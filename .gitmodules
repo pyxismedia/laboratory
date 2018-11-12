@@ -1,0 +1,3 @@
+[submodule "packages/pyxis-on-redux"]
+	path = packages/pyxis-on-redux
+	url = https://github.com/creaux/pyxis-on-redux.git

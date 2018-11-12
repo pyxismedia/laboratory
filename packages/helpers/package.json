@@ -1,0 +1,24 @@
+{
+  "name": "@pyxis/helpers",
+  "version": "1.0.3",
+  "description": "",
+  "main": "./dist/helpers.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "holderjs": "^2.9.6",
+    "lodash": "^4.17.11",
+    "react-redux": "^5.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.5",
+    "@babel/preset-env": "^7.1.5",
+    "@babel/register": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2"
+  }
+}
