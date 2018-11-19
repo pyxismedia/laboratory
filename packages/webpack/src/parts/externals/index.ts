@@ -1,0 +1,1 @@
+export { externals } from './part';

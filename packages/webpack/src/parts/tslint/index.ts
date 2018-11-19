@@ -1,0 +1,1 @@
+export { tslint } from './part';

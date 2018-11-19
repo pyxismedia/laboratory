@@ -1,0 +1,35 @@
+import ava from 'ava';
+import { devServer } from './part';
+import * as webpack from "webpack";
+
+ava('should return default configuration', (t) => {
+  const expected = {
+    devServer: {
+      stats: 'errors-only' as webpack.Options.Stats,
+      host: '0.0.0.0',
+      port: 3000,
+      open: true,
+      overlay: true,
+    },
+  };
+
+  const result = devServer();
+
+  t.deepEqual(result, expected);
+});
+
+ava('should be customizable host and port', (t) => {
+  const expected = {
+    devServer: {
+      stats: 'errors-only' as webpack.Options.Stats,
+      host: 'localhost',
+      port: 8080,
+      open: true,
+      overlay: true,
+    },
+  };
+
+  const result = devServer({ host: 'localhost', port: 8080 });
+
+  t.deepEqual(result, expected);
+});
