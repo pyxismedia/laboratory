@@ -13,9 +13,15 @@
     // Disallow features that require cross-file information for emit.
     "isolatedModules": true,
     // Import non-ES modules as default imports.
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    // TS1209: Ambient const enums are not allowed when the '--isolatedModules' flag is provided.
+    // Try to remove to find another fix
+    "skipLibCheck": true
   },
   "include": [
     "src"
+  ],
+  "exclude": [
+    "node_modules"
   ]
 }

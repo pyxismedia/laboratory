@@ -5,7 +5,9 @@
   ],
   "defaultSeverity": "error",
   "jsRules": {},
-  "rules": {},
+  "rules": {
+    "import-name": false
+  },
   "rulesDirectory": [],
   "linterOptions": {
     "exclude": ["**/node_modules/**"]

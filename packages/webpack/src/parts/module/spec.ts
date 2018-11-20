@@ -6,11 +6,10 @@ ava('should have entry with default value', (t) => {
     module: {
       rules: [
         {
-          test: /\.m?jsx?$/,
+          test: /\.m?tsx?$/,
           exclude: /node_modules/,
           use: [
             'babel-loader',
-            'eslint-loader',
           ],
         },
       ],

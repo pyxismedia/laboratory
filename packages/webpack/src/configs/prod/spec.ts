@@ -8,6 +8,8 @@ const { prod } = prequire.noCallThru()('./config', {
   '../../parts/externals': { externals: () => 'externals' },
   '../../parts/output': { output: () => 'output' },
   '../../parts/extensions': { extensions: () => 'extensions' },
+  '../../parts/tslint': { tslint: () => 'tslint' },
+  '../../parts/mode': { mode: () => 'mode' },
   'webpack-merge': (...data: any) => ([ ...data ]),
 });
 
@@ -19,6 +21,8 @@ ava('should generate prod config', (t) => {
     'externals',
     'output',
     'extensions',
+    'tslint',
+    'mode',
   ];
 
   const result = prod();

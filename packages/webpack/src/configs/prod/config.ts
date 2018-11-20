@@ -6,11 +6,11 @@ import { module } from '../../parts/module';
 import { externals } from '../../parts/externals';
 import { output } from '../../parts/output';
 import { extensions as extension } from "../../parts/extensions";
-import { Entry } from "webpack/declarations/WebpackOptions";
+import { mode } from "../../parts/mode";
 import { tslint } from "../../parts/tslint";
 
 export interface IProd {
-  entry: Entry | Entry[] | string | string[];
+  entry: string;
   cleanPath?: string[];
   extensions: string[];
 }
@@ -23,4 +23,5 @@ export const prod = ({ entry, cleanPath, extensions }: IProd = { entry: './src/i
   output(),
   extension({ extensions }),
   tslint(),
+  mode(),
 );
