@@ -31,6 +31,7 @@
     "@babel/core": "^7.1.6",
     "@babel/plugin-proposal-class-properties": "^7.1.0",
     "@babel/preset-env": "^7.1.6",
+    "@babel/preset-react": "^7.0.0",
     "@babel/preset-typescript": "^7.1.0",
     "@types/app-root-path": "^1.2.4",
     "@types/clean-webpack-plugin": "^0.1.2",
@@ -67,7 +68,7 @@
     "app-root-path": "^2.1.0",
     "clean-webpack-plugin": "^1.0.0",
     "html-webpack-plugin": "^3.2.0",
-    "webpack": "^4.25.1",
+    "webpack": "^4.26.0",
     "webpack-merge": "^4.1.4",
     "webpack-node-externals": "^1.7.2"
   }

@@ -1,16 +1,13 @@
-import { prod } from './src/configs/prod';
+import { typescript } from './src/configs/typescript';
 
-const DEV = 'dev.config';
-const PROD = 'prod.config';
+const TYPESCRIPT = 'typescript.config';
 
-export const config = prod({
+export const config = typescript({
   entry: {
-    [DEV]: './src/configs/dev',
-    [PROD]: './src/configs/prod',
+    [TYPESCRIPT]: './src/configs/typescript',
   },
   cleanPath: [
-    `${DEV}.js`,
-    `${PROD}.js`,
+    `${TYPESCRIPT}.js`,
   ],
   extensions: ['.ts'],
 });

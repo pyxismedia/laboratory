@@ -1,1 +1,0 @@
-export { prod } from './config';

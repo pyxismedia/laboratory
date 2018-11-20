@@ -8,6 +8,8 @@ ava('should have output with default value', (t) => {
     output: {
       filename: '[name].js',
       path: 'root/path',
+      library: 'library',
+      libraryTarget: 'umd',
     },
   };
 

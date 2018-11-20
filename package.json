@@ -1,0 +1,14 @@
+{
+  "name": "pyxis",
+  "version": "1.0.0",
+  "description": "Pyxis monorepo",
+  "main": "index.js",
+  "author": "Petr Juna",
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^3.0.0-rc.0"
+  },
+  "dependencies": {
+    "@babel/register": "^7.0.0"
+  }
+}
