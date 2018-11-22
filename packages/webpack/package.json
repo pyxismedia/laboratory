@@ -16,7 +16,7 @@
   "scripts": {
     "build": "node webpack.register.js",
     "build:watch": "webpack --config webpack.config.babel.js --watch",
-    "test": "nyc ava ./src/**/spec.ts --verbose",
+    "test": "nyc ava --verbose",
     "test:watch": "ava --watch ./src/**/spec.ts",
     "precommit": "lint-staged",
     "report": "nyc report"

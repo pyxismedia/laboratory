@@ -3,8 +3,20 @@
     "text",
     "html"
   ],
+  "require": [
+    "./register.js"
+  ],
+  "extension": [
+    ".ts"
+  ],
+  "all": true,
+  "exclude": [
+    "src/**/spec.ts"
+  ],
+  "cache": false,
+  "sourceMap": false,
+  "instrument": false,
   "check-coverage": true,
-  "per-file": true,
   "lines": 100,
   "statements": 100,
   "functions": 100,
