@@ -9,6 +9,7 @@ const { typescript } = prequire.noCallThru()('./config', {
   '../../parts/extensions': { extensions: () => 'extensions' },
   '../../parts/ts': { ts: () => 'ts' },
   '../../parts/mode': { mode: () => 'mode' },
+  '../../parts/target': { target: () => 'target' },
   'webpack-merge': (...data: any) => ([ ...data ]),
 });
 
@@ -21,6 +22,7 @@ ava('should generate prod config', (t) => {
     'extensions',
     'ts',
     'mode',
+    'target',
   ];
 
   const result = typescript();

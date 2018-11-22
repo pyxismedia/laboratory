@@ -1,6 +1,6 @@
-const { typescript } = require('@pyxis/webpack/typescript.config');
+const { typescriptCss } = require('@pyxis/webpack/typescriptCss.config');
 
 module.exports = {
-  webpackConfig: typescript,
-  components: 'src/components/**/*.{ts,tsx}'
+  webpackConfig: typescriptCss({ target: 'web', mode: 'development' }),
+  components: 'src/components/**/*.tsx',
 };

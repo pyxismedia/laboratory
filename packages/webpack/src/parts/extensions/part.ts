@@ -1,5 +1,5 @@
 
-export const extensions = ({ extensions }: { extensions: string[] } = { extensions: ['.js'] }) => ({
+export const extensions = ({ extensions }: { extensions?: string[] } = { extensions: ['.js'] }) => ({
   resolve: {
     extensions,
   },

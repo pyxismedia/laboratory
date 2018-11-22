@@ -5,7 +5,6 @@ const { externals } = prequire('./part', { 'webpack-node-externals': () => 'exte
 
 ava('should return externals object', (t) => {
   const expected = {
-    target: 'node',
     externals: ['externals'],
   };
   const result = externals();

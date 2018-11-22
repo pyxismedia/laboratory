@@ -1,0 +1,1 @@
+export { typescriptCss } from './config';

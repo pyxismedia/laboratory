@@ -5,21 +5,27 @@ import { entry as entries } from '../../parts/entry';
 import { externals } from '../../parts/externals';
 import { output } from '../../parts/output';
 import { extensions as extension } from "../../parts/extensions";
-import { mode } from "../../parts/mode";
+import { mode as modes } from "../../parts/mode";
 import { ts } from "../../parts/ts";
+import { target as targets } from "../../parts/target";
+import { Target } from "../../parts/target/part";
+import { Mode } from "../../parts/mode/part";
 
 export interface ITypescript {
   entry: string;
   cleanPath?: string[];
   extensions: string[];
+  target?: Target
+  mode: Mode;
 }
 
-export const typescript = ({ entry, cleanPath, extensions }: ITypescript = { entry: './src/index.js', extensions: ['.ts', '.tsx'] }) => merge(
+export const typescript = ({ entry, cleanPath, extensions, target, mode }: ITypescript = { entry: './src/index.ts', extensions: ['.ts', '.tsx'], target: 'node', mode: 'production' }) => merge(
   clean({ paths: cleanPath }),
   entries({ entry }),
   externals(),
   output(),
   extension({ extensions }),
   ts(),
-  mode(),
+  modes({ mode }),
+  targets({ target }),
 );
