@@ -1,4 +1,4 @@
-export const css = () => ({
+export const  css = () => ({
   module: {
     rules: [
       {

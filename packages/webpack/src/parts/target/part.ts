@@ -1,4 +1,4 @@
-export type Target = 'web' | 'webworker' | 'async-node' | 'node' | 'electron-main' | 'electron-renderer' | 'node-webkit';
+import { Target } from "./types";
 
 export const target = ({ target = 'node'}: { target?: Target } = {}) => ({
   target,
