@@ -16,8 +16,7 @@
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
     "dev": "styleguidist server",
-    "build": "styleguidist build",
-    "start": "yarn dev"
+    "build": "styleguidist build"
   },
   "dependencies": {
     "@pyxis/webpack": "^0.0.0",
