@@ -8,7 +8,7 @@ import { extensions as extension } from "../../parts/extensions";
 import { mode as modes } from "../../parts/mode";
 import { ts } from "../../parts/ts";
 import { target as targets } from "../../parts/target";
-import { Target } from "../../parts/target/part";
+import { Target } from "../../parts/target/types";
 import { Mode } from "../../parts/mode/part";
 
 export interface ITypescript {

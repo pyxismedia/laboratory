@@ -8,6 +8,8 @@ import { babelrc } from './babelrc';
 
 export type enforce = 'pre' | 'post' | undefined;
 
+console.log(ForkTsCheckerWebpackPlugin);
+
 export const ts = () => ({
   module: {
     rules: [

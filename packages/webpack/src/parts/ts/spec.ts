@@ -1,19 +1,64 @@
-import prequire from 'proxyquire';
 import ava from 'ava';
+import prequire from 'proxyquire';
+import { resolve } from 'path';
+import root from 'app-root-path';
+import { enforce } from './part';
 
-const { babelrc } = prequire('./babelrc', {
-  '@babel/preset-env': { default: '@babel/preset-env' },
-  '@babel/preset-typescript': { default: '@babel/preset-typescript' },
-  '@babel/preset-react': { default: '@babel/preset-react' },
-  '@babel/plugin-proposal-class-properties': { default: '@babel/plugin-proposal-class-properties' },
-  '@babel/plugin-proposal-object-rest-spread': { default: '@babel/plugin-proposal-object-rest-spread' },
+class ForkTsCheckerWebpackPlugin {
+  tsconfig: string[];
+  constructor({ tsconfig }: { tsconfig: string[] }) {
+    this.tsconfig = tsconfig;
+  }
+}
+
+const { ts } = prequire.noCallThru()('./part', {
+  'fork-ts-checker-webpack-plugin': ForkTsCheckerWebpackPlugin,
+  // @ts-ignore
+  'path': { resolve: (...args) => ([...args]) },
+  'app-root-path': { path: 'root' },
+  './babelrc': { babelrc: 'babelrc' },
 });
 
-ava('should return expected values', (t) => {
+ava('should export default values', (t) => {
   const expected = {
-    presets: ['@babel/preset-env', '@babel/preset-typescript', '@babel/preset-react'],
-    plugins: ['@babel/plugin-proposal-class-properties', '@babel/plugin-proposal-object-rest-spread'],
+    module: {
+      rules: [
+        {
+          test: /\.m?tsx?$/,
+          exclude: /node_modules/,
+          enforce: 'pre' as enforce,
+          loader: [
+            'root',
+            'node_modules',
+            'tslint-loader',
+          ],
+          options: {
+            configFile: [
+              'root',
+              'tslint.json',
+            ],
+          },
+        },
+        {
+          test: /\.m?tsx?$/,
+          exclude: /node_modules/,
+          loader: [
+            'root',
+            'node_modules',
+            'babel-loader',
+          ],
+          options: 'babelrc',
+        },
+      ],
+    },
+    plugins: [
+      new ForkTsCheckerWebpackPlugin({
+        tsconfig: ['root', 'tsconfig.json'],
+      }),
+    ],
   };
 
-  t.deepEqual(babelrc, expected);
+  const result = ts();
+
+  t.deepEqual(expected, result);
 });

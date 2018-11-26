@@ -6,7 +6,8 @@
   "defaultSeverity": "error",
   "jsRules": {},
   "rules": {
-    "import-name": false
+    "import-name": false,
+    "variable-name": false
   },
   "rulesDirectory": [],
   "linterOptions": {
