@@ -1,6 +1,6 @@
 {
   "name": "@pyxis/webpack",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "> TODO: description",
   "author": "Petr Juna <petr.juna@gmail.com>",
   "homepage": "",
@@ -55,11 +55,9 @@
     "prettier": "1.15.2",
     "proxyquire": "^2.1.0",
     "speed-measure-webpack-plugin": "^1.2.3",
-    "tslint": "^5.11.0",
     "tslint-config-airbnb": "^5.11.1",
     "tslint-config-prettier": "^1.16.0",
     "tslint-loader": "^3.5.4",
-    "typescript": "^3.1.6",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.10"
   },
@@ -70,6 +68,8 @@
     "css-loader": "^1.0.1",
     "fork-ts-checker-webpack-plugin": "^0.4.15",
     "html-webpack-plugin": "^3.2.0",
+    "tslint": "^5.11.0",
+    "typescript": "^3.1.6",
     "webpack": "^4.26.0",
     "webpack-merge": "^4.1.4",
     "webpack-node-externals": "^1.7.2"
