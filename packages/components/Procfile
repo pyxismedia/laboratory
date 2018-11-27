@@ -1,1 +1,1 @@
-web: yarn dev
+web: ls -all && cd node_modules/.bin && ls -all
