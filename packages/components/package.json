@@ -1,6 +1,6 @@
 {
   "name": "@pyxis/components",
-  "version": "0.0.5",
+  "version": "0.0.18",
   "description": "Components library",
   "author": "Petr Juna <petr.juna@gmail.com>",
   "homepage": "",
@@ -15,7 +15,7 @@
     "postinstall": "if [ $BUILD ]; then yarn build; fi"
   },
   "dependencies": {
-    "@pyxis/webpack": "0.0.18",
+    "@pyxis/webpack": "^0.0.18",
     "mapbox-gl": "^0.51.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3"
