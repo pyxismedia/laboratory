@@ -1,6 +1,6 @@
 {
   "name": "@pyxis/webpack",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "> TODO: description",
   "author": "Petr Juna <petr.juna@gmail.com>",
   "homepage": "",
@@ -11,7 +11,7 @@
     "test": "__tests__"
   },
   "files": [
-    "lib"
+    "**/*"
   ],
   "scripts": {
     "build": "node webpack.register.js",
