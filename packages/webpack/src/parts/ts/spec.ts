@@ -14,9 +14,10 @@ class ForkTsCheckerWebpackPlugin {
 const { ts } = prequire.noCallThru()('./part', {
   'fork-ts-checker-webpack-plugin': ForkTsCheckerWebpackPlugin,
   // @ts-ignore
-  'path': { resolve: (...args) => ([...args]) },
+  'path': { join: (...args) => ([...args]) },
   'app-root-path': { path: 'root' },
   './babelrc': { babelrc: 'babelrc' },
+  'pkg-dir': { sync: () => 'root' }
 });
 
 ava('should export default values', (t) => {

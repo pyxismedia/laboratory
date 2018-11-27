@@ -23,6 +23,11 @@ ava('should generate prod config', (t) => {
     'ts',
     'mode',
     'target',
+    {
+      node: {
+        __dirname: false,
+      },
+    },
   ];
 
   const result = typescript();

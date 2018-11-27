@@ -28,4 +28,9 @@ export const typescript = ({ entry, cleanPath, extensions, target, mode }: IType
   ts(),
   modes({ mode }),
   targets({ target }),
+  {
+    node: {
+      __dirname: false,
+    },
+  },
 );
