@@ -105,10 +105,10 @@
   resolved "https://registry.npmjs.org/@nodelib/fs.stat/-/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
   integrity sha512-shAmDyaQC4H92APFoIaVDHCx5bStIocgvbwQyxPRrbUY20V1EYTbSDchWbuwlMG3V17cprZhA6+78JfB+3DTPw==
 
-"@pyxis/webpack@^0.0.3":
-  version "0.0.3"
-  resolved "https://pyxis-npm.herokuapp.com/@pyxis%2fwebpack/-/webpack-0.0.3.tgz#83e420ecf0efb5b2c34646a5c7f8fbfe0981b396"
-  integrity sha512-K0le5fKxHL94Y3ZFBkDFl8mlAQYjuBxLWsxRJ2X5/8RaDzHQkcR/mLTUD6YhZqWKzZsP1wZmvfEldYDDhHZMSg==
+"@pyxis/webpack@^0.0.4":
+  version "0.0.4"
+  resolved "https://pyxis-npm.herokuapp.com/@pyxis%2fwebpack/-/webpack-0.0.4.tgz#ff26c165bf86b0f4f1d44d8e668f3302a0ca1ea3"
+  integrity sha512-RCt+JNjS6OxtDwqzYMhLDjr3wgW/zpqqlCRvV2MhvPuJtcS3cyB+rdo+UXdgoFEMNZZGP2aOfQ2iXTBq3mJTOQ==
   dependencies:
     "@babel/register" "^7.0.0"
     app-root-path "^2.1.0"
