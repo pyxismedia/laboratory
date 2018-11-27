@@ -1,16 +1,11 @@
 import { typescript } from './src/configs/typescript';
 
-const TYPESCRIPT = 'typescript.config';
-const TYPESCRIPT_CSS = 'typescriptCss.config';
+const CONFIGS = 'configs';
 
 export const config = typescript({
   entry: {
-    [TYPESCRIPT]: './src/configs/typescript',
-    [TYPESCRIPT_CSS]: './src/configs/typescriptCss',
+    [CONFIGS]: './src/configs',
   },
-  cleanPath: [
-    `${TYPESCRIPT}.js`,
-    `${TYPESCRIPT_CSS}.js`,
-  ],
+  cleanPath: ['./build'],
   extensions: ['.ts'],
 });
