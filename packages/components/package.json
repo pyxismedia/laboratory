@@ -29,5 +29,9 @@
     "react-dom": "^16.6.3",
     "react-styleguidist": "^8.0.5",
     "webpack": "^4.26.0"
+  },
+  "engines": {
+    "mode": "lts/*",
+    "yarn": "1.10.1"
   }
 }
