@@ -14,7 +14,6 @@
     "lib"
   ],
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1",
     "dev": "styleguidist server",
     "build": "styleguidist build"
   },
@@ -31,7 +30,7 @@
     "webpack": "^4.26.0"
   },
   "engines": {
-    "mode": "lts/*",
+    "mode": "10.13.0",
     "yarn": "1.10.1"
   }
 }
