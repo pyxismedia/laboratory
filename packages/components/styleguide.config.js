@@ -1,4 +1,4 @@
-const { typescriptCss } = require('@pyxis/webpack/typescriptCss.config');
+const { typescriptCss } = require('@pyxis/webpack');
 
 module.exports = {
   webpackConfig: typescriptCss({ target: 'web', mode: 'development' }),
