@@ -1,1 +1,1 @@
-web: ls -all && cd node_modules/.bin && ls -all
+web: ls -all node_modules/.bin
