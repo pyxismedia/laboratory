@@ -6,7 +6,6 @@ package-lock.json
 build
 storybook-static
 *.log.*
-.npmrc
 *.iml
 .DS_Store
 _book
