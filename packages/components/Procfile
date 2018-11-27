@@ -1,1 +1,1 @@
-web: cd packages/components && yarn dev
+web: cd packages/components && npm run dev
