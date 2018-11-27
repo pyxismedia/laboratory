@@ -1,10 +1,10 @@
 {
   "name": "@pyxis/components",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Components library",
   "author": "Petr Juna <petr.juna@gmail.com>",
   "homepage": "",
-  "license": "ISC",
+  "license": "MIT",
   "main": "lib/components.js",
   "files": [
     "lib"
@@ -20,7 +20,7 @@
     "react-dom": "^16.6.3"
   },
   "devDependencies": {
-    "@pyxis/webpack": "^0.0.1",
+    "@pyxis/webpack": "^0.0.2",
     "@types/mapbox-gl": "^0.51.0",
     "react-styleguidist": "^8.0.6",
     "webpack": "^4.26.0"
