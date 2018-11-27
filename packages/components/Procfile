@@ -1,1 +1,1 @@
-web: ls -all node_modules/.bin
+web: yarn dev
