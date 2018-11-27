@@ -11,7 +11,8 @@
   ],
   "scripts": {
     "dev": "styleguidist server",
-    "build": "styleguidist build"
+    "build": "styleguidist build",
+    "postinstall": "if [ $BUILD ]; then yarn build; fi"
   },
   "dependencies": {
     "mapbox-gl": "^0.51.0"
