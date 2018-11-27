@@ -14,16 +14,15 @@
     "build": "styleguidist build"
   },
   "dependencies": {
-    "@pyxis/webpack": "^0.0.0",
-    "@types/mapbox-gl": "^0.51.0",
     "mapbox-gl": "^0.51.0"
   },
   "devDependencies": {
-    "babel-loader": "^8.0.4",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-styleguidist": "^8.0.6",
-    "webpack": "^4.26.0"
+    "webpack": "^4.26.0",
+    "@types/mapbox-gl": "^0.51.0",
+    "@pyxis/webpack": "^0.0.0"
   },
   "engines": {
     "node": "10.13.0",
