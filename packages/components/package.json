@@ -23,7 +23,7 @@
     "react-styleguidist": "^8.0.6",
     "webpack": "^4.26.0",
     "@types/mapbox-gl": "^0.51.0",
-    "@pyxis/webpack": "^0.0.1"
+    "@pyxis/webpack": "^0.0.2"
   },
   "engines": {
     "node": "10.13.0",
