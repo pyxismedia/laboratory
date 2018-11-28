@@ -4,22 +4,27 @@
   "keywords": [
     "webpack",
   ],
-  "scripts": {
-  },
   "env": {
     "NODE_MODULES_CACHE": {
       "required": true
     },
+    "PROJECT_PATH": {
+      "required": true
+    }
   },
-  "formation": {},
-  "addons": [],
   "buildpacks": [
-    { "url": "https://github.com/heroku/heroku-buildpack-nodejs\\#v132" },
+    {
+      "url": "https://github.com/timanovsky/subdir-heroku-buildpack"
+    },
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs\\#v132"
+    },
   ],
   "environments": {
     "test": {
       "env": {
         "NODE_MODULES_CACHE": "true",
+        "PROJECT_PATH": "packages/webpack"
       },
       "scripts": {
         "test": "yarn test"
