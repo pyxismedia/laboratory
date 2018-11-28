@@ -7,7 +7,7 @@
     }
   ],
   "scripts": {
-    "postdeploy": "yarn bootstrap"
+    "postdeploy": "yarn && yarn bootstrap"
   },
   "environments": {
     "test": {
