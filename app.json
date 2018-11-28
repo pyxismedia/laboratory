@@ -7,7 +7,7 @@
     }
   ],
   "scripts": {
-    "postdeploy": "lerna bootstrap"
+    "postdeploy": "yarn bootstrap"
   },
   "environments": {
     "test": {
@@ -15,7 +15,7 @@
         "NODE_MODULES_CACHE": "true"
       },
       "scripts": {
-        "test": "lerna test"
+        "test": "yarn test"
       }
     }
   }
