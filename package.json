@@ -5,15 +5,15 @@
   "main": "index.js",
   "author": "Petr Juna",
   "license": "MIT",
+    "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "test": "lerna run test"
+  },
   "devDependencies": {
     "lerna": "^3.0.0-rc.0"
   },
   "dependencies": {
     "@babel/register": "^7.0.0"
-  },
-  "scripts": {
-    "bootstrap": "lerna bootstrap",
-    "test": "lerna test"
   },
   "engines": {
     "node": "10.13.0",
