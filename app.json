@@ -3,7 +3,20 @@
   "description": "@pyxis",
   "buildpacks": [
     {
-      "url": "https://github.com/timanovsky/subdir-heroku-buildpack"
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs\\#v132"
+    },
+  ],
+  "scripts": {
+    "postdeploy": "lerna bootstrap"
+  },
+  "environments": {
+    "test": {
+      "env": {
+        "NODE_MODULES_CACHE": "true"
+      },
+      "scripts": {
+        "test": "lerna test"
+      }
     }
-  ]
+  }
 }
