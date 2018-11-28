@@ -1,0 +1,9 @@
+{
+  "name": "@pyxis",
+  "description": "@pyxis",
+  "buildpacks": [
+    {
+      "url": "https://github.com/timanovsky/subdir-heroku-buildpack"
+    }
+  ]
+}
