@@ -3,7 +3,7 @@
   "description": "@pyxis",
   "buildpacks": [
     {
-      "url": "https://github.com/heroku/heroku-buildpack-nodejs\\#v132"
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs#v132"
     }
   ],
   "scripts": {
