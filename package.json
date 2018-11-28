@@ -8,7 +8,7 @@
     "scripts": {
     "bootstrap": "lerna bootstrap",
     "test": "lerna run test",
-    "postinstall": "yarn boostrap"
+    "postinstall": "yarn bootstrap"
   },
   "devDependencies": {
     "lerna": "^3.0.0-rc.0"
