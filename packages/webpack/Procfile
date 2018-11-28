@@ -1,1 +1,1 @@
-web: yarn test
+web: yarn build
