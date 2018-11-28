@@ -4,7 +4,7 @@
   "buildpacks": [
     {
       "url": "https://github.com/heroku/heroku-buildpack-nodejs\\#v132"
-    },
+    }
   ],
   "scripts": {
     "postdeploy": "lerna bootstrap"
