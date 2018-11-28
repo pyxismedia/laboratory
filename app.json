@@ -6,9 +6,6 @@
       "url": "https://github.com/heroku/heroku-buildpack-nodejs#v132"
     }
   ],
-  "scripts": {
-    "postdeploy": "yarn && yarn bootstrap"
-  },
   "environments": {
     "test": {
       "env": {
