@@ -25,7 +25,7 @@ ava('should export default values', (t) => {
     module: {
       rules: [
         {
-          test: /\.m?tsx?$/,
+          test: /.*\.m?tsx?$/,
           exclude: /node_modules/,
           enforce: 'pre' as enforce,
           loader: [
@@ -41,7 +41,7 @@ ava('should export default values', (t) => {
           },
         },
         {
-          test: /\.m?tsx?$/,
+          test: /.*\.m?tsx?$/,
           exclude: /node_modules/,
           loader: [
             'root',

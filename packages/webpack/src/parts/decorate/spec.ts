@@ -9,7 +9,7 @@ const { decorate } = prequire.noCallThru()('./part', {
 ava('should set all variables', (t) => {
   const expected = {
     module: {
-      rules: {
+      rules: [{
         test: /.*\.decorable\.ts/,
         loaders: [
           {
@@ -19,7 +19,7 @@ ava('should set all variables', (t) => {
             loader: ['root', 'node_modules', '@pyxis', 'loaders', 'loader'],
           },
         ],
-      },
+      }],
     },
   };
 

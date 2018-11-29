@@ -3,7 +3,7 @@ import prequire from 'proxyquire';
 
 const { output } = prequire('./part', {
   'path': { join: (...args: string[]) => ([...args]) },
-  'pkg-dir': { sync: () => 'root' },
+  '../../constants': { APP_DIRNAME: 'root' },
 });
 
 ava('should have output with default value', (t) => {

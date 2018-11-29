@@ -26,6 +26,7 @@ ava('should generate prod config', (t) => {
     {
       node: {
         __dirname: false,
+        __filename: false,
       },
     },
   ];
