@@ -4,12 +4,9 @@ import { join } from 'path';
 // because .babelrc has to be in json for ava which is part of @pyxis/webpack
 // as testing tool
 import { babelrc } from './babelrc';
-import pkgDir from 'pkg-dir';
+import { PACKAGE_DIRNAME } from "../../constants";
 
 export type enforce = 'pre' | 'post' | undefined;
-
-// Determine path to package root!
-const PACKAGE_DIRNAME = pkgDir.sync(__dirname) || __dirname;
 
 export const ts = () => ({
   module: {

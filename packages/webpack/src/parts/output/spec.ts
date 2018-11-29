@@ -2,8 +2,8 @@ import ava from 'ava';
 import prequire from 'proxyquire';
 
 const { output } = prequire('./part', {
-  'path': { join: (...args) => ([...args]) },
-  'pkg-dir': { sync: (dirname) => 'root' },
+  'path': { join: (...args: string[]) => ([...args]) },
+  'pkg-dir': { sync: () => 'root' },
 });
 
 ava('should have output with default value', (t) => {

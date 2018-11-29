@@ -1,0 +1,1 @@
+export default (wrapped) => props => wrapped(props);

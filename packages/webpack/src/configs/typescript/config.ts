@@ -10,16 +10,17 @@ import { ts } from "../../parts/ts";
 import { target as targets } from "../../parts/target";
 import { Target } from "../../parts/target/types";
 import { Mode } from "../../parts/mode/part";
+import { EntryValue } from '../../parts/entry/part';
 
 export interface ITypescript {
-  entry: string;
+  entry: EntryValue | string;
   cleanPath?: string[];
   extensions: string[];
   target?: Target
-  mode: Mode;
+  mode?: Mode;
 }
 
-export const typescript = ({ entry, cleanPath, extensions, target, mode }: ITypescript = { entry: './src/index.ts', extensions: ['.ts', '.tsx'], target: 'node', mode: 'production' }) => merge(
+export const typescript = ({ entry, cleanPath, extensions, target, mode }: ITypescript = { entry: './src/index.ts' as EntryValue | string, extensions: ['.ts', '.tsx'], target: 'node', mode: 'production' }) => merge(
   clean({ paths: cleanPath }),
   entries({ entry }),
   externals(),

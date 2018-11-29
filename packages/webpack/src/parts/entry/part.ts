@@ -1,8 +1,16 @@
 
-export interface IEntry {
+export interface EntryValue {
   [name: string]: string;
 }
 
-export const entry = ({ entry = './src/index.js' } = {}): { entry: IEntry | string } => ({
+export interface IEntry {
+  entry?: EntryValue | string;
+}
+
+const initial = {
+  name: './src/index.js',
+};
+
+export const entry = ({ entry = initial }: IEntry = {}) => ({
   entry,
 });
