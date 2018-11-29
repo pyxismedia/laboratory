@@ -8,8 +8,12 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "test": "lerna run test",
-    "postinstall": "yarn bootstrap",
-    "pre-push": "yarn test"
+    "postinstall": "yarn bootstrap"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm test"
+    }
   },
   "devDependencies": {
     "husky": "^1.2.0",
