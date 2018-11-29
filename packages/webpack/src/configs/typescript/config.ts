@@ -20,7 +20,7 @@ export interface ITypescript {
   mode?: Mode;
 }
 
-export const typescript = ({ entry, cleanPath, extensions, target, mode }: ITypescript = { entry: './src/index.ts' as EntryValue | string, extensions: ['.ts', '.tsx'], target: 'node', mode: 'production' }) => merge(
+export const typescript = ({ entry, cleanPath, extensions = ['.ts', '.tsx'], target = 'node', mode = 'production' }: ITypescript = { entry: './src/index.ts' as EntryValue | string, extensions: ['.ts', '.tsx'], target: 'node', mode: 'production' }) => merge(
   clean({ paths: cleanPath }),
   entries({ entry }),
   externals(),
@@ -32,6 +32,7 @@ export const typescript = ({ entry, cleanPath, extensions, target, mode }: IType
   {
     node: {
       __dirname: false,
+      __filename: false,
     },
   },
 );

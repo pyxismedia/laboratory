@@ -1,11 +1,8 @@
 import { LibraryTarget } from 'webpack';
 import { join } from 'path';
-import pkgDir from 'pkg-dir';
+import { APP_DIRNAME } from '../../constants';
 
-// Determine path to package root!
-const PACKAGE_DIRNAME = pkgDir.sync(__dirname) || __dirname;
-
-export const output = ({ filename = '[name].js', path = join(PACKAGE_DIRNAME, './build'), library = 'library', libraryTarget = 'umd' as LibraryTarget } = {}) => ({
+export const output = ({ filename = '[name].js', path = join(APP_DIRNAME, './build'), library = 'library', libraryTarget = 'umd' as LibraryTarget } = {}) => ({
   output: {
     filename,
     path,

@@ -6,6 +6,9 @@
   "files": [
     "**/*"
   ],
+  "scripts": {
+    "build": "webpack"
+  },
   "dependencies": {
     "styled-components": "^4.1.2"
   },

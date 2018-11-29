@@ -15,6 +15,7 @@
     "postinstall": "if [ $BUILD ]; then yarn build; fi"
   },
   "dependencies": {
+    "@pyxis/decorators": "^0.0.0",
     "@pyxis/webpack": "^0.0.19",
     "mapbox-gl": "^0.51.0",
     "react": "^16.6.3",
@@ -23,7 +24,8 @@
   "devDependencies": {
     "@types/mapbox-gl": "^0.51.0",
     "react-styleguidist": "^8.0.6",
-    "webpack": "^4.26.0"
+    "webpack": "^4.26.0",
+    "webpack-merge": "^4.1.4"
   },
   "engines": {
     "node": "10.13.0",

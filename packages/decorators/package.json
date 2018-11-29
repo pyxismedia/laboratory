@@ -1,0 +1,23 @@
+{
+  "name": "@pyxis/decorators",
+  "version": "0.0.0",
+  "main": "./build/main.js",
+  "author": "Petr Juna",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "@pyxis/webpack": "^0.0.19",
+    "webpack": "^4.26.1",
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "react": "^16.6.3"
+  },
+  "engines": {
+    "node": "10.13.0",
+    "yarn": "1.10.1",
+    "npm": "6.4.1"
+  }
+}

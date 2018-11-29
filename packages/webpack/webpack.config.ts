@@ -12,6 +12,5 @@ export const config = typescript({
     'configs/typescript': './src/configs/typescript',
     'parts/decorate': './src/parts/decorate',
   },
-  cleanPath: ['./build/**/*'], //TODO Doesn't work
   extensions: ['.ts'],
 });

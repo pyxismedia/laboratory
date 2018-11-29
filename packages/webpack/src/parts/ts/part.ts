@@ -12,7 +12,7 @@ export const ts = () => ({
   module: {
     rules: [
       {
-        test: /\.m?tsx?$/,
+        test: /.*\.m?tsx?$/,
         exclude: /node_modules/,
         enforce: 'pre' as enforce,
         loader: join(PACKAGE_DIRNAME, 'node_modules', 'tslint-loader'),
@@ -21,7 +21,7 @@ export const ts = () => ({
         },
       },
       {
-        test: /\.m?tsx?$/,
+        test: /.*\.m?tsx?$/,
         exclude: /node_modules/,
         loader: join(PACKAGE_DIRNAME, 'node_modules', 'babel-loader'),
         options: babelrc,

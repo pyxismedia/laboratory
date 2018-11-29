@@ -13,7 +13,10 @@ runLoaders(
 			loader: resolve(__dirname, './'),
 			options: {
 				package: 'resources',
-				decorator: resolve(__dirname, 'resources', 'decorator'),
+				decorator: {
+					source: resolve(__dirname, 'resources', 'decorator'),
+					imports: 'decorator',
+				},
 				sourceDir: undefined,
 			},
 		}],

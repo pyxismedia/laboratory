@@ -1,1 +1,1 @@
-export default (wrapped) => props => wrapped(props);
+export const decorator = (wrapped) => props => wrapped(props);

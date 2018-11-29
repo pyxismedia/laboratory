@@ -5,4 +5,4 @@ export const A = styled.a`
   align-items: center;
   color: black;
   font-size: 14px;
-`);
+`;

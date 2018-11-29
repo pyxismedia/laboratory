@@ -1,1 +1,1 @@
-export { PACKAGE_DIRNAME } from './constants';
+export { PACKAGE_DIRNAME, APP_DIRNAME } from './constants';
