@@ -3,7 +3,9 @@ import { entry } from './part';
 
 ava('should have entry with default value', (t) => {
   const expected = {
-    entry: './src/index.js',
+    entry: {
+      name: './src/index.js',
+    },
   };
 
   const result = entry();
