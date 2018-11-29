@@ -5,12 +5,14 @@
   "main": "index.js",
   "author": "Petr Juna",
   "license": "MIT",
-    "scripts": {
+  "scripts": {
     "bootstrap": "lerna bootstrap",
     "test": "lerna run test",
-    "postinstall": "yarn bootstrap"
+    "postinstall": "yarn bootstrap",
+    "pre-push": "yarn test"
   },
   "devDependencies": {
+    "husky": "^1.2.0",
     "lerna": "^3.0.0-rc.0"
   },
   "dependencies": {
