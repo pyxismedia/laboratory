@@ -1,10 +1,7 @@
 import external from 'webpack-node-externals';
-import { ExternalsElement } from 'webpack';
+import { ExternalsPart } from './types';
 
-export interface IExternals {
-  externals: ExternalsElement[]
-}
 
-export const externals = (): IExternals => ({
+export const externals = (): ExternalsPart => ({
   externals: [external()],
 });

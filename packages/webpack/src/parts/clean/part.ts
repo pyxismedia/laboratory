@@ -1,7 +1,7 @@
 import CleanWebpackPlugin from 'clean-webpack-plugin';
-import { ICleanModel } from './types';
+import { CleanArgs, CleanPart, Clean } from './types';
 
-export const clean = ({ paths = ['build'] } = {}): ICleanModel  => ({
+export const clean = ({ paths = Clean.BUILD }: CleanArgs): CleanPart  => ({
   plugins: [
     new CleanWebpackPlugin(paths),
   ],

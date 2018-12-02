@@ -1,5 +1,5 @@
-import { Target } from "./types";
+import { Target, TargetArgs, TargetPart } from './types';
 
-export const target = ({ target = 'node'}: { target?: Target } = {}) => ({
+export const target = ({ target = Target.NODE }: TargetArgs): TargetPart => ({
   target,
 });

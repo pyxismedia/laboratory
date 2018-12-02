@@ -11,12 +11,13 @@
     // Enable strictest settings like strictNullChecks & noImplicitAny.
     "strict": true,
     // Disallow features that require cross-file information for emit.
-    "isolatedModules": true,
+    "isolatedModules": false,
     // Import non-ES modules as default imports.
     "esModuleInterop": true,
     // TS1209: Ambient const enums are not allowed when the '--isolatedModules' flag is provided.
     // Try to remove to find another fix
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "declaration": true
   },
   "include": [
     "src"

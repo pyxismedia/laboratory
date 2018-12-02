@@ -1,23 +1,23 @@
 import ava from 'ava';
-import prequire from 'proxyquire';
 import { mode } from './part';
+import {Mode} from "./types";
 
 ava('should have target with default value', (t) => {
   const expected = {
-    mode: 'production',
+    mode: Mode.production,
   };
 
-  const result = mode();
+  const result = mode({});
 
   t.deepEqual(result, expected);
 });
 
 ava('should have target with custom value', (t) => {
   const expected = {
-    mode: 'development',
+    mode: Mode.development,
   };
 
-  const result = mode({ mode: 'development' });
+  const result = mode({ mode: Mode.development });
 
   t.deepEqual(result, expected);
 });

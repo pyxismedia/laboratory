@@ -4,17 +4,19 @@ import { join } from 'path';
 // because .babelrc has to be in json for ava which is part of @pyxis/webpack
 // as testing tool
 import { babelrc } from './babelrc';
-import { PACKAGE_DIRNAME } from "../../constants";
+import { PACKAGE_DIRNAME } from '../../constants';
+import { TsPart } from './types';
+import { Enforce } from '../../types';
 
 export type enforce = 'pre' | 'post' | undefined;
 
-export const ts = () => ({
+export const ts = (): TsPart => ({
   module: {
     rules: [
       {
         test: /.*\.m?tsx?$/,
         exclude: /node_modules/,
-        enforce: 'pre' as enforce,
+        enforce: Enforce.PRE,
         loader: join(PACKAGE_DIRNAME, 'node_modules', 'tslint-loader'),
         options: {
           configFile: join(PACKAGE_DIRNAME, 'tslint.json'),

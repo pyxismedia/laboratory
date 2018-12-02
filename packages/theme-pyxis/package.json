@@ -1,5 +1,5 @@
 {
-  "name": "@pyxis/theme",
+  "name": "@pyxis/theme-pyxis",
   "version": "0.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -10,6 +10,8 @@
     "build": "webpack"
   },
   "dependencies": {
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
     "styled-components": "^4.1.2"
   },
   "devDependencies": {

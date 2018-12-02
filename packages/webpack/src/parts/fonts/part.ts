@@ -1,8 +1,9 @@
 // Determine path to package root!
 import { join } from 'path';
-import { PACKAGE_DIRNAME } from "../../constants";
+import { PACKAGE_DIRNAME } from '../../constants';
+import { FontsPart } from './types';
 
-export const fonts = () => ({
+export const fonts = (): FontsPart => ({
   module: {
     rules: {
       test: /\.font\.js/,

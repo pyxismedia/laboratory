@@ -1,6 +1,7 @@
 import ava from 'ava';
 import { devServer } from './part';
 import * as webpack from "webpack";
+import { Host } from './types';
 
 ava('should return default configuration', (t) => {
   const expected = {
@@ -13,7 +14,7 @@ ava('should return default configuration', (t) => {
     },
   };
 
-  const result = devServer();
+  const result = devServer({});
 
   t.deepEqual(result, expected);
 });
@@ -29,7 +30,7 @@ ava('should be customizable host and port', (t) => {
     },
   };
 
-  const result = devServer({ host: 'localhost', port: 8080 });
+  const result = devServer({ host: Host.LOCALHOST, port: 8080 });
 
   t.deepEqual(result, expected);
 });

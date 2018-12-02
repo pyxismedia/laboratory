@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "higher": "node higher/run.js"
+    "build": "webpack"
   },
   "files": [
     "**/*"
@@ -12,11 +12,16 @@
     "cli-highlight": "^2.0.0",
     "js-beautify": "^1.8.8",
     "loader-runner": "^2.3.1",
-    "loader-utils": "^1.1.0"
+    "loader-utils": "^1.1.0",
+    "webpack": "^4.26.1",
+    "webpack-cli": "^3.1.2"
   },
   "engines": {
     "node": "10.13.0",
     "yarn": "1.10.1",
     "npm": "6.4.1"
+  },
+  "dependencies": {
+    "@pyxis/webpack": "^0.0.19"
   }
 }

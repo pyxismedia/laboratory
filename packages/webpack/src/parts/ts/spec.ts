@@ -1,7 +1,5 @@
 import ava from 'ava';
 import prequire from 'proxyquire';
-import { resolve } from 'path';
-import root from 'app-root-path';
 import { enforce } from './part';
 
 class ForkTsCheckerWebpackPlugin {
@@ -15,7 +13,6 @@ const { ts } = prequire.noCallThru()('./part', {
   'fork-ts-checker-webpack-plugin': ForkTsCheckerWebpackPlugin,
   // @ts-ignore
   'path': { join: (...args) => ([...args]) },
-  'app-root-path': { path: 'root' },
   './babelrc': { babelrc: 'babelrc' },
   '../../constants': { PACKAGE_DIRNAME: 'root' }
 });

@@ -1,6 +1,6 @@
-import { Configuration } from 'webpack-dev-server';
+import { Host, Port, DecorateArgs, DecoratePart } from './types';
 
-export const devServer = ({ host = '0.0.0.0', port = 3000 } = {}): { devServer: Configuration } => ({
+export const devServer = ({ host = Host.ALL_ACCESS, port = Port.NODE }: DecorateArgs): DecoratePart => ({
   devServer: {
     host,
     port,

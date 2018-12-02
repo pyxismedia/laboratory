@@ -8,9 +8,8 @@ import react from '@babel/preset-react';
 import pluginClassProperties from '@babel/plugin-proposal-class-properties';
 // @ts-ignore
 import pluginObjectRestSpread from '@babel/plugin-proposal-object-rest-spread';
-import { BABELRC } from "./types";
 
-export const babelrc: BABELRC = {
+export type BABELRC = {
   presets: [env, typescript, react],
-  plugins: [pluginClassProperties, pluginObjectRestSpread],
-};
+  plugins: [pluginClassProperties, pluginObjectRestSpread]
+}

@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@pyxis/decorators": "^0.0.0",
+    "@pyxis/theme-pyxis": "^0.0.0",
     "@pyxis/webpack": "^0.0.19",
     "mapbox-gl": "^0.51.0",
     "react": "^16.6.3",

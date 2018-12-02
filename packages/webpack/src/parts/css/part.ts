@@ -1,4 +1,6 @@
-export const  css = () => ({
+import { ModulePart } from '../../types'
+
+export const css = (): ModulePart => ({
   module: {
     rules: [
       {

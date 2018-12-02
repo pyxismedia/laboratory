@@ -1,8 +1,8 @@
 import { PACKAGE_DIRNAME } from "../../constants";
 import { join } from 'path';
-import { LoaderOptionsPlugin } from 'webpack';
+import { DecorateArgs, DecoratePart } from './types';
 
-export const decorate = ({ test, loader, options }: { test: RegExp, loader: string, options: LoaderOptionsPlugin }) => ({
+export const decorate = ({ test, loader, options }: DecorateArgs): DecoratePart => ({
 	module: {
 		rules: [{
 			test,

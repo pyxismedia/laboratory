@@ -13,7 +13,7 @@ module.exports = {
       test: /.*\.ds\.tsx?$/,
       loader: 'higher',
       options: {
-        package: '@pyxis/theme-pyxis',
+        package: '@pyxis/theme-pyxis/build',
         decorator: {
           source: '@pyxis/decorators',
           imports: 'decorator',

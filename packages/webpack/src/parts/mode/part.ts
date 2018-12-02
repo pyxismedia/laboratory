@@ -1,5 +1,5 @@
-export type Mode = 'production' | 'development';
+import { Mode, ModeArgs, ModePart } from './types';
 
-export const mode = ({ mode = 'production' }: { mode?: 'production' | 'development' } = {}) => ({
+export const mode = ({ mode = Mode.none }: ModeArgs): ModePart => ({
   mode,
 });

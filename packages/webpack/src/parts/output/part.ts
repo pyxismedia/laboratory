@@ -1,12 +1,13 @@
-import { LibraryTarget } from 'webpack';
 import { join } from 'path';
-import { APP_DIRNAME } from '../../constants';
+import { Filename, Library, Path, LibraryTarget, OutputArgs } from './types';
+import {APP_DIRNAME} from "../../constants";
 
-export const output = ({ filename = '[name].js', path = join(APP_DIRNAME, './build'), library = 'library', libraryTarget = 'umd' as LibraryTarget } = {}) => ({
+export const output = ({ filename = Filename.AUTO, path = Path.BUILD,
+                         library = Library.LIBRARY, libraryTarget = LibraryTarget.UMD }: OutputArgs) => ({
   output: {
     filename,
-    path,
     libraryTarget,
     library,
+    path: join(APP_DIRNAME, path),
   },
 });

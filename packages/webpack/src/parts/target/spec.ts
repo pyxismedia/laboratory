@@ -1,23 +1,23 @@
 import ava from 'ava';
-import prequire from 'proxyquire';
-import { target } from './part';
+import {target} from './part';
+import {Target} from './types';
 
 ava('should have target with default value', (t) => {
   const expected = {
-    target: 'node',
+    target: Target.NODE,
   };
 
-  const result = target();
+  const result = target({});
 
   t.deepEqual(result, expected);
 });
 
 ava('should have target with custom value', (t) => {
   const expected = {
-    target: 'web',
+    target: Target.WEB,
   };
 
-  const result = target({ target: 'web' });
+  const result = target({ target: Target.WEB });
 
   t.deepEqual(result, expected);
 });

@@ -1,30 +1,20 @@
-// noinspection TsLint
 import merge from 'webpack-merge';
-import { clean } from '../../parts/clean';
-import { entry as entries } from '../../parts/entry';
-import { externals } from '../../parts/externals';
-import { output } from '../../parts/output';
-import { extensions as extension } from "../../parts/extensions";
-import { mode as modes } from "../../parts/mode";
-import { ts } from "../../parts/ts";
-import { target as targets } from "../../parts/target";
-import { Target } from "../../parts/target/types";
-import { Mode } from "../../parts/mode/part";
-import { EntryValue } from '../../parts/entry/part';
+import {clean} from '../../parts/clean';
+import {entry as entries, Entry} from '../../parts/entry';
+import {externals} from '../../parts/externals';
+import {output} from '../../parts/output';
+import {mode as modes} from "../../parts/mode";
+import {ts} from "../../parts/ts";
+import { target as targets} from "../../parts/target";
+import { Extension, extensions as extension } from '../../parts/extensions';
+import { TypescriptArgs, TypescriptConfig } from "./types";
 
-export interface ITypescript {
-  entry: EntryValue | string;
-  cleanPath?: string[];
-  extensions: string[];
-  target?: Target
-  mode?: Mode;
-}
-
-export const typescript = ({ entry, cleanPath, extensions = ['.ts', '.tsx'], target = 'node', mode = 'production' }: ITypescript = { entry: './src/index.ts' as EntryValue | string, extensions: ['.ts', '.tsx'], target: 'node', mode: 'production' }) => merge(
+export const typescript = ({ entry = Entry.INDEX_TS, extensions = [Extension.TS, Extension.TSX],
+                             target, mode, cleanPath }: TypescriptArgs): TypescriptConfig => merge(
   clean({ paths: cleanPath }),
   entries({ entry }),
   externals(),
-  output(),
+  output({}),
   extension({ extensions }),
   ts(),
   modes({ mode }),
