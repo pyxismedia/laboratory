@@ -1,7 +1,7 @@
 import ava from 'ava';
 import prequire from 'proxyquire';
 
-const { typescript } = prequire.noCallThru()('./config', {
+const { typescript } = prequire('./config', {
   '../../parts/clean': { clean: () => 'clean' },
   '../../parts/entry': { entry: () => 'entry' },
   '../../parts/externals': { externals: () => 'externals' },
@@ -31,7 +31,7 @@ ava('should generate prod config', (t) => {
     },
   ];
 
-  const result = typescript();
+  const result = typescript({});
 
   t.deepEqual(result, expected);
 });

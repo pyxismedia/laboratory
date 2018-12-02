@@ -4,9 +4,7 @@ import { Entry } from './types';
 
 ava('should have entry with default value', (t) => {
   const expected = {
-    entry: {
-      name: Entry.INDEX_JS,
-    },
+    entry: Entry.INDEX_JS,
   };
 
   const result = entry({});

@@ -5,7 +5,7 @@ export interface CleanPart {
 }
 
 export interface CleanArgs {
-  paths?: Clean;
+  paths?: Clean[];
 }
 
 export enum Clean {

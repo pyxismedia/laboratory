@@ -14,11 +14,11 @@ const { html } = prequire('./part', { 'html-webpack-plugin': HtmlWebpackPlugin }
 ava('should call HtmlWebpackPlugin with default parameter', (t) => {
   const expected = {
     plugins: [
-      new HtmlWebpackPlugin({ title: 'Webpack demo' }),
+      new HtmlWebpackPlugin({ title: 'Webpack html plugin' }),
     ],
   };
 
-  const result = html();
+  const result = html({});
 
   t.deepEqual(result, expected);
 });

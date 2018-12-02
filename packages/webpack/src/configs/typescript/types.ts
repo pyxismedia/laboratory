@@ -10,7 +10,7 @@ import {TargetPart} from "../../parts/target/types";
 
 export interface TypescriptArgs {
   entry?: Entry;
-  cleanPath?: Clean;
+  cleanPath?: Clean[];
   extensions?: Extension[];
   target?: Target
   mode?: Mode;

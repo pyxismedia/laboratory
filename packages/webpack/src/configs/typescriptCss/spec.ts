@@ -13,7 +13,7 @@ ava('should generate prod config', (t) => {
     'css',
   ];
 
-  const result = typescriptCss();
+  const result = typescriptCss({});
 
   t.deepEqual(result, expected);
 });

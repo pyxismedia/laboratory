@@ -12,11 +12,11 @@ const { clean } = prequire('./part', { 'clean-webpack-plugin': CleanWebpackPlugi
 ava('should call CleanWebpackPlugin with default parameter', (t) => {
   const expected = {
     plugins: [
-      new CleanWebpackPlugin(['build']),
+      new CleanWebpackPlugin(['./build']),
     ],
   };
 
-  const result = clean();
+  const result = clean({});
 
   t.deepEqual(result, expected);
 });
