@@ -1,5 +1,4 @@
 const webpack = require('webpack');
-const ProgressPlugin = require('webpack/lib/ProgressPlugin');
 
 require('@babel/register')({
   extensions: ['.ts'],

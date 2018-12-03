@@ -1,5 +1,10 @@
 import ava from 'ava';
-import { css } from './part';
+import prequire from "proxyquire";
+
+const { css } = prequire.noCallThru()('./part', {
+  '../../constants': { PACKAGE_DIRNAME: 'root' },
+  join: (...args: string[]) => ([...args])
+});
 
 ava('should return default configuration', (t) => {
   const expected = {

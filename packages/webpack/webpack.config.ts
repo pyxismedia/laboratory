@@ -11,6 +11,9 @@ export const config = typescript({
     [CONFIGS]: './src/configs',
     [TYPESCRIPT_CSS]: './src/configs/typescriptCss',
     [TYPESCRIPT]: './src/configs/typescript',
+    // Parts
     'parts/decorate': './src/parts/decorate',
+    // Babel register
+    'register/typescript': './src/register/typescript',
   },
 });

@@ -4,20 +4,21 @@ const { highlight } = require('cli-highlight');
 const { resolve } = require('path');
 const { runLoaders } = require('loader-runner');
 
-const hofResourcePath = './resources/holy.js';
+const hofResourcePath = './resource/decorable.ts';
 
 runLoaders(
 	{
 		resources: [hofResourcePath],
 		loaders: [{
-			loader: resolve(__dirname, './'),
+			loader: resolve(__dirname, './loader'),
 			options: {
-				package: 'resources',
+				data: {
+				  path: './resource',
+        },
 				decorator: {
-					source: resolve(__dirname, 'resources', 'decorator'),
-					imports: 'decorator',
+					path: resolve(__dirname, 'resources', 'decorator'),
+					destructor: 'decorator',
 				},
-				sourceDir: undefined,
 			},
 		}],
 		context: {
@@ -25,7 +26,7 @@ runLoaders(
 				return resolve(__dirname, hofResourcePath);
 			},
 			loadModule(path, callback) {
-				if (!fs.existsSync(resolve(__dirname, path))) {
+				if (!fs.existsSync(resolve(__dirname, `${path}.ts`))) {
 					callback(new Error('File doesn\'t exists'));
 					return;
 				}
@@ -39,5 +40,5 @@ runLoaders(
 			console.error(err)
 		}
 		console.log(highlight(beautify(result.result[0]), { language: 'javascript' }));
-	},
+    },
 );

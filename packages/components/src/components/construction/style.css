@@ -1,0 +1,11 @@
+.construction {
+  background: rgb(242, 164, 157);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.construction__image {
+  width: 500px;
+  height: 500px;
+}

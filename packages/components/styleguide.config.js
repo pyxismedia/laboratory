@@ -7,21 +7,31 @@ module.exports = {
     typescriptCss({
       target: 'web',
       mode: 'development',
-      extensions: ['.ts', '.tsx'],
     }),
-    decorate({
-      test: /.*\.ds\.tsx?$/,
-      loader: 'higher',
-      options: {
-        package: '@pyxis/theme-pyxis/build',
-        decorator: {
-          source: '@pyxis/decorators',
-          imports: 'decorator',
-        },
-        sourceDir: 'src',
-      },
-    }),
+    // decorate({
+    //   test: /.*\.ds\.tsx?$/,
+    //   loader: 'higher',
+    //   options: {
+    //     package: '@pyxis/theme-pyxis/build',
+    //     decorator: {
+    //       source: '@pyxis/decorators',
+    //       imports: 'decorator',
+    //     },
+    //     sourceDir: 'src',
+    //   },
+    // }),
   ),
-  components: ['src/components/**/index.ts', 'src/components/**/*.ds.tsx'],
+  components: [
+    'src/components/**/index.ts',
+    // 'src/components/**/*.ds.tsx'
+  ],
   serverPort: process.env.PORT || 6060,
+  styles: {
+    StyleGuide: {
+      '@global .rsg--preview': {
+        position: 'relative',
+        overflow: 'hidden',
+      },
+    },
+  },
 };
