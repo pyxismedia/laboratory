@@ -14,7 +14,8 @@
     "src/**/spec.ts",
     "src/**/index.ts",
     "src/**/*.d.ts",
-    "src/**/types.ts"
+    "src/**/types.ts",
+    "build/**/*"
   ],
   "include": [
     "src/**/*.ts"
