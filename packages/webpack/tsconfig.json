@@ -16,13 +16,13 @@
     "esModuleInterop": true,
     // TS1209: Ambient const enums are not allowed when the '--isolatedModules' flag is provided.
     // Try to remove to find another fix
-    "skipLibCheck": true,
-    "declaration": true
+    "skipLibCheck": true
   },
   "include": [
     "src"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "src/**/spec.ts"
   ]
 }

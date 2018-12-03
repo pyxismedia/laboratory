@@ -6,6 +6,7 @@
   "homepage": "",
   "license": "MIT",
   "main": "./build/configs.js",
+  "types": "./build/main.d.ts",
   "module": "./build",
   "directories": {
     "lib": "build"
@@ -14,7 +15,7 @@
     "**/*"
   ],
   "scripts": {
-    "build": "node webpack.register.js",
+    "build": "node webpack.register.js && yarn declarations",
     "build:watch": "webpack --config webpack.config.babel.js --watch",
     "pretest": "yarn typing && yarn lint",
     "test": "NODE_ENV=test nyc ava --verbose",
@@ -22,7 +23,8 @@
     "precommit": "lint-staged",
     "report": "nyc report",
     "lint": "tslint -c tslint.json ./src/**/*.ts",
-    "typing": "tsc --noEmit"
+    "typing": "tsc --noEmit",
+    "declarations": "tsc --emitDeclarationOnly --declaration --noEmit false --allowJs false --outDir build/declarations && dts-bundle --configJson dts-bundle.json"
   },
   "lint-staged": {
     "{src}/**/*.ts*": [
@@ -42,12 +44,14 @@
     "@types/webpack-node-externals": "^1.6.3",
     "ava": "1.0.0-rc.2",
     "babel-plugin-istanbul": "^5.1.0",
+    "dts-bundle": "^0.7.3",
     "husky": "^1.1.4",
     "lint-staged": "^8.0.5",
     "nyc": "^13.1.0",
     "prettier": "1.15.2",
     "proxyquire": "^2.1.0",
     "speed-measure-webpack-plugin": "^1.2.3",
+    "ts-loader": "^5.3.1",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.10"
   },

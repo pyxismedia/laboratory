@@ -6,4 +6,5 @@ export interface ModulePart {
 
 export enum Enforce {
   PRE = 'pre',
+  POST = 'post',
 }

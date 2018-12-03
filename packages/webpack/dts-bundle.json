@@ -1,0 +1,5 @@
+{
+  "name": "main",
+  "main": "build/declarations/**/*.d.ts",
+  "out": "../main.d.ts"
+}
