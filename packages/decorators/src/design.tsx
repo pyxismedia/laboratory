@@ -1,3 +1,3 @@
 import React from 'react';
 
-export const design = components => Component => props => <Component styled={components} {...props} />;
+export const design = designed => Component => props => <Component styled={designed} {...props} />;

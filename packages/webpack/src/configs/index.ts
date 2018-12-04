@@ -1,2 +1,2 @@
-export { typescript } from './typescript';
-export { typescriptCss } from './typescriptCss';
+export * from './typescript';
+export * from './typescriptCss';

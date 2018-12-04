@@ -3,10 +3,12 @@ import { typescript } from '../typescript';
 import { css } from "../../parts/css";
 import { image } from '../../parts/image';
 import { Target } from '../../parts/target';
+import { html } from '../../parts/html';
 import { TypescriptCssConfig, TypescriptCssArgs } from "./types";
 
 export const typescriptCss = ({ target = Target.WEB, entry, mode }: TypescriptCssArgs): TypescriptCssConfig => merge(
   typescript({ target, entry, mode }),
   css(),
   image(),
+  html({}),
 );

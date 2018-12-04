@@ -1,10 +1,19 @@
 import ava from 'ava';
-import {target} from './part';
 import {Target} from './types';
+import prequire from 'proxyquire';
+
+const { target } = prequire.noCallThru()('./part', {
+  'webpack-node-externals': () => 'externals',
+});
 
 ava('should have target with default value', (t) => {
   const expected = {
     target: Target.NODE,
+    externals: ['externals'],
+    node: {
+      __dirname: false,
+      __filename: false,
+    },
   };
 
   const result = target({});

@@ -1,9 +1,9 @@
 import ava from 'ava';
-import prequire from "proxyquire";
+import prequire from 'proxyquire';
 
 const { css } = prequire.noCallThru()('./part', {
   '../../constants': { PACKAGE_DIRNAME: 'root' },
-  join: (...args: string[]) => ([...args])
+  path: { join: (...args: string[]) => ([...args]) },
 });
 
 ava('should return default configuration', (t) => {
@@ -12,10 +12,21 @@ ava('should return default configuration', (t) => {
       rules: [
         {
           test: /\.css$/,
-          use: [ 'style-loader', 'css-loader' ]
-        }
-      ]
-    }
+          use: [
+            [
+              'root',
+              'node_modules',
+              'style-loader',
+            ],
+            [
+              'root',
+              'node_modules',
+              'css-loader',
+            ],
+          ],
+        },
+      ],
+    },
   };
 
   const result = css();

@@ -1,7 +1,7 @@
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 export interface HtmlArgs {
-  title: string;
+  title?: string;
 }
 
 export interface HtmlPart {

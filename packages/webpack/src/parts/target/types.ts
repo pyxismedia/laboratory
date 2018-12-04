@@ -12,6 +12,8 @@ export enum Target {
 
 export interface TargetArgs {
   target?: Configuration['target'] | Target;
+  externals?: Configuration['externals'],
+  node?: Configuration['node'],
 }
 
 export interface TargetPart extends TargetArgs {}

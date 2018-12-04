@@ -8,7 +8,7 @@
     "build": "webpack"
   },
   "devDependencies": {
-    "@pyxis/webpack": "^0.0.19",
+    "@pyxis/webpack": "^0.0.20",
     "webpack": "^4.26.1",
     "webpack-cli": "^3.1.2"
   },

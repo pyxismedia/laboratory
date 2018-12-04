@@ -10,4 +10,5 @@ export interface CleanArgs {
 
 export enum Clean {
   BUILD = './build',
+  DIST = './dist',
 }

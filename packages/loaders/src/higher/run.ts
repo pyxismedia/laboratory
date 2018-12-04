@@ -13,7 +13,9 @@ runLoaders(
 			loader: resolve(__dirname, './loader'),
 			options: {
 				data: {
+				  group: '',
 				  path: './resource',
+          theme: '',
         },
 				decorator: {
 					path: resolve(__dirname, 'resources', 'decorator'),

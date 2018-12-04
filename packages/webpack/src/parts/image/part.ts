@@ -8,9 +8,9 @@ export const image = (): ModulePart => ({
       {
         test: /\.(jpg|png)$/,
         use: {
-          loader: join(PACKAGE_DIRNAME, 'node_modules', 'file-loader'),
+          loader: join(PACKAGE_DIRNAME, 'node_modules', 'url-loader'),
           options: {
-            limit: 25000,
+            limit: 500000,
           },
         },
       }

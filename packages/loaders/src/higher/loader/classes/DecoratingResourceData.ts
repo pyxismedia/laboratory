@@ -8,6 +8,8 @@ export class DecoratingResourceData {
   ) {}
 
   public get path() {
-    return ''.concat(this.data.path, '/', this.resource.name);
+    const groupPath = this.data.group ? `${this.data.group}/` : '';
+    const themePath = this.data.theme ? `${this.data.theme}/` : '';
+    return `${groupPath}${themePath}${this.data.path}/${this.resource.name}`;
   }
 }

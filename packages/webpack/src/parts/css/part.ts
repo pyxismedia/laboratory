@@ -1,6 +1,6 @@
 import { ModulePart } from '../../types'
 import { join } from 'path';
-import {PACKAGE_DIRNAME} from "../../constants";
+import { PACKAGE_DIRNAME } from '../../constants';
 
 export const css = (): ModulePart => ({
   module: {

@@ -1,6 +1,5 @@
 const merge = require('webpack-merge');
 const { typescriptCss } = require('@pyxis/webpack/build/configs/typescriptCss');
-const { decorate } = require('@pyxis/webpack/build/parts/decorate');
 
 module.exports = {
   webpackConfig: merge(
@@ -8,30 +7,49 @@ module.exports = {
       target: 'web',
       mode: 'development',
     }),
-    // decorate({
-    //   test: /.*\.ds\.tsx?$/,
-    //   loader: 'higher',
-    //   options: {
-    //     package: '@pyxis/theme-pyxis/build',
-    //     decorator: {
-    //       source: '@pyxis/decorators',
-    //       imports: 'decorator',
-    //     },
-    //     sourceDir: 'src',
-    //   },
-    // }),
   ),
   components: [
-    'src/components/**/index.ts',
-    // 'src/components/**/*.ds.tsx'
+    './src/components/**/index.ts',
   ],
   serverPort: process.env.PORT || 6060,
+  propsParser: require('react-docgen-typescript').withDefaultConfig().parse,
+  verbose: false,
   styles: {
-    StyleGuide: {
-      '@global .rsg--preview': {
-        position: 'relative',
-        overflow: 'hidden',
+    Playground: {
+      preview: {
+        position: 'relative'
       },
-    },
+    }
   },
+  pagePerSection: true,
+  sections: [
+    {
+      name: 'Styleguide',
+      content: 'docs/Documentation.md',
+    },
+    {
+      name: 'Designable Components',
+      content: 'docs/Designable.md',
+      sections: [
+        {
+          name: 'Logo',
+          components: () => ['./src/components/Logo/index.ts'],
+          exampleMode: 'expand',
+          usageMode: 'collapse', 
+        },
+        {
+          name: 'Construction',
+          components: () => ['./src/components/Construction/index.ts'],
+          exampleMode: 'expand',
+          usageMode: 'collapse', 
+        },
+        {
+          name: 'Map',
+          components: () => ['./src/components/Mapbox/index.ts'],
+          exampleMode: 'expand',
+          usageMode: 'collapse', 
+        },
+      ]
+    }
+  ],
 };

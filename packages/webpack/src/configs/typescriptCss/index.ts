@@ -1,1 +1,1 @@
-export { typescriptCss } from './config';
+export * from './config';

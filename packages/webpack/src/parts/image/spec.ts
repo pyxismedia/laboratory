@@ -16,7 +16,7 @@ ava('should return default configuration', (t) => {
             loader: [
               'root',
               'node_modules',
-              'file-loader',
+              'url-loader',
             ],
             options: {
               limit: 25000,

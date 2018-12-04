@@ -24,8 +24,8 @@
   "sourceMap": false,
   "instrument": false,
   "check-coverage": true,
-  "lines": 100,
-  "statements": 100,
+  "lines": 92,
+  "statements": 95,
   "functions": 100,
   "branches": 92
 }
