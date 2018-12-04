@@ -10,6 +10,7 @@
     "**/*"
   ],
   "scripts": {
+    "start": "node server.js",
     "guide:dev": "styleguidist server",
     "guide:build": "styleguidist build",
     "dev": "webpack --config webpack.config.js --watch",

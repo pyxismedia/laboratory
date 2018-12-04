@@ -8,6 +8,7 @@ const { typescriptCss } = prequire.noCallThru()('./config', {
   '../typescript': { typescript: ({ target, entry, mode }) => ({ target, entry, mode }) },
   '../../parts/css': { css: () => 'css' },
   '../../parts/image': { image: () => 'image' },
+  '../../parts/html': { html: () => 'html' },
   'webpack-merge': (...data: any) => ([ ...data ]),
 });
 
@@ -20,6 +21,7 @@ ava('should generate prod config', (t) => {
     },
     'css',
     'image',
+    'html',
   ];
 
   const result = typescriptCss({});
@@ -36,6 +38,7 @@ ava('should initialize object with custom config', (t) => {
     },
     'css',
     'image',
+    'html',
   ];
 
   const result = typescriptCss({
