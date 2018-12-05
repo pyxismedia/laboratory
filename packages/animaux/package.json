@@ -6,7 +6,8 @@
   "scripts": {
     "build": "webpack --config webpack.config.js",
     "dev": "webpack-dev-server --config webpack.config.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "postinstall": "yarn build"
   },
   "dependencies": {
     "@pyxis/components": "^0.0.30",
