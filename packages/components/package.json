@@ -1,6 +1,6 @@
 {
   "name": "@pyxis/components",
-  "version": "0.0.19",
+  "version": "0.0.20",
   "description": "Components library",
   "author": "Petr Juna <petr.juna@gmail.com>",
   "homepage": "",
@@ -24,16 +24,15 @@
     "react-image-holder": "^2.0.1"
   },
   "devDependencies": {
+    "@pyxis/webpack": "^0.0.20",
     "@types/mapbox-gl": "^0.51.0",
     "@types/react": "^16.7.13",
     "@types/react-dom": "^16.0.11",
     "react-docgen-typescript": "^1.12.2",
     "react-styleguidist": "^8.0.6",
-    "styleguidist-goodies": "^2.0.0",
     "webpack": "^4.26.1",
     "webpack-cli": "^3.1.2",
-    "webpack-merge": "^4.1.4",
-    "@pyxis/webpack": "^0.0.20"
+    "webpack-merge": "^4.1.4"
   },
   "engines": {
     "node": "10.13.0",

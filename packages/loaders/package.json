@@ -1,6 +1,6 @@
 {
   "name": "@pyxis/loaders",
-  "version": "0.0.0",
+  "version": "0.0.20",
   "license": "MIT",
   "scripts": {
     "build": "webpack --config webpack.config.js",

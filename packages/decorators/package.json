@@ -1,6 +1,6 @@
 {
   "name": "@pyxis/decorators",
-  "version": "0.0.0",
+  "version": "0.0.20",
   "main": "./build/main.js",
   "author": "Petr Juna",
   "license": "MIT",
