@@ -24,6 +24,7 @@ ava('should have target with default value', (t) => {
 ava('should have target with custom value', (t) => {
   const expected = {
     target: Target.WEB,
+    externals: ['externals'],
   };
 
   const result = target({ target: Target.WEB });

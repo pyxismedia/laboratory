@@ -15,5 +15,6 @@ export const target = ({ target = Target.NODE }: TargetArgs): TargetPart => {
   
   return {
     target,
+    externals: [external()],
   };
 };
