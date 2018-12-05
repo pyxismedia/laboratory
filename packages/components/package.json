@@ -24,7 +24,7 @@
     "react-image-holder": "^2.0.1"
   },
   "devDependencies": {
-    "@pyxis/webpack": "^0.0.22",
+    "@pyxis/webpack": "^0.0.24",
     "@types/mapbox-gl": "^0.51.0",
     "@types/react": "^16.7.13",
     "@types/react-dom": "^16.0.11",

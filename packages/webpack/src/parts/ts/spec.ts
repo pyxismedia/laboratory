@@ -14,7 +14,10 @@ const { ts } = prequire.noCallThru()('./part', {
   // @ts-ignore
   'path': { join: (...args) => ([...args]) },
   './babelrc': { babelrc: 'babelrc' },
-  '../../constants': { PACKAGE_DIRNAME: 'root' }
+  '../../constants': {
+    PACKAGE_DIRNAME: 'root',
+    APP_DIRNAME: 'root',
+  }
 });
 
 ava('should export default values', (t) => {

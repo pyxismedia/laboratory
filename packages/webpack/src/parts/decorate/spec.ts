@@ -3,7 +3,7 @@ import prequire from 'proxyquire';
 
 const { decorate } = prequire.noCallThru()('./part', {
   path: { join: (...args: string[]) => [...args] },
-  '../../constants': { PACKAGE_DIRNAME: 'root' },
+  '../../constants': { APP_DIRNAME: 'root' },
 });
 
 ava('should set all variables', (t) => {

@@ -5,7 +5,7 @@ import { join } from 'path';
 // because .babelrc has to be in json for ava which is part of @pyxis/webpack
 // as testing tool
 import { babelrc } from './babelrc';
-import { PACKAGE_DIRNAME } from '../../constants';
+import { APP_DIRNAME, PACKAGE_DIRNAME } from '../../constants';
 import { TsPart } from './types';
 import { Enforce } from '../../types';
 
@@ -18,7 +18,7 @@ export const ts = (): TsPart => ({
         test: /.*\.m?tsx?$/,
         exclude: /node_modules/,
         enforce: Enforce.PRE,
-        loader: join(PACKAGE_DIRNAME, 'node_modules', 'tslint-loader'),
+        loader: join(APP_DIRNAME, 'node_modules', 'tslint-loader'),
         options: {
           configFile: join(PACKAGE_DIRNAME, 'tslint.json'),
         },
@@ -26,7 +26,7 @@ export const ts = (): TsPart => ({
       {
         test: /.*\.m?tsx?$/,
         exclude: /node_modules/,
-        loader: join(PACKAGE_DIRNAME, 'node_modules', 'babel-loader'),
+        loader: join(APP_DIRNAME, 'node_modules', 'babel-loader'),
         options: babelrc,
       },
     ],

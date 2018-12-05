@@ -2,7 +2,7 @@ import ava from 'ava';
 import prequire from 'proxyquire';
 
 const { image } = prequire.noCallThru()('./part', {
-  '../../constants': { PACKAGE_DIRNAME: 'root' },
+  '../../constants': { APP_DIRNAME: 'root' },
   path: { join: (...args: string[]) => ([...args]) },
 });
 

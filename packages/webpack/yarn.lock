@@ -771,10 +771,10 @@
     log-update "^2.3.0"
     strip-ansi "^3.0.1"
 
-"@pyxis/loaders@^0.0.0":
-  version "0.0.0"
-  resolved "https://pyxis-npm.herokuapp.com/@pyxis%2floaders/-/loaders-0.0.0.tgz#4b1d14d692e490f0f089a5e2d91c4f8e25975ef9"
-  integrity sha512-kNN1xlhUovr0W4v2Jvz1+db53/d5Niyvy2GadStZM3DG6DfbgH+FHEOj7IYA4z+KpD+evpI0Whg/XQ92hpOGFA==
+"@pyxis/loaders@^0.0.21":
+  version "0.0.21"
+  resolved "https://pyxis-npm.herokuapp.com/@pyxis%2floaders/-/loaders-0.0.21.tgz#e937025593965cf96287d5bcc23385d9565b72c6"
+  integrity sha512-7QZAfgcSQ3+vphFMGcr7ipqikmPABWJKS3Efq0X2rOKDKUg4t6/mGA54gsm7HDsXVw+7h0Gw76OB81kMiMiZSA==
 
 "@samverschueren/stream-to-observable@^0.3.0":
   version "0.3.0"

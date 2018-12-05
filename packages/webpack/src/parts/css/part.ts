@@ -1,6 +1,6 @@
 import { ModulePart } from '../../types'
 import { join } from 'path';
-import { PACKAGE_DIRNAME } from '../../constants';
+import { APP_DIRNAME } from '../../constants';
 
 export const css = (): ModulePart => ({
   module: {
@@ -8,8 +8,8 @@ export const css = (): ModulePart => ({
       {
         test: /\.css$/,
         use: [
-          join(PACKAGE_DIRNAME, 'node_modules', 'style-loader'),
-          join(PACKAGE_DIRNAME, 'node_modules', 'css-loader'),
+          join(APP_DIRNAME, 'node_modules', 'style-loader'),
+          join(APP_DIRNAME, 'node_modules', 'css-loader'),
         ]
       }
     ]
