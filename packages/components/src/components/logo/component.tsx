@@ -10,7 +10,7 @@ export interface LogoProps {
   className: string;
   // Styled object contains styled components
   styled: {
-    A: Component
+    A: typeof Component
   }
 }
 

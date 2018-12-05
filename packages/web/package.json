@@ -14,8 +14,7 @@
     "webpack-cli": "^3.1.2"
   },
   "scripts": {
-    "dev": "webpack-dev-server",
-    "reinstall": "yarn"
+    "dev": "webpack-dev-server"
   },
   "devDependencies": {
     "webpack-dev-server": "^3.1.10",

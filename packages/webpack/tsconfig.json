@@ -10,6 +10,9 @@
     "esModuleInterop": true,
     "skipLibCheck": true
   },
+  "jsRules": {
+    "no-empty": true
+  },
   "include": [
     "src"
   ],

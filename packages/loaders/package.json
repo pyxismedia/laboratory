@@ -4,8 +4,7 @@
   "license": "MIT",
   "scripts": {
     "build": "webpack --config webpack.config.js",
-    "higher:dev": "nodemon --watch ./src/**/*.ts ./node_modules/@pyxis/webpack/build/register/typescript.js ./src/higher/run",
-    "reinstall": "yarn"
+    "higher:dev": "nodemon --watch ./src/**/*.ts ./node_modules/@pyxis/webpack/build/register/typescript.js ./src/higher/run"
   },
   "files": [
     "**/*"

@@ -8,8 +8,7 @@
     "**/*"
   ],
   "scripts": {
-    "build": "webpack",
-    "reinstall": "yarn"
+    "build": "webpack"
   },
   "devDependencies": {
     "@pyxis/webpack": "^0.0.24",
