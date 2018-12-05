@@ -4,6 +4,9 @@
   "main": "./build/main.js",
   "author": "Petr Juna",
   "license": "MIT",
+  "files": [
+    "**/*"
+  ],
   "scripts": {
     "build": "webpack",
     "reinstall": "yarn"

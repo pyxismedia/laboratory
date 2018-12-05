@@ -9,7 +9,7 @@
     "bootstrap": "lerna bootstrap",
     "test": "lerna run test",
     "postinstall": "yarn bootstrap",
-    "reinstall": "lerna run reinstall",
+    "reinstall": "lerna exec -- yarn install",
     "build": "lerna run build"
   },
   "husky": {

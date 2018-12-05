@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "@pyxis/components": "^0.0.21",
+    "@pyxis/components": "^0.0.30",
     "@pyxis/decorators": "^0.0.21",
     "@pyxis/loaders": "^0.0.21",
     "@pyxis/theme": "^0.0.21",
