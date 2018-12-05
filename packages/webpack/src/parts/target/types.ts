@@ -1,4 +1,4 @@
-import { Configuration } from 'webpack';
+import { Configuration, ExternalsElement } from 'webpack';
 
 export enum Target {
   WEB = 'web',
@@ -12,8 +12,12 @@ export enum Target {
 
 export interface TargetArgs {
   target?: Configuration['target'] | Target;
-  externals?: Configuration['externals'],
+  externals?: undefined | ExternalsElement,
   node?: Configuration['node'],
 }
 
-export interface TargetPart extends TargetArgs {}
+export interface TargetPart {
+  target: Configuration['target'] | Target;
+  externals: Configuration['externals'],
+  node?: Configuration['node'],
+}

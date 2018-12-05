@@ -1,11 +1,11 @@
 import { Target, TargetArgs, TargetPart } from './types';
 import external from 'webpack-node-externals';
 
-export const target = ({ target = Target.NODE }: TargetArgs): TargetPart => {
+export const target = ({ target = Target.NODE, externals }: TargetArgs): TargetPart => {
   if (target === Target.NODE) {
     return {
       target,
-      externals: [external()],
+      externals: externals ? [external(), externals] : [external()],
       node: {
         __dirname: false,
         __filename: false,
@@ -15,6 +15,6 @@ export const target = ({ target = Target.NODE }: TargetArgs): TargetPart => {
   
   return {
     target,
-    externals: [external()],
+    externals: externals ? [external(), externals] : [external()],
   };
 };
