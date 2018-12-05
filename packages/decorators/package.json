@@ -5,10 +5,11 @@
   "author": "Petr Juna",
   "license": "MIT",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "reinstall": "yarn"
   },
   "devDependencies": {
-    "@pyxis/webpack": "^0.0.21",
+    "@pyxis/webpack": "^0.0.24",
     "webpack": "^4.26.1",
     "webpack-cli": "^3.1.2"
   },

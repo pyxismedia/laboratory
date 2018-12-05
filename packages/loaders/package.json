@@ -4,13 +4,14 @@
   "license": "MIT",
   "scripts": {
     "build": "webpack --config webpack.config.js",
-    "higher:dev": "nodemon --watch ./src/**/*.ts ./node_modules/@pyxis/webpack/build/register/typescript.js ./src/higher/run"
+    "higher:dev": "nodemon --watch ./src/**/*.ts ./node_modules/@pyxis/webpack/build/register/typescript.js ./src/higher/run",
+    "reinstall": "yarn"
   },
   "files": [
     "**/*"
   ],
   "devDependencies": {
-    "@pyxis/webpack": "^0.0.21",
+    "@pyxis/webpack": "^0.0.24",
     "cli-highlight": "^2.0.0",
     "js-beautify": "^1.8.8",
     "loader-runner": "^2.3.1",

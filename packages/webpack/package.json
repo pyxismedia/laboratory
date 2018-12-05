@@ -24,7 +24,8 @@
     "report": "nyc report",
     "lint": "tslint -c tslint.json ./src/**/*.ts",
     "typing": "tsc --noEmit",
-    "declarations": "tsc --emitDeclarationOnly --declaration --noEmit false --allowJs false --outDir build/declarations && dts-bundle --configJson dts-bundle.json"
+    "declarations": "tsc --emitDeclarationOnly --declaration --noEmit false --allowJs false --outDir build/declarations && dts-bundle --configJson dts-bundle.json",
+    "reinstall": "yarn"
   },
   "lint-staged": {
     "{src}/**/*.ts*": [
