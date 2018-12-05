@@ -764,7 +764,7 @@
   resolved "https://registry.npmjs.org/@mapbox/whoots-js/-/whoots-js-3.1.0.tgz#497c67a1cef50d1a2459ba60f315e448d2ad87fe"
   integrity sha512-Es6WcD0nO5l+2BOQS4uLfNPYQaNDfbot3X1XUoloz+x0mPDS3eeORZJl06HXjwBG1fOGwCRnzK88LMdxKRrd6Q==
 
-"@pyxis/components@^0.0.19":
+"@pyxis/components@^0.0.21":
   version "0.0.19"
   resolved "https://pyxis-npm.herokuapp.com/@pyxis%2fcomponents/-/components-0.0.19.tgz#df7e8f5cab00c1212e37b1d5a6e11543ebf31b6c"
   integrity sha512-e6McgqhoMxFLBysWDWFW57pjsuNIs1CbMoA5FmlpGpyzAAXUjItGoIg+zhfprgZorkwtxq0ks9CLbIoHc4DJSQ==
@@ -801,10 +801,10 @@
     webpack-merge "^4.1.4"
     webpack-node-externals "^1.7.2"
 
-"@pyxis/webpack@^0.0.20":
-  version "0.0.20"
-  resolved "https://pyxis-npm.herokuapp.com/@pyxis%2fwebpack/-/webpack-0.0.20.tgz#0b9d84cfac345a39a90705d0a8a467c30f86881f"
-  integrity sha512-4XhmhjW1DvLHMit22gRJIwmtswqDBVLhe9e2VVhj7NZ7Ued/vNHK98Vk9+ktdHC9RDOsAKlwo9bqBHWBIoL1dw==
+"@pyxis/webpack@^0.0.21":
+  version "0.0.21"
+  resolved "https://pyxis-npm.herokuapp.com/@pyxis%2fwebpack/-/webpack-0.0.21.tgz#ddf58df4d00e202da78dce9d6e88b76ef8681242"
+  integrity sha512-FVsmjSsLGsNR4nzX83lYP8Hy96OE084A2lVWlkoUFHu+WQgrvad2FzXbigT5tKwoFRfsmjkqvIcsjafCL14dQw==
   dependencies:
     "@babel/core" "^7.1.6"
     "@babel/plugin-proposal-class-properties" "^7.1.0"
@@ -815,19 +815,23 @@
     babel-loader "^8.0.4"
     clean-webpack-plugin "^1.0.0"
     css-loader "^1.0.1"
+    file-loader "^2.0.0"
     fork-ts-checker-webpack-plugin "^0.4.15"
     html-webpack-plugin "^3.2.0"
     pkg-dir "^3.0.0"
     require-main-filename "^1.0.1"
+    style-loader "^0.23.1"
     tslint "^5.11.0"
     tslint-config-airbnb "^5.11.1"
     tslint-config-prettier "^1.16.0"
     tslint-loader "^3.5.4"
     typescript "^3.1.6"
+    url-loader "^1.1.2"
     webfonts-loader "^4.2.1"
     webpack "^4.26.0"
     webpack-merge "^4.1.4"
     webpack-node-externals "^1.7.2"
+    yaml-loader "^0.5.0"
 
 "@webassemblyjs/ast@1.7.11":
   version "1.7.11"
@@ -2496,6 +2500,14 @@ figgy-pudding@^3.1.0, figgy-pudding@^3.5.1:
   resolved "https://registry.npmjs.org/figgy-pudding/-/figgy-pudding-3.5.1.tgz#862470112901c727a0e495a80744bd5baa1d6790"
   integrity sha512-vNKxJHTEKNThjfrdJwHc7brvM6eVevuO5nTj6ez8ZQ1qbXTvGthucRF7S4vf2cr71QVnT70V34v0S1DyQsti0w==
 
+file-loader@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npmjs.org/file-loader/-/file-loader-2.0.0.tgz#39749c82f020b9e85901dcff98e8004e6401cfde"
+  integrity sha512-YCsBfd1ZGCyonOKLxPiKPdu+8ld9HAaMEvJewzz+b2eTF7uL5Zm/HdBF6FjCrpCMRq25Mi0U1gl4pwn2TlH7hQ==
+  dependencies:
+    loader-utils "^1.0.2"
+    schema-utils "^1.0.0"
+
 fill-range@^4.0.0:
   version "4.0.0"
   resolved "https://registry.npmjs.org/fill-range/-/fill-range-4.0.0.tgz#d544811d428f98eb06a63dc402d2403c328c38f7"
@@ -3387,7 +3399,7 @@ js-tokens@^3.0.2:
   resolved "https://registry.npmjs.org/js-tokens/-/js-tokens-3.0.2.tgz#9866df395102130e38f7f996bceb65443209c25b"
   integrity sha1-mGbfOVECEw449/mWvOtlRDIJwls=
 
-js-yaml@3.x.x, js-yaml@^3.7.0:
+js-yaml@3.x.x, js-yaml@^3.5.2, js-yaml@^3.7.0:
   version "3.12.0"
   resolved "https://registry.npmjs.org/js-yaml/-/js-yaml-3.12.0.tgz#eaed656ec8344f10f527c6bfa1b6e2244de167d1"
   integrity sha512-PIt2cnwmPfL4hKNwqeiuz4bKfnzHTBv6HyVgjahA6mPLwPDzjDWrplJBMjHUFxku/N3FlmrbyPclad+I+4mJ3A==
@@ -3729,7 +3741,7 @@ mime@1.4.1:
   resolved "https://registry.npmjs.org/mime/-/mime-1.4.1.tgz#121f9ebc49e3766f311a76e1fa1c8003c4b03aa6"
   integrity sha512-KI1+qOZu5DcW6wayYHSzR/tXKCDC5Om4s1z2QJjDULzLcmf3DvzS7oluY4HCTrc+9FiKmWUgeNLg7W3uIQvxtQ==
 
-mime@^2.3.1:
+mime@^2.0.3, mime@^2.3.1:
   version "2.4.0"
   resolved "https://registry.npmjs.org/mime/-/mime-2.4.0.tgz#e051fd881358585f3279df333fe694da0bcffdd6"
   integrity sha512-ikBcWwyqXQSHKtciCcctu9YfPbFYZ4+gbHEmE0Q8jzcTYQg5dHCr3g2wwAZjPoJfQVXZq6KXAjpXOTf5/cjT7w==
@@ -5442,6 +5454,14 @@ strip-json-comments@~2.0.1:
   resolved "https://registry.npmjs.org/strip-json-comments/-/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
   integrity sha1-PFMZQukIwml8DsNEhYwobHygpgo=
 
+style-loader@^0.23.1:
+  version "0.23.1"
+  resolved "https://registry.npmjs.org/style-loader/-/style-loader-0.23.1.tgz#cb9154606f3e771ab6c4ab637026a1049174d925"
+  integrity sha512-XK+uv9kWwhZMZ1y7mysB+zoihsEj4wneFWAS5qoiLwzW0WzSqMrrsIy+a3zkQJq0ipFtBpX5W3MqyRIBF/WFGg==
+  dependencies:
+    loader-utils "^1.1.0"
+    schema-utils "^1.0.0"
+
 supercluster@^4.1.1:
   version "4.1.1"
   resolved "https://registry.npmjs.org/supercluster/-/supercluster-4.1.1.tgz#cf13c3b28a3fb3db5290bfad7f524e244bd4ce78"
@@ -5892,6 +5912,15 @@ url-join@^1.1.0:
   resolved "https://registry.npmjs.org/url-join/-/url-join-1.1.0.tgz#741c6c2f4596c4830d6718460920d0c92202dc78"
   integrity sha1-dBxsL0WWxIMNZxhGCSDQySIC3Hg=
 
+url-loader@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.npmjs.org/url-loader/-/url-loader-1.1.2.tgz#b971d191b83af693c5e3fea4064be9e1f2d7f8d8"
+  integrity sha512-dXHkKmw8FhPqu8asTc1puBfe3TehOCo2+RmOOev5suNCIYBcT626kxiWg1NBVkwc4rO8BGa7gP70W7VXuqHrjg==
+  dependencies:
+    loader-utils "^1.1.0"
+    mime "^2.0.3"
+    schema-utils "^1.0.0"
+
 url-parse@^1.4.3:
   version "1.4.4"
   resolved "https://registry.npmjs.org/url-parse/-/url-parse-1.4.4.tgz#cac1556e95faa0303691fec5cf9d5a1bc34648f8"
@@ -6253,6 +6282,13 @@ yallist@^3.0.0, yallist@^3.0.2:
   version "3.0.3"
   resolved "https://registry.npmjs.org/yallist/-/yallist-3.0.3.tgz#b4b049e314be545e3ce802236d6cd22cd91c3de9"
   integrity sha512-S+Zk8DEWE6oKpV+vI3qWkaK+jSbIK86pCwe2IF/xwIpQ8jEuxpw9NyaGjmp9+BoJv5FV2piqCDcoCtStppiq2A==
+
+yaml-loader@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.npmjs.org/yaml-loader/-/yaml-loader-0.5.0.tgz#86b1982d84a8e429e6647d93de9a0169e1c15827"
+  integrity sha512-p9QIzcFSNm4mCw/m5NdyMfN4RE4aFZJWRRb01ERVNGCym8VNbKtw3OYZXnvUIkim6U/EjqE/2yIh9F/msShH9A==
+  dependencies:
+    js-yaml "^3.5.2"
 
 yargs-parser@^10.1.0:
   version "10.1.0"

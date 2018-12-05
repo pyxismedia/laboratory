@@ -8,7 +8,7 @@
     "dev": "webpack-dev-server --config webpack.config.js"
   },
   "dependencies": {
-    "@pyxis/components": "^0.0.21",
+    "@pyxis/components": "^0.0.19",
     "react": "^16.6.3",
     "react-dom": "^16.6.3"
   },
