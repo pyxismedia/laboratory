@@ -21,14 +21,14 @@
   "dependencies": {
     "mapbox-gl": "^0.51.0",
     "react": "^16.6.3",
-    "react-dom": "^16.6.3"
+    "react-dom": "^16.6.3",
+    "express": "^4.16.4"
   },
   "devDependencies": {
     "@pyxis/webpack": "^0.0.24",
     "@types/mapbox-gl": "^0.51.0",
     "@types/react": "^16.7.13",
     "@types/react-dom": "^16.0.11",
-    "express": "^4.16.4",
     "react-docgen-typescript": "^1.12.2",
     "react-styleguidist": "^8.0.6",
     "webpack": "^4.26.1",
