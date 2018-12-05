@@ -20,6 +20,4 @@ export const config = webpackMerge(typescript({
     // Babel register
     'register/typescript': './src/register/typescript',
   },
-}),
-  externals(),
-  );
+}));
