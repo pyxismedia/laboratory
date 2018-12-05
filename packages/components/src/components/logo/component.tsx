@@ -8,7 +8,7 @@ export interface LogoProps {
   pathname: string;
   /** classname which represent specific styles */
   className: string;
-  // Styled object contains styled components
+  /** `styled` object contains styled components */
   styled: {
     A: typeof Component
   }
@@ -16,6 +16,8 @@ export interface LogoProps {
 
 /**
  * Logo component.
+ * 
+ * @visibleName Logotype
  */
 export const Logo = ({ pathname, className, styled: { A } }: LogoProps) => (
   <A to={pathname} className={className}>Logo</A>

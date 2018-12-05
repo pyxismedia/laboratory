@@ -11,6 +11,11 @@ module.exports = {
   components: [
     './src/components/**/index.ts',
   ],
+  logger: {
+    warn: console.warn,
+    info: console.log,
+    debug: console.log
+  },
   serverPort: process.env.PORT || 6060,
   propsParser: require('react-docgen-typescript').withDefaultConfig().parse,
   verbose: false,
@@ -35,7 +40,7 @@ module.exports = {
           name: 'Logo',
           components: () => ['./src/components/Logo/index.ts'],
           exampleMode: 'expand',
-          usageMode: 'collapse', 
+          usageMode: 'collapse',
         },
         {
           name: 'Construction',
@@ -49,7 +54,8 @@ module.exports = {
           exampleMode: 'expand',
           usageMode: 'collapse', 
         },
-      ]
+      ],
+      sectionDepth: 0,
     }
   ],
 };
