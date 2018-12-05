@@ -1,6 +1,6 @@
 {
   "name": "@pyxis/loaders",
-  "version": "0.0.20",
+  "version": "0.0.21",
   "license": "MIT",
   "scripts": {
     "build": "webpack --config webpack.config.js",
@@ -10,7 +10,7 @@
     "**/*"
   ],
   "devDependencies": {
-    "@pyxis/webpack": "^0.0.20",
+    "@pyxis/webpack": "^0.0.21",
     "cli-highlight": "^2.0.0",
     "js-beautify": "^1.8.8",
     "loader-runner": "^2.3.1",
