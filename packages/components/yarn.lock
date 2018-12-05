@@ -2791,7 +2791,7 @@ es6-promise@^4.2.4:
   resolved "https://registry.npmjs.org/es6-promise/-/es6-promise-4.2.5.tgz#da6d0d5692efb461e082c14817fe2427d8f5d054"
   integrity sha512-n6wvpdE43VFtJq+lUDYDBFUwV8TZbuGXLV4D6wKafg13ldznKsyEvatubnmUe31zcvelSzOHF+XbaT+Bl9ObDg==
 
-escape-html@~1.0.1, escape-html@~1.0.3:
+escape-html@~1.0.3:
   version "1.0.3"
   resolved "https://registry.npmjs.org/escape-html/-/escape-html-1.0.3.tgz#0258eae4d3d0c0974de1c169188ef0051d1d1988"
   integrity sha1-Aljq5NPQwJdN4cFpGI7wBR0dGYg=
@@ -3620,13 +3620,6 @@ hmac-drbg@^1.0.0:
     hash.js "^1.0.3"
     minimalistic-assert "^1.0.0"
     minimalistic-crypto-utils "^1.0.1"
-
-holderjs@~2.8.1:
-  version "2.8.2"
-  resolved "http://registry.npmjs.org/holderjs/-/holderjs-2.8.2.tgz#622676b8e29982902e7fd7441bb017adce2b3178"
-  integrity sha1-YiZ2uOKZgpAuf9dEG7AXrc4rMXg=
-  dependencies:
-    shaven "^0.7.3"
 
 home-or-tmp@^3.0.0:
   version "3.0.0"
@@ -4460,11 +4453,6 @@ lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.3, lodash@^4.17.5, lodash@^4.6.1:
   version "4.17.11"
   resolved "https://registry.npmjs.org/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
   integrity sha512-cQKh8igo5QUhZ7lg38DYWAxMvjSAKG0A8wGSVimP07SIUEK2UO+arSRKbRZWtelMtN5V0Hkwh5ryOto/SshYIg==
-
-lodash@~4.11.1:
-  version "4.11.2"
-  resolved "http://registry.npmjs.org/lodash/-/lodash-4.11.2.tgz#d6b4338b110a58e21dae5cebcfdbbfd2bc4cdb3b"
-  integrity sha1-1rQzixEKWOIdrlzrz9u/0rxM2zs=
 
 log-symbols@^2.2.0:
   version "2.2.0"
@@ -5692,13 +5680,6 @@ qs@6.5.2, qs@~6.5.2:
   resolved "https://registry.npmjs.org/qs/-/qs-6.5.2.tgz#cb3ae806e8740444584ef154ce8ee98d403f3e36"
   integrity sha512-N5ZAX4/LxJmF+7wN74pUD6qAh9/wnvdQcjq9TZjevvXzSUo7bfmw91saqMjzGS2xq91/odN2dW/WOl7qQHNDGA==
 
-query-string@~2.4.0:
-  version "2.4.2"
-  resolved "http://registry.npmjs.org/query-string/-/query-string-2.4.2.tgz#7db0666420804baa92ae9f268962855a76143dfb"
-  integrity sha1-fbBmZCCAS6qSrp8miWKFWnYUPfs=
-  dependencies:
-    strict-uri-encode "^1.0.0"
-
 querystring-es3@^0.2.0:
   version "0.2.1"
   resolved "https://registry.npmjs.org/querystring-es3/-/querystring-es3-0.2.1.tgz#9ec61f79049875707d69414596fd907a4d711e73"
@@ -5857,15 +5838,6 @@ react-icons@^2.2.7:
   integrity sha512-0n4lcGqzJFcIQLoQytLdJCE0DKSA9dkwEZRYoGrIDJZFvIT6Hbajx5mv9geqhqFiNjUgtxg8kPyDfjlhymbGFg==
   dependencies:
     react-icon-base "2.1.0"
-
-react-image-holder@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.npmjs.org/react-image-holder/-/react-image-holder-2.0.1.tgz#b210361a6c0ad1258c1fa9ef026bcba651684da3"
-  integrity sha1-shA2GmwK0SWMH6nvAmvLplFoTaM=
-  dependencies:
-    holderjs "~2.8.1"
-    lodash "~4.11.1"
-    query-string "~2.4.0"
 
 react-lifecycles-compat@^3.0.4:
   version "3.0.4"
@@ -6514,13 +6486,6 @@ sharkdown@^0.1.0:
     stream-spigot "~2.1.2"
     through "~2.3.4"
 
-shaven@^0.7.3:
-  version "0.7.3"
-  resolved "https://registry.npmjs.org/shaven/-/shaven-0.7.3.tgz#3ed2a66c4bdc7053afc1407b168379d4f77424da"
-  integrity sha1-PtKmbEvccFOvwUB7FoN51Pd0JNo=
-  dependencies:
-    escape-html "~1.0.1"
-
 shebang-command@^1.2.0:
   version "1.2.0"
   resolved "https://registry.npmjs.org/shebang-command/-/shebang-command-1.2.0.tgz#44aac65b695b03398968c39f363fee5deafdf1ea"
@@ -6793,11 +6758,6 @@ stream-spigot@~2.1.2:
   integrity sha1-feFF6Bn43Q20UJDRPc9zqO08wDU=
   dependencies:
     readable-stream "~1.1.0"
-
-strict-uri-encode@^1.0.0:
-  version "1.1.0"
-  resolved "https://registry.npmjs.org/strict-uri-encode/-/strict-uri-encode-1.1.0.tgz#279b225df1d582b1f54e65addd4352e18faa0713"
-  integrity sha1-J5siXfHVgrH1TmWt3UNS4Y+qBxM=
 
 string-width@^1.0.1:
   version "1.0.2"

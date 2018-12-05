@@ -9,12 +9,11 @@
     "bootstrap": "lerna bootstrap",
     "test": "lerna run test",
     "postinstall": "yarn bootstrap",
-    "reinstall": "lerna exec -- yarn install",
     "build": "lerna run build"
   },
   "husky": {
     "hooks": {
-      "pre-push": "yarn reinstall && yarn build && yarn test"
+      "pre-push": "yarn test"
     }
   },
   "devDependencies": {
