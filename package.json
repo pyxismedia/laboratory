@@ -12,7 +12,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "npm test"
+      "pre-push": "yarn install && yarn build && yarn test"
     }
   },
   "devDependencies": {
