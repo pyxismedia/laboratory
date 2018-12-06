@@ -17,7 +17,7 @@ export interface TargetArgs {
 }
 
 export interface TargetPart {
-  target: Configuration['target'] | Target;
-  externals: Configuration['externals'],
+  target?: Configuration['target'] | Target;
+  externals?: Configuration['externals'],
   node?: Configuration['node'],
 }

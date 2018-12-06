@@ -16,5 +16,4 @@ export interface TypescriptArgs {
   mode?: Mode;
 }
 
-export interface TypescriptConfig extends CleanPart, EntryPart, ExternalsPart, OutputPart,
-  ExternalsPart, TsPart, ModePart, TargetPart {}
+export interface TypescriptConfig extends CleanPart, EntryPart, OutputPart, TsPart, ModePart, TargetPart {}
