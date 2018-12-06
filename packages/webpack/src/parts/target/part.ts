@@ -5,7 +5,7 @@ export const target = ({ target = Target.NODE, externals }: TargetArgs): TargetP
   if (target === Target.NODE) {
     return {
       target,
-      externals: externals ? [external(), externals] : [external()],
+      externals: externals ? externals : [external()],
       node: {
         __dirname: false,
         __filename: false,
@@ -15,6 +15,6 @@ export const target = ({ target = Target.NODE, externals }: TargetArgs): TargetP
   
   return {
     target,
-    externals: externals ? [external(), externals] : [external()],
+    externals: externals ? externals : [external()],
   };
 };

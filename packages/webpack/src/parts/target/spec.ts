@@ -6,7 +6,7 @@ const { target } = prequire.noCallThru()('./part', {
   'webpack-node-externals': () => 'externals',
 });
 
-ava('should have target with default value', (t) => {
+ava('should have target node with default value', (t) => {
   const expected = {
     target: Target.NODE,
     externals: ['externals'],
@@ -21,13 +21,39 @@ ava('should have target with default value', (t) => {
   t.deepEqual(result, expected);
 });
 
-ava('should have target with custom value', (t) => {
+ava('should have target node with custom externals value', (t) => {
+  const expected = {
+    target: Target.NODE,
+    externals: 'externals2',
+    node: {
+      __dirname: false,
+      __filename: false,
+    },
+  };
+
+  const result = target({ target: Target.NODE, externals: 'externals2' });
+
+  t.deepEqual(result, expected);
+});
+
+ava('should have target web with custom value', (t) => {
   const expected = {
     target: Target.WEB,
     externals: ['externals'],
   };
 
   const result = target({ target: Target.WEB });
+
+  t.deepEqual(result, expected);
+});
+
+ava('should have target web with custom externals value', (t) => {
+  const expected = {
+    target: Target.WEB,
+    externals: 'externals2',
+  };
+
+  const result = target({ target: Target.WEB, externals: 'externals2' });
 
   t.deepEqual(result, expected);
 });
