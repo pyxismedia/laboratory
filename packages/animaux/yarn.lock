@@ -764,10 +764,10 @@
   resolved "https://registry.npmjs.org/@mapbox/whoots-js/-/whoots-js-3.1.0.tgz#497c67a1cef50d1a2459ba60f315e448d2ad87fe"
   integrity sha512-Es6WcD0nO5l+2BOQS4uLfNPYQaNDfbot3X1XUoloz+x0mPDS3eeORZJl06HXjwBG1fOGwCRnzK88LMdxKRrd6Q==
 
-"@pyxis/components@^0.0.31":
-  version "0.0.31"
-  resolved "https://pyxis-npm.herokuapp.com/@pyxis%2fcomponents/-/components-0.0.31.tgz#9e33bf5bbe49d9c2f0ff37d7008ddd5671ab77e9"
-  integrity sha512-xDZ4QCtPRUepddCnWrz4vmQye7P+4GbVjFpmo6+WdhXRQtpOwbzGhBEY3YfU3QLfvfQmnLsRbhkIe0PVAiPYtg==
+"@pyxis/components@^0.0.33":
+  version "0.0.33"
+  resolved "https://pyxis-npm.herokuapp.com/@pyxis%2fcomponents/-/components-0.0.33.tgz#81be7833e6137b4aad39d15df650ca5ef7c45ed4"
+  integrity sha512-UQbUVP0+uqmmXbZIJy8/vwupCUPhObx2tzzhGFJ5LAuJ5zP+7hdoHy9UPKcdocCxNsLLDBn9M7aUpc6JrYkJgQ==
   dependencies:
     express "^4.16.4"
     mapbox-gl "^0.51.0"

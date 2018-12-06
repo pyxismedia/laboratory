@@ -10,7 +10,7 @@
     "postinstall": "yarn build"
   },
   "dependencies": {
-    "@pyxis/components": "^0.0.31",
+    "@pyxis/components": "^0.0.33",
     "express": "^4.16.4",
     "react": "^16.6.3",
     "react-dom": "^16.6.3"
