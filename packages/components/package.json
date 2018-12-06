@@ -24,7 +24,7 @@
     "react-dom": "^16.6.3"
   },
   "devDependencies": {
-    "@pyxis/webpack": "^0.0.26",
+    "@pyxis/webpack": "^0.0.28",
     "@types/mapbox-gl": "^0.51.0",
     "@types/react": "^16.7.13",
     "@types/react-dom": "^16.0.11",
