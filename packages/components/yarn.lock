@@ -789,10 +789,10 @@
   resolved "https://pyxis-npm.herokuapp.com/@pyxis%2floaders/-/loaders-0.0.21.tgz#e937025593965cf96287d5bcc23385d9565b72c6"
   integrity sha512-7QZAfgcSQ3+vphFMGcr7ipqikmPABWJKS3Efq0X2rOKDKUg4t6/mGA54gsm7HDsXVw+7h0Gw76OB81kMiMiZSA==
 
-"@pyxis/webpack@^0.0.24":
-  version "0.0.24"
-  resolved "https://pyxis-npm.herokuapp.com/@pyxis%2fwebpack/-/webpack-0.0.24.tgz#8722116855955937d8f237e28bd3473e37aa6552"
-  integrity sha512-ZJm1U0t4xngGMvVKpixVJlo8xZGmVej5JGlqWQBtvzZ9CN91yjppdNlmk+FBdXssh6DkoWmiCFSwsD2Nmean1g==
+"@pyxis/webpack@^0.0.26":
+  version "0.0.26"
+  resolved "https://pyxis-npm.herokuapp.com/@pyxis%2fwebpack/-/webpack-0.0.26.tgz#4b2ff55484981d240d5e8b67782f044267dd71aa"
+  integrity sha512-PIkF9T+PwUScX47BwZiM/XcBL2yvCjdqDxAeyUWzwgW5wT0CHdbRAM2Zp7l9KL8LyEZBi0jh640o44o4MjirWQ==
   dependencies:
     "@babel/core" "^7.1.6"
     "@babel/plugin-proposal-class-properties" "^7.1.0"
