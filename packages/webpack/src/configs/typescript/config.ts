@@ -9,12 +9,12 @@ import { Extension, extensions as extension } from '../../parts/extensions';
 import { TypescriptArgs, TypescriptConfig } from "./types";
 
 export const typescript = ({ entry = Entry.INDEX_TS, extensions = [Extension.TS, Extension.TSX, Extension.JS],
-                             target, mode, cleanPath }: TypescriptArgs): TypescriptConfig => merge(
+                             target, mode, cleanPath, externals }: TypescriptArgs): TypescriptConfig => merge(
   clean({ paths: cleanPath }),
   entries({ entry }),
   output({}),
   extension({ extensions }),
   ts(),
   modes({ mode }),
-  targets({ target }),
+  targets({ target, externals }),
 );

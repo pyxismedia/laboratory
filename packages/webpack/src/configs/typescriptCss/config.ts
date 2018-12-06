@@ -6,8 +6,8 @@ import { Target } from '../../parts/target';
 import { html } from '../../parts/html';
 import { TypescriptCssConfig, TypescriptCssArgs } from "./types";
 
-export const typescriptCss = ({ target = Target.WEB, entry, mode }: TypescriptCssArgs): TypescriptCssConfig => merge(
-  typescript({ target, entry, mode }),
+export const typescriptCss = ({ target = Target.WEB, entry, mode, externals }: TypescriptCssArgs): TypescriptCssConfig => merge(
+  typescript({ target, entry, mode, externals }),
   css(),
   image(),
   html({}),

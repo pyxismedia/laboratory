@@ -12,7 +12,7 @@ export enum Target {
 
 export interface TargetArgs {
   target?: Configuration['target'] | Target;
-  externals?: undefined | ExternalsElement,
+  externals?: Configuration['externals'],
   node?: Configuration['node'],
 }
 

@@ -7,6 +7,7 @@ import {ExternalsPart} from "../../parts/externals";
 import {OutputPart} from "../../parts/output";
 import {TsPart} from "../../parts/ts";
 import {TargetPart} from "../../parts/target/types";
+import { Configuration } from 'webpack';
 
 export interface TypescriptArgs {
   entry?: Entry;
@@ -14,6 +15,7 @@ export interface TypescriptArgs {
   extensions?: Extension[];
   target?: Target
   mode?: Mode;
+  externals?: Configuration['externals'];
 }
 
 export interface TypescriptConfig extends CleanPart, EntryPart, OutputPart, TsPart, ModePart, TargetPart {}
