@@ -764,10 +764,10 @@
   resolved "https://registry.npmjs.org/@mapbox/whoots-js/-/whoots-js-3.1.0.tgz#497c67a1cef50d1a2459ba60f315e448d2ad87fe"
   integrity sha512-Es6WcD0nO5l+2BOQS4uLfNPYQaNDfbot3X1XUoloz+x0mPDS3eeORZJl06HXjwBG1fOGwCRnzK88LMdxKRrd6Q==
 
-"@pyxis/components@^0.0.33":
-  version "0.0.33"
-  resolved "https://pyxis-npm.herokuapp.com/@pyxis%2fcomponents/-/components-0.0.33.tgz#81be7833e6137b4aad39d15df650ca5ef7c45ed4"
-  integrity sha512-UQbUVP0+uqmmXbZIJy8/vwupCUPhObx2tzzhGFJ5LAuJ5zP+7hdoHy9UPKcdocCxNsLLDBn9M7aUpc6JrYkJgQ==
+"@pyxis/components@^0.0.42":
+  version "0.0.42"
+  resolved "https://pyxis-npm.herokuapp.com/@pyxis%2fcomponents/-/components-0.0.42.tgz#ab74536ae7a9c20f7e8f6172ffa65315d0618d57"
+  integrity sha512-sWZP+vIRD/a2tgIbH3rmfW1CXtLlWbAHE5PcEiridHEgeFAYrudHnrJERiQV0r/OACpkQnNE18bkOEltEqnWCQ==
   dependencies:
     express "^4.16.4"
     mapbox-gl "^0.51.0"
@@ -779,10 +779,10 @@
   resolved "https://pyxis-npm.herokuapp.com/@pyxis%2floaders/-/loaders-0.0.21.tgz#e937025593965cf96287d5bcc23385d9565b72c6"
   integrity sha512-7QZAfgcSQ3+vphFMGcr7ipqikmPABWJKS3Efq0X2rOKDKUg4t6/mGA54gsm7HDsXVw+7h0Gw76OB81kMiMiZSA==
 
-"@pyxis/webpack@^0.0.29":
-  version "0.0.29"
-  resolved "https://pyxis-npm.herokuapp.com/@pyxis%2fwebpack/-/webpack-0.0.29.tgz#77f876304635e63625a89ce77950f5991ee3317c"
-  integrity sha512-rOk2SHqaq7lZlrs+6NoqgbBMjdeck/KBb92yDaUDVl2p8TRhTeMfK1s+MZn7ih520lMXha+VBLnRBcbwJD5lEQ==
+"@pyxis/webpack@^0.0.42":
+  version "0.0.42"
+  resolved "https://pyxis-npm.herokuapp.com/@pyxis%2fwebpack/-/webpack-0.0.42.tgz#5d9f282f5b4c58fa46dbd28b2613c690cb2ad1af"
+  integrity sha512-Lz/Ty1zH0h8T/VsWrO3TA4kQajlUiMszT75+OH9DOWyo5R9BQ7zZ4PFz12NQnWlKTVeDK10GbzS2EDXNHMGoVA==
   dependencies:
     "@babel/core" "^7.1.6"
     "@babel/plugin-proposal-class-properties" "^7.1.0"

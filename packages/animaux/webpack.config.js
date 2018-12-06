@@ -6,6 +6,6 @@ module.exports = merge(
   typescriptCss({
     mode: 'development',
     entry: './src/index.tsx',
-    externals: [externals()],
+    externals: [],
   }),
 );
