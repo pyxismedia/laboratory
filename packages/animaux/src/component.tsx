@@ -8,8 +8,16 @@ const config = {
   }
 };
 
+const props = {
+  backgroundColor:"rgb(242, 164, 157)",
+  email: "info@animaux.glass",
+  title: "Animaux de Verre",
+  subtitle: "Glass Dildos",
+  phone: '+44 7445 063 366',
+}
+
 export const App = () => (
   <WebFontLoader config={config}>
-    <Construction backgroundColor="rgb(242, 164, 157)" />
+    <Construction {...props}/>
   </WebFontLoader>
 );
