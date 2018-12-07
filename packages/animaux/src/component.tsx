@@ -1,7 +1,15 @@
 import React from 'react';
 import { Construction } from '@pyxis/components/build/construction';
-import logo from './logo.png';
+import WebFontLoader from '@dr-kobros/react-webfont-loader';
+
+const config = {
+  google: {
+    families: ['Open Sans:100', 'Dr Sugiyama'],
+  }
+};
 
 export const App = () => (
-  <Construction logo={logo} backgroundColor="rgb(242, 164, 157)" />
+  <WebFontLoader config={config}>
+    <Construction backgroundColor="rgb(242, 164, 157)" />
+  </WebFontLoader>
 );

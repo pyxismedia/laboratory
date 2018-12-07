@@ -696,6 +696,14 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
+"@dr-kobros/react-webfont-loader@^8.0.0":
+  version "8.0.0"
+  resolved "https://registry.npmjs.org/@dr-kobros/react-webfont-loader/-/react-webfont-loader-8.0.0.tgz#1e000be944d846cc9101e656cdcf2521e859e066"
+  integrity sha512-7cC+Amhh3gbj/FenRym6N+a8JAm3SGUFSwK4jxOQJcy49qzBMt1Q3VbI8I1ZHuKSIThNzz8FlauDlOLsuFPE+g==
+  dependencies:
+    prop-types "^15.5.8"
+    webfontloader "^1.6.27"
+
 "@fimbul/bifrost@^0.15.0":
   version "0.15.0"
   resolved "https://registry.npmjs.org/@fimbul/bifrost/-/bifrost-0.15.0.tgz#f3a48dee3046681e926c1f970f0b1a67e29e088e"
@@ -764,11 +772,12 @@
   resolved "https://registry.npmjs.org/@mapbox/whoots-js/-/whoots-js-3.1.0.tgz#497c67a1cef50d1a2459ba60f315e448d2ad87fe"
   integrity sha512-Es6WcD0nO5l+2BOQS4uLfNPYQaNDfbot3X1XUoloz+x0mPDS3eeORZJl06HXjwBG1fOGwCRnzK88LMdxKRrd6Q==
 
-"@pyxis/components@^0.0.42":
-  version "0.0.42"
-  resolved "https://pyxis-npm.herokuapp.com/@pyxis%2fcomponents/-/components-0.0.42.tgz#ab74536ae7a9c20f7e8f6172ffa65315d0618d57"
-  integrity sha512-sWZP+vIRD/a2tgIbH3rmfW1CXtLlWbAHE5PcEiridHEgeFAYrudHnrJERiQV0r/OACpkQnNE18bkOEltEqnWCQ==
+"@pyxis/components@^0.0.44":
+  version "0.0.44"
+  resolved "https://pyxis-npm.herokuapp.com/@pyxis%2fcomponents/-/components-0.0.44.tgz#1adc87c3254f7384563d6bc4c6b42df8b35e5e08"
+  integrity sha512-pWWTRs4VxtetZw0w9hK1vp5DMpH/fnAVGonbe6jtmPolDU+XziXm1NpHKXjNQ6ZwU2IYXsAqUuqKMRzJaKieyQ==
   dependencies:
+    "@dr-kobros/react-webfont-loader" "^8.0.0"
     express "^4.16.4"
     mapbox-gl "^0.51.0"
     react "^16.6.3"
@@ -4690,7 +4699,7 @@ promise-inflight@^1.0.1:
   resolved "https://registry.npmjs.org/promise-inflight/-/promise-inflight-1.0.1.tgz#98472870bf228132fcbdd868129bad12c3c029e3"
   integrity sha1-mEcocL8igTL8vdhoEputEsPAKeM=
 
-prop-types@^15.6.2:
+prop-types@^15.5.8, prop-types@^15.6.2:
   version "15.6.2"
   resolved "https://registry.npmjs.org/prop-types/-/prop-types-15.6.2.tgz#05d5ca77b4453e985d60fc7ff8c859094a497102"
   integrity sha512-3pboPvLiWD7dkI3qf3KbUe6hKFKa52w+AE0VCqECtf+QHAKgOL37tTaNCnuX1nAAQ4ZhyP+kYVKf8rLmJ/feDQ==
@@ -6208,6 +6217,11 @@ wbuf@^1.1.0, wbuf@^1.7.2:
   integrity sha512-O84QOnr0icsbFGLS0O3bI5FswxzRr8/gHwWkDlQFskhSPryQXvrTMxjxGP4+iWYoauLoBvfDpkrOauZ+0iZpDA==
   dependencies:
     minimalistic-assert "^1.0.0"
+
+webfontloader@^1.6.27:
+  version "1.6.28"
+  resolved "https://registry.npmjs.org/webfontloader/-/webfontloader-1.6.28.tgz#db786129253cb6e8eae54c2fb05f870af6675bae"
+  integrity sha1-23hhKSU8tujq5UwvsF+HCvZnW64=
 
 webfonts-generator@^0.4.0:
   version "0.4.0"
