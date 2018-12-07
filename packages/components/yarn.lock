@@ -703,6 +703,14 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
+"@dr-kobros/react-webfont-loader@^8.0.0":
+  version "8.0.0"
+  resolved "https://registry.npmjs.org/@dr-kobros/react-webfont-loader/-/react-webfont-loader-8.0.0.tgz#1e000be944d846cc9101e656cdcf2521e859e066"
+  integrity sha512-7cC+Amhh3gbj/FenRym6N+a8JAm3SGUFSwK4jxOQJcy49qzBMt1Q3VbI8I1ZHuKSIThNzz8FlauDlOLsuFPE+g==
+  dependencies:
+    prop-types "^15.5.8"
+    webfontloader "^1.6.27"
+
 "@fimbul/bifrost@^0.15.0":
   version "0.15.0"
   resolved "https://registry.npmjs.org/@fimbul/bifrost/-/bifrost-0.15.0.tgz#f3a48dee3046681e926c1f970f0b1a67e29e088e"
@@ -7090,7 +7098,7 @@ prompts@^0.1.9:
     kleur "^2.0.1"
     sisteransi "^0.1.1"
 
-prop-types@^15.6.0, prop-types@^15.6.2:
+prop-types@^15.5.8, prop-types@^15.6.0, prop-types@^15.6.2:
   version "15.6.2"
   resolved "https://registry.npmjs.org/prop-types/-/prop-types-15.6.2.tgz#05d5ca77b4453e985d60fc7ff8c859094a497102"
   integrity sha512-3pboPvLiWD7dkI3qf3KbUe6hKFKa52w+AE0VCqECtf+QHAKgOL37tTaNCnuX1nAAQ4ZhyP+kYVKf8rLmJ/feDQ==
@@ -9442,6 +9450,11 @@ wcwidth@^1.0.1:
   integrity sha1-8LDc+RW8X/FSivrbLA4XtTLaL+g=
   dependencies:
     defaults "^1.0.3"
+
+webfontloader@^1.6.27:
+  version "1.6.28"
+  resolved "https://registry.npmjs.org/webfontloader/-/webfontloader-1.6.28.tgz#db786129253cb6e8eae54c2fb05f870af6675bae"
+  integrity sha1-23hhKSU8tujq5UwvsF+HCvZnW64=
 
 webfonts-generator@^0.4.0:
   version "0.4.0"
