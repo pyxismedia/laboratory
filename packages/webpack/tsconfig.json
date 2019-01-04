@@ -1,14 +1,15 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
+    "module": "commonjs",
     "moduleResolution": "node",
-    "allowJs": true,
-    "noEmit": true,
     "strict": true,
-    "isolatedModules": false,
     "esModuleInterop": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "outDir": "./build",
+    "declaration": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true
   },
   "jsRules": {
     "no-empty": true

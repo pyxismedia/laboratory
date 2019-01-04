@@ -1,5 +1,7 @@
 const merge = require('webpack-merge');
 const { typescriptCss } = require('@pyxis/webpack/build/configs/typescriptCss');
+const { Enforce } = require('@pyxis/webpack/build/types/module');
+const webpack = require('webpack');
 
 module.exports = {
   webpackConfig: merge(
@@ -7,6 +9,28 @@ module.exports = {
       target: 'web',
       mode: 'development',
     }),
+    // TODO: Implement to webpack. To watch all @pyxis/* modules on dev mode.
+    {
+      watchOptions: {
+        ignored: [
+          /node_modules([\\]+|\/)+(?!@pyxis)/, 
+          /\@pyxis([\\]+|\/)node_modules/
+        ]
+      }
+    }
+    // {
+    //   module: {
+    //     rules: [{
+    //       test: require.resolve('tracking'),
+    //       loader: 'imports-loader?this=>window'
+    //     }],
+    //   },
+    //   plugins: [
+    //     new webpack.ProvidePlugin({
+    //       tracking: 'tracking',
+    //     }),
+    //   ],
+    // }
   ),
   components: [
     './src/components/**/index.ts',
@@ -51,6 +75,12 @@ module.exports = {
         {
           name: 'Map',
           components: () => ['./src/components/Mapbox/index.ts'],
+          exampleMode: 'expand',
+          usageMode: 'collapse', 
+        },
+        {
+          name: 'Tracking',
+          components: () => ['./src/components/Tracking/index.ts'],
           exampleMode: 'expand',
           usageMode: 'collapse', 
         },

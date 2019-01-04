@@ -1,4 +1,4 @@
-import { Configuration } from 'webpack';
+import { Configuration, Plugin } from 'webpack';
 
 export enum Mode {
   production = 'production',
@@ -10,4 +10,6 @@ export interface ModeArgs {
   mode?: Configuration['mode'];
 }
 
-export interface ModePart extends ModeArgs {}
+export interface ModePart extends ModeArgs {
+  plugins?: Plugin[] | undefined,
+}

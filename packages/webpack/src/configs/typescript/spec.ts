@@ -7,16 +7,16 @@ import { Entry } from '../../parts/entry/types';
 import { Extension } from '../../parts/extensions/types';
 
 const { typescript } = prequire.noCallThru()('./config', {
-  '../../parts/clean': { clean: ({ paths }) => ({ paths }) },
+  '../../parts/clean': { clean: ({ paths }: { paths: string[] }) => ({ paths }) },
   '../../parts/entry': {
-    entry: ({ entry }) => ({ entry }),
+    entry: ({ entry }: { entry: string }) => ({ entry }),
     Entry: {
       INDEX_TS: './src/index.ts',
     }
   },
   '../../parts/output': { output: () => 'output' },
   '../../parts/extensions': {
-    extensions: ({ extensions }) => ({ extensions }),
+    extensions: ({ extensions }: { extensions: string[] }) => ({ extensions }),
     Extension: {
       TS: '.ts',
       TSX: '.tsx',
@@ -24,8 +24,8 @@ const { typescript } = prequire.noCallThru()('./config', {
     }
   },
   '../../parts/ts': { ts: () => 'ts' },
-  '../../parts/mode': { mode: ({ mode }) => ({ mode }) },
-  '../../parts/target': { target: ({ target }) => ({ target }) },
+  '../../parts/mode': { mode: ({ mode }: { mode: string }) => ({ mode }) },
+  '../../parts/target': { target: ({ target }: { target: string }) => ({ target }) },
   'webpack-merge': (...data: any) => ([ ...data ]),
 });
 

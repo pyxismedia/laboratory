@@ -5,10 +5,11 @@ import { Entry } from '../../parts/entry/types';
 import { Mode } from '../../parts/mode/types';
 
 const { typescriptCss } = prequire.noCallThru()('./config', {
-  '../typescript': { typescript: ({ target, entry, mode }) => ({ target, entry, mode }) },
+  '../typescript': { typescript: ({ target, entry, mode }: { target: string, entry: string, mode: string }) => ({ target, entry, mode }) },
   '../../parts/css': { css: () => 'css' },
   '../../parts/image': { image: () => 'image' },
   '../../parts/html': { html: () => 'html' },
+  '../../parts/devtool': { devtool: () => 'devtool' },
   'webpack-merge': (...data: any) => ([ ...data ]),
 });
 
@@ -22,6 +23,7 @@ ava('should generate prod config', (t) => {
     'css',
     'image',
     'html',
+    'devtool',
   ];
 
   const result = typescriptCss({});
@@ -39,6 +41,7 @@ ava('should initialize object with custom config', (t) => {
     'css',
     'image',
     'html',
+    'devtool',
   ];
 
   const result = typescriptCss({

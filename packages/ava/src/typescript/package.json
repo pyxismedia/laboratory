@@ -1,0 +1,18 @@
+{
+  "ava": {
+    "require": [
+      "@pyxis/webpack/build/register/ava.js"
+    ],
+    "files": [
+      "<%= APP_DIRNAME %>/src/**/spec.ts"
+    ],
+    "sources": [
+      "<%= APP_DIRNAME %>/src/**/*.ts"
+    ],
+    "babel": {
+      "extensions": ["ts"],
+      "testOptions": <%= BABEL %>
+    },
+    "verbose": true
+  }
+}

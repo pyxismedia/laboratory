@@ -1,5 +1,4 @@
-import { APP_DIRNAME
- } from "../../constants";
+import { resolve } from "../../constants";
 import { join } from 'path';
 import { DecorateArgs, DecoratePart } from './types';
 
@@ -10,7 +9,7 @@ export const decorate = ({ test, loader, options }: DecorateArgs): DecoratePart 
 			loaders: [
 				{
 					options,
-					loader: join(APP_DIRNAME, 'node_modules', '@pyxis', 'loaders', loader),
+					loader: resolve(join('@pyxis', 'loaders', loader)),
 				},
 			],
 		}],

@@ -1,6 +1,7 @@
 export default {
-  require: [
-    './register.js'
+  compileEnhancements: false,
+  extensions: [
+    "ts"
   ],
   files: [
     'src/**/spec.ts',
@@ -8,10 +9,7 @@ export default {
   sources: [
     'src/**/*.ts',
   ],
-  babel: {
-    extensions: ['ts'],
-    testOptions: {
-      babelrc: true,
-    },
-  },
+  require: [
+    'ts-node/register'
+  ]
 };

@@ -5,6 +5,7 @@
   "main": "index.js",
   "author": "Petr Juna",
   "license": "MIT",
+  "private": true,
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "test": "lerna run test",
@@ -20,12 +21,12 @@
     "husky": "^1.2.0",
     "lerna": "^3.0.0-rc.0"
   },
-  "dependencies": {
-    "@babel/register": "^7.0.0"
-  },
   "engines": {
     "node": "10.13.0",
     "yarn": "1.10.1",
     "npm": "6.4.1"
+  },
+  "dependencies": {
+    "pkg-dir": "^3.0.0"
   }
 }

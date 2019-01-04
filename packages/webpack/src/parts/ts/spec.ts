@@ -3,21 +3,17 @@ import prequire from 'proxyquire';
 import { enforce } from './part';
 
 class ForkTsCheckerWebpackPlugin {
-  tsconfig: string[];
-  constructor({ tsconfig }: { tsconfig: string[] }) {
+  tsconfig: string;
+  constructor({ tsconfig }: { tsconfig: string }) {
     this.tsconfig = tsconfig;
   }
 }
 
 const { ts } = prequire.noCallThru()('./part', {
   'fork-ts-checker-webpack-plugin': ForkTsCheckerWebpackPlugin,
-  // @ts-ignore
-  'path': { join: (...args) => ([...args]) },
   './babelrc': { babelrc: 'babelrc' },
-  '../../constants': {
-    PACKAGE_DIRNAME: 'root',
-    APP_DIRNAME: 'root',
-  }
+  '../../constants': { resolve: (modules: string) => modules },
+  path: { resolve: () => 'root' },
 });
 
 ava('should export default values', (t) => {
@@ -28,33 +24,22 @@ ava('should export default values', (t) => {
           test: /.*\.m?tsx?$/,
           exclude: /node_modules/,
           enforce: 'pre' as enforce,
-          loader: [
-            'root',
-            'node_modules',
-            'tslint-loader',
-          ],
+          loader: 'tslint-loader',
           options: {
-            configFile: [
-              'root',
-              'tslint.json',
-            ],
+            configFile: '@pyxis/webpack/tslint.json',
           },
         },
         {
           test: /.*\.m?tsx?$/,
           exclude: /node_modules/,
-          loader: [
-            'root',
-            'node_modules',
-            'babel-loader',
-          ],
+          loader: 'babel-loader',
           options: 'babelrc',
         },
       ],
     },
     plugins: [
       new ForkTsCheckerWebpackPlugin({
-        tsconfig: ['root', 'tsconfig.json'],
+        tsconfig: 'root',
       }),
     ],
   };

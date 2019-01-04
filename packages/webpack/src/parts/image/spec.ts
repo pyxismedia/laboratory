@@ -2,8 +2,7 @@ import ava from 'ava';
 import prequire from 'proxyquire';
 
 const { image } = prequire.noCallThru()('./part', {
-  '../../constants': { APP_DIRNAME: 'root' },
-  path: { join: (...args: string[]) => ([...args]) },
+  '../../constants': { resolve: (modules: string) => modules },
 });
 
 ava('should return default configuration', (t) => {
@@ -13,11 +12,7 @@ ava('should return default configuration', (t) => {
         {
           test: /\.(jpg|png)$/,
           use: {
-            loader: [
-              'root',
-              'node_modules',
-              'url-loader',
-            ],
+            loader: 'url-loader',
             options: {
               limit: 500000,
             },

@@ -3,7 +3,7 @@ import prequire from 'proxyquire';
 
 const { decorate } = prequire.noCallThru()('./part', {
   path: { join: (...args: string[]) => [...args] },
-  '../../constants': { APP_DIRNAME: 'root' },
+  '../../constants': { resolve: (modules: string) => modules },
 });
 
 ava('should set all variables', (t) => {
@@ -16,7 +16,7 @@ ava('should set all variables', (t) => {
             options: {
               some: 'some',
             },
-            loader: ['root', 'node_modules', '@pyxis', 'loaders', 'loader'],
+            loader: ['@pyxis', 'loaders', 'loader'],
           },
         ],
       }],

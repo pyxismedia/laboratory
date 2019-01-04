@@ -3,7 +3,7 @@ import prequire from 'proxyquire';
 
 const { yaml } = prequire('./part', {
   '../../constants': { APP_DIRNAME: 'root' },
-  path: { join: (...args) => ([...args])},
+  path: { join: (...args: string[]) => ([...args])},
 });
 
 ava('should export default configuration', (t) => {

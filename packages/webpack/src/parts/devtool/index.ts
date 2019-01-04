@@ -1,0 +1,1 @@
+export { devtool } from './part';
