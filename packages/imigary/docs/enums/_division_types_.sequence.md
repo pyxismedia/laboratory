@@ -26,7 +26,7 @@
 
 **EIGHT**:  = 55
 
-*Defined in [Division/types.ts:10](https://github.com/creaux/pyxis/blob/42c6131/packages/imigary/src/Division/types.ts#L10)*
+*Defined in [Division/types.ts:10](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Division/types.ts#L10)*
 
 ___
 <a id="five"></a>
@@ -35,7 +35,7 @@ ___
 
 **FIVE**:  = 13
 
-*Defined in [Division/types.ts:7](https://github.com/creaux/pyxis/blob/42c6131/packages/imigary/src/Division/types.ts#L7)*
+*Defined in [Division/types.ts:7](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Division/types.ts#L7)*
 
 ___
 <a id="four"></a>
@@ -44,7 +44,7 @@ ___
 
 **FOUR**:  = 8
 
-*Defined in [Division/types.ts:6](https://github.com/creaux/pyxis/blob/42c6131/packages/imigary/src/Division/types.ts#L6)*
+*Defined in [Division/types.ts:6](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Division/types.ts#L6)*
 
 ___
 <a id="one"></a>
@@ -53,7 +53,7 @@ ___
 
 **ONE**:  = 1
 
-*Defined in [Division/types.ts:3](https://github.com/creaux/pyxis/blob/42c6131/packages/imigary/src/Division/types.ts#L3)*
+*Defined in [Division/types.ts:3](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Division/types.ts#L3)*
 
 ___
 <a id="seven"></a>
@@ -62,7 +62,7 @@ ___
 
 **SEVEN**:  = 34
 
-*Defined in [Division/types.ts:9](https://github.com/creaux/pyxis/blob/42c6131/packages/imigary/src/Division/types.ts#L9)*
+*Defined in [Division/types.ts:9](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Division/types.ts#L9)*
 
 ___
 <a id="six"></a>
@@ -71,7 +71,7 @@ ___
 
 **SIX**:  = 21
 
-*Defined in [Division/types.ts:8](https://github.com/creaux/pyxis/blob/42c6131/packages/imigary/src/Division/types.ts#L8)*
+*Defined in [Division/types.ts:8](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Division/types.ts#L8)*
 
 ___
 <a id="three"></a>
@@ -80,7 +80,7 @@ ___
 
 **THREE**:  = 5
 
-*Defined in [Division/types.ts:5](https://github.com/creaux/pyxis/blob/42c6131/packages/imigary/src/Division/types.ts#L5)*
+*Defined in [Division/types.ts:5](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Division/types.ts#L5)*
 
 ___
 <a id="two"></a>
@@ -89,7 +89,7 @@ ___
 
 **TWO**:  = 3
 
-*Defined in [Division/types.ts:4](https://github.com/creaux/pyxis/blob/42c6131/packages/imigary/src/Division/types.ts#L4)*
+*Defined in [Division/types.ts:4](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Division/types.ts#L4)*
 
 ___
 <a id="zero"></a>
@@ -98,7 +98,7 @@ ___
 
 **ZERO**:  = 0
 
-*Defined in [Division/types.ts:2](https://github.com/creaux/pyxis/blob/42c6131/packages/imigary/src/Division/types.ts#L2)*
+*Defined in [Division/types.ts:2](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Division/types.ts#L2)*
 
 ___
 

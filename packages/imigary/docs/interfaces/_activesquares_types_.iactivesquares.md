@@ -37,7 +37,7 @@
 
 *Inherited from [ISquares](_squares_types_.isquares.md).[edges](_squares_types_.isquares.md#edges)*
 
-*Defined in [Squares/types.ts:36](https://github.com/creaux/pyxis/blob/42c6131/packages/imigary/src/Squares/types.ts#L36)*
+*Defined in [Squares/types.ts:36](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Squares/types.ts#L36)*
 
 *__returns__*: Array of left and top edges and right and bottom edges of square
 
@@ -50,7 +50,7 @@ ___
 
 **● getInactive**: *`function`*
 
-*Defined in [ActiveSquares/types.ts:4](https://github.com/creaux/pyxis/blob/42c6131/packages/imigary/src/ActiveSquares/types.ts#L4)*
+*Defined in [ActiveSquares/types.ts:4](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/ActiveSquares/types.ts#L4)*
 
 #### Type declaration
 ▸(square: *[Square](../modules/_squares_types_.md#square)*): `function`
@@ -70,7 +70,7 @@ ___
 
 **● inactiveEdges**: *[Square](../modules/_squares_types_.md#square)[]*
 
-*Defined in [ActiveSquares/types.ts:5](https://github.com/creaux/pyxis/blob/42c6131/packages/imigary/src/ActiveSquares/types.ts#L5)*
+*Defined in [ActiveSquares/types.ts:5](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/ActiveSquares/types.ts#L5)*
 
 ___
 <a id="safearea"></a>
@@ -81,7 +81,7 @@ ___
 
 *Inherited from [ISquares](_squares_types_.isquares.md).[safeArea](_squares_types_.isquares.md#safearea)*
 
-*Defined in [Squares/types.ts:37](https://github.com/creaux/pyxis/blob/42c6131/packages/imigary/src/Squares/types.ts#L37)*
+*Defined in [Squares/types.ts:37](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Squares/types.ts#L37)*
 
 ___
 <a id="safeareainactivesquares"></a>
@@ -90,7 +90,7 @@ ___
 
 **● safeAreaInactiveSquares**: *`boolean`[]*
 
-*Defined in [ActiveSquares/types.ts:6](https://github.com/creaux/pyxis/blob/42c6131/packages/imigary/src/ActiveSquares/types.ts#L6)*
+*Defined in [ActiveSquares/types.ts:6](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/ActiveSquares/types.ts#L6)*
 
 ___
 <a id="sizes"></a>
@@ -101,7 +101,7 @@ ___
 
 *Inherited from [ISquares](_squares_types_.isquares.md).[sizes](_squares_types_.isquares.md#sizes)*
 
-*Defined in [Squares/types.ts:31](https://github.com/creaux/pyxis/blob/42c6131/packages/imigary/src/Squares/types.ts#L31)*
+*Defined in [Squares/types.ts:31](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Squares/types.ts#L31)*
 
 *__returns__*: Array of left top corners of square with width and height
 
@@ -116,7 +116,7 @@ ___
 
 *Inherited from [ISquares](_squares_types_.isquares.md).[squares](_squares_types_.isquares.md#squares)*
 
-*Defined in [Squares/types.ts:26](https://github.com/creaux/pyxis/blob/42c6131/packages/imigary/src/Squares/types.ts#L26)*
+*Defined in [Squares/types.ts:26](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Squares/types.ts#L26)*
 
 *__returns__*: Array of coordinates x,y of 4 square corners
 

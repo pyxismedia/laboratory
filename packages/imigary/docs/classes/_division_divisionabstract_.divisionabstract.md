@@ -35,7 +35,7 @@
 
 **● max**: *`number`*
 
-*Defined in [Division/DivisionAbstract.ts:4](https://github.com/creaux/pyxis/blob/42c6131/packages/imigary/src/Division/DivisionAbstract.ts#L4)*
+*Defined in [Division/DivisionAbstract.ts:4](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Division/DivisionAbstract.ts#L4)*
 
 ___
 <a id="sequence"></a>
@@ -51,7 +51,7 @@ ___
     Sequence.SIX
   ]
 
-*Defined in [Division/DivisionAbstract.ts:5](https://github.com/creaux/pyxis/blob/42c6131/packages/imigary/src/Division/DivisionAbstract.ts#L5)*
+*Defined in [Division/DivisionAbstract.ts:5](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Division/DivisionAbstract.ts#L5)*
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 getreverse(): [DerivatedDivision](../modules/_division_types_.md#derivateddivision)
 
-*Defined in [Division/DivisionAbstract.ts:14](https://github.com/creaux/pyxis/blob/42c6131/packages/imigary/src/Division/DivisionAbstract.ts#L14)*
+*Defined in [Division/DivisionAbstract.ts:14](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Division/DivisionAbstract.ts#L14)*
 
 **Returns:** [DerivatedDivision](../modules/_division_types_.md#derivateddivision)
 
@@ -74,7 +74,7 @@ ___
 
 getscale(): [DerivatedDivision](../modules/_division_types_.md#derivateddivision)
 
-*Defined in [Division/DivisionAbstract.ts:16](https://github.com/creaux/pyxis/blob/42c6131/packages/imigary/src/Division/DivisionAbstract.ts#L16)*
+*Defined in [Division/DivisionAbstract.ts:16](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Division/DivisionAbstract.ts#L16)*
 
 **Returns:** [DerivatedDivision](../modules/_division_types_.md#derivateddivision)
 
@@ -85,7 +85,7 @@ ___
 
 getstraight(): [DerivatedDivision](../modules/_division_types_.md#derivateddivision)
 
-*Defined in [Division/DivisionAbstract.ts:13](https://github.com/creaux/pyxis/blob/42c6131/packages/imigary/src/Division/DivisionAbstract.ts#L13)*
+*Defined in [Division/DivisionAbstract.ts:13](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Division/DivisionAbstract.ts#L13)*
 
 **Returns:** [DerivatedDivision](../modules/_division_types_.md#derivateddivision)
 

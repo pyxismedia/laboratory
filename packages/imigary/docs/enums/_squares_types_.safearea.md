@@ -23,7 +23,7 @@
 
 **MAX**:  = 67
 
-*Defined in [Squares/types.ts:48](https://github.com/creaux/pyxis/blob/42c6131/packages/imigary/src/Squares/types.ts#L48)*
+*Defined in [Squares/types.ts:48](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Squares/types.ts#L48)*
 
 ___
 <a id="min"></a>
@@ -32,7 +32,7 @@ ___
 
 **MIN**:  = 32
 
-*Defined in [Squares/types.ts:47](https://github.com/creaux/pyxis/blob/42c6131/packages/imigary/src/Squares/types.ts#L47)*
+*Defined in [Squares/types.ts:47](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Squares/types.ts#L47)*
 
 ___
 

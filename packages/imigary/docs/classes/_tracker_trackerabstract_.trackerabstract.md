@@ -85,7 +85,7 @@ ___
 
 ▸ **blur**(width: *`number`*, height: *`number`*): `function`
 
-*Defined in [Tracker/TrackerAbstract.ts:9](https://github.com/creaux/pyxis/blob/42c6131/packages/imigary/src/Tracker/TrackerAbstract.ts#L9)*
+*Defined in [Tracker/TrackerAbstract.ts:9](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Tracker/TrackerAbstract.ts#L9)*
 
 **Parameters:**
 
@@ -103,7 +103,7 @@ ___
 
 ▸ **corners**(width: *`number`*, height: *`number`*): `function`
 
-*Defined in [Tracker/TrackerAbstract.ts:8](https://github.com/creaux/pyxis/blob/42c6131/packages/imigary/src/Tracker/TrackerAbstract.ts#L8)*
+*Defined in [Tracker/TrackerAbstract.ts:8](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Tracker/TrackerAbstract.ts#L8)*
 
 **Parameters:**
 
@@ -121,7 +121,7 @@ ___
 
 ▸ **depth4ToDepth1**(depth4: *`number`[]*): `number`[]
 
-*Defined in [Tracker/TrackerAbstract.ts:7](https://github.com/creaux/pyxis/blob/42c6131/packages/imigary/src/Tracker/TrackerAbstract.ts#L7)*
+*Defined in [Tracker/TrackerAbstract.ts:7](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Tracker/TrackerAbstract.ts#L7)*
 
 **Parameters:**
 
@@ -190,7 +190,7 @@ ___
 
 ▸ **getPairs**(data: *[Coordinates](../modules/_squares_types_.md#coordinates)*): [Coordinates](../modules/_squares_types_.md#coordinates)[]
 
-*Defined in [Tracker/TrackerAbstract.ts:6](https://github.com/creaux/pyxis/blob/42c6131/packages/imigary/src/Tracker/TrackerAbstract.ts#L6)*
+*Defined in [Tracker/TrackerAbstract.ts:6](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Tracker/TrackerAbstract.ts#L6)*
 
 **Parameters:**
 
@@ -207,7 +207,7 @@ ___
 
 ▸ **grayscale**(width: *`number`*, height: *`number`*): `function`
 
-*Defined in [Tracker/TrackerAbstract.ts:10](https://github.com/creaux/pyxis/blob/42c6131/packages/imigary/src/Tracker/TrackerAbstract.ts#L10)*
+*Defined in [Tracker/TrackerAbstract.ts:10](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Tracker/TrackerAbstract.ts#L10)*
 
 **Parameters:**
 
@@ -462,7 +462,7 @@ ___
 
 ▸ **track**(pixels: *`Uint8ClampedArray`*, width: *`number`*, height: *`number`*): `void`
 
-*Defined in [Tracker/TrackerAbstract.ts:5](https://github.com/creaux/pyxis/blob/42c6131/packages/imigary/src/Tracker/TrackerAbstract.ts#L5)*
+*Defined in [Tracker/TrackerAbstract.ts:5](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Tracker/TrackerAbstract.ts#L5)*
 
 **Parameters:**
 
