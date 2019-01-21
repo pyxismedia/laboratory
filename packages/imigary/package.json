@@ -11,7 +11,7 @@
     "build:watch": "tsc --watch",
     "test": "ava",
     "test:watch": "ava --watch",
-    "docs": "node_modules/.bin/typedoc --out ./docs ./src --theme markdown",
+    "docs": "node_modules/.bin/typedoc --out ./docs ./src --theme default",
     "typings": "tsc --noEmit"
   },
   "dependencies": {
@@ -31,7 +31,6 @@
     "proxyquire": "^2.1.0",
     "sinon": "^7.2.2",
     "ts-node": "^7.0.1",
-    "typedoc": "^0.14.2",
-    "typedoc-plugin-markdown": "^1.1.22"
+    "typedoc": "^0.14.2"
   }
 }
