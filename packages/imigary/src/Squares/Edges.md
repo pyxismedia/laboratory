@@ -2,5 +2,5 @@
 
 Following image represent example how edges array is constituted.
 
-![](./Edges.png)
+![](../src/Squares/Edges.png)
 

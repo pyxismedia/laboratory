@@ -27,7 +27,7 @@
 
 **Ƭ Coordinates**: *[`number`, `number`]*
 
-*Defined in [Squares/types.ts:8](https://github.com/creaux/pyxis/blob/d2e0e43/packages/imigary/src/Squares/types.ts#L8)*
+*Defined in [Squares/types.ts:8](https://github.com/creaux/pyxis/blob/04ce533/packages/imigary/src/Squares/types.ts#L8)*
 
 *__description__*: x and y coordinates
 
@@ -42,7 +42,7 @@ ___
 
 **Ƭ Square**: *[[Coordinates](_squares_types_.md#coordinates), [Coordinates](_squares_types_.md#coordinates)]*
 
-*Defined in [Squares/types.ts:16](https://github.com/creaux/pyxis/blob/d2e0e43/packages/imigary/src/Squares/types.ts#L16)*
+*Defined in [Squares/types.ts:16](https://github.com/creaux/pyxis/blob/04ce533/packages/imigary/src/Squares/types.ts#L16)*
 
 *__description__*: contains min corner of x, y and and max corner of x, y which makes possible to render square on area particular area
 

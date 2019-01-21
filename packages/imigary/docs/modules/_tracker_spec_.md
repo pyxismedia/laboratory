@@ -29,7 +29,7 @@
 
 **● CustomTracker**: *`any`*
 
-*Defined in [Tracker/spec.ts:48](https://github.com/creaux/pyxis/blob/d2e0e43/packages/imigary/src/Tracker/spec.ts#L48)*
+*Defined in [Tracker/spec.ts:48](https://github.com/creaux/pyxis/blob/04ce533/packages/imigary/src/Tracker/spec.ts#L48)*
 
 ___
 <a id="blurspy"></a>
@@ -41,7 +41,7 @@ ___
   'blur',
 ).returns('blur')
 
-*Defined in [Tracker/spec.ts:38](https://github.com/creaux/pyxis/blob/d2e0e43/packages/imigary/src/Tracker/spec.ts#L38)*
+*Defined in [Tracker/spec.ts:38](https://github.com/creaux/pyxis/blob/04ce533/packages/imigary/src/Tracker/spec.ts#L38)*
 
 ___
 <a id="emitspy"></a>
@@ -50,7 +50,7 @@ ___
 
 **● emitSPY**: *`SinonSpy`<`any`[], `any`> | `SinonSpy`<`unknown`[], `Object`>* =  spy(tracker, 'emit')
 
-*Defined in [Tracker/spec.ts:58](https://github.com/creaux/pyxis/blob/d2e0e43/packages/imigary/src/Tracker/spec.ts#L58)*
+*Defined in [Tracker/spec.ts:58](https://github.com/creaux/pyxis/blob/04ce533/packages/imigary/src/Tracker/spec.ts#L58)*
 
 ___
 <a id="findcornersspy"></a>
@@ -62,7 +62,7 @@ ___
   'findCorners',
 ).returns('corners')
 
-*Defined in [Tracker/spec.ts:33](https://github.com/creaux/pyxis/blob/d2e0e43/packages/imigary/src/Tracker/spec.ts#L33)*
+*Defined in [Tracker/spec.ts:33](https://github.com/creaux/pyxis/blob/04ce533/packages/imigary/src/Tracker/spec.ts#L33)*
 
 ___
 <a id="grayscalespy"></a>
@@ -74,7 +74,7 @@ ___
   'grayscale',
 ).returns('grayscale')
 
-*Defined in [Tracker/spec.ts:43](https://github.com/creaux/pyxis/blob/d2e0e43/packages/imigary/src/Tracker/spec.ts#L43)*
+*Defined in [Tracker/spec.ts:43](https://github.com/creaux/pyxis/blob/04ce533/packages/imigary/src/Tracker/spec.ts#L43)*
 
 ___
 <a id="inheritsspy"></a>
@@ -83,7 +83,7 @@ ___
 
 **● inheritsSPY**: *`SinonSpy`<`[]`, `void`>* =  spy((window as IWindowTracking).tracking, 'inherits')
 
-*Defined in [Tracker/spec.ts:31](https://github.com/creaux/pyxis/blob/d2e0e43/packages/imigary/src/Tracker/spec.ts#L31)*
+*Defined in [Tracker/spec.ts:31](https://github.com/creaux/pyxis/blob/04ce533/packages/imigary/src/Tracker/spec.ts#L31)*
 
 ___
 <a id="trackresult"></a>
@@ -92,7 +92,7 @@ ___
 
 **● trackResult**: *`any`* =  tracker.track([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], 100, 100)
 
-*Defined in [Tracker/spec.ts:59](https://github.com/creaux/pyxis/blob/d2e0e43/packages/imigary/src/Tracker/spec.ts#L59)*
+*Defined in [Tracker/spec.ts:59](https://github.com/creaux/pyxis/blob/04ce533/packages/imigary/src/Tracker/spec.ts#L59)*
 
 ___
 <a id="tracker"></a>
@@ -101,7 +101,7 @@ ___
 
 **● tracker**: *`any`* =  new CustomTracker()
 
-*Defined in [Tracker/spec.ts:56](https://github.com/creaux/pyxis/blob/d2e0e43/packages/imigary/src/Tracker/spec.ts#L56)*
+*Defined in [Tracker/spec.ts:56](https://github.com/creaux/pyxis/blob/04ce533/packages/imigary/src/Tracker/spec.ts#L56)*
 
 ___
 

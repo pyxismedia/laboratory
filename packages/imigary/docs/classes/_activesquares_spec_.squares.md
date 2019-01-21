@@ -42,7 +42,7 @@
 
 *Overrides [SquaresAbstract](_squares_squaresabstract_.squaresabstract.md).[edges](_squares_squaresabstract_.squaresabstract.md#edges)*
 
-*Defined in [ActiveSquares/spec.ts:10](https://github.com/creaux/pyxis/blob/d2e0e43/packages/imigary/src/ActiveSquares/spec.ts#L10)*
+*Defined in [ActiveSquares/spec.ts:10](https://github.com/creaux/pyxis/blob/04ce533/packages/imigary/src/ActiveSquares/spec.ts#L10)*
 
 ___
 <a id="sizes"></a>
@@ -55,7 +55,7 @@ ___
 
 *Overrides [SquaresAbstract](_squares_squaresabstract_.squaresabstract.md).[sizes](_squares_squaresabstract_.squaresabstract.md#sizes)*
 
-*Defined in [ActiveSquares/spec.ts:9](https://github.com/creaux/pyxis/blob/d2e0e43/packages/imigary/src/ActiveSquares/spec.ts#L9)*
+*Defined in [ActiveSquares/spec.ts:9](https://github.com/creaux/pyxis/blob/04ce533/packages/imigary/src/ActiveSquares/spec.ts#L9)*
 
 ___
 <a id="squares"></a>
@@ -68,7 +68,7 @@ ___
 
 *Overrides [SquaresAbstract](_squares_squaresabstract_.squaresabstract.md).[squares](_squares_squaresabstract_.squaresabstract.md#squares)*
 
-*Defined in [ActiveSquares/spec.ts:8](https://github.com/creaux/pyxis/blob/d2e0e43/packages/imigary/src/ActiveSquares/spec.ts#L8)*
+*Defined in [ActiveSquares/spec.ts:8](https://github.com/creaux/pyxis/blob/04ce533/packages/imigary/src/ActiveSquares/spec.ts#L8)*
 
 ___
 <a id="safe_max"></a>
@@ -79,7 +79,7 @@ ___
 
 *Inherited from [SquaresAbstract](_squares_squaresabstract_.squaresabstract.md).[SAFE_MAX](_squares_squaresabstract_.squaresabstract.md#safe_max)*
 
-*Defined in [Squares/SquaresAbstract.ts:6](https://github.com/creaux/pyxis/blob/d2e0e43/packages/imigary/src/Squares/SquaresAbstract.ts#L6)*
+*Defined in [Squares/SquaresAbstract.ts:6](https://github.com/creaux/pyxis/blob/04ce533/packages/imigary/src/Squares/SquaresAbstract.ts#L6)*
 
 ___
 <a id="safe_min"></a>
@@ -90,7 +90,7 @@ ___
 
 *Inherited from [SquaresAbstract](_squares_squaresabstract_.squaresabstract.md).[SAFE_MIN](_squares_squaresabstract_.squaresabstract.md#safe_min)*
 
-*Defined in [Squares/SquaresAbstract.ts:5](https://github.com/creaux/pyxis/blob/d2e0e43/packages/imigary/src/Squares/SquaresAbstract.ts#L5)*
+*Defined in [Squares/SquaresAbstract.ts:5](https://github.com/creaux/pyxis/blob/04ce533/packages/imigary/src/Squares/SquaresAbstract.ts#L5)*
 
 ___
 
@@ -104,7 +104,7 @@ getsafeArea(): [Square](../modules/_squares_types_.md#square)
 
 *Overrides [SquaresAbstract](_squares_squaresabstract_.squaresabstract.md).[safeArea](_squares_squaresabstract_.squaresabstract.md#safearea)*
 
-*Defined in [ActiveSquares/spec.ts:19](https://github.com/creaux/pyxis/blob/d2e0e43/packages/imigary/src/ActiveSquares/spec.ts#L19)*
+*Defined in [ActiveSquares/spec.ts:19](https://github.com/creaux/pyxis/blob/04ce533/packages/imigary/src/ActiveSquares/spec.ts#L19)*
 
 **Returns:** [Square](../modules/_squares_types_.md#square)
 
@@ -117,7 +117,7 @@ getxPairsEdges(): `number`[][]
 
 *Overrides [SquaresAbstract](_squares_squaresabstract_.squaresabstract.md).[xPairsEdges](_squares_squaresabstract_.squaresabstract.md#xpairsedges)*
 
-*Defined in [ActiveSquares/spec.ts:12](https://github.com/creaux/pyxis/blob/d2e0e43/packages/imigary/src/ActiveSquares/spec.ts#L12)*
+*Defined in [ActiveSquares/spec.ts:12](https://github.com/creaux/pyxis/blob/04ce533/packages/imigary/src/ActiveSquares/spec.ts#L12)*
 
 **Returns:** `number`[][]
 
@@ -130,7 +130,7 @@ getyPairsEdges(): `number`[][]
 
 *Overrides [SquaresAbstract](_squares_squaresabstract_.squaresabstract.md).[yPairsEdges](_squares_squaresabstract_.squaresabstract.md#ypairsedges)*
 
-*Defined in [ActiveSquares/spec.ts:15](https://github.com/creaux/pyxis/blob/d2e0e43/packages/imigary/src/ActiveSquares/spec.ts#L15)*
+*Defined in [ActiveSquares/spec.ts:15](https://github.com/creaux/pyxis/blob/04ce533/packages/imigary/src/ActiveSquares/spec.ts#L15)*
 
 **Returns:** `number`[][]
 

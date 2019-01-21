@@ -27,7 +27,7 @@
 
 **● scale**: *[DerivatedDivision](../modules/_division_types_.md#derivateddivision)*
 
-*Defined in [Division/types.ts:29](https://github.com/creaux/pyxis/blob/d2e0e43/packages/imigary/src/Division/types.ts#L29)*
+*Defined in [Division/types.ts:29](https://github.com/creaux/pyxis/blob/04ce533/packages/imigary/src/Division/types.ts#L29)*
 
 ___
 
