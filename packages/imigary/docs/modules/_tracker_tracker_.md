@@ -22,7 +22,7 @@
 
 **● tracking**: *`any`*
 
-*Defined in [Tracker/Tracker.ts:7](https://github.com/creaux/pyxis/blob/04ce533/packages/imigary/src/Tracker/Tracker.ts#L7)*
+*Defined in [Tracker/Tracker.ts:7](https://github.com/creaux/pyxis/blob/10b280f/packages/imigary/src/Tracker/Tracker.ts#L7)*
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 ▸ **CustomTracker**(): `void`
 
-*Defined in [Tracker/Tracker.ts:9](https://github.com/creaux/pyxis/blob/04ce533/packages/imigary/src/Tracker/Tracker.ts#L9)*
+*Defined in [Tracker/Tracker.ts:9](https://github.com/creaux/pyxis/blob/10b280f/packages/imigary/src/Tracker/Tracker.ts#L9)*
 
 **Returns:** `void`
 

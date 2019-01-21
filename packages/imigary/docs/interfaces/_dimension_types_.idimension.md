@@ -28,7 +28,7 @@
 
 **● xPairs**: *[DerivatedDivisionPairs](../modules/_division_types_.md#derivateddivisionpairs)*
 
-*Defined in [Dimension/types.ts:4](https://github.com/creaux/pyxis/blob/04ce533/packages/imigary/src/Dimension/types.ts#L4)*
+*Defined in [Dimension/types.ts:4](https://github.com/creaux/pyxis/blob/10b280f/packages/imigary/src/Dimension/types.ts#L4)*
 
 ___
 <a id="ypairs"></a>
@@ -37,7 +37,7 @@ ___
 
 **● yPairs**: *[DerivatedDivisionPairs](../modules/_division_types_.md#derivateddivisionpairs)*
 
-*Defined in [Dimension/types.ts:5](https://github.com/creaux/pyxis/blob/04ce533/packages/imigary/src/Dimension/types.ts#L5)*
+*Defined in [Dimension/types.ts:5](https://github.com/creaux/pyxis/blob/10b280f/packages/imigary/src/Dimension/types.ts#L5)*
 
 ___
 
