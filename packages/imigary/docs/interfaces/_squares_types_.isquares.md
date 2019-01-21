@@ -37,7 +37,7 @@
 
 **● edges**: *[Square](../modules/_squares_types_.md#square)[]*
 
-*Defined in [Squares/types.ts:36](https://github.com/creaux/pyxis/blob/10b280f/packages/imigary/src/Squares/types.ts#L36)*
+*Defined in [Squares/types.ts:36](https://github.com/creaux/pyxis/blob/42c6131/packages/imigary/src/Squares/types.ts#L36)*
 
 *__returns__*: Array of left and top edges and right and bottom edges of square
 
@@ -50,7 +50,7 @@ ___
 
 **● safeArea**: *[Square](../modules/_squares_types_.md#square)*
 
-*Defined in [Squares/types.ts:37](https://github.com/creaux/pyxis/blob/10b280f/packages/imigary/src/Squares/types.ts#L37)*
+*Defined in [Squares/types.ts:37](https://github.com/creaux/pyxis/blob/42c6131/packages/imigary/src/Squares/types.ts#L37)*
 
 ___
 <a id="sizes"></a>
@@ -59,7 +59,7 @@ ___
 
 **● sizes**: *[Square](../modules/_squares_types_.md#square)[]*
 
-*Defined in [Squares/types.ts:31](https://github.com/creaux/pyxis/blob/10b280f/packages/imigary/src/Squares/types.ts#L31)*
+*Defined in [Squares/types.ts:31](https://github.com/creaux/pyxis/blob/42c6131/packages/imigary/src/Squares/types.ts#L31)*
 
 *__returns__*: Array of left top corners of square with width and height
 
@@ -72,7 +72,7 @@ ___
 
 **● squares**: *[Square](../modules/_squares_types_.md#square)[]*
 
-*Defined in [Squares/types.ts:26](https://github.com/creaux/pyxis/blob/10b280f/packages/imigary/src/Squares/types.ts#L26)*
+*Defined in [Squares/types.ts:26](https://github.com/creaux/pyxis/blob/42c6131/packages/imigary/src/Squares/types.ts#L26)*
 
 *__returns__*: Array of coordinates x,y of 4 square corners
 

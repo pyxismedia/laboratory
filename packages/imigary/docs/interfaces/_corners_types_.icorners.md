@@ -30,7 +30,7 @@
 
 ▸ **fill**(): `void`
 
-*Defined in [Corners/types.ts:5](https://github.com/creaux/pyxis/blob/10b280f/packages/imigary/src/Corners/types.ts#L5)*
+*Defined in [Corners/types.ts:5](https://github.com/creaux/pyxis/blob/42c6131/packages/imigary/src/Corners/types.ts#L5)*
 
 **Returns:** `void`
 
@@ -41,7 +41,7 @@ ___
 
 ▸ **rectFromPairs**(pairs: *[Coordinates](../modules/_squares_types_.md#coordinates)[]*): `void`
 
-*Defined in [Corners/types.ts:3](https://github.com/creaux/pyxis/blob/10b280f/packages/imigary/src/Corners/types.ts#L3)*
+*Defined in [Corners/types.ts:3](https://github.com/creaux/pyxis/blob/42c6131/packages/imigary/src/Corners/types.ts#L3)*
 
 **Parameters:**
 
@@ -58,7 +58,7 @@ ___
 
 ▸ **style**(styles: *`string`[][]*): `void`
 
-*Defined in [Corners/types.ts:4](https://github.com/creaux/pyxis/blob/10b280f/packages/imigary/src/Corners/types.ts#L4)*
+*Defined in [Corners/types.ts:4](https://github.com/creaux/pyxis/blob/42c6131/packages/imigary/src/Corners/types.ts#L4)*
 
 **Parameters:**
 

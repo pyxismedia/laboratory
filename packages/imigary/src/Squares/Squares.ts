@@ -56,7 +56,7 @@ export class Squares extends SquaresAbstract {
 
   /**
    * @returns Array of left and top edges and right and bottom edges of square
-   * @description For checking whether some point is in between these edges on matrix ![](../src/Squares/Edges.md)
+   * @description For checking whether some point is in between these edges on matrix ![](./../src/Squares/Edges.md)
    */
   @memoize public get edges(): Square[] {
     return flatten(

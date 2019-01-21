@@ -32,7 +32,7 @@
 
 *Implementation of [ICorners](../interfaces/_corners_types_.icorners.md).[fill](../interfaces/_corners_types_.icorners.md#fill)*
 
-*Defined in [Corners/CornersAbstract.ts:6](https://github.com/creaux/pyxis/blob/10b280f/packages/imigary/src/Corners/CornersAbstract.ts#L6)*
+*Defined in [Corners/CornersAbstract.ts:6](https://github.com/creaux/pyxis/blob/42c6131/packages/imigary/src/Corners/CornersAbstract.ts#L6)*
 
 **Returns:** `void`
 
@@ -45,7 +45,7 @@ ___
 
 *Implementation of [ICorners](../interfaces/_corners_types_.icorners.md).[rectFromPairs](../interfaces/_corners_types_.icorners.md#rectfrompairs)*
 
-*Defined in [Corners/CornersAbstract.ts:4](https://github.com/creaux/pyxis/blob/10b280f/packages/imigary/src/Corners/CornersAbstract.ts#L4)*
+*Defined in [Corners/CornersAbstract.ts:4](https://github.com/creaux/pyxis/blob/42c6131/packages/imigary/src/Corners/CornersAbstract.ts#L4)*
 
 **Parameters:**
 
@@ -64,7 +64,7 @@ ___
 
 *Implementation of [ICorners](../interfaces/_corners_types_.icorners.md).[style](../interfaces/_corners_types_.icorners.md#style)*
 
-*Defined in [Corners/CornersAbstract.ts:5](https://github.com/creaux/pyxis/blob/10b280f/packages/imigary/src/Corners/CornersAbstract.ts#L5)*
+*Defined in [Corners/CornersAbstract.ts:5](https://github.com/creaux/pyxis/blob/42c6131/packages/imigary/src/Corners/CornersAbstract.ts#L5)*
 
 **Parameters:**
 

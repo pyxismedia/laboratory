@@ -42,7 +42,7 @@
 
 **● SAFE_MAX**: *[SafeArea](../enums/_squares_types_.safearea.md)*
 
-*Defined in [Squares/SquaresAbstract.ts:6](https://github.com/creaux/pyxis/blob/10b280f/packages/imigary/src/Squares/SquaresAbstract.ts#L6)*
+*Defined in [Squares/SquaresAbstract.ts:6](https://github.com/creaux/pyxis/blob/42c6131/packages/imigary/src/Squares/SquaresAbstract.ts#L6)*
 
 ___
 <a id="safe_min"></a>
@@ -51,7 +51,7 @@ ___
 
 **● SAFE_MIN**: *[SafeArea](../enums/_squares_types_.safearea.md)*
 
-*Defined in [Squares/SquaresAbstract.ts:5](https://github.com/creaux/pyxis/blob/10b280f/packages/imigary/src/Squares/SquaresAbstract.ts#L5)*
+*Defined in [Squares/SquaresAbstract.ts:5](https://github.com/creaux/pyxis/blob/42c6131/packages/imigary/src/Squares/SquaresAbstract.ts#L5)*
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 getedges(): [Square](../modules/_squares_types_.md#square)[]
 
-*Defined in [Squares/SquaresAbstract.ts:11](https://github.com/creaux/pyxis/blob/10b280f/packages/imigary/src/Squares/SquaresAbstract.ts#L11)*
+*Defined in [Squares/SquaresAbstract.ts:11](https://github.com/creaux/pyxis/blob/42c6131/packages/imigary/src/Squares/SquaresAbstract.ts#L11)*
 
 **Returns:** [Square](../modules/_squares_types_.md#square)[]
 
@@ -74,7 +74,7 @@ ___
 
 getsafeArea(): [Square](../modules/_squares_types_.md#square)
 
-*Defined in [Squares/SquaresAbstract.ts:12](https://github.com/creaux/pyxis/blob/10b280f/packages/imigary/src/Squares/SquaresAbstract.ts#L12)*
+*Defined in [Squares/SquaresAbstract.ts:12](https://github.com/creaux/pyxis/blob/42c6131/packages/imigary/src/Squares/SquaresAbstract.ts#L12)*
 
 **Returns:** [Square](../modules/_squares_types_.md#square)
 
@@ -85,7 +85,7 @@ ___
 
 getsizes(): [Square](../modules/_squares_types_.md#square)[]
 
-*Defined in [Squares/SquaresAbstract.ts:10](https://github.com/creaux/pyxis/blob/10b280f/packages/imigary/src/Squares/SquaresAbstract.ts#L10)*
+*Defined in [Squares/SquaresAbstract.ts:10](https://github.com/creaux/pyxis/blob/42c6131/packages/imigary/src/Squares/SquaresAbstract.ts#L10)*
 
 **Returns:** [Square](../modules/_squares_types_.md#square)[]
 
@@ -96,7 +96,7 @@ ___
 
 getsquares(): [Square](../modules/_squares_types_.md#square)[]
 
-*Defined in [Squares/SquaresAbstract.ts:9](https://github.com/creaux/pyxis/blob/10b280f/packages/imigary/src/Squares/SquaresAbstract.ts#L9)*
+*Defined in [Squares/SquaresAbstract.ts:9](https://github.com/creaux/pyxis/blob/42c6131/packages/imigary/src/Squares/SquaresAbstract.ts#L9)*
 
 **Returns:** [Square](../modules/_squares_types_.md#square)[]
 
@@ -107,7 +107,7 @@ ___
 
 getxPairsEdges(): [DerivatedDivisionPairs](../modules/_division_types_.md#derivateddivisionpairs)
 
-*Defined in [Squares/SquaresAbstract.ts:7](https://github.com/creaux/pyxis/blob/10b280f/packages/imigary/src/Squares/SquaresAbstract.ts#L7)*
+*Defined in [Squares/SquaresAbstract.ts:7](https://github.com/creaux/pyxis/blob/42c6131/packages/imigary/src/Squares/SquaresAbstract.ts#L7)*
 
 **Returns:** [DerivatedDivisionPairs](../modules/_division_types_.md#derivateddivisionpairs)
 
@@ -118,7 +118,7 @@ ___
 
 getyPairsEdges(): [DerivatedDivisionPairs](../modules/_division_types_.md#derivateddivisionpairs)
 
-*Defined in [Squares/SquaresAbstract.ts:8](https://github.com/creaux/pyxis/blob/10b280f/packages/imigary/src/Squares/SquaresAbstract.ts#L8)*
+*Defined in [Squares/SquaresAbstract.ts:8](https://github.com/creaux/pyxis/blob/42c6131/packages/imigary/src/Squares/SquaresAbstract.ts#L8)*
 
 **Returns:** [DerivatedDivisionPairs](../modules/_division_types_.md#derivateddivisionpairs)
 

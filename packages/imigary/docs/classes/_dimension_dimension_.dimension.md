@@ -42,7 +42,7 @@
 
 ⊕ **new Dimension**(width: *`number`*, height: *`number`*): [Dimension](_dimension_dimension_.dimension.md)
 
-*Defined in [Dimension/Dimension.ts:10](https://github.com/creaux/pyxis/blob/10b280f/packages/imigary/src/Dimension/Dimension.ts#L10)*
+*Defined in [Dimension/Dimension.ts:10](https://github.com/creaux/pyxis/blob/42c6131/packages/imigary/src/Dimension/Dimension.ts#L10)*
 
 **Parameters:**
 
@@ -65,7 +65,7 @@ ___
 
 *Overrides [DimensionAbstract](_dimension_dimensionabstract_.dimensionabstract.md).[height](_dimension_dimensionabstract_.dimensionabstract.md#height)*
 
-*Defined in [Dimension/Dimension.ts:13](https://github.com/creaux/pyxis/blob/10b280f/packages/imigary/src/Dimension/Dimension.ts#L13)*
+*Defined in [Dimension/Dimension.ts:13](https://github.com/creaux/pyxis/blob/42c6131/packages/imigary/src/Dimension/Dimension.ts#L13)*
 
 ___
 <a id="width"></a>
@@ -76,7 +76,7 @@ ___
 
 *Overrides [DimensionAbstract](_dimension_dimensionabstract_.dimensionabstract.md).[width](_dimension_dimensionabstract_.dimensionabstract.md#width)*
 
-*Defined in [Dimension/Dimension.ts:12](https://github.com/creaux/pyxis/blob/10b280f/packages/imigary/src/Dimension/Dimension.ts#L12)*
+*Defined in [Dimension/Dimension.ts:12](https://github.com/creaux/pyxis/blob/42c6131/packages/imigary/src/Dimension/Dimension.ts#L12)*
 
 ___
 
@@ -90,7 +90,7 @@ getxDivisions(): [DerivatedDivision](../modules/_division_types_.md#derivateddiv
 
 *Overrides [DimensionAbstract](_dimension_dimensionabstract_.dimensionabstract.md).[xDivisions](_dimension_dimensionabstract_.dimensionabstract.md#xdivisions)*
 
-*Defined in [Dimension/Dimension.ts:18](https://github.com/creaux/pyxis/blob/10b280f/packages/imigary/src/Dimension/Dimension.ts#L18)*
+*Defined in [Dimension/Dimension.ts:18](https://github.com/creaux/pyxis/blob/42c6131/packages/imigary/src/Dimension/Dimension.ts#L18)*
 
 **Returns:** [DerivatedDivision](../modules/_division_types_.md#derivateddivision)
 
@@ -103,7 +103,7 @@ getxPairs(): [DerivatedDivisionPairs](../modules/_division_types_.md#derivateddi
 
 *Overrides [DimensionAbstract](_dimension_dimensionabstract_.dimensionabstract.md).[xPairs](_dimension_dimensionabstract_.dimensionabstract.md#xpairs)*
 
-*Defined in [Dimension/Dimension.ts:28](https://github.com/creaux/pyxis/blob/10b280f/packages/imigary/src/Dimension/Dimension.ts#L28)*
+*Defined in [Dimension/Dimension.ts:28](https://github.com/creaux/pyxis/blob/42c6131/packages/imigary/src/Dimension/Dimension.ts#L28)*
 
 **Returns:** [DerivatedDivisionPairs](../modules/_division_types_.md#derivateddivisionpairs)
 
@@ -116,7 +116,7 @@ getyDivisions(): [DerivatedDivision](../modules/_division_types_.md#derivateddiv
 
 *Overrides [DimensionAbstract](_dimension_dimensionabstract_.dimensionabstract.md).[yDivisions](_dimension_dimensionabstract_.dimensionabstract.md#ydivisions)*
 
-*Defined in [Dimension/Dimension.ts:23](https://github.com/creaux/pyxis/blob/10b280f/packages/imigary/src/Dimension/Dimension.ts#L23)*
+*Defined in [Dimension/Dimension.ts:23](https://github.com/creaux/pyxis/blob/42c6131/packages/imigary/src/Dimension/Dimension.ts#L23)*
 
 **Returns:** [DerivatedDivision](../modules/_division_types_.md#derivateddivision)
 
@@ -129,7 +129,7 @@ getyPairs(): [DerivatedDivisionPairs](../modules/_division_types_.md#derivateddi
 
 *Overrides [DimensionAbstract](_dimension_dimensionabstract_.dimensionabstract.md).[yPairs](_dimension_dimensionabstract_.dimensionabstract.md#ypairs)*
 
-*Defined in [Dimension/Dimension.ts:32](https://github.com/creaux/pyxis/blob/10b280f/packages/imigary/src/Dimension/Dimension.ts#L32)*
+*Defined in [Dimension/Dimension.ts:32](https://github.com/creaux/pyxis/blob/42c6131/packages/imigary/src/Dimension/Dimension.ts#L32)*
 
 **Returns:** [DerivatedDivisionPairs](../modules/_division_types_.md#derivateddivisionpairs)
 
