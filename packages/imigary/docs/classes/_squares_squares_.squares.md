@@ -45,7 +45,7 @@
 
 ⊕ **new Squares**(dimension: *[DimensionAbstract](_dimension_dimensionabstract_.dimensionabstract.md)*): [Squares](_squares_squares_.squares.md)
 
-*Defined in [Squares/Squares.ts:12](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Squares/Squares.ts#L12)*
+*Defined in [Squares/Squares.ts:12](https://github.com/creaux/pyxis/blob/1000889/packages/imigary/src/Squares/Squares.ts#L12)*
 
 **Parameters:**
 
@@ -65,7 +65,7 @@ ___
 
 **● dimension**: *[DimensionAbstract](_dimension_dimensionabstract_.dimensionabstract.md)*
 
-*Defined in [Squares/Squares.ts:15](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Squares/Squares.ts#L15)*
+*Defined in [Squares/Squares.ts:15](https://github.com/creaux/pyxis/blob/1000889/packages/imigary/src/Squares/Squares.ts#L15)*
 
 ___
 <a id="safe_max"></a>
@@ -76,7 +76,7 @@ ___
 
 *Overrides [SquaresAbstract](_squares_squaresabstract_.squaresabstract.md).[SAFE_MAX](_squares_squaresabstract_.squaresabstract.md#safe_max)*
 
-*Defined in [Squares/Squares.ts:12](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Squares/Squares.ts#L12)*
+*Defined in [Squares/Squares.ts:12](https://github.com/creaux/pyxis/blob/1000889/packages/imigary/src/Squares/Squares.ts#L12)*
 
 ___
 <a id="safe_min"></a>
@@ -87,7 +87,7 @@ ___
 
 *Overrides [SquaresAbstract](_squares_squaresabstract_.squaresabstract.md).[SAFE_MIN](_squares_squaresabstract_.squaresabstract.md#safe_min)*
 
-*Defined in [Squares/Squares.ts:11](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Squares/Squares.ts#L11)*
+*Defined in [Squares/Squares.ts:11](https://github.com/creaux/pyxis/blob/1000889/packages/imigary/src/Squares/Squares.ts#L11)*
 
 ___
 
@@ -101,9 +101,9 @@ getedges(): [Square](../modules/_squares_types_.md#square)[]
 
 *Overrides [SquaresAbstract](_squares_squaresabstract_.squaresabstract.md).[edges](_squares_squaresabstract_.squaresabstract.md#edges)*
 
-*Defined in [Squares/Squares.ts:61](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Squares/Squares.ts#L61)*
+*Defined in [Squares/Squares.ts:61](https://github.com/creaux/pyxis/blob/1000889/packages/imigary/src/Squares/Squares.ts#L61)*
 
-*__description__*: For checking whether some point is in between these edges on matrix[](./../../src/Squares/Edges.md)
+*__description__*: For checking whether some point is in between these edges on matrix. [What are edges?](./../../src/Squares/Edges.md)
 
 **Returns:** [Square](../modules/_squares_types_.md#square)[]
 Array of left and top edges and right and bottom edges of square
@@ -117,7 +117,7 @@ getsafeArea(): [Square](../modules/_squares_types_.md#square)
 
 *Overrides [SquaresAbstract](_squares_squaresabstract_.squaresabstract.md).[safeArea](_squares_squaresabstract_.squaresabstract.md#safearea)*
 
-*Defined in [Squares/Squares.ts:74](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Squares/Squares.ts#L74)*
+*Defined in [Squares/Squares.ts:74](https://github.com/creaux/pyxis/blob/1000889/packages/imigary/src/Squares/Squares.ts#L74)*
 
 *__description__*: Safe Area for rendering text
 
@@ -132,7 +132,7 @@ getsizes(): [Square](../modules/_squares_types_.md#square)[]
 
 *Overrides [SquaresAbstract](_squares_squaresabstract_.squaresabstract.md).[sizes](_squares_squaresabstract_.squaresabstract.md#sizes)*
 
-*Defined in [Squares/Squares.ts:46](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Squares/Squares.ts#L46)*
+*Defined in [Squares/Squares.ts:46](https://github.com/creaux/pyxis/blob/1000889/packages/imigary/src/Squares/Squares.ts#L46)*
 
 *__description__*: Can be constructed square from this using canvas rect on matrix
 
@@ -148,7 +148,7 @@ getsquares(): [Square](../modules/_squares_types_.md#square)[]
 
 *Overrides [SquaresAbstract](_squares_squaresabstract_.squaresabstract.md).[squares](_squares_squaresabstract_.squaresabstract.md#squares)*
 
-*Defined in [Squares/Squares.ts:32](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Squares/Squares.ts#L32)*
+*Defined in [Squares/Squares.ts:32](https://github.com/creaux/pyxis/blob/1000889/packages/imigary/src/Squares/Squares.ts#L32)*
 
 *__description__*: Coordinates based description of the square on matrix using 4 corners
 
@@ -164,7 +164,7 @@ getxPairsEdges(): [DerivatedDivisionPairs](../modules/_division_types_.md#deriva
 
 *Overrides [SquaresAbstract](_squares_squaresabstract_.squaresabstract.md).[xPairsEdges](_squares_squaresabstract_.squaresabstract.md#xpairsedges)*
 
-*Defined in [Squares/Squares.ts:20](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Squares/Squares.ts#L20)*
+*Defined in [Squares/Squares.ts:20](https://github.com/creaux/pyxis/blob/1000889/packages/imigary/src/Squares/Squares.ts#L20)*
 
 **Returns:** [DerivatedDivisionPairs](../modules/_division_types_.md#derivateddivisionpairs)
 
@@ -177,7 +177,7 @@ getyPairsEdges(): [DerivatedDivisionPairs](../modules/_division_types_.md#deriva
 
 *Overrides [SquaresAbstract](_squares_squaresabstract_.squaresabstract.md).[yPairsEdges](_squares_squaresabstract_.squaresabstract.md#ypairsedges)*
 
-*Defined in [Squares/Squares.ts:24](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Squares/Squares.ts#L24)*
+*Defined in [Squares/Squares.ts:24](https://github.com/creaux/pyxis/blob/1000889/packages/imigary/src/Squares/Squares.ts#L24)*
 
 **Returns:** [DerivatedDivisionPairs](../modules/_division_types_.md#derivateddivisionpairs)
 

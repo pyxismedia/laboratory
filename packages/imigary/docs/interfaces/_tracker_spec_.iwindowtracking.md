@@ -2588,7 +2588,7 @@ ___
 
 **● tracking**: *`object`*
 
-*Defined in [Tracker/spec.ts:6](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Tracker/spec.ts#L6)*
+*Defined in [Tracker/spec.ts:6](https://github.com/creaux/pyxis/blob/1000889/packages/imigary/src/Tracker/spec.ts#L6)*
 
 #### Type declaration
 

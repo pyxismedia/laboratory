@@ -43,7 +43,7 @@
 
 ⊕ **new Division**(max: *`number`*): [Division](_division_division_.division.md)
 
-*Defined in [Division/Division.ts:16](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Division/Division.ts#L16)*
+*Defined in [Division/Division.ts:16](https://github.com/creaux/pyxis/blob/1000889/packages/imigary/src/Division/Division.ts#L16)*
 
 **Parameters:**
 
@@ -65,7 +65,7 @@ ___
 
 *Overrides [DivisionAbstract](_division_divisionabstract_.divisionabstract.md).[max](_division_divisionabstract_.divisionabstract.md#max)*
 
-*Defined in [Division/Division.ts:19](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Division/Division.ts#L19)*
+*Defined in [Division/Division.ts:19](https://github.com/creaux/pyxis/blob/1000889/packages/imigary/src/Division/Division.ts#L19)*
 
 ___
 <a id="sequence"></a>
@@ -83,7 +83,7 @@ ___
 
 *Inherited from [DivisionAbstract](_division_divisionabstract_.divisionabstract.md).[sequence](_division_divisionabstract_.divisionabstract.md#sequence)*
 
-*Defined in [Division/DivisionAbstract.ts:5](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Division/DivisionAbstract.ts#L5)*
+*Defined in [Division/DivisionAbstract.ts:5](https://github.com/creaux/pyxis/blob/1000889/packages/imigary/src/Division/DivisionAbstract.ts#L5)*
 
 ___
 
@@ -97,7 +97,7 @@ getreverse(): [DerivatedDivision](../modules/_division_types_.md#derivateddivisi
 
 *Overrides [DivisionAbstract](_division_divisionabstract_.divisionabstract.md).[reverse](_division_divisionabstract_.divisionabstract.md#reverse)*
 
-*Defined in [Division/Division.ts:29](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Division/Division.ts#L29)*
+*Defined in [Division/Division.ts:29](https://github.com/creaux/pyxis/blob/1000889/packages/imigary/src/Division/Division.ts#L29)*
 
 **Returns:** [DerivatedDivision](../modules/_division_types_.md#derivateddivision)
 
@@ -110,7 +110,7 @@ getscale(): [DerivatedDivision](../modules/_division_types_.md#derivateddivision
 
 *Overrides [DivisionAbstract](_division_divisionabstract_.divisionabstract.md).[scale](_division_divisionabstract_.divisionabstract.md#scale)*
 
-*Defined in [Division/Division.ts:40](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Division/Division.ts#L40)*
+*Defined in [Division/Division.ts:40](https://github.com/creaux/pyxis/blob/1000889/packages/imigary/src/Division/Division.ts#L40)*
 
 **Returns:** [DerivatedDivision](../modules/_division_types_.md#derivateddivision)
 
@@ -123,7 +123,7 @@ getstraight(): [DerivatedDivision](../modules/_division_types_.md#derivateddivis
 
 *Overrides [DivisionAbstract](_division_divisionabstract_.divisionabstract.md).[straight](_division_divisionabstract_.divisionabstract.md#straight)*
 
-*Defined in [Division/Division.ts:24](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Division/Division.ts#L24)*
+*Defined in [Division/Division.ts:24](https://github.com/creaux/pyxis/blob/1000889/packages/imigary/src/Division/Division.ts#L24)*
 
 **Returns:** [DerivatedDivision](../modules/_division_types_.md#derivateddivision)
 
@@ -137,7 +137,7 @@ ___
 
 ▸ **pairs**(scale: *[DerivatedDivision](../modules/_division_types_.md#derivateddivision)*): [DerivatedDivisionPairs](../modules/_division_types_.md#derivateddivisionpairs)
 
-*Defined in [Division/Division.ts:6](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Division/Division.ts#L6)*
+*Defined in [Division/Division.ts:6](https://github.com/creaux/pyxis/blob/1000889/packages/imigary/src/Division/Division.ts#L6)*
 
 **Parameters:**
 

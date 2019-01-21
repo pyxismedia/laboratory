@@ -50,7 +50,7 @@
 
 **● corners**: *[Coordinates](../modules/_squares_types_.md#coordinates)[]*
 
-*Defined in [ActiveSquares/ActiveSquaresAbstract.ts:10](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/ActiveSquares/ActiveSquaresAbstract.ts#L10)*
+*Defined in [ActiveSquares/ActiveSquaresAbstract.ts:10](https://github.com/creaux/pyxis/blob/1000889/packages/imigary/src/ActiveSquares/ActiveSquaresAbstract.ts#L10)*
 
 ___
 <a id="dimension"></a>
@@ -59,7 +59,7 @@ ___
 
 **● dimension**: *[DimensionAbstract](_dimension_dimensionabstract_.dimensionabstract.md)*
 
-*Defined in [ActiveSquares/ActiveSquaresAbstract.ts:9](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/ActiveSquares/ActiveSquaresAbstract.ts#L9)*
+*Defined in [ActiveSquares/ActiveSquaresAbstract.ts:9](https://github.com/creaux/pyxis/blob/1000889/packages/imigary/src/ActiveSquares/ActiveSquaresAbstract.ts#L9)*
 
 ___
 <a id="getinactive"></a>
@@ -70,7 +70,7 @@ ___
 
 *Implementation of [IActiveSquares](../interfaces/_activesquares_types_.iactivesquares.md).[getInactive](../interfaces/_activesquares_types_.iactivesquares.md#getinactive)*
 
-*Defined in [ActiveSquares/ActiveSquaresAbstract.ts:12](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/ActiveSquares/ActiveSquaresAbstract.ts#L12)*
+*Defined in [ActiveSquares/ActiveSquaresAbstract.ts:12](https://github.com/creaux/pyxis/blob/1000889/packages/imigary/src/ActiveSquares/ActiveSquaresAbstract.ts#L12)*
 
 #### Type declaration
 ▸(square: *[Square](../modules/_squares_types_.md#square)*): `function`
@@ -90,7 +90,7 @@ ___
 
 **● inactive**: *`boolean`[]*
 
-*Defined in [ActiveSquares/ActiveSquaresAbstract.ts:11](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/ActiveSquares/ActiveSquaresAbstract.ts#L11)*
+*Defined in [ActiveSquares/ActiveSquaresAbstract.ts:11](https://github.com/creaux/pyxis/blob/1000889/packages/imigary/src/ActiveSquares/ActiveSquaresAbstract.ts#L11)*
 
 ___
 <a id="inactiveedges"></a>
@@ -101,7 +101,7 @@ ___
 
 *Implementation of [IActiveSquares](../interfaces/_activesquares_types_.iactivesquares.md).[inactiveEdges](../interfaces/_activesquares_types_.iactivesquares.md#inactiveedges)*
 
-*Defined in [ActiveSquares/ActiveSquaresAbstract.ts:15](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/ActiveSquares/ActiveSquaresAbstract.ts#L15)*
+*Defined in [ActiveSquares/ActiveSquaresAbstract.ts:15](https://github.com/creaux/pyxis/blob/1000889/packages/imigary/src/ActiveSquares/ActiveSquaresAbstract.ts#L15)*
 
 ___
 <a id="safe_max"></a>
@@ -112,7 +112,7 @@ ___
 
 *Inherited from [SquaresAbstract](_squares_squaresabstract_.squaresabstract.md).[SAFE_MAX](_squares_squaresabstract_.squaresabstract.md#safe_max)*
 
-*Defined in [Squares/SquaresAbstract.ts:6](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Squares/SquaresAbstract.ts#L6)*
+*Defined in [Squares/SquaresAbstract.ts:6](https://github.com/creaux/pyxis/blob/1000889/packages/imigary/src/Squares/SquaresAbstract.ts#L6)*
 
 ___
 <a id="safe_min"></a>
@@ -123,7 +123,7 @@ ___
 
 *Inherited from [SquaresAbstract](_squares_squaresabstract_.squaresabstract.md).[SAFE_MIN](_squares_squaresabstract_.squaresabstract.md#safe_min)*
 
-*Defined in [Squares/SquaresAbstract.ts:5](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Squares/SquaresAbstract.ts#L5)*
+*Defined in [Squares/SquaresAbstract.ts:5](https://github.com/creaux/pyxis/blob/1000889/packages/imigary/src/Squares/SquaresAbstract.ts#L5)*
 
 ___
 
@@ -137,7 +137,7 @@ getedges(): [Square](../modules/_squares_types_.md#square)[]
 
 *Inherited from [SquaresAbstract](_squares_squaresabstract_.squaresabstract.md).[edges](_squares_squaresabstract_.squaresabstract.md#edges)*
 
-*Defined in [Squares/SquaresAbstract.ts:11](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Squares/SquaresAbstract.ts#L11)*
+*Defined in [Squares/SquaresAbstract.ts:11](https://github.com/creaux/pyxis/blob/1000889/packages/imigary/src/Squares/SquaresAbstract.ts#L11)*
 
 **Returns:** [Square](../modules/_squares_types_.md#square)[]
 
@@ -150,7 +150,7 @@ getsafeArea(): [Square](../modules/_squares_types_.md#square)
 
 *Inherited from [SquaresAbstract](_squares_squaresabstract_.squaresabstract.md).[safeArea](_squares_squaresabstract_.squaresabstract.md#safearea)*
 
-*Defined in [Squares/SquaresAbstract.ts:12](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Squares/SquaresAbstract.ts#L12)*
+*Defined in [Squares/SquaresAbstract.ts:12](https://github.com/creaux/pyxis/blob/1000889/packages/imigary/src/Squares/SquaresAbstract.ts#L12)*
 
 **Returns:** [Square](../modules/_squares_types_.md#square)
 
@@ -161,7 +161,7 @@ ___
 
 getsafeAreaInactiveSquares(): `boolean`[]
 
-*Defined in [ActiveSquares/ActiveSquaresAbstract.ts:16](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/ActiveSquares/ActiveSquaresAbstract.ts#L16)*
+*Defined in [ActiveSquares/ActiveSquaresAbstract.ts:16](https://github.com/creaux/pyxis/blob/1000889/packages/imigary/src/ActiveSquares/ActiveSquaresAbstract.ts#L16)*
 
 **Returns:** `boolean`[]
 
@@ -172,7 +172,7 @@ ___
 
 getsafeAreaSquares(): `boolean`[]
 
-*Defined in [ActiveSquares/ActiveSquaresAbstract.ts:14](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/ActiveSquares/ActiveSquaresAbstract.ts#L14)*
+*Defined in [ActiveSquares/ActiveSquaresAbstract.ts:14](https://github.com/creaux/pyxis/blob/1000889/packages/imigary/src/ActiveSquares/ActiveSquaresAbstract.ts#L14)*
 
 **Returns:** `boolean`[]
 
@@ -185,7 +185,7 @@ getsizes(): [Square](../modules/_squares_types_.md#square)[]
 
 *Inherited from [SquaresAbstract](_squares_squaresabstract_.squaresabstract.md).[sizes](_squares_squaresabstract_.squaresabstract.md#sizes)*
 
-*Defined in [Squares/SquaresAbstract.ts:10](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Squares/SquaresAbstract.ts#L10)*
+*Defined in [Squares/SquaresAbstract.ts:10](https://github.com/creaux/pyxis/blob/1000889/packages/imigary/src/Squares/SquaresAbstract.ts#L10)*
 
 **Returns:** [Square](../modules/_squares_types_.md#square)[]
 
@@ -198,7 +198,7 @@ getsquares(): [Square](../modules/_squares_types_.md#square)[]
 
 *Inherited from [SquaresAbstract](_squares_squaresabstract_.squaresabstract.md).[squares](_squares_squaresabstract_.squaresabstract.md#squares)*
 
-*Defined in [Squares/SquaresAbstract.ts:9](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Squares/SquaresAbstract.ts#L9)*
+*Defined in [Squares/SquaresAbstract.ts:9](https://github.com/creaux/pyxis/blob/1000889/packages/imigary/src/Squares/SquaresAbstract.ts#L9)*
 
 **Returns:** [Square](../modules/_squares_types_.md#square)[]
 
@@ -211,7 +211,7 @@ getxPairsEdges(): [DerivatedDivisionPairs](../modules/_division_types_.md#deriva
 
 *Inherited from [SquaresAbstract](_squares_squaresabstract_.squaresabstract.md).[xPairsEdges](_squares_squaresabstract_.squaresabstract.md#xpairsedges)*
 
-*Defined in [Squares/SquaresAbstract.ts:7](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Squares/SquaresAbstract.ts#L7)*
+*Defined in [Squares/SquaresAbstract.ts:7](https://github.com/creaux/pyxis/blob/1000889/packages/imigary/src/Squares/SquaresAbstract.ts#L7)*
 
 **Returns:** [DerivatedDivisionPairs](../modules/_division_types_.md#derivateddivisionpairs)
 
@@ -224,7 +224,7 @@ getyPairsEdges(): [DerivatedDivisionPairs](../modules/_division_types_.md#deriva
 
 *Inherited from [SquaresAbstract](_squares_squaresabstract_.squaresabstract.md).[yPairsEdges](_squares_squaresabstract_.squaresabstract.md#ypairsedges)*
 
-*Defined in [Squares/SquaresAbstract.ts:8](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Squares/SquaresAbstract.ts#L8)*
+*Defined in [Squares/SquaresAbstract.ts:8](https://github.com/creaux/pyxis/blob/1000889/packages/imigary/src/Squares/SquaresAbstract.ts#L8)*
 
 **Returns:** [DerivatedDivisionPairs](../modules/_division_types_.md#derivateddivisionpairs)
 
@@ -238,7 +238,7 @@ ___
 
 ▸ **generateInactive**(): `boolean`[]
 
-*Defined in [ActiveSquares/ActiveSquaresAbstract.ts:13](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/ActiveSquares/ActiveSquaresAbstract.ts#L13)*
+*Defined in [ActiveSquares/ActiveSquaresAbstract.ts:13](https://github.com/creaux/pyxis/blob/1000889/packages/imigary/src/ActiveSquares/ActiveSquaresAbstract.ts#L13)*
 
 **Returns:** `boolean`[]
 

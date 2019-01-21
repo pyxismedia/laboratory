@@ -9451,7 +9451,7 @@
   ]
 ]
 
-*Defined in [mock.ts:2](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/mock.ts#L2)*
+*Defined in [mock.ts:2](https://github.com/creaux/pyxis/blob/1000889/packages/imigary/src/mock.ts#L2)*
 
 ___
 

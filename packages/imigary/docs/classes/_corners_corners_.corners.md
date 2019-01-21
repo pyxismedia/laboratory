@@ -39,7 +39,7 @@
 
 ⊕ **new Corners**(context: *`any`*): [Corners](_corners_corners_.corners.md)
 
-*Defined in [Corners/Corners.ts:7](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Corners/Corners.ts#L7)*
+*Defined in [Corners/Corners.ts:7](https://github.com/creaux/pyxis/blob/1000889/packages/imigary/src/Corners/Corners.ts#L7)*
 
 **Parameters:**
 
@@ -59,7 +59,7 @@ ___
 
 **● context**: *`any`*
 
-*Defined in [Corners/Corners.ts:8](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Corners/Corners.ts#L8)*
+*Defined in [Corners/Corners.ts:8](https://github.com/creaux/pyxis/blob/1000889/packages/imigary/src/Corners/Corners.ts#L8)*
 
 ___
 
@@ -75,7 +75,7 @@ ___
 
 *Overrides [CornerAbstract](_corners_cornersabstract_.cornerabstract.md).[fill](_corners_cornersabstract_.cornerabstract.md#fill)*
 
-*Defined in [Corners/Corners.ts:22](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Corners/Corners.ts#L22)*
+*Defined in [Corners/Corners.ts:22](https://github.com/creaux/pyxis/blob/1000889/packages/imigary/src/Corners/Corners.ts#L22)*
 
 **Returns:** `void`
 
@@ -90,7 +90,7 @@ ___
 
 *Overrides [CornerAbstract](_corners_cornersabstract_.cornerabstract.md).[rectFromPairs](_corners_cornersabstract_.cornerabstract.md#rectfrompairs)*
 
-*Defined in [Corners/Corners.ts:12](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Corners/Corners.ts#L12)*
+*Defined in [Corners/Corners.ts:12](https://github.com/creaux/pyxis/blob/1000889/packages/imigary/src/Corners/Corners.ts#L12)*
 
 **Parameters:**
 
@@ -111,7 +111,7 @@ ___
 
 *Overrides [CornerAbstract](_corners_cornersabstract_.cornerabstract.md).[style](_corners_cornersabstract_.cornerabstract.md#style)*
 
-*Defined in [Corners/Corners.ts:18](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Corners/Corners.ts#L18)*
+*Defined in [Corners/Corners.ts:18](https://github.com/creaux/pyxis/blob/1000889/packages/imigary/src/Corners/Corners.ts#L18)*
 
 **Parameters:**
 

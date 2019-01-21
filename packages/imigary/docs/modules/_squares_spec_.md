@@ -18,7 +18,7 @@
 
 ▸ **createDimension**(xPairs: *[DerivatedDivisionPairs](_division_types_.md#derivateddivisionpairs)*, yPairs: *[DerivatedDivisionPairs](_division_types_.md#derivateddivisionpairs)*): `Dimension`
 
-*Defined in [Squares/spec.ts:7](https://github.com/creaux/pyxis/blob/f13ba2a/packages/imigary/src/Squares/spec.ts#L7)*
+*Defined in [Squares/spec.ts:7](https://github.com/creaux/pyxis/blob/1000889/packages/imigary/src/Squares/spec.ts#L7)*
 
 **Parameters:**
 
