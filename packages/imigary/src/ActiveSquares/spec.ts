@@ -1,7 +1,8 @@
 import ava, { Assertions } from 'ava';
 import { ActiveSquares } from './ActiveSquares';
 import { SquaresAbstract } from '../Squares/SquaresAbstract';
-import { Square, SafeAreaTuple } from '../Squares/types';
+import { Square } from '../Squares/types';
+import { Dimension } from '../Dimension/Dimension';
 
 class Squares extends SquaresAbstract {
   public squares!: Square[]; 
@@ -15,15 +16,15 @@ class Squares extends SquaresAbstract {
     return [[1,2]];
   };
 
-  public get safeArea(): SafeAreaTuple  {
+  public get safeArea(): Square  {
     return [[0, 2], [3, 4]];
   }
 }
 
 ava('should provide inactive', (t: Assertions) => {
-  const expected = [true];
-  const squares = new Squares();
-  const activeSquares = new ActiveSquares(squares, [[1,2], [2,3]]);
+  const expected = [false];
+  const dimension = new Dimension(2, 2);
+  const activeSquares = new ActiveSquares(dimension, [[1,2], [2,3]]);
   console.log(activeSquares.inactive);
   t.deepEqual(activeSquares.inactive, expected);
 });

@@ -1,5 +1,5 @@
 import { DerivatedDivisionPairs } from '../Division/types';
-import { Square, ISquares, SafeArea, SafeAreaTuple } from './types';
+import { Square, ISquares, SafeArea } from './types';
 
 export abstract class SquaresAbstract implements ISquares {
   protected static SAFE_MIN: SafeArea;
@@ -9,5 +9,5 @@ export abstract class SquaresAbstract implements ISquares {
   public abstract get squares(): Square[]
   public abstract get sizes(): Square[]
   public abstract get edges(): Square[];
-  public abstract get safeArea(): SafeAreaTuple;
+  public abstract get safeArea(): Square;
 }

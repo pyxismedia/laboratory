@@ -6,6 +6,9 @@ import { Square, Coordinates, Squares } from '../Squares';
 import { DimensionAbstract } from '../Dimension';
 import { memoize } from '@pyxis/decorators/build/memoize';
 
+/**
+ * @description 
+ */
 export class ActiveSquares extends Squares implements IActiveSquares {
   constructor(
     protected readonly dimension: DimensionAbstract,
@@ -85,6 +88,9 @@ export class ActiveSquares extends Squares implements IActiveSquares {
     return result;
   }
 
+  /**
+   * @description get all active squares in safe area
+   */
   @memoize public get safeAreaActiveSquares(): boolean[] {
     const result = [];
     for (let i = 0; i < this.safeAreaSquares.length; i++) {

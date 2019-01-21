@@ -1,6 +1,6 @@
 import flatten from 'lodash/flatten';
 // Module
-import { Square, SafeArea, SafeAreaTuple } from './types';
+import { Square, SafeArea } from './types';
 import { SquaresAbstract } from './SquaresAbstract';
 // Dependencies
 import { DerivatedDivisionPairs } from '../Division';
@@ -26,8 +26,8 @@ export class Squares extends SquaresAbstract {
   }
 
   /**
-   * @returns Array of coordinates x,y of each corner of square
-   * @description Coordinates based description of the square on matrix
+   * @returns Array of coordinates x,y of 4 corners of square
+   * @description Coordinates based description of the square on matrix using 4 corners
    */
   @memoize public get squares(): Square[] {
     return flatten(
@@ -55,8 +55,8 @@ export class Squares extends SquaresAbstract {
   }
 
   /**
-   * @returns Array of lowest edges and highest edges of square
-   * @description For checking whether some point is in between these edges on matrix
+   * @returns Array of left and top edges and right and bottom edges of square
+   * @description For checking whether some point is in between these edges on matrix ![](./Edges.md)
    */
   @memoize public get edges(): Square[] {
     return flatten(
@@ -71,7 +71,7 @@ export class Squares extends SquaresAbstract {
   /**
    * @description Safe Area for rendering text
    */
-  @memoize public get safeArea(): SafeAreaTuple {
+  @memoize public get safeArea(): Square {
     return [this.edges[Squares.SAFE_MIN][0], this.edges[Squares.SAFE_MAX][1]];
   }
 }

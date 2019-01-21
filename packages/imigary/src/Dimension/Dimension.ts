@@ -4,6 +4,9 @@ import { DimensionAbstract } from './DimensionAbstract';
 import { Division } from '../Division';
 import { DerivatedDivision, DerivatedDivisionPairs } from '../Division/types';
 
+/**
+ * @description represent divisions for x and y
+ */
 export class Dimension extends DimensionAbstract {
   constructor(
     protected readonly width: number,
