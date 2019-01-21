@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ICorners | @pyxis/imigary</title>
+	<title>CornerAbstract | @pyxis/imigary</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_corners_types_.html">&quot;Corners/types&quot;</a>
+					<a href="../modules/_corners_cornersabstract_.html">&quot;Corners/CornersAbstract&quot;</a>
 				</li>
 				<li>
-					<a href="_corners_types_.icorners.html">ICorners</a>
+					<a href="_corners_cornersabstract_.cornerabstract.html">CornerAbstract</a>
 				</li>
 			</ul>
-			<h1>Interface ICorners</h1>
+			<h1>Class CornerAbstract</h1>
 		</div>
 	</div>
 </header>
@@ -73,16 +73,19 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">ICorners</span>
+						<span class="target">CornerAbstract</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<a href="_corners_corners_.corners.html" class="tsd-signature-type">Corners</a>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
 			<section class="tsd-panel">
-				<h3>Implemented by</h3>
+				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../classes/_corners_cornersabstract_.cornerabstract.html" class="tsd-signature-type">CornerAbstract</a></li>
-					<li><a href="../classes/_corners_corners_.corners.html" class="tsd-signature-type">Corners</a></li>
-					<li><a href="../classes/_corners_corners_.corners.html" class="tsd-signature-type">Corners</a></li>
+					<li><a href="../interfaces/_corners_types_.icorners.html" class="tsd-signature-type">ICorners</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -92,9 +95,9 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_corners_types_.icorners.html#fill" class="tsd-kind-icon">fill</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_corners_types_.icorners.html#rectfrompairs" class="tsd-kind-icon">rect<wbr>From<wbr>Pairs</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_corners_types_.icorners.html#style" class="tsd-kind-icon">style</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_corners_cornersabstract_.cornerabstract.html#fill" class="tsd-kind-icon">fill</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_corners_cornersabstract_.cornerabstract.html#rectfrompairs" class="tsd-kind-icon">rect<wbr>From<wbr>Pairs</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_corners_cornersabstract_.cornerabstract.html#style" class="tsd-kind-icon">style</a></li>
 							</ul>
 						</section>
 					</div>
@@ -102,34 +105,36 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="fill" class="tsd-anchor"></a>
-					<h3>fill</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> fill</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 						<li class="tsd-signature tsd-kind-icon">fill<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_corners_types_.icorners.html">ICorners</a>.<a href="../interfaces/_corners_types_.icorners.html#fill">fill</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/creaux/pyxis/blob/164b3d2/packages/imigary/src/Corners/types.ts#L5">Corners/types.ts:5</a></li>
+									<li>Defined in <a href="https://github.com/creaux/pyxis/blob/d510af8/packages/imigary/src/Corners/CornersAbstract.ts#L6">Corners/CornersAbstract.ts:6</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="rectfrompairs" class="tsd-anchor"></a>
-					<h3>rect<wbr>From<wbr>Pairs</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> rect<wbr>From<wbr>Pairs</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 						<li class="tsd-signature tsd-kind-icon">rect<wbr>From<wbr>Pairs<span class="tsd-signature-symbol">(</span>pairs<span class="tsd-signature-symbol">: </span><a href="../modules/_squares_types_.html#coordinates" class="tsd-signature-type">Coordinates</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_corners_types_.icorners.html">ICorners</a>.<a href="../interfaces/_corners_types_.icorners.html#rectfrompairs">rectFromPairs</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/creaux/pyxis/blob/164b3d2/packages/imigary/src/Corners/types.ts#L3">Corners/types.ts:3</a></li>
+									<li>Defined in <a href="https://github.com/creaux/pyxis/blob/d510af8/packages/imigary/src/Corners/CornersAbstract.ts#L4">Corners/CornersAbstract.ts:4</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -142,17 +147,18 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="style" class="tsd-anchor"></a>
-					<h3>style</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> style</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 						<li class="tsd-signature tsd-kind-icon">style<span class="tsd-signature-symbol">(</span>styles<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_corners_types_.icorners.html">ICorners</a>.<a href="../interfaces/_corners_types_.icorners.html#style">style</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/creaux/pyxis/blob/164b3d2/packages/imigary/src/Corners/types.ts#L4">Corners/types.ts:4</a></li>
+									<li>Defined in <a href="https://github.com/creaux/pyxis/blob/d510af8/packages/imigary/src/Corners/CornersAbstract.ts#L5">Corners/CornersAbstract.ts:5</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -174,7 +180,7 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_corners_types_.html">"<wbr>Corners/types"</a>
+						<a href="../modules/_corners_cornersabstract_.html">"<wbr>Corners/<wbr>Corners<wbr>Abstract"</a>
 					</li>
 				</ul>
 			</nav>
@@ -182,17 +188,17 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_corners_types_.icorners.html" class="tsd-kind-icon">ICorners</a>
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_corners_cornersabstract_.cornerabstract.html" class="tsd-kind-icon">Corner<wbr>Abstract</a>
 						<ul>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="_corners_types_.icorners.html#fill" class="tsd-kind-icon">fill</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_corners_cornersabstract_.cornerabstract.html#fill" class="tsd-kind-icon">fill</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="_corners_types_.icorners.html#rectfrompairs" class="tsd-kind-icon">rect<wbr>From<wbr>Pairs</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_corners_cornersabstract_.cornerabstract.html#rectfrompairs" class="tsd-kind-icon">rect<wbr>From<wbr>Pairs</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="_corners_types_.icorners.html#style" class="tsd-kind-icon">style</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_corners_cornersabstract_.cornerabstract.html#style" class="tsd-kind-icon">style</a>
 							</li>
 						</ul>
 					</li>
