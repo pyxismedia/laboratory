@@ -9,19 +9,4 @@ module.exports = merge(typescriptCss({
     'logo': './src/components/logo',
   },
   externals: [externals()],
-}),
-// TODO Remove when extracted to imigary
-// {
-//   module: {
-//     rules: [{
-//       test: require.resolve('tracking'),
-//       loader: 'imports-loader?this=>window'
-//     }],
-//   },
-//   plugins: [
-//     new webpack.ProvidePlugin({
-//       tracking: 'tracking',
-//     }),
-//   ],
-// }
-);
+}));

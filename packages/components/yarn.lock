@@ -908,15 +908,6 @@
   resolved "https://registry.npmjs.org/@nodelib/fs.stat/-/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
   integrity sha512-shAmDyaQC4H92APFoIaVDHCx5bStIocgvbwQyxPRrbUY20V1EYTbSDchWbuwlMG3V17cprZhA6+78JfB+3DTPw==
 
-"@pyxis/imigary@^0.0.2":
-  version "0.0.2"
-  resolved "https://pyxis-npm.herokuapp.com/@pyxis%2fimigary/-/imigary-0.0.2.tgz#8a94499aefae61b1031a4aebc6af351b16339a5a"
-  integrity sha512-eDRzJwtXfX/Ww768B2h+E1ZUp6EDKm2thNdZtcqi1ydbUtZenKHfAbs8iD2WGhzR8E/UvrMj2AVBwXHDIUVCNg==
-  dependencies:
-    lodash "^4.17.11"
-    tracking "^1.1.3"
-    typescript "^3.2.2"
-
 "@pyxis/loaders@^0.0.21":
   version "0.0.21"
   resolved "https://pyxis-npm.herokuapp.com/@pyxis%2floaders/-/loaders-0.0.21.tgz#e937025593965cf96287d5bcc23385d9565b72c6"
@@ -8878,7 +8869,7 @@ typedarray@^0.0.6:
   resolved "https://registry.npmjs.org/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@^3.1.6, typescript@^3.2.2:
+typescript@^3.1.6:
   version "3.2.2"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.2.2.tgz#fe8101c46aa123f8353523ebdcf5730c2ae493e5"
   integrity sha512-VCj5UiSyHBjwfYacmDuc/NOk4QQixbE+Wn7MFJuS0nRuPQbof132Pw4u53dm264O8LPc2MVsc7RJNml5szurkg==

@@ -7,6 +7,7 @@ import {ts} from "../../parts/ts";
 import {target as targets} from "../../parts/target";
 import { Extension, extensions as extension } from '../../parts/extensions';
 import { TypescriptArgs, TypescriptConfig } from "./types";
+import { pyxis } from '../../parts/pyxis';
 
 export const typescript = ({ entry = Entry.INDEX_TS, extensions = [Extension.TS, Extension.TSX, Extension.JS], mode = Mode.development,
                              target, cleanPath, externals }: TypescriptArgs): TypescriptConfig => merge(
@@ -17,4 +18,5 @@ export const typescript = ({ entry = Entry.INDEX_TS, extensions = [Extension.TS,
   ts(),
   modes({ mode }),
   targets({ target, externals }),
+  pyxis(),
 );

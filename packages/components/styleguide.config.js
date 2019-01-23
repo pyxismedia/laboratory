@@ -15,22 +15,9 @@ module.exports = {
         ignored: [
           /node_modules([\\]+|\/)+(?!@pyxis)/, 
           /\@pyxis([\\]+|\/)node_modules/
-        ]
-      }
-    }
-    // {
-    //   module: {
-    //     rules: [{
-    //       test: require.resolve('tracking'),
-    //       loader: 'imports-loader?this=>window'
-    //     }],
-    //   },
-    //   plugins: [
-    //     new webpack.ProvidePlugin({
-    //       tracking: 'tracking',
-    //     }),
-    //   ],
-    // }
+        ],
+      },
+    },
   ),
   components: [
     './src/components/**/index.ts',
