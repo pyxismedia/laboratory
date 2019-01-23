@@ -3,6 +3,25 @@ import { ActiveSquares } from './ActiveSquares';
 import { SquaresAbstract } from '../Squares/SquaresAbstract';
 import { Square } from '../Squares/types';
 import { Dimension } from '../Dimension/Dimension';
+import prequire from 'proxyquire';
+
+const { assign, defineProperty } = Object;
+
+function memoize(target: any, propertyKey: string, descriptor: PropertyDescriptor) {
+  const original = assign({}, descriptor);
+
+  defineProperty(descriptor, 'get', {
+    get() {
+      return function() {
+        return original;
+      }
+    }
+  });
+}
+
+const { typescript } = prequire.noCallThru()('./ActiveSquares', {
+  '@pyxis/decorators/build/memoize': { memoize }
+});
 
 class Squares extends SquaresAbstract {
   public squares!: Square[]; 
