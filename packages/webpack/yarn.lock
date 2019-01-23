@@ -842,6 +842,11 @@
   resolved "https://registry.yarnpkg.com/@nodelib/fs.stat/-/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
   integrity sha512-shAmDyaQC4H92APFoIaVDHCx5bStIocgvbwQyxPRrbUY20V1EYTbSDchWbuwlMG3V17cprZhA6+78JfB+3DTPw==
 
+"@pyxis/loaders@^0.0.21":
+  version "0.0.21"
+  resolved "https://pyxis-npm.herokuapp.com/@pyxis%2floaders/-/loaders-0.0.21.tgz#e937025593965cf96287d5bcc23385d9565b72c6"
+  integrity sha512-7QZAfgcSQ3+vphFMGcr7ipqikmPABWJKS3Efq0X2rOKDKUg4t6/mGA54gsm7HDsXVw+7h0Gw76OB81kMiMiZSA==
+
 "@samverschueren/stream-to-observable@^0.3.0":
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/@samverschueren/stream-to-observable/-/stream-to-observable-0.3.0.tgz#ecdf48d532c58ea477acfcab80348424f8d0662f"
