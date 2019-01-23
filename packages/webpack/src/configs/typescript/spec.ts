@@ -24,9 +24,13 @@ const { typescript } = prequire.noCallThru()('./config', {
     }
   },
   '../../parts/ts': { ts: () => 'ts' },
-  '../../parts/mode': { mode: ({ mode }: { mode: string }) => ({ mode }) },
+  '../../parts/mode': {
+    mode: ({ mode }: { mode: string }) => ({ mode }),
+    Mode: { DEVELOPMENT: 'development' },
+  },
   '../../parts/target': { target: ({ target }: { target: string }) => ({ target }) },
   'webpack-merge': (...data: any) => ([ ...data ]),
+  '../../parts/pyxis': { pyxis: () => 'pyxis' },
 });
 
 ava('should generate default prod config', (t) => {
@@ -38,6 +42,7 @@ ava('should generate default prod config', (t) => {
     'ts',
     { mode: undefined },
     { target: undefined },
+    'pyxis',
   ];
 
   const result = typescript({});
@@ -54,6 +59,7 @@ ava('should generate customized config', (t) => {
     'ts',
     { mode: Mode.development },
     { target: Target.WEB },
+    'pyxis',
   ];
 
   const result = typescript({

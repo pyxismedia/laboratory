@@ -1,7 +1,8 @@
 import prequire from 'proxyquire';
 import ava from 'ava';
 
-const { babelrc } = prequire('./babelrc', {
+// FIXME: Preshaps conflict with json file
+const { babelrc } = prequire.noCallThru()('./babelrc.js', {
   '@babel/preset-env': { default: '@babel/preset-env' },
   '@babel/preset-typescript': { default: '@babel/preset-typescript' },
   '@babel/preset-react': { default: '@babel/preset-react' },
@@ -14,6 +15,7 @@ ava('should return expected values', (t) => {
     presets: ['@babel/preset-env', '@babel/preset-typescript', '@babel/preset-react'],
     plugins: ['@babel/plugin-proposal-class-properties', '@babel/plugin-proposal-object-rest-spread'],
   };
+  console.log('TEST', babelrc);
 
   t.deepEqual(babelrc, expected);
 });

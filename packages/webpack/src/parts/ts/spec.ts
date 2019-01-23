@@ -3,14 +3,25 @@ import prequire from 'proxyquire';
 import { enforce } from './part';
 
 class ForkTsCheckerWebpackPlugin {
-  tsconfig: string;
+  public tsconfig: string;
   constructor({ tsconfig }: { tsconfig: string }) {
     this.tsconfig = tsconfig;
   }
 }
 
+class PrepackPlugin {
+  public configuration = {
+    test: /\.tsx?($|\?)/i,
+    prepack: {},
+    options: {
+      sourceMap: true,
+    },
+  }
+}
+
 const { ts } = prequire.noCallThru()('./part', {
   'fork-ts-checker-webpack-plugin': ForkTsCheckerWebpackPlugin,
+  'prepack-webpack-plugin': PrepackPlugin,
   './babelrc': { babelrc: 'babelrc' },
   '../../constants': { resolve: (modules: string) => modules },
   path: { resolve: () => 'root' },
@@ -41,6 +52,7 @@ ava('should export default values', (t) => {
       new ForkTsCheckerWebpackPlugin({
         tsconfig: 'root',
       }),
+      new PrepackPlugin(),
     ],
   };
 
