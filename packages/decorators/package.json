@@ -9,9 +9,7 @@
   ],
   "scripts": {
     "build": "tsc",
-    "build:watch": "tsc --watch",
-    "test": "ava",
-    "test:watch": "ava --watch"
+    "build:watch": "tsc --watch"
   },
   "devDependencies": {
     "@types/react": "^16.7.18",
