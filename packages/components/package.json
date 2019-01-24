@@ -35,7 +35,7 @@
     "tracking": "^1.1.3"
   },
   "devDependencies": {
-    "@pyxis/webpack": "0.0.43",
+    "@pyxis/webpack": "0.0.44",
     "@types/lodash": "^4.14.119",
     "@types/mapbox-gl": "^0.51.0",
     "@types/react": "^16.7.13",

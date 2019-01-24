@@ -9,15 +9,6 @@ module.exports = {
       target: 'web',
       mode: 'development',
     }),
-    // TODO: Implement to webpack. To watch all @pyxis/* modules on dev mode.
-    {
-      watchOptions: {
-        ignored: [
-          /node_modules([\\]+|\/)+(?!@pyxis)/, 
-          /\@pyxis([\\]+|\/)node_modules/
-        ],
-      },
-    },
   ),
   components: [
     './src/components/**/index.ts',
