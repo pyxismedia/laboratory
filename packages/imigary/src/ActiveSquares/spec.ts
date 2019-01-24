@@ -4,22 +4,8 @@ import { Square } from '../Squares/types';
 import { Dimension } from '../Dimension/Dimension';
 import prequire from 'proxyquire';
 
-const { assign, defineProperty } = Object;
-
-function memoize(target: any, propertyKey: string, descriptor: PropertyDescriptor) {
-  const original = assign({}, descriptor);
-
-  defineProperty(descriptor, 'get', {
-    get() {
-      return function() {
-        return original;
-      }
-    }
-  });
-}
-
 const { ActiveSquares } = prequire.noCallThru()('./ActiveSquares', {
-  '@pyxis/decorators/build/memoize': { memoize }
+  '@pyxis/decorators/build/memoize': { memoize: () => {} },
 });
 
 class Squares extends SquaresAbstract {

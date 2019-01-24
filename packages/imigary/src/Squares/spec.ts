@@ -3,22 +3,8 @@ import { DimensionAbstract } from '../Dimension/DimensionAbstract';
 import { DerivatedDivisionPairs } from '../Division/types';
 import prequire from 'proxyquire';
 
-const { defineProperty, assign } = Object;
-
-function memoize(target: any, propertyKey: string, descriptor: PropertyDescriptor) {
-  const original = assign({}, descriptor);
-
-  defineProperty(descriptor, 'get', {
-    get() {
-      return function() {
-        return original;
-      }
-    },
-  });
-}
-
 const { Squares } = prequire.noCallThru()('./Squares', {
-  '@pyxis/decorators/build/memoize': { memoize },
+  '@pyxis/decorators/build/memoize': { memoize: () => {} },
 });
 
 const createDimension = (xPairs: DerivatedDivisionPairs, yPairs: DerivatedDivisionPairs) => class Dimension extends DimensionAbstract {
