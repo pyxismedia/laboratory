@@ -325,10 +325,10 @@
   dependencies:
     arrify "^1.0.1"
 
-"@pyxis/decorators@^0.0.21":
-  version "0.0.21"
-  resolved "https://pyxis-npm.herokuapp.com/@pyxis%2fdecorators/-/decorators-0.0.21.tgz#64f46ad9d1f0269b6c9742d4d99f4c70cd3a4316"
-  integrity sha512-6I04swipWQzD9ykM5yEusrKjPW2NILjtZbWdKCBcWAvl6wU8TZs2y/bNbkcRN40njwrS3E6zyGbUwBE8+cRRMA==
+"@pyxis/decorators@^0.0.23":
+  version "0.0.23"
+  resolved "https://pyxis-npm.herokuapp.com/@pyxis%2fdecorators/-/decorators-0.0.23.tgz#9897c73c446d53b1a4a2b27a4f17690cd60014b9"
+  integrity sha512-US6SlJ7VntAIoKEVvNiy6Un6gvmz0P6Jrcyq6fmD8/dY9/1NYHx7kycTu8uH7g/EUhZtIZnTPZ0Kia14+lFmfQ==
   dependencies:
     react "^16.6.3"
 
