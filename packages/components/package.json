@@ -21,7 +21,8 @@
   },
   "dependencies": {
     "@dr-kobros/react-webfont-loader": "^8.0.0",
-    "@pyxis/imigary": "^0.0.2",
+    "@pyxis/imigary": "^0.0.3",
+    "@pyxis/decorators": "0.0.23",
     "express": "^4.16.4",
     "konva": "^2.5.1",
     "lodash": "^4.17.11",

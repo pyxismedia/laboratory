@@ -3,8 +3,8 @@ import { IStore, StoreState } from '../../store';
 import { Layer, Text } from 'react-konva';
 import { inject, observer } from 'mobx-react';
 import { Text as TextType } from 'konva';
-import { Coordinates } from '../../../../../../imigary/src/Squares/types';
-import { memoize } from '../../../../../../decorators/build/memoize';
+import { Coordinates } from '@pyxis/imigary/src/Squares/types';
+import { memoize } from '@pyxis/decorators/build/memoize';
 
 export enum Align {
   LEFT = 'left',
