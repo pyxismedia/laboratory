@@ -1,5 +1,4 @@
 import ava, { Assertions } from 'ava';
-import { ActiveSquares } from './ActiveSquares';
 import { SquaresAbstract } from '../Squares/SquaresAbstract';
 import { Square } from '../Squares/types';
 import { Dimension } from '../Dimension/Dimension';
@@ -19,7 +18,7 @@ function memoize(target: any, propertyKey: string, descriptor: PropertyDescripto
   });
 }
 
-const { typescript } = prequire.noCallThru()('./ActiveSquares', {
+const { ActiveSquares } = prequire.noCallThru()('./ActiveSquares', {
   '@pyxis/decorators/build/memoize': { memoize }
 });
 
