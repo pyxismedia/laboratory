@@ -13,12 +13,12 @@ function memoize(target: any, propertyKey: string, descriptor: PropertyDescripto
       return function() {
         return original;
       }
-    }
+    },
   });
 }
 
 const { Squares } = prequire.noCallThru()('./Squares', {
-  '@pyxis/decorators/build/memoize': { memoize }
+  '@pyxis/decorators/build/memoize': { memoize },
 });
 
 const createDimension = (xPairs: DerivatedDivisionPairs, yPairs: DerivatedDivisionPairs) => class Dimension extends DimensionAbstract {
