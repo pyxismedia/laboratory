@@ -21,7 +21,8 @@
     "test:watch": "ava --watch",
     "precommit": "lint-staged",
     "report": "nyc report",
-    "lint": "tslint -c tslint.json ./src/**/*.ts"
+    "lint": "tslint -c tslint.json ./src/**/*.ts",
+    "postinstall": "yarn build"
   },
   "lint-staged": {
     "{src}/**/*.ts*": [
