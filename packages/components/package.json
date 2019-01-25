@@ -15,7 +15,7 @@
     "guide:build": "styleguidist build",
     "dev": "webpack --config webpack.config.js --watch",
     "build": "webpack --config webpack.config.js",
-    "postinstall": "yarn guide:build",
+    "postinstall": "yarn guide:build && yarn build",
     "test": "ava",
     "test:watch": "ava --watch"
   },
