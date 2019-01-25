@@ -10,7 +10,7 @@
   "scripts": {
     "build": "tsc",
     "build:watch": "tsc --watch",
-    "postinstall": "if [ $BUILD ]; then yarn build; fi"
+    "postinstall": "yarn build"
   },
   "devDependencies": {
     "@types/react": "^16.7.18",

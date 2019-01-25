@@ -7,7 +7,7 @@
     "build": "webpack --config webpack.config.js",
     "dev": "webpack-dev-server --config webpack.config.js",
     "start": "node server.js",
-    "postinstall": "if [ $BUILD ]; then yarn guide; fi"
+    "postinstall": "yarn build"
   },
   "dependencies": {
     "@dr-kobros/react-webfont-loader": "^8.0.0",
