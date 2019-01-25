@@ -56,7 +56,8 @@
     "webpack": "^4.26.1",
     "webpack-cli": "^3.1.2",
     "webpack-merge": "^4.1.4",
-    "typescript": "^3.1.6"
+    "typescript": "^3.1.6",
+    "webpack-node-externals": "1.7.2"
   },
   "engines": {
     "node": "10.13.0",
