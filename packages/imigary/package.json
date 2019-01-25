@@ -12,7 +12,8 @@
     "test": "ava",
     "test:watch": "ava --watch",
     "docs": "node_modules/.bin/typedoc --out ../../docs/imigary ./src --theme default",
-    "typings": "tsc --noEmit"
+    "typings": "tsc --noEmit",
+    "postinstall": "yarn build"
   },
   "dependencies": {
     "@pyxis/decorators": "^0.0.23",
