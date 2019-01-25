@@ -12,7 +12,7 @@
         "NODE_MODULES_CACHE": "true"
       },
       "scripts": {
-        "test": "yarn test"
+        "test": "yarn test && yarn release"
       }
     }
   }

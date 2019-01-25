@@ -12,7 +12,8 @@
     "postinstall": "lerna bootstrap",
     "build": "lerna run build",
     "docs": "lerna run docs",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "release": "lerna-semantic-release pre && lerna-semantic-release perform"
   },
   "husky": {
     "hooks": {
