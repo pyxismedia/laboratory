@@ -1,6 +1,6 @@
 {
   "name": "@pyxis/components",
-  "version": "0.0.44",
+  "version": "1.0.0",
   "description": "Components library",
   "author": "Petr Juna <petr.juna@gmail.com>",
   "homepage": "",
@@ -25,7 +25,6 @@
     "@pyxis/imigary": "^0.0.3",
     "commitizen": "^3.0.5",
     "express": "^4.16.4",
-    "global": "^4.3.2",
     "konva": "^2.5.1",
     "lodash": "^4.17.11",
     "mapbox-gl": "^0.51.0",

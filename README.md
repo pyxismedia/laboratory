@@ -5,3 +5,9 @@
 3. `heroku config:add BUILDPACK='packages/api=https://github.com/heroku/heroku-buildpack-nodejs#v83' -a <MYPROJECT>`
 4. `heroku git:remote -a <MYPROJECT>`
 5. `git push heroku master`
+
+# How to start development?
+
+To be able to start development just run following in cli.
+
+`yarn`

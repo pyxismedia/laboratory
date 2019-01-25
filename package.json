@@ -11,7 +11,8 @@
     "test": "lerna run test",
     "postinstall": "yarn bootstrap",
     "build": "lerna run build",
-    "docs": "lerna run docs"
+    "docs": "lerna run docs",
+    "commit": "git-cz"
   },
   "husky": {
     "hooks": {
@@ -20,9 +21,11 @@
   },
   "devDependencies": {
     "@lerna/project": "^3.10.0",
+    "commitizen": "^3.0.5",
     "cz-lerna-changelog": "^2.0.2",
     "husky": "^1.2.0",
-    "lerna": "^3.0.0-rc.0"
+    "lerna": "^2.11.0",
+    "lerna-semantic-release": "^9.1.0"
   },
   "engines": {
     "node": "10.13.0",
@@ -31,10 +34,5 @@
   },
   "dependencies": {
     "pkg-dir": "^3.0.0"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-lerna-changelog"
-    }
   }
 }
