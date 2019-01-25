@@ -19,6 +19,8 @@
     }
   },
   "devDependencies": {
+    "@lerna/project": "^3.10.0",
+    "cz-lerna-changelog": "^2.0.2",
     "husky": "^1.2.0",
     "lerna": "^3.0.0-rc.0"
   },
@@ -29,5 +31,10 @@
   },
   "dependencies": {
     "pkg-dir": "^3.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-lerna-changelog"
+    }
   }
 }

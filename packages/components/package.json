@@ -21,9 +21,11 @@
   },
   "dependencies": {
     "@dr-kobros/react-webfont-loader": "^8.0.0",
-    "@pyxis/imigary": "^0.0.3",
     "@pyxis/decorators": "0.0.23",
+    "@pyxis/imigary": "^0.0.3",
+    "commitizen": "^3.0.5",
     "express": "^4.16.4",
+    "global": "^4.3.2",
     "konva": "^2.5.1",
     "lodash": "^4.17.11",
     "mapbox-gl": "^0.51.0",
@@ -53,10 +55,10 @@
     "sinon": "^7.1.1",
     "sinon-chai": "^3.3.0",
     "ts-node": "^7.0.1",
+    "typescript": "^3.1.6",
     "webpack": "^4.26.1",
     "webpack-cli": "^3.1.2",
     "webpack-merge": "^4.1.4",
-    "typescript": "^3.1.6",
     "webpack-node-externals": "1.7.2"
   },
   "engines": {
