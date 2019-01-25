@@ -1,5 +1,5 @@
 {
-  "name": "web",
+  "name": "@pyxis/web",
   "version": "0.0.21",
   "main": "index.js",
   "license": "MIT",
