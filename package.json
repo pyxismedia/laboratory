@@ -22,6 +22,7 @@
   },
   "devDependencies": {
     "@lerna/project": "^3.10.0",
+    "@semantic-release/github": "^5.2.10",
     "commitizen": "^3.0.5",
     "cz-lerna-changelog": "^2.0.2",
     "husky": "^1.2.0",

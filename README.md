@@ -10,4 +10,16 @@
 
 To be able to start development just run following in cli.
 
-`yarn`
+`$ yarn`
+
+After changes please add changes to the repository using.
+
+`$ git add .`
+
+Instead of using `git commit` use following to have properly formatted commit message.
+
+`$ yarn commit`
+
+then send changes to server.
+
+`$ git push`
