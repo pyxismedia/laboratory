@@ -1,0 +1,86 @@
+{
+  "name": "keystone",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "apollo-server-express": "2.0.6",
+    "body-parser": "1.18.2",
+    "graphql": "14.0.2",
+    "graphql-rxjs": "0.11.7-0",
+    "graphql-subscriptions": "0.5.4",
+    "graphql-tools": "2.2.1",
+    "iterall": "^1.1.3",
+    "jade": "^1.11.0",
+    "keystone": "4.0.0-beta.5",
+    "mongoose": "4.5.10",
+    "rxjs": "5.4.3",
+    "underscore": "1.8.3"
+  },
+  "engines": {
+    "node": "6.11.4",
+    "npm": "5.3.0",
+    "mongodb": "3.4"
+  },
+  "scripts": {
+    "lint": "eslint --config .eslintrc.json 'app/**/*.js'",
+    "predev": "babel-node --inspect --extensions '.ts,.tsx'  app/scripts/drop",
+    "dev": "nodemon --debug=3003 --exec babel-node --inspect --extensions '.ts,.tsx' -- app/app.ts",
+    "start": "node app/app.register.js",
+    "test": "npm run test:nyan",
+    "test:diff": "ava | tap-diff",
+    "test:nyan": "ava | tnyan",
+    "test:coverage": "nyc ava",
+    "watch:test": "ava --watch",
+    "types": "tsc",
+    "precommit": "lint-staged"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.0.0",
+    "@babel/core": "7.0.0",
+    "@babel/node": "7.0.0",
+    "@babel/polyfill": "7.0.0",
+    "@babel/preset-env": "7.0.0",
+    "@babel/preset-typescript": "7.0.0",
+    "@types/graphql": "14.0.0",
+    "@types/node": "10.9.4",
+    "eslint": "4.8.0",
+    "eslint-config-airbnb": "16.0.0",
+    "eslint-plugin-import": "2.7.0",
+    "eslint-plugin-jsx-a11y": "6.0.2",
+    "eslint-plugin-react": "7.4.0",
+    "husky": "0.14.3",
+    "lint-staged": "7.2.2",
+    "nodemon": "1.12.1",
+    "nyc": "11.2.1",
+    "prettier": "^1.14.2",
+    "sinon": "4.0.1",
+    "tap-diff": "0.1.1",
+    "tap-nyan": "1.1.0",
+    "tslint": "5.11.0",
+    "tslint-config-airbnb": "5.11.0",
+    "tslint-config-prettier": "1.15.0",
+    "typescript": "3.0.3"
+  },
+  "ava": {
+    "files": [
+      "app/**/spec.ts"
+    ],
+    "source": [
+      "**/*.{ts,tsx}"
+    ],
+    "concurrency": 5,
+    "failWithoutAssertions": false,
+    "tap": true,
+    "powerAssert": true,
+    "require": [
+      "babel-register"
+    ],
+    "babel": "inherit"
+  },
+  "lint-staged": {
+    "app/**/*.ts*": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
