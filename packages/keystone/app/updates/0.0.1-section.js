@@ -1,8 +1,8 @@
-import keystone from 'keystone';
+const keystone = require('keystone');
 
 const Section = keystone.list('Section');
 
-exports = module.exports = function(done) {
+module.exports = function(done) {
   new Section.model.insertMany([
     {
       _id: '00000000000000000000000a',

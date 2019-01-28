@@ -1,6 +1,8 @@
 /* eslint-disable global-require */
 import isDevelopment from '../../environment/isDevelopment';
 
+console.log(isDevelopment);
+
 if (isDevelopment) exports.default = require('./development').default;
 else exports.default = require('./production').default;
 

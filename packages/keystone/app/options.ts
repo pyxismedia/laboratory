@@ -18,4 +18,13 @@ export default {
   'cookie secret': '(your secret here)',
   host: '0.0.0.0',
   port: PORT,
+  'wysiwyg additional plugins': 'template,fullpage,fullscreen,table',
+  'wysiwyg override toolbar': false,
+  'wysiwyg menubar': false,
+  'wysiwyg additional buttons': 'template,fullpage,blockquote,fullscreen,table',
+  'wysiwyg additional options': {
+    templates: [
+      { title: 'Test', description: 'Testing use case', url: '/templates/template.html' }
+    ]
+  }
 };

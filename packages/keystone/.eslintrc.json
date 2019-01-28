@@ -1,11 +1,15 @@
 {
-  "parser": "babel-eslint",
+  "parser": "@typescript-eslint/parser",
   "extends": "airbnb",
   "env": {
-    "browser": false,
     "node": true,
-    "jasmine": false,
-    "jest": false,
+    "mocha": true,
     "es6": true
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "modules": true
+    }
   }
 }

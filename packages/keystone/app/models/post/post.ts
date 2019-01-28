@@ -9,7 +9,7 @@ Post.add({
   state: { type: Types.Select, options: 'draft, published, archived', default: 'draft' },
   title: { type: Types.Text, required: true, initial: true, unique: true },
   subtitle: { type: Types.Text, required: true, initial: true },
-  content: { type: Types.Markdown, required: true, initial: true },
+  content: { type: Types.Html, wysiwyg: true, required: true, initial: true },
   date: { type: Types.Date },
   author: { type: Types.Relationship, ref: 'User' },
   section: { type: Types.Relationship, ref: 'Section' },

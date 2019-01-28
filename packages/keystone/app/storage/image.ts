@@ -1,13 +1,13 @@
 import { join } from 'path';
-import keystone, { Storage, Field } from 'keystone';
+import { Storage, Field, expandPath } from 'keystone';
 
 const { Types } = Field;
 
 const image = new Storage({
   adapter: Storage.Adapters.FS,
   fs: {
-    path: keystone.expandPath(join(__dirname, '../public/images')),
-    publicPath: '/images',
+    path: './app/public/uploads/images',
+    publicPath: '/public/uploads/',
   },
   schema: {
     filename: String,

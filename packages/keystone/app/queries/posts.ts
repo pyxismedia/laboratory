@@ -1,6 +1,6 @@
-import keystone from 'keystone';
+import { list } from 'keystone';
 
-const Post = keystone.list('Post');
+const Post = list('Post');
 
 // eslint-disable-next-line import/prefer-default-export
 export const getPosts = (section, orderBy, skip = 0, limit = 10, labels = []) => (

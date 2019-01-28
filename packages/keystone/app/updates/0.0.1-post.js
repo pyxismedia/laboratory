@@ -1,4 +1,4 @@
-import keystone from 'keystone';
+const keystone = require('keystone');
 
 const Post = keystone.list('Post');
 
@@ -8,9 +8,7 @@ exports = module.exports = function(done) {
       _id: '000000000000000000000a00',
       title: 'Lorem ipsum 1',
       subtitle: 'Dolor sit amet',
-      content: {
-        md: 'Integer posuere erat.'
-      },
+      content: 'Integer posuere erat.',
       image: { filename: 'someimage.png' },
       state: 'draft',
       date: new Date(),
