@@ -35,7 +35,8 @@
     "keystone-storage-adapter-s3": "^2.0.0",
     "mongoose": "4.5.10",
     "rxjs": "5.4.3",
-    "underscore": "1.8.3"
+    "underscore": "1.8.3",
+    "ts-node": "^8.0.2"
   },
   "devDependencies": {
     "@types/graphql": "14.0.0",
@@ -55,7 +56,6 @@
     "sinon": "4.0.1",
     "tap-diff": "0.1.1",
     "tap-nyan": "1.1.0",
-    "ts-node": "^8.0.2",
     "typescript": "3.2.4"
   },
   "lint-staged": {
