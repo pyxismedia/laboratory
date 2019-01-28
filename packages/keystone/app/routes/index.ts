@@ -28,7 +28,7 @@ set(
 // Load Routes
 const routes = { views: importRoutes('./views') };
 
-const server = new ApolloServer({ resolvers, typeDefs: schema });
+const server = new ApolloServer({ resolvers, typeDefs: schema, introspection: true });
 
 // Bind Routes
 export default app => {
