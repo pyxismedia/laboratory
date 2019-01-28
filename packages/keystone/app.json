@@ -1,0 +1,42 @@
+{
+  "name": "keystone-graphql",
+  "scripts": {
+  },
+  "env": {
+    "NODE_ENV": {
+      "required": true
+    },
+    "NODE_MODULES_CACHE": {
+      "required": true
+    },
+    "NPM_CONFIG_PRODUCTION": {
+      "required": true
+    },
+    "PORT": {
+      "required": true
+    }
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "environments": {
+    "test": {
+      "env": {
+        "PORT": "80",
+        "NPM_CONFIG_PRODUCTION": "false",
+        "NODE_MODULES_CACHE": "false",
+        "NODE_ENV": "production"
+      },
+      "scripts": {
+        "test": "npm test"
+      }
+    }
+  }
+}
