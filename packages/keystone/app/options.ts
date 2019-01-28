@@ -1,4 +1,4 @@
-import { MONGODB, PORT } from './constants';
+import { MONGODB, PORT, HOST } from './constants';
 
 export default {
   // Project Options http://keystonejs.com/docs/configuration/#options-project
@@ -16,7 +16,7 @@ export default {
   auth: true,
   'user model': 'User',
   'cookie secret': '(your secret here)',
-  host: '0.0.0.0',
+  host: HOST,
   port: PORT,
   'wysiwyg additional plugins': 'template,fullpage,fullscreen,table',
   'wysiwyg override toolbar': false,
