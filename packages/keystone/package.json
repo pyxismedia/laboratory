@@ -12,7 +12,7 @@
     "lint": "eslint app --ext ts --config .eslintrc.json",
     "predev": "NODE_ENV=development ts-node app/scripts/drop",
     "dev": "NODE_ENV=development nodemon --exec ts-node -- app/app.ts",
-    "start": "ts-node app/app.js",
+    "start": "ts-node app/app.ts",
     "test": "npm run test:nyan",
     "test:diff": "ava | tap-diff",
     "test:nyan": "ava | tnyan",
@@ -38,7 +38,7 @@
   },
   "devDependencies": {
     "@types/graphql": "14.0.0",
-    "@types/node": "10.9.4",
+    "@types/node": "^10.12.18",
     "@typescript-eslint/parser": "^1.1.0",
     "ava": "^1.2.0",
     "eslint": "5.12.1",
