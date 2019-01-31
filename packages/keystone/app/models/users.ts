@@ -1,7 +1,9 @@
 import { Field, List } from 'keystone';
 
 const { Types } = Field;
-const User = new List('User');
+const User = new List('User', {
+  map: { name: 'name' },
+});
 
 User.add({
   displayName: { type: String },

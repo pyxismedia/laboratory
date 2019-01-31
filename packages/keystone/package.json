@@ -34,9 +34,10 @@
     "keystone": "4.0.0",
     "keystone-storage-adapter-s3": "^2.0.0",
     "mongoose": "4.5.10",
+    "mongoose-intl": "^3.1.0",
     "rxjs": "5.4.3",
-    "underscore": "1.8.3",
-    "ts-node": "^8.0.2"
+    "ts-node": "^8.0.2",
+    "underscore": "1.8.3"
   },
   "devDependencies": {
     "@types/graphql": "14.0.0",

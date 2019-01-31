@@ -28,17 +28,13 @@ export default gql`
     name: String
   }
   
-  type Markdown {
-    html: String
-    md: String
-  }
-  
   type Post {
+    slug: String
     image: Image
     state: String
     title: String
     subtitle: String
-    content: Markdown
+    content: String
     date: String
     author: Author
     labels: [String]

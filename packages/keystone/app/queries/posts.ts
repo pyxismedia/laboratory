@@ -3,12 +3,14 @@ import { list } from 'keystone';
 const Post = list('Post');
 
 // eslint-disable-next-line import/prefer-default-export
-export const getPosts = (section, orderBy, skip = 0, limit = 10, labels = []) => (
-  Post.model.aggregate([
+export const getPosts = (section, orderBy = { date: -1 }, skip = 0, limit = 10, labels = []) => {
+  console.log(section);
+  return Post.model.aggregate([
     {
       $project: {
         '_id': false,
         id: '$_id',
+        slug: true,
         title: true,
         subtitle: true,
         date: true,
@@ -59,6 +61,7 @@ export const getPosts = (section, orderBy, skip = 0, limit = 10, labels = []) =>
     {
       $project: {
         id: true,
+        slug: true,
         title: true,
         subtitle: true,
         date: true,
@@ -80,4 +83,4 @@ export const getPosts = (section, orderBy, skip = 0, limit = 10, labels = []) =>
       $limit: limit,
     },
   ])
-);
+};

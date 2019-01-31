@@ -1,6 +1,7 @@
 // -- dependencies --
 // Register observable as part of mongoose
-import { init, set, start, import as imports } from 'keystone';
+import { init, set, start, import as imports, plugin } from 'keystone';
+
 // -- application --
 import './models';
 import routes from './routes';
