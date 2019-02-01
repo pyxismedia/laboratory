@@ -1,0 +1,21 @@
+{
+  "name": "@pyxis/lab",
+  "version": "0.0.1",
+  "description": "The most basic level for creating html component.",
+  "main": "./app/index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "node ./app/index.js"
+  },
+  "dependencies": {
+    "bootstrap": "^4.2.1",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "handlebars-layouts": "^3.1.4",
+    "handlebars-wax": "^6.1.0",
+    "node-sass-middleware": "^0.11.0",
+    "pkg-dir": "^3.0.0",
+    "pug": "^2.0.3",
+    "pug-bootstrap": "^0.0.15"
+  }
+}
