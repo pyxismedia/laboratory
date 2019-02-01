@@ -6,11 +6,21 @@ module.exports = function(done) {
   new Section.model.insertMany([
     {
       _id: '00000000000000000000000a',
-      name: 'Lorem ipsum',
+      slug: 'lore-ipsum',
+      name: {
+        en: 'Lorem ipsum',
+        de: 'Lorem ipsum de',
+        fr: 'Lorem ipsum fr',
+      },
     },
     {
       _id: '00000000000000000000000b',
-      name: 'Dolor sit amet',
+      slug: 'dolor-sit-amet',
+      name: {
+        en: 'Dolor sit amet',
+        de: 'Dolor sit amet de',
+        fr: 'Dolor sit amet fr',
+      },
     },
   ]).then(() => {
     console.log('INFO: Section updated.');

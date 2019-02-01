@@ -3,7 +3,7 @@ import { ApolloServer } from 'apollo-server-express';
 import { importer, pre, set } from 'keystone';
 // -- application --
 import * as middleware from './middleware';
-import schema from './schema';
+import typeDefs from './typeDefs';
 import * as resolvers from './resolvers';
 
 const importRoutes = importer(__dirname);
@@ -17,18 +17,15 @@ pre('render', middleware.flashMessages);
 set('404', (req, res) => res.notfound());
 
 // Handle other errors
-set(
-  '500',
-  (error: { message?: string; stack?: string } = {}, req, res) => {
-    const { message, stack } = error;
-    res.err(stack, undefined, message);
-  }
-);
+set('500', (error: { message?: string; stack?: string } = {}, req, res) => {
+  const { message, stack } = error;
+  res.err(stack, undefined, message);
+});
 
 // Load Routes
 const routes = { views: importRoutes('./views') };
 
-const server = new ApolloServer({ resolvers, typeDefs: schema, introspection: true });
+const server = new ApolloServer({ resolvers, typeDefs, introspection: true });
 
 // Bind Routes
 export default app => {
