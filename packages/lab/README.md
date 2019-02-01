@@ -1,6 +1,6 @@
 # Templates
 
-Based on [pug](https://pugjs.org/api/getting-started.html), [express](https://expressjs.com) and [sass](https://sass-lang.com).
+Based on [handlebars](https://handlebarsjs.com), [handlebars layout](https://github.com/shannonmoeller/handlebars-layouts), [express](https://expressjs.com) and [sass](https://sass-lang.com).
 
 ## Objective
 
@@ -19,8 +19,7 @@ packages/templates/src
 │   ├── organism          - Atomic Design Organism
 │   ├── pages             - Atomic Design Pages
 │   ├── templates         - Atomic Design Templates
-│   ├── index.pug         - Application starts here
-│   └── layout.pug        - Layout file which should be extended by all templates
+│   ├── index.hbs         - Application starts here
 ├── README.md             - This file
 └── routes.js             - Add route if you need other routes
 ```
