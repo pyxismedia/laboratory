@@ -4,7 +4,7 @@ Based on [handlebars](https://handlebarsjs.com), [handlebars layout](https://git
 
 ## Objective
 
-Objective of this package is to provide as much as simplictic environment for making [atomic design](http://bradfrost.com/blog/post/atomic-web-design/). Please spend few minutes to understand what is going on.
+Objective of this package is to provide as much as simplictic environment using [bootstrap](https://getbootstrap.com) for making [atomic design](http://bradfrost.com/blog/post/atomic-web-design/). Please spend few minutes to understand what is going on.
 
 ## Structure
 
