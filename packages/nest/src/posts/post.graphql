@@ -1,0 +1,25 @@
+schema {
+  query: Query
+}
+
+enum State {
+  DRAFT
+  PUBLISHED
+  ARCHIVED
+}
+
+type Post {
+  title: String
+  subtitle: String
+  content: String
+  image: String
+  state: State
+  date: String
+  labels: [String]
+  author: String
+  section: String
+}
+
+type Query {
+  posts: [Post]
+}

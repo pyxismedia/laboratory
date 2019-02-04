@@ -1,0 +1,33 @@
+{
+  "_id": { "$oid": "000000000000000000000a00" },
+  "slug": {
+    "en": "lorem-ipsum-1",
+    "de": "lorem-ipsum-1",
+    "fr": "lorem-ipsum-1"
+  },
+  "title": {
+    "en": "Lorem ipsum 1",
+    "de": "Lorem ipsum 1",
+    "fr": "Lorem ipsum 1"
+  },
+  "subtitle": {
+    "en": "Dolor sit amet",
+    "de": "Dolor sit amet",
+    "fr": "Dolor sit amet"
+  },
+  "content": {
+    "en": "Integer posuere erat.",
+    "de": "Integer posuere erat.",
+    "fr": "Integer posuere erat."
+  },
+  "state": {
+    "en": "DRAFT",
+    "de": "DRAFT",
+    "fr": "DRAFT"
+  },
+  "date": 0,
+  "labels": ["lorem-ipsum-1"],
+  "image": "someimage.png",
+  "author": "0000000000000000000000a0",
+  "section": "00000000000000000000000a"
+}
