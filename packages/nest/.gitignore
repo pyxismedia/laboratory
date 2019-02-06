@@ -16,3 +16,4 @@ logs
 !scripts/.env
 *.swp
 .vscode
+*.env

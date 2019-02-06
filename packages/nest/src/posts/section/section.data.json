@@ -1,0 +1,8 @@
+{
+  "_id": { "$oid": "00000000000000000000000a" },
+  "name": {
+    "en": "Section",
+    "de": "Der Sektion",
+    "fr": "La section"
+  }
+}

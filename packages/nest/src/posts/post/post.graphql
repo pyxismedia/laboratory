@@ -9,6 +9,7 @@ enum State {
 }
 
 type Post {
+  _id: ID!
   title: String
   subtitle: String
   content: String
@@ -17,9 +18,15 @@ type Post {
   date: String
   labels: [String]
   author: String
-  section: String
+  section: Section
+}
+
+type Section {
+  _id: ID!
+  name: String
 }
 
 type Query {
   posts: [Post]
+  post(id: ID!): Post
 }

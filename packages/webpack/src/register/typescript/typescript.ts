@@ -5,6 +5,8 @@ import pluginProposalClassProperties from "@babel/plugin-proposal-class-properti
 // @ts-ignore
 import pluginProposalObjectRestSpread from "@babel/plugin-proposal-object-rest-spread";
 // @ts-ignore
+import pluginTransformModulesCommonjs from "@babel/plugin-transform-modules-commonjs";
+// @ts-ignore
 import presetEnv from "@babel/preset-env";
 // @ts-ignore
 import presetTypescript from "@babel/preset-typescript";
@@ -18,6 +20,7 @@ register({
   plugins: [
     pluginProposalClassProperties,
     pluginProposalObjectRestSpread,
+    pluginTransformModulesCommonjs,
   ],
 });
 

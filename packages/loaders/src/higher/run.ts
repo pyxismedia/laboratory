@@ -12,14 +12,19 @@ runLoaders(
 		loaders: [{
 			loader: resolve(__dirname, './loader'),
 			options: {
+				component: {
+					group: '',
+					theme: '',
+					path: './resource',
+				},
 				data: {
-				  group: '',
-				  path: './resource',
-          theme: '',
-        },
+					group: '',
+					theme: '',
+					path: './resource'
+				},
 				decorator: {
 					path: resolve(__dirname, 'resources', 'decorator'),
-					destructor: 'decorator',
+					destructor: 'design',
 				},
 			},
 		}],

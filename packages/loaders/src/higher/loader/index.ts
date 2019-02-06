@@ -5,15 +5,16 @@ import { DecoratingResourceData } from './classes/DecoratingResourceData';
 
 export default function(source) {
 	const callback = this.async();
-	const resource = new Resource(this.resourcePath);
+  const resource = new Resource(this.resourcePath);
 	const options = new Options(getOptions(this), resource);
 	const decoratingResourceData = new DecoratingResourceData(resource, options.data);
 
+  console.log('HEEEEEEY', decoratingResourceData, decoratingResourceData.path, decoratingResourceData.source, decoratingResourceData._source);
 	this.loadModule(
 	  decoratingResourceData.path,
     (error, decoratingResourceSource) => {
       if (error) {
-        console.error(`ERROR: @pyxis/loaders/higher: File doesn't exists on path: ${decoratingResourceData.path}. Fallback on origin one.\n`);
+        throw new Error(`ERROR: @pyxis/loaders/higher: File doesn't exists on path: ${decoratingResourceData.path}. Fallback on origin one.\n`);
         callback(null, source);
         return;
       }

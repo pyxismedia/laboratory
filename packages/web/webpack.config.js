@@ -1,5 +1,6 @@
 const { typescriptCss } = require('@pyxis/webpack/build/configs/typescriptCss');
 const { decorate } = require('@pyxis/webpack/build/parts/decorate');
+const { yaml } = require('@pyxis/webpack/build/parts/yaml');
 const merge = require('webpack-merge');
 
 module.exports = merge(
@@ -8,9 +9,10 @@ module.exports = merge(
     mode: 'development',
   }),
   decorate({
-    test: /designable.yaml?$/,
+    test: /.*designable.yaml?$/,
     loader: 'build/higher',
     options: {
+      // Decorating component over data using decorator
       component: {
         group: '@pyxis',
         theme: 'components',
@@ -18,7 +20,7 @@ module.exports = merge(
       },
       data: {
         group: '@pyxis',
-        theme: 'theme-pyxis',
+        theme: 'theme',
         path: 'build/designers'
       },
       decorator: {
@@ -27,4 +29,5 @@ module.exports = merge(
       },
     },
   }),
+  yaml(),
 );
