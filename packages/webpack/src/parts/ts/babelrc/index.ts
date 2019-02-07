@@ -1,1 +1,0 @@
-export { babelrc } from './babelrc';

@@ -1,5 +1,0 @@
-lib
-!webpack.config.js
-.nyc_output
-coverage
-build

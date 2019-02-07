@@ -1,1 +1,0 @@
-export { yaml } from './part';
