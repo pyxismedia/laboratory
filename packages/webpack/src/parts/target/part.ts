@@ -16,6 +16,5 @@ export const target = ({ target = Target.NODE, externals }: TargetArgs): TargetP
   
   return {
     target,
-    externals: result,
   };
 };

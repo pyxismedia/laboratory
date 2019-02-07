@@ -39,7 +39,6 @@ ava('should have target node with custom externals value', (t) => {
 ava('should have target web with custom value', (t) => {
   const expected = {
     target: Target.WEB,
-    externals: ['externals'],
   };
 
   const result = target({ target: Target.WEB });
@@ -47,7 +46,7 @@ ava('should have target web with custom value', (t) => {
   t.deepEqual(result, expected);
 });
 
-ava('should have target web with custom externals value', (t) => {
+ava('should not have target web with custom externals value', (t) => {
   const expected = {
     target: Target.WEB,
     externals: 'externals2',
@@ -55,5 +54,5 @@ ava('should have target web with custom externals value', (t) => {
 
   const result = target({ target: Target.WEB, externals: 'externals2' });
 
-  t.deepEqual(result, expected);
+  t.notDeepEqual(result.externals, expected.externals);
 });
