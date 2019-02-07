@@ -8,13 +8,16 @@
     "**/*"
   ],
   "scripts": {
-    "build": "tsc",
-    "build:watch": "tsc --watch",
+    "build": "webpack --config webpack.config.js",
     "postinstall": "yarn build"
   },
   "devDependencies": {
+    "@pyxis/webpack": "^0.0.44",
     "@types/react": "^16.7.18",
-    "@types/styled-components": "^4.1.4"
+    "@types/styled-components": "^4.1.4",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3",
+    "webpack-node-externals": "^1.7.2"
   },
   "dependencies": {
     "react": "^16.6.3",

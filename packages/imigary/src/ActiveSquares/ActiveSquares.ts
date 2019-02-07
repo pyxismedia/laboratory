@@ -4,7 +4,7 @@ import { IActiveSquares } from './types';
 import flatten from 'lodash/flatten';
 import { Square, Coordinates, Squares } from '../Squares';
 import { DimensionAbstract } from '../Dimension';
-import { memoize } from '@pyxis/decorators/build/memoize';
+import { memoize } from '@pyxis/decorators/build/main';
 
 /**
  * @description 

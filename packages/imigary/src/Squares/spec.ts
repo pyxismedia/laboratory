@@ -4,7 +4,7 @@ import { DerivatedDivisionPairs } from '../Division/types';
 import prequire from 'proxyquire';
 
 const { Squares } = prequire.noCallThru()('./Squares', {
-  '@pyxis/decorators/build/memoize': { memoize: () => {} },
+  '@pyxis/decorators/build/main': { memoize: () => {} },
 });
 
 const createDimension = (xPairs: DerivatedDivisionPairs, yPairs: DerivatedDivisionPairs) => class Dimension extends DimensionAbstract {

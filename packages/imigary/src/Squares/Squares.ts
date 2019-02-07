@@ -5,7 +5,7 @@ import { SquaresAbstract } from './SquaresAbstract';
 // Dependencies
 import { DerivatedDivisionPairs } from '../Division';
 import { DimensionAbstract } from '../Dimension';
-import { memoize } from '@pyxis/decorators/build/memoize';
+import { memoize } from '@pyxis/decorators/build/main';
 
 export class Squares extends SquaresAbstract {
   protected static SAFE_MIN: SafeArea = SafeArea.MIN;

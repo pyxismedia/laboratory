@@ -5,7 +5,7 @@ import { Dimension } from '../Dimension/Dimension';
 import prequire from 'proxyquire';
 
 const { ActiveSquares } = prequire.noCallThru()('./ActiveSquares', {
-  '@pyxis/decorators/build/memoize': { memoize: () => {} },
+  '@pyxis/decorators/build/main': { memoize: () => {} },
 });
 
 class Squares extends SquaresAbstract {
