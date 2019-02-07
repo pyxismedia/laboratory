@@ -9,7 +9,7 @@ module.exports = merge(
     mode: 'development',
   }),
   decorate({
-    test: /.*designable.yaml?$/,
+    test: /designable.yaml?$/,
     loader: 'build/higher',
     options: {
       // Decorating component over data using decorator
@@ -19,15 +19,15 @@ module.exports = merge(
         path: 'build',
       },
       data: {
-        group: '@pyxis',
-        theme: 'theme',
-        path: 'build/designers'
+        group: '',
+        theme: '',
+        path: '../../../theme/build/designers'
       },
       decorator: {
-        path: '@pyxis/decorators',
+        path: '../../../decorators/build/design',
         destructor: 'design',
       },
     },
   }),
-  yaml(),
+  // yaml(),
 );

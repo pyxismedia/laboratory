@@ -2,6 +2,7 @@ export enum Extension {
   JS = '.js',
   TS = '.ts',
   TSX = '.tsx',
+  YAML = '.yaml',
 }
 
 export interface ExtensionsArgs {

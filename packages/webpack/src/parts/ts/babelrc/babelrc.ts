@@ -10,6 +10,8 @@ import pluginClassProperties from '@babel/plugin-proposal-class-properties';
 import pluginObjectRestSpread from '@babel/plugin-proposal-object-rest-spread';
 // @ts-ignore
 import pluginProposalDecorators from '@babel/plugin-proposal-decorators';
+// @ts-ignore
+// import pluginTransformModulesCommonJs from '@babel/plugin-transform-modules-commonjs';
 import { BABELRC } from "./types";
 
 export const babelrc: BABELRC = {
@@ -19,5 +21,10 @@ export const babelrc: BABELRC = {
       "browsers": ["last 2 Chrome versions"]
     }
   }], typescript, react],
-  plugins: [[pluginProposalDecorators, { legacy: true }], [pluginClassProperties, { loose: true }], pluginObjectRestSpread],
+  plugins: [
+    [pluginProposalDecorators, { legacy: true }],
+    [pluginClassProperties, { loose: true }],
+    pluginObjectRestSpread
+    // pluginTransformModulesCommonJs,
+  ],
 };

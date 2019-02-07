@@ -10,8 +10,15 @@ import pluginClassProperties from '@babel/plugin-proposal-class-properties';
 import pluginObjectRestSpread from '@babel/plugin-proposal-object-rest-spread';
 // @ts-ignore
 import pluginProposalDecorators from '@babel/plugin-proposal-decorators';
+// @ts-ignore
+// import pluginTransformModulesCommonjs from '@babel/plugin-transform-modules-commonjs';
 
 export type BABELRC = {
   presets: [env, typescript, react],
-  plugins: [[pluginProposalDecorators, { legacy: true }], pluginClassProperties, pluginObjectRestSpread]
+  plugins: [
+    [pluginProposalDecorators, { legacy: true }],
+    pluginClassProperties,
+    pluginObjectRestSpread
+    // pluginTransformModulesCommonjs
+  ],
 }
