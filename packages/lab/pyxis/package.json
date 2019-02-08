@@ -6,7 +6,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "nodemon --config nodemon.json ./app/index.js",
-    "start": "node ./app/index.js"
+    "start": "node ./app/index.js",
+    "postinstall": "node ../../../node_modules/node-sass/scripts/install.js && cd ../../../ && npm rebuild node-sass && cd packages/lab/pyxis"
   },
   "dependencies": {
     "bootstrap": "^4.2.1",
