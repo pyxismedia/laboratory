@@ -1,0 +1,24 @@
+{
+  "reporter": [
+    "text",
+    "html"
+  ],
+  "extension": [
+    ".ts"
+  ],
+  "all": true,
+  "exclude": [
+    "src/**/spec.ts",
+    "src/**/index.ts",
+    "src/**/*.d.ts",
+    "src/**/types.ts",
+    "build/**/*"
+  ],
+  "include": [
+    "src/**/*.ts"
+  ],
+  "lines": 91,
+  "statements": 94,
+  "functions": 100,
+  "branches": 92
+}

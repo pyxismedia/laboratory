@@ -41,5 +41,15 @@
   },
   "dependencies": {
     "pkg-dir": "^3.0.0"
-  }
+  },
+  "workspaces": [
+    "packages/app/pyxis/theme",
+    "packages/app/pyxis/web",
+    "packages/lab/pyxis",
+    "packages/lib/components",
+    "packages/lib/decorators",
+    "packages/lib/imigary",
+    "packages/srv/nest",
+    "packages/util/webpack"
+  ]
 }
