@@ -1,9 +1,9 @@
 import { Module, Global } from '@nestjs/common';
-import { ConfigService } from './config.service';
+import { ConfigSingleton } from './config.singleton';
 
 const configService = {
-  provide: ConfigService,
-  useValue: new ConfigService(`${process.env.NODE_ENV || 'development'}.env`),
+  provide: 'ConfigService',
+  useValue: new ConfigSingleton(`${process.env.NODE_ENV || 'development'}.env`),
 };
 
 @Module({

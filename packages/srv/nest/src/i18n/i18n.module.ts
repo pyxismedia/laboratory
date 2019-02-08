@@ -5,7 +5,7 @@ import { I18nService } from './i18n.service';
 import * as mongoose from 'mongoose';
 import * as mongooseIntl from 'mongoose-intl';
 import { ConfigModule } from '../config/config.module';
-import { ConfigService } from '../config/config.service';
+import { ConfigSingleton } from '../config/config.singleton';
 
 // TODO: Move to async provider
 mongoose.plugin(mongooseIntl, { languages: ['en', 'de', 'fr'], defaultLanguage: 'en' }); // wrong instance
@@ -14,10 +14,10 @@ mongoose.plugin(mongooseIntl, { languages: ['en', 'de', 'fr'], defaultLanguage: 
   imports: [
     MongooseModule.forRootAsync({
       imports: [ConfigModule],
-      useFactory: async (configService: ConfigService) => ({
+      useFactory: async (configService: ConfigSingleton) => ({
         uri: configService.get(configService.Env.MONGODB_URI),
       }),
-      inject: [ConfigService],
+      inject: [ConfigSingleton],
     },
   )],
   providers: [I18nService],

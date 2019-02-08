@@ -10,7 +10,7 @@ enum Env {
 }
 
 @Injectable()
-export class ConfigService {
+export class ConfigSingleton {
   private readonly envConfig: Env;
   public readonly Env = Env;
 
