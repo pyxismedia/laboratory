@@ -8,8 +8,24 @@
           "title": "Buttons"
         },
         {
-          "link": "/atoms/ahoj",
-          "title": "Ahoj"
+          "link": "/atoms/search",
+          "title": "Search"
+        },
+        {
+          "link": "/atoms/popup",
+          "title": "Popup"
+        },
+        {
+          "link": "/atoms/date",
+          "title": "Date"
+        },
+        {
+          "link": "/atoms/logo",
+          "title": "Logo"
+        },
+        {
+          "link": "/atoms/image",
+          "title": "Image"
         }
       ] 
     },
@@ -49,9 +65,29 @@
       "view": "atoms/buttons.hbs"
     },
     {
-      "route": "/atoms/ahoj",
-      "title": "Ahoj",
-      "view": "atoms/ahoj.hbs"
+      "route": "/atoms/search",
+      "title": "Search",
+      "view": "atoms/search.hbs"
+    },
+    {
+      "route": "/atoms/popup",
+      "title": "Popup",
+      "view": "atoms/popup.hbs"
+    },
+    {
+      "route": "/atoms/date",
+      "title": "Date",
+      "view": "atoms/date.hbs"
+    },
+    {
+      "route": "/atoms/logo",
+      "title": "Logo",
+      "view": "atoms/logo.hbs"
+    },
+    {
+      "route": "/atoms/image",
+      "title": "Image",
+      "view": "atoms/image.hbs"
     }
   ]
 }
