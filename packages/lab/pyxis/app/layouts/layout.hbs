@@ -12,17 +12,13 @@
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-    <a class="navbar-brand" href="#">LAB</a>
+    <a class="navbar-brand" href="/">LAB</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        {{#block "atoms"}}{{/block}}
-        {{#block "moleculs"}}{{/block}}
-        {{#block "organism"}}{{/block}}
-        {{#block "templates"}}{{/block}}
-        {{#block "pages"}}{{/block}}
+        {{#embed "navigation"}}{{/embed}}
       </ul>
     </div>
   </nav>

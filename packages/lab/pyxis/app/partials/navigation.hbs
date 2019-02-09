@@ -1,0 +1,12 @@
+{{#each nav as |item itemId|}}
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      {{item.title}}
+    </a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+      {{#each item.links as |link linkId|}}
+        <a class="dropdown-item" href="{{link.link}}">{{link.title}}</a>
+      {{/each}}
+    </div>
+  </li>
+{{/each}}

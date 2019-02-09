@@ -1,0 +1,46 @@
+{
+  "nav": [
+    {
+      "title": "Atoms",
+      "links": [{
+        "link": "/atoms/buttons",
+        "title": "Buttons"
+      }]
+    },
+    {
+      "title": "Moleculs",
+      "links": [{
+        "link": "/moleculs/buttons",
+        "title": "Buttons"
+      }]
+    },
+    {
+      "title": "Organisms",
+      "links": [{
+        "link": "/organisms/buttons",
+        "title": "Buttons"
+      }]
+    },
+    {
+      "title": "Templates",
+      "links": [{
+        "link": "/templates/buttons",
+        "title": "Buttons"
+      }]
+    },
+    {
+      "title": "Pages",
+      "links": [{
+        "link": "/pages/buttons",
+        "title": "Buttons"
+      }]
+    }
+  ],
+  "routes": [
+    {
+      "route": "/atoms/buttons",
+      "title": "Buttons",
+      "view": "atoms/buttons.hbs"
+    }
+  ]
+}
