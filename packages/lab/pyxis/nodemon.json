@@ -1,5 +1,5 @@
 {
   "verbose": true,
   "ignore": ["node_modules/**/node_modules", ".git"],
-  "ext": "hbs,js"
+  "ext": "hbs,js,json"
 }

@@ -2,10 +2,16 @@
   "nav": [
     {
       "title": "Atoms",
-      "links": [{
-        "link": "/atoms/buttons",
-        "title": "Buttons"
-      }]
+      "links": [
+        {
+          "link": "/atoms/buttons",
+          "title": "Buttons"
+        },
+        {
+          "link": "/atoms/ahoj",
+          "title": "Ahoj"
+        }
+      ] 
     },
     {
       "title": "Moleculs",
@@ -41,6 +47,11 @@
       "route": "/atoms/buttons",
       "title": "Buttons",
       "view": "atoms/buttons.hbs"
+    },
+    {
+      "route": "/atoms/ahoj",
+      "title": "Ahoj",
+      "view": "atoms/ahoj.hbs"
     }
   ]
 }
