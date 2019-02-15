@@ -11,5 +11,5 @@ app.locals.nav = config.nav;
 app.get('/', (req, res) => res.render('index', { title: 'Home' }));
 
 config.routes.forEach(route => {
-  app.get(route.route, (req, res) => res.render(path.join(__dirname, '../src/views/', route.view), { title: route.title }));
+  app.get(route.route, (req, res) => res.render(path.join(__dirname, '../src/views/', route.view), { title: route.title, data: route.data }));
 });

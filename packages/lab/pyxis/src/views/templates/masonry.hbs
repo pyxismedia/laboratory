@@ -1,0 +1,38 @@
+{{#extend "layout"}}
+
+  {{#content "preload"}}
+    <link rel="stylesheet" type="text/css" href="../views/templates/masonry.scss">
+    <script src="https://unpkg.com/animate-css-grid@latest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/textfit/2.3.1/textFit.js"></script>
+  {{/content}}
+
+  {{#content "postload"}}
+    <script src="../views/templates/masonry.js"></script>
+  {{/content}}
+
+  {{#content "content"}}
+
+    <div class="Masonry">
+      {{#each data.items as |item index|}}
+        <div
+          data-origin-row-start="row-{{item.origin.row.[0]}}"
+          data-origin-row-end="row-{{item.origin.row.[1]}}"
+          data-origin-column-start="col-{{item.origin.column.[0]}}"
+          data-origin-column-end="col-{{item.origin.column.[1]}}"
+          data-opened-row-start="row-{{item.opened.row.[0]}}"
+          data-opened-row-end="row-{{item.opened.row.[1]}}"
+          data-opened-column-start="col-{{item.opened.column.[0]}}"
+          data-opened-column-end="col-{{item.opened.column.[1]}}"
+          class="Masonry__item Masonry__item--{{index}}"
+        >
+          <div class="Masonry__content">
+            <h1 class="Masonry__headline">{{item.title}}</h1>
+            <div class="Masonry__close"></div>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+
+  {{/content}}
+
+{{/extend}}

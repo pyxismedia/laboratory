@@ -23,17 +23,21 @@
     },
     {
       "title": "Templates",
-      "links": [{
-        "link": "/templates/buttons",
-        "title": "Buttons"
-      }]
+      "links": [
+        {
+          "link": "/templates/masonry",
+          "title": "Masonry"
+        }
+      ]
     },
     {
       "title": "Pages",
-      "links": [{
-        "link": "/pages/buttons",
-        "title": "Buttons"
-      }]
+      "links": [
+        {
+          "link": "/pages/buttons",
+          "title": "Buttons"
+        }
+      ]
     }
   ],
   "routes": [
@@ -41,6 +45,114 @@
       "route": "/atoms/buttons",
       "title": "Buttons",
       "view": "atoms/buttons.hbs"
+    },
+    {
+      "route": "/templates/masonry",
+      "title": "Masonry",
+      "view": "/templates/masonry.hbs",
+      "data": {
+        "items": [
+          {
+            "title": "Lorem ipsum dolor",
+            "origin": {
+              "column": ["1", "3"],
+              "row": ["1", "3"]
+            },
+            "opened": {
+              "column": ["1", "5"],
+              "row": ["1", "3"]
+            }
+          },
+          {
+            "title": "Sit amet selar hyper set",
+            "origin": {
+              "column": ["3", "4"],
+              "row": ["1", "3"]
+            },
+            "opened": {
+              "column": ["1", "5"],
+              "row": ["1", "3"]
+            }
+          },
+          {
+            "title": "Lorem",
+            "origin": {
+              "column": ["4", "5"],
+              "row": ["1", "2"]
+            },
+            "opened": {
+              "column": ["1", "5"],
+              "row": ["1", "3"]
+            }
+          },
+          {
+            "title": "Lorem",
+            "origin": {
+              "column": ["4", "5"],
+              "row": ["2", "3"]
+            },
+            "opened": {
+              "column": ["1", "5"],
+              "row": ["1", "3"]
+            }
+          },
+          {
+            "title": "Lorem",
+            "origin": {
+              "column": ["1", "2"],
+              "row": ["3", "5"]
+            },
+            "opened": {
+              "column": ["1", "5"],
+              "row": ["3", "5"]
+            }
+          },
+          {
+            "title": "Lorem",
+            "origin": {
+              "column": ["2", "3"],
+              "row": ["3", "4"]
+            },
+            "opened": {
+              "column": ["1", "5"],
+              "row": ["3", "5"]
+            }
+          },
+          {
+            "title": "Lorem",
+            "origin": {
+              "column": ["3", "4"],
+              "row": ["3", "4"]
+            },
+            "opened": {
+              "column": ["1", "5"],
+              "row": ["3", "5"]
+            }
+          },
+          {
+            "title": "Lorem",
+            "origin": {
+              "column": ["2", "4"],
+              "row": ["4", "5"]
+            },
+            "opened": {
+              "column": ["1", "5"],
+              "row": ["3", "5"]
+            }
+          },
+          {
+            "title": "Lorem",
+            "origin": {
+              "column": ["4", "5"],
+              "row": ["3", "5"]
+            },
+            "opened": {
+              "column": ["1", "5"],
+              "row": ["3", "5"]
+            }
+          }
+        ]
+      }
     }
   ]
 }

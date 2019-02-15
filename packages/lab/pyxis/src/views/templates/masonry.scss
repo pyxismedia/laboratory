@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700');
+
+.Masonry {
+  display: grid;
+  grid-template-columns: [col-1] minmax(0, 1fr) [col-2] minmax(0, 1fr) [col-3] minmax(0, 1fr) [col-4] minmax(0, 1fr) [col-5];
+  grid-template-rows: [row-1] 25vh [row-2] 25vh [row-3] 25vh [row-4] 25vh [row-5];
+  font-family: 'Lora', serif;
+}
+
+$s-min: 20;
+$s-max: 70;
+$l-min: 30;
+$l-max: 90;
+
+@for $i from 1 through 9 {
+  .Masonry__item:nth-of-type(#{$i}) {
+    background-color: hsl(random(360),$s-min+random($s-max+-$s-min),$l-min+random($l-max+-$l-min));
+
+    &::after {
+      content: "\00a0#{$i}\00a0";
+      display: inline-block;
+      color: black;
+    }
+  }
+}
+
+.Masonry__item {
+  position: relative;
+  z-index: 0;
+  padding: 20px;
+}
+
+.Masonry__content {
+  position: relative;
+}
+
+.Masonry__item--active {
+  z-index: 10;
+}
+
+.Masonry__headline {
+  font-weight: bold;
+}
+
+.Masonry__close {
+  display: none;
+  $size: 50px;
+  height: $size;
+  width: $size;
+  position: absolute;
+  box-sizing: border-box;
+  line-height: $size;
+  top: 0;
+  right: 0;
+
+  &:before, &:after {
+    $width: 30px;
+    $height: 2px;
+    transform: rotate(-45deg);
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -$height/2;
+    margin-left: -$width/2;
+    display: block;
+    height: $height;
+    width: $width;
+    background-color: #fff;
+  }
+
+  &:after {
+    transform: rotate(45deg);
+  }
+}
+
+.Masonry__close--active {
+  display: inline-block;
+}
