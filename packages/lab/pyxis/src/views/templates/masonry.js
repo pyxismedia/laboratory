@@ -1,6 +1,6 @@
 const TIMEOUT = 300;
-// const grid = document.querySelector('.Masonry');
-// animateCSSGrid.wrapGrid(grid, { duration : TIMEOUT });
+const grid = document.querySelector('.Masonry');
+animateCSSGrid.wrapGrid(grid, { duration : TIMEOUT });
 
 $.cssNumber.gridColumnStart = true;
 $.cssNumber.gridColumnEnd = true;
@@ -15,10 +15,6 @@ $('.Masonry__item').each(function() {
     gridRowEnd: $(this).data('origin-row-end'),
   });
 });
-
-// $('h1').textFill({
-//   maxFontPixels: 200,
-// });
 
 $('.Masonry__item').click(function(event) {
   event.stopPropagation();
