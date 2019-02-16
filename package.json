@@ -14,7 +14,6 @@
     "bootstrap": "lerna bootstrap",
     "bootstrap:ns": "lerna bootstrap --ignore-scripts",
     "test": "lerna run test",
-    "postinstall": "lerna bootstrap",
     "build": "lerna run build",
     "docs": "lerna run docs",
     "commit": "git add . && git-cz",
