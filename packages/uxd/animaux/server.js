@@ -3,7 +3,7 @@ var app, server,
   path = require('path'),
   host = process.env.HOST || '127.0.0.1',
   port = process.env.PORT || 3002,
-  root = path.resolve(__dirname, '..');
+  root = path.resolve(__dirname, '');
 
 app = express();
 app.use(function(req, res, next) { console.log(req.url); next(); });

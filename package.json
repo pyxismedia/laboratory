@@ -41,6 +41,7 @@
     "pkg-dir": "^3.0.0"
   },
   "workspaces": [
+    "packages/uxd/animaux",
     "packages/app/pyxis/theme",
     "packages/app/pyxis/web",
     "packages/lab/pyxis",
