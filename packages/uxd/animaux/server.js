@@ -1,7 +1,7 @@
 var app, server,
   express = require('express'),
   path = require('path'),
-  host = process.env.HOST || '127.0.0.1',
+  host = process.env.HOST || '0.0.0.0',
   port = process.env.PORT || 3002,
   root = path.resolve(__dirname, '');
 
