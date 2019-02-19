@@ -26,8 +26,17 @@
       "links": [
         {
           "link": "/templates/masonry",
-          "title": "CSS Grid"
+          "title": "Masonry"
         },
+        {
+          "link": "/templates/shop",
+          "title": "Shop"
+        }
+      ]
+    },
+    {
+      "title": "Pages",
+      "links": [
         {
           "link": "/templates/packery",
           "title": "Packery"
@@ -45,6 +54,11 @@
       "route": "/atoms/buttons",
       "title": "Buttons",
       "view": "atoms/buttons.hbs"
+    },
+    {
+    "route": "/templates/shop",
+    "title": "Shop",
+    "view": "templates/shop.hbs"
     },
     {
       "route": "/templates/masonry",
