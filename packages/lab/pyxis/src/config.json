@@ -27,6 +27,10 @@
         {
           "link": "/templates/masonry",
           "title": "Masonry"
+        },
+        {
+          "link": "/templates/shop",
+          "title": "Shop"
         }
       ]
     },
@@ -45,6 +49,11 @@
       "route": "/atoms/buttons",
       "title": "Buttons",
       "view": "atoms/buttons.hbs"
+    },
+    {
+    "route": "/templates/shop",
+    "title": "Shop",
+    "view": "templates/shop.hbs"
     },
     {
       "route": "/templates/masonry",
