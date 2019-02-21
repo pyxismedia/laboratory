@@ -2,15 +2,17 @@
 
   {{#content "preload"}}
     <link rel="stylesheet" type="text/css" href="../views/templates/shop.scss">
+    <link rel="stylesheet" type="text/css" href="../views/templates/sofiapro.scss">
   {{/content}}
 
 
   {{#content "content"}}
+  <div class="container">
 
  <nav class="navbar navbar-expand-lg pyxis-nav">
-    <a class="navbar-brand pyxis-nav__brand col-1" href="#">LOGO</a>
+            <a class="navbar-brand pyxis-nav__brand col-1" href="#">LOGO</a>
 
-            <ul class="navbar-nav pyxis-nav__navbar col-3 col-10">
+            <ul class="navbar-nav pyxis-nav__navbar col-9">
 
                 <li class="nav-item pyxis-nav__item">
                     <a class="nav-link pyxis-nav__link" href="#">ABOUT</a>
@@ -34,10 +36,17 @@
 
             </ul>
 
-            <button class="pyxis-nav__cart">
+            <button class=" btn pyxis-nav__cart">
                 <p class="pyxis-nav__textcart"> OPEN CART</p>
             </button>
     </nav>
+    <nav>
+        <ol class="breadcrumb pyxis-nav__breadcrumb">
+            <li class="breadcrumb-item pyxus-nav__breaditem"><a href="#">HOME</a></li>
+            <li class="breadcrumb-item pyxus-nav__breaditem"><a href="#">SHOP</a></li>
+        </ol>
+    </nav>
+</div>
 
   {{/content}}
 
