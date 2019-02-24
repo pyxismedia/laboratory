@@ -4,6 +4,9 @@
     max-width: 1440px;
     padding: 0px;
 }
+html {
+    font-size: 16px;
+}
 
 // MENU
 
@@ -16,13 +19,13 @@
 }
 
 .pyxis-nav__link {
-    font-family: $sofia-pro-light;
-    font-size:12px;
+    font: $sofia-pro-light;
+    color: $sofia-color;
 }
 
 .pyxis-nav__brand {
-    font-family: $sofia-pro-black;
-    font-size:28px;
+    font: $sofia-pro-black;
+    color: $sofia-color;
 }
 
 .pyxis-nav__cart {
@@ -32,8 +35,8 @@
 }
 
 .pyxis-nav__textcart {
-    font-family: $sofia-pro-bold;
-    font-size:12px;
+    font: $sofia-pro-bold;
+    color: $sofia-color;
 }
 
 // ARIA CURRENT
