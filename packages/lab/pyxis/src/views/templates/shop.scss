@@ -1,3 +1,5 @@
+@import '../templates/sofiapro.scss';
+
 .container {
     max-width: 1440px;
     padding: 0px;
@@ -10,29 +12,17 @@
     height: 56px;
     width: 100%;
     left: 0px;
-    padding-left: 88px;
     border-bottom: 1px solid gray;
 }
 
-.pyxis-nav__navbar {
-    width: 302px;
-    height: 28px;
-}
-
 .pyxis-nav__link {
-    font-family: "Sofia Pro-light";
+    font-family: $sofia-pro-light;
     font-size:12px;
-    color:#000000;
-    letter-spacing:0;
-    text-align:center;
 }
 
 .pyxis-nav__brand {
-    font-family: "Sofia Pro-black";
+    font-family: $sofia-pro-black;
     font-size:28px;
-    color:#000000;
-    letter-spacing:0;
-    text-align:center;
 }
 
 .pyxis-nav__cart {
@@ -42,25 +32,18 @@
 }
 
 .pyxis-nav__textcart {
-    font-family: "Sofia Pro-bold";
+    font-family: $sofia-pro-bold;
     font-size:12px;
-    color:#000000;;
-    letter-spacing:0;
-    text-align:center;
-    font-weight: bold;
 }
 
 // ARIA CURRENT
 
 .pyxis-nav__breadcrumb {
     background: white;
-    margin-left: 88px;
     a {
         font-family: "Helvetica";
         font-size:12px;
         color:#4a4a4a;
-        letter-spacing:0;
-        text-align:center;
     }
 }
 
