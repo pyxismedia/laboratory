@@ -1,0 +1,38 @@
+{{#extend "layout"}}
+
+  {{#content "preload"}}
+    <link rel="stylesheet" type="text/css" href="../views/templates/packery.scss">
+    <script src="https://unpkg.com/packery@2/dist/packery.pkgd.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/isotope-packery@2.0.1/packery-mode.min.js"></script>
+  {{/content}}
+
+  {{#content "postload"}}
+    <script>
+
+      var elem = document.querySelector('.Grid');
+      var iso = new Isotope(elem, {
+        // options
+        itemSelector: '.Grid__item',
+        layoutMode: 'packery'
+      });
+    </script>
+  {{/content}}
+
+  {{#content "content"}}
+
+    <div class="Grid">
+      <img class="Grid__item" data-grid="big-square" src="http://lorempixel.com/400/400/" />
+      <img class="Grid__item" data-grid="tall" src="http://lorempixel.com/200/400/" />
+      <img class="Grid__item" data-grid="square" src="http://lorempixel.com/200/200/" />
+      <img class="Grid__item" data-grid="square" src="http://lorempixel.com/200/200/" />
+      <img class="Grid__item" data-grid="tall" src="http://lorempixel.com/200/400/" />
+      <img class="Grid__item" data-grid="square" src="http://lorempixel.com/200/200/" />
+      <img class="Grid__item" data-grid="square" src="http://lorempixel.com/200/200/" />
+      <img class="Grid__item" data-grid="wide" src="http://lorempixel.com/400/200/" />
+      <img class="Grid__item" data-grid="tall" src="http://lorempixel.com/200/400/" />
+    </div>
+
+  {{/content}}
+
+{{/extend}}

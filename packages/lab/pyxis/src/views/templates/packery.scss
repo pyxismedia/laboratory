@@ -1,0 +1,23 @@
+.Grid {
+  width: 960px;
+}
+
+[data-grid="big-square"] {
+  width: 50%;
+  height: 400px;
+}
+
+[data-grid="tall"] {
+  width: 25%;
+  height: 400px;
+}
+
+[data-grid="square"] {
+  width: 25%;
+  height: 200px;
+}
+
+[data-grid="wide"] {
+  width: 50%;
+  height: 200px;
+}

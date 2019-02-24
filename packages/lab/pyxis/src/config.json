@@ -26,21 +26,21 @@
       "links": [
         {
           "link": "/templates/masonry",
-          "title": "Masonry"
-        }
-      ]
-    },
-    {
-      "title": "Pages",
-      "links": [
+          "title": "CSS Grid"
+        },
         {
-          "link": "/pages/buttons",
-          "title": "Buttons"
+          "link": "/templates/packery",
+          "title": "Packery"
         }
       ]
     }
   ],
   "routes": [
+    {
+      "route": "/templates/packery",
+      "title": "Buttons",
+      "view": "templates/packery.hbs"
+    },
     {
       "route": "/atoms/buttons",
       "title": "Buttons",
