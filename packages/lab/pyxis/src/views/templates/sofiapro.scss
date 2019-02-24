@@ -1,6 +1,6 @@
 @font-face {
-    $sofia-pro-black: 'Sofia Pro-black' #000000;
-    src: url('fonts/PSofiaPro-Black.eot');
+    font-family: 'Sofia Pro-black';
+    src: url('fonts/SofiaPro-Black.eot');
     src: url('fonts/SofiaPro-Black.eot?#iefix') format('embedded-opentype'),
         url('fonts/SofiaPro-Black.woff2') format('woff2'),
         url('fonts/SofiaPro-Black.woff') format('woff'),
@@ -9,7 +9,7 @@
 }
 
 @font-face {
-    $sofia-pro-light: 'Sofia Pro-light' #000000;
+    font-family: 'Sofia Pro-light';
     src: url('fonts/SofiaPro-Light.eot');
     src: url('fonts/SofiaPro-Light.eot?#iefix') format('embedded-opentype'),
         url('fonts/SofiaPro-Light.woff2') format('woff2'),
@@ -19,7 +19,7 @@
 }
 
 @font-face {
-    $sofia-pro-bold:'Sofia Pro-bold' #000000;
+    font-family:'Sofia Pro-bold';
     src: url('fonts/SofiaPro-Bold.eot');
     src: url('fonts/SofiaPro-Bold.eot?#iefix') format('embedded-opentype'),
         url('fonts/SofiaPro-Bold.woff2') format('woff2'),
@@ -29,3 +29,7 @@
     font-weight: bold;
     font-style: normal;
 }
+$sofia-pro-black: 28px 'Sofia Pro-black';
+$sofia-pro-light: 12px 'Sofia Pro-light';
+$sofia-pro-bold: 12px 'Sofia Pro-bold';
+$sofia-color: #000000;
