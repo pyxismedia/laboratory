@@ -1,1 +1,0 @@
-export { Construction } from './component';

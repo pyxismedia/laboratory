@@ -1,1 +1,0 @@
-export { Mapbox } from './component';

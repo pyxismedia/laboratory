@@ -9,8 +9,8 @@ export const css = (): ModulePart => ({
         use: [
           resolve('style-loader'),
           resolve('css-loader'),
-        ]
-      }
+        ],
+      },
     ]
   }
 });

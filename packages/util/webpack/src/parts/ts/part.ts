@@ -35,8 +35,13 @@ export const ts = (): TsPart => ({
       {
         test: /.*\.m?tsx?$/,
         exclude: /node_modules/,
-        loader: resolve('babel-loader'),
-        options: babelrc,
+        use: [
+          {
+            loader: resolve('babel-loader'),
+            options: babelrc,
+          },
+          resolve('react-docgen-typescript-loader'),
+        ],
       },
     ],
   },

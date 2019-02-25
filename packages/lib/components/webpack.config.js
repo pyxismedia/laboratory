@@ -1,11 +1,11 @@
-const { typescriptCss } = require('@pyxis/webpack/build/configs/typescriptCss');
+const { stylable } = require('@pyxis/webpack/build/configs/stylable');
 const externals = require('webpack-node-externals');
 const merge = require('webpack-merge');
 
-module.exports = merge(typescriptCss({
+module.exports = merge(stylable({
   entry: {
-    'construction': './src/components/construction',
-    'logo': './src/components/logo',
+    'construction': './src/components/templates/construction',
+    'logo': './src/components/atoms/svg',
   },
   externals: [externals()],
 }));

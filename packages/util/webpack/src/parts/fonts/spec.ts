@@ -1,6 +1,5 @@
 import ava from 'ava';
 import prequire from 'proxyquire';
-import { resolve } from '../../constants';
 
 const { fonts } = prequire.noCallThru()('./part', {
   '../../constants': { resolve: (modules: string) => modules },
@@ -9,10 +8,12 @@ const { fonts } = prequire.noCallThru()('./part', {
 ava('should have target with default value', (t) => {
   const expected = {
     module: {
-      rules: {
-        test: /\.font\.js/,
-        use: ['css-loader', 'webfonts-loader'],
-      },
+      rules: [
+        {
+          test: /\.font\.js/,
+          use: ['css-loader', 'webfonts-loader'],
+        }
+      ],
     },
   };
 
