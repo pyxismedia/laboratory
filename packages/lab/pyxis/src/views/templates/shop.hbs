@@ -3,51 +3,66 @@
   {{#content "preload"}}
     <link rel="stylesheet" type="text/css" href="../views/templates/shop.scss">
     <link rel="stylesheet" type="text/css" href="../views/templates/sofiapro.scss">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   {{/content}}
 
 
   {{#content "content"}}
-  <div class="container">
-      <div class="row">
+<div class="container">
+    <div class="row">
 
- <nav class="navbar navbar-expand-lg pyxis-nav col-xl-12">
-            <a class="navbar-brand pyxis-nav__brand col-1" href="#">LOGO</a>
+        <nav class="navbar navbar-expand-lg pyxis-nav col-xl-12">
+                <a class="navbar-brand pyxis-nav__brand col-2 text-center" href="#">LOGO</a>
 
-            <ul class="navbar-nav pyxis-nav__navbar col-10">
+                <ul class="navbar-nav pyxis-nav__navbar col-8">
 
-                <li class="nav-item pyxis-nav__item d-flex align-items-center">
-                    <a class="nav-link pyxis-nav__link" href="#">ABOUT</a>
-                </li>
+                    <li class="nav-item pyxis-nav__item d-flex align-items-center">
+                        <a class="nav-link pyxis-nav__link" href="#">ABOUT</a>
+                    </li>
 
-                <li class="nav-item pyxis-nav__item">
-                    <a class="nav-link pyxis-nav__link d-flex align-items-center">|</a>
-                </li>
+                    <li class="nav-item pyxis-nav__item">
+                        <a class="nav-link pyxis-nav__link d-flex align-items-center">|</a>
+                    </li>
 
-                <li class="nav-item pyxis-nav__item d-flex align-items-center">
-                    <a class="nav-link pyxis-nav__link" href="#">ESHOP</a>
-                </li>
+                    <li class="nav-item pyxis-nav__item d-flex align-items-center">
+                        <a class="nav-link pyxis-nav__link" href="#">ESHOP</a>
+                    </li>
 
-                <li class="nav-item pyxis-nav__item">
-                    <a class="nav-link pyxis-nav__link d-flex align-items-center">|</a>
-                </li>
+                    <li class="nav-item pyxis-nav__item">
+                        <a class="nav-link pyxis-nav__link d-flex align-items-center">|</a>
+                    </li>
 
-                <li class="nav-item pyxis-nav__item d-flex align-items-center">
-                    <a class="nav-link pyxis-nav__link" href="#">CONTACT</a>
-                </li>
+                    <li class="nav-item pyxis-nav__item d-flex align-items-center">
+                        <a class="nav-link pyxis-nav__link" href="#">CONTACT</a>
+                    </li>
 
-            </ul>
+                </ul>
 
-            <button class=" btn pyxis-nav__cart">
-                <p class="pyxis-nav__textcart">OPEN CART</p>
-            </button>
-    </nav>
+                <button class=" btn pyxis-nav__cart">
+                    <p class="pyxis-nav__textcart"><i class="fas fa-shopping-cart"></i> OPEN CART</p>
+                </button>
+        </nav>
     </div>
-    <nav>
-        <ol class="breadcrumb pyxis-nav__breadcrumb">
-            <li class="breadcrumb-item pyxus-nav__breaditem"><a href="#">HOME</a></li>
-            <li class="breadcrumb-item pyxus-nav__breaditem"><a href="#">SHOP</a></li>
-        </ol>
-    </nav>
+
+    <div class="row">
+        <nav class="col-xl-12">
+            <ol class="breadcrumb pyxis-nav__breadcrumb col-2 justify-content-center">
+                <li class="breadcrumb-item pyxus-nav__breaditem"><a href="#">HOME</a></li>
+                <li class="breadcrumb-item pyxus-nav__breaditem"><a href="#">SHOP</a></li>
+            </ol>
+        </nav>
+    </div>
+    
+    <div class="media pyxis-content__media">
+        <img src="../../views/templates/photo/Sofia-group-styled_Web_1024x1024_affd2440-5a10-4eed-b90f-d80832af3105_2048x@1x.png" class="mr-3" alt="...">
+            <div class="media-body pyxis-content__media-body">
+                <h5 class="mt-0 pyxis-content__mediatitle">Lorem ipsum solor sit amet</h5>
+                <h5 class="mt-0 pyxis-content__mediaprice">€500</h5>
+                <p class="pyxis-content__mediadescription">
+                    Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero.
+                </p>
+            </div>
+    </div>
 </div>
 
   {{/content}}
