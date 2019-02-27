@@ -10,7 +10,7 @@ storiesOf('Atoms/Svg', module)
   .addDecorator(withReadme(README))
   .add(
   'default',
-  /*withDocs(README,*/ () => {
+  () => {
     const props = {
       svg,
       link: text('Link', '#'),
@@ -19,4 +19,4 @@ storiesOf('Atoms/Svg', module)
       },
     };
     return <Svg {...props} />
-  }/*)*/);
+  });

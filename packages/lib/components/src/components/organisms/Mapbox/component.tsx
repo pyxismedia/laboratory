@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import * as mapbox from 'mapbox-gl';
-import 'mapbox-gl/dist/mapbox-gl.css';
+// import 'mapbox-gl/dist/mapbox-gl.css';
 
 export class Mapbox extends Component {
   map;
