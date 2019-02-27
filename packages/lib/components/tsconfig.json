@@ -1,5 +1,5 @@
 {
-  "extends": "./node_modules/@pyxis/webpack/build/parts/ts/tsconfig.json",
+  "extends": "@pyxis/webpack/build/parts/ts/tsconfig.json",
   "compilerOptions": {
     "module": "commonjs",
     "jsx": "react"

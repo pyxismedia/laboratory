@@ -1,0 +1,1 @@
+export { stylable } from './part';

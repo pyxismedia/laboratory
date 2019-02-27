@@ -1,8 +1,10 @@
 export interface FontsPart {
   module: {
-    rules: {
-      test: RegExp,
-      use: string[],
-    }
-  }
+    rules: [
+      {
+        test: RegExp,
+        use: string[],
+      }
+    ],
+  },
 }

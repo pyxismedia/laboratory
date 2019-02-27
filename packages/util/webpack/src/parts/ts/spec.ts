@@ -1,6 +1,8 @@
 import ava from 'ava';
 import prequire from 'proxyquire';
 import { enforce } from './part';
+import { resolve } from '../../constants';
+import { babelrc } from './babelrc';
 
 class ForkTsCheckerWebpackPlugin {
   public tsconfig: string;
@@ -43,8 +45,13 @@ ava('should export default values', (t) => {
         {
           test: /.*\.m?tsx?$/,
           exclude: /node_modules/,
-          loader: 'babel-loader',
-          options: 'babelrc',
+          use: [
+            {
+              loader: 'babel-loader',
+              options: 'babelrc',
+            },
+            'react-docgen-typescript-loader',
+          ],
         },
       ],
     },
