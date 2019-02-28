@@ -12,42 +12,41 @@ html {
 
 .pyxis-nav {
     position: relative;
-    height: 56px;
+    height: $menu-height;
     width: 100%;
-    left: 0px;
-    border-bottom: 1px solid gray;
+    border-bottom: $border;
 }
 
 .pyxis-nav__link {
     font: $sofia-pro-light;
-    color: $sofia-color;
+    color: $primary-color;
 }
 
 .pyxis-nav__brand {
     font: $sofia-pro-black;
-    color: $sofia-color;
+    color: $primary-color;
 }
 
 .pyxis-nav__cart {
-    height: 28px;
-    border: 1px solid gray;
+    height: $cart-height;
+    border: $border;
     border-radius: 0px;
 }
 
 .pyxis-nav__textcart {
     font: $sofia-pro-bold;
-    color: $sofia-color;
+    color: $primary-color;
 }
 
 // ARIA CURRENT
 
 .pyxis-nav__breadcrumb {
-    background: white;
-    a {
-        font-family: "Helvetica";
-        font-size:12px;
-        color:#4a4a4a;
-    }
+    background: $background-color;
+}
+
+.pyxis-nav__breadlink {
+    color: $secondary-color;
+    font: $helvetica;
 }
 
 // CONTENT
