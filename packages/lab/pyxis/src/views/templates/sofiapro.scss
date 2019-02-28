@@ -29,7 +29,17 @@
     font-weight: bold;
     font-style: normal;
 }
-$sofia-pro-black: 28px 'Sofia Pro-black';
-$sofia-pro-light: 12px 'Sofia Pro-light';
-$sofia-pro-bold: 12px 'Sofia Pro-bold';
-$sofia-color: #000000;
+
+$sofia-pro-black: 1.75rem 'Sofia Pro-black';
+$sofia-pro-light: 0.75rem 'Sofia Pro-light';
+$sofia-pro-bold: 0.75rem 'Sofia Pro-bold';
+$helvetica: 0.75rem 'Helvetica';
+
+$primary-color: #000000;
+$secondary-color: #4a4a4a;
+$background-color: rgb(255, 255, 255);
+
+$border: 1px solid $secondary-color;
+
+$cart-height: 28px;
+$menu-height: 56px;
