@@ -1,0 +1,1 @@
+export { sass } from './part';

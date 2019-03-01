@@ -1,3 +1,6 @@
 [submodule "packages/pyxis-on-redux"]
 	path = packages/pyxis-on-redux
 	url = https://github.com/creaux/pyxis-on-redux.git
+[submodule "packages/lib/styled"]
+	path = packages/lib/styled
+	url = https://github.com/creaux/pyxis-on-redux.git

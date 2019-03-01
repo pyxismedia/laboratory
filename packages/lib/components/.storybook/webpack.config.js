@@ -1,5 +1,5 @@
-const path = require("path");
 const { storybook } = require('@pyxis/webpack/build/configs/typescript/stylable');
+const { sass } = require('@pyxis/webpack/build/parts/sass');
 const webpackMerge = require('webpack-merge');
 const { assign } = Object;
 
@@ -13,6 +13,7 @@ module.exports = (storybookBaseConfig, configType, defaultConfig) => {
   })(
     defaultConfig,
     storybook(),
+    sass(),
   );
 
   const forbiddenStorybookLoaders = [

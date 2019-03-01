@@ -10,8 +10,6 @@ import pluginClassProperties from '@babel/plugin-proposal-class-properties';
 import pluginObjectRestSpread from '@babel/plugin-proposal-object-rest-spread';
 // @ts-ignore
 import pluginProposalDecorators from '@babel/plugin-proposal-decorators';
-// @ts-ignore
-import pluginRequireContextHook from 'babel-plugin-require-context-hook';
 import { BABELRC } from "./types";
 
 export const babelrc: BABELRC = {
@@ -25,10 +23,5 @@ export const babelrc: BABELRC = {
     [pluginProposalDecorators, { legacy: true }],
     [pluginClassProperties, { loose: true }],
     pluginObjectRestSpread
-  ],
-  env: {
-    test: {
-      plugins: [pluginRequireContextHook],
-    }
-  }
+  ]
 };
