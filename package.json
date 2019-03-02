@@ -16,7 +16,8 @@
     "build": "lerna run build",
     "docs": "lerna run docs",
     "commit": "git add . && git-cz",
-    "release": "lerna-semantic-release pre && lerna-semantic-release perform"
+    "release": "lerna-semantic-release pre && lerna-semantic-release perform",
+    "postinstall": "lerna exec -- \"yarn generate-lock-entry > yarn.lock\""
   },
   "husky": {
     "hooks": {
