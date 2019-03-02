@@ -1,7 +1,6 @@
 import React, { FunctionComponent } from 'react';
 // @ts-ignore
 import InlineSVG from 'svg-inline-react';
-import style from './svg.st.css';
 
 /**
  * Svg properties.

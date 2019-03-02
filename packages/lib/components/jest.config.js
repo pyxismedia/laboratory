@@ -4,7 +4,7 @@ module.exports = {
   ],
   "transform": {
     "^.+\\.(tsx?|jsx?)$": "ts-jest",
-    "^.+\\.(css|less|md|svg)$": "<rootDir>/.jest/.jestMock.js"
+    "^.+\\.(css|less|md|svg|scss)$": "<rootDir>/.jest/.jestMock.js"
   },
   "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$",
   "moduleFileExtensions": [
@@ -15,4 +15,8 @@ module.exports = {
     "json",
     "node"
   ],
+  "setupFilesAfterEnv": [
+    "<rootDir>/.jest/setupTestFramework.ts",
+    "<rootDir>/.jest/setupEnzyme.js"
+  ]
 };
