@@ -17,7 +17,8 @@
     "docs": "lerna run docs",
     "commit": "git add . && git-cz",
     "release": "lerna-semantic-release pre && lerna-semantic-release perform",
-    "postinstall": "lerna exec -- \"yarn generate-lock-entry > yarn.lock\""
+    "sass-fix": "node ./node_modules/node-sass/scripts/install.js && npm rebuild node-sass",
+    "postinstall": "lerna exec -- \"yarn generate-lock-entry > yarn.lock\" && yarn sass-fix"
   },
   "husky": {
     "hooks": {

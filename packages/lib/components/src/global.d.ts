@@ -14,6 +14,11 @@ declare module '*.md' {
   export default content;
 }
 
+declare module '*.scss' {
+  const content: any;
+  export default content;
+}
+
 interface Global extends NodeJS.Global {
   expect: Chai.ExpectStatic;
 }

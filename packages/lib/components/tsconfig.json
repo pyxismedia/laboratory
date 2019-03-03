@@ -1,12 +1,10 @@
 {
   "extends": "@pyxis/webpack/build/parts/ts/tsconfig.json",
-  "compilerOptions": {
-    "module": "commonjs",
-    "jsx": "react"
-  },
+  // Has to be define otherwise relatively to origin directory
   "include": [
     "src"
   ],
+  // Has to be define otherwise relatively to origin directory
   "exclude": [
     "node_modules",
     "src/**/spec.ts"

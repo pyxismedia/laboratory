@@ -3,6 +3,7 @@ const { sass } = require('@pyxis/webpack/build/parts/sass');
 const { sassExtract } = require('@pyxis/webpack/build/parts/sassExtract');
 const webpackMerge = require('webpack-merge');
 const { assign } = Object;
+const webpack = require('webpack');
 
 // Export a function. Accept the base config as the only param.
 module.exports = (storybookBaseConfig, configType, defaultConfig) => {
@@ -15,7 +16,6 @@ module.exports = (storybookBaseConfig, configType, defaultConfig) => {
     defaultConfig,
     storybook(),
     sass(),
-    sassExtract(),
   );
 
   const forbiddenStorybookLoaders = [
@@ -26,7 +26,7 @@ module.exports = (storybookBaseConfig, configType, defaultConfig) => {
   // Remove css since we are using stylable
   // Stylable causing issue when loader for css is part of it
   // Since storybook adding it by default we have to manually remove it
-  return assign({}, result ,{
+  const sanitized = assign({}, result ,{
     module: {
       rules: result.module.rules
         .filter(rule => (
@@ -34,4 +34,6 @@ module.exports = (storybookBaseConfig, configType, defaultConfig) => {
         )),
     },
   });
+
+  return sanitized;
 };

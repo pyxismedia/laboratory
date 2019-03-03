@@ -1,8 +1,6 @@
 import { configure, addDecorator } from '@storybook/react';
-import '@storybook/addon-console';
 import { withOptions } from '@storybook/addon-options';
 import { withKnobs } from '@storybook/addon-knobs';
-import { withInfo } from '@storybook/addon-info';
 import path from 'path';
 
 function requireAll(requireContext) {
@@ -10,7 +8,6 @@ function requireAll(requireContext) {
 }
 
 function loadStories() {
-  addDecorator(withInfo({ inline: true }));
   addDecorator(withKnobs);
   addDecorator(
     withOptions({
