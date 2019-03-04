@@ -1,4 +1,5 @@
 @import '../templates/sofiapro.scss';
+@import '../../scss/variables.scss';
 
 .container {
     max-width: 1440px;
@@ -6,6 +7,7 @@
 }
 html {
     font-size: 16px;
+    font-family: $font-family-sans-serif;
 }
 
 // MENU
@@ -18,13 +20,15 @@ html {
 }
 
 .pyxis-nav__link {
-    font: $sofia-pro-light;
-    color: $primary-color;
+    color: $font-color;
+    font-weight: lighter;
+    font-size: $font-size-sm;
 }
 
 .pyxis-nav__brand {
-    font: $sofia-pro-black;
-    color: $primary-color;
+    color: $font-color;
+    font-weight: bold;
+    font-size: $font-size-lg;
 }
 
 .pyxis-nav__cart {
@@ -34,30 +38,25 @@ html {
 }
 
 .pyxis-nav__textcart {
-    font: $sofia-pro-bold;
-    color: $primary-color;
+    color: $font-color;
+    font-weight: bolder;
+    font-size: $font-size-sm;
 }
 
 // ARIA CURRENT
 
-.pyxis-nav__breadcrumb {
-    background: $background-color;
-}
-
 .pyxis-nav__breadlink {
     color: $secondary-color;
-    font: $helvetica;
+    font-size: $font-size-sm;
 }
 
 // CONTENT
 
 .pyxis-content__mediatitle {
-    font: $sofia-pro-bold;
-    font-size: 1.5rem;
+    font-size: $font-size-lg;
 }
 
 .pyxis-content__mediadescription {
-    font: $sofia-pro-light;
-    font-size: 0.875rem;
+    font-weight: 100;
 }
 
