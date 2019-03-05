@@ -1,0 +1,28 @@
+@import '../templates/sofiapro.scss';
+@import '../../scss/variables.scss';
+
+html {
+    font-size: 16px;
+    font-family: $font-family-sans-serif;
+}
+
+
+.container {
+    max-width: 1440px;
+    padding: 0px;
+}
+
+.painter-navigation {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    width: 100%;
+}
+
+.painter-nav__icon .painter-nav__link {
+    color: $font-color;
+}
+
+.painter-nav__link {
+    font-weight: lighter;
+}

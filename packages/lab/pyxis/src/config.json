@@ -31,9 +31,13 @@
         {
           "link": "/templates/shop",
           "title": "Shop"
-        }
-      ]
-    },
+        },
+      {
+        "link": "/templates/painter",
+        "title": "Painter"
+      }
+    ]
+  },
     {
       "title": "Pages",
       "links": [
@@ -55,6 +59,11 @@
     "title": "Shop",
     "view": "templates/shop.hbs"
     },
+    {
+      "route": "/templates/painter",
+      "title": "Painter",
+      "view": "templates/painter.hbs"
+      },
     {
       "route": "/templates/masonry",
       "title": "Masonry",
