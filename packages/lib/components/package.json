@@ -14,11 +14,13 @@
     "dev": "webpack --config webpack.config.js --watch",
     "build": "webpack --config webpack.config.js",
     "postinstall_BYPASS": "yarn storybook:build && yarn build",
+    "postinstall": "yarn storybook:build",
     "test": "jest",
     "test:watch": "jest --watch",
     "storybook": "start-storybook -p 9001 -c .storybook",
     "storybook:build": "build-storybook -c .storybook -o .storybook/build",
-    "storybook:serve": "surge --domain pyxis-components.surge.sh --project .storybook/build"
+    "storybook:surge": "surge --domain pyxis-components.surge.sh --project .storybook/build",
+    "storybook:serve": "serve .storybook/build"
   },
   "dependencies": {
     "@dr-kobros/react-webfont-loader": "^8.0.0",
@@ -40,6 +42,7 @@
     "react-dom": "^16.6.3",
     "react-konva": "^16.6.31",
     "recompose": "^0.30.0",
+    "serve": "^10.1.2",
     "svg-inline-react": "^3.1.0",
     "tracking": "^1.1.3"
   },
