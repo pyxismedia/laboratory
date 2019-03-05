@@ -1,9 +1,10 @@
 @import '../templates/sofiapro.scss';
 @import '../../scss/variables.scss';
 
-html {
+html, body{
     font-size: 16px;
     font-family: $font-family-sans-serif;
+    background-color: $painter-primary-color;
 }
 
 
@@ -20,9 +21,27 @@ html {
 }
 
 .painter-nav__icon .painter-nav__link {
-    color: $font-color;
 }
 
 .painter-nav__link {
     font-weight: lighter;
+}
+
+.painter-title__main {
+    font-size: $font-size-painter-lg;
+    padding: 10px;
+    color: $painter-h1;
+}
+
+.painter-title__concact {
+    color: $painter-secondary-color;
+}
+
+.painter-screen__main {
+    border-bottom: $painter-border;
+    margin-top: 20px;
+}
+
+.painter-title__skills {
+    padding: 30px;
 }
