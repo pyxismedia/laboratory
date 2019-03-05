@@ -1,79 +1,40 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { Carousel } from './component';
-import { withDocs } from 'storybook-readme'
-import README from './README.md';
-import faker from 'faker';
+import { Carousel } from './component'
+import HEADER from './markdown/HEADER.md';
+import VARIANTS_HEADER from './markdown/VARIANTS_HEADER.md';
+import VARIANTS_SIMPLE from './markdown/VARIANTS_SIMPLE.md'
+import VARIANTS_MULTI from './markdown/VARIANTS_MULTI.md'
+import { mocks } from './mocks';
 import { withInfo } from '@storybook/addon-info'
+import Marked from 'storybook-readme/components/Marked';
 
-const story = storiesOf('Moleculs/Carousel', module)
-  .addDecorator(withInfo({ header: false }))
-  .addDecorator(withDocs(README));
+const story = storiesOf('Moleculs/Carousel', module);
+const typings = story.addDecorator(withInfo({ header: false }));
 
 story.add(
+  'Documentation',
+  () => (
+    <div style={{ padding: '20px' }}>
+      <Marked md={HEADER} />
+      <Marked md={'<br />'} />
+      <Marked md={VARIANTS_HEADER}/>
+      <Marked md={'<br />'} />
+      <Marked md={VARIANTS_SIMPLE}/>
+      <Marked md={'<br />'} />
+      <Carousel {...mocks.simple} />
+      <Marked md={'<br />'} />
+      <Marked md={VARIANTS_MULTI}/>
+      <Marked md={'<br />'} />
+      <Carousel {...mocks.multi} />
+    </div>
+  ),
+);
+
+typings.add(
   'multi',
-  () => {
-    const props = {
-      slides: [
-        [
-          {
-            src: faker.image.image(),
-            alt: faker.lorem.text(),
-          },
-          {
-            src: faker.image.image(),
-            alt: faker.lorem.text(),
-          },
-          {
-            src: faker.image.image(),
-            alt: faker.lorem.text(),
-          },
-          {
-            src: faker.image.image(),
-            alt: faker.lorem.text(),
-          }
-        ],
-        [
-          {
-            src: faker.image.image(),
-            alt: faker.lorem.text(),
-          },
-          {
-            src: faker.image.image(),
-            alt: faker.lorem.text(),
-          },
-          {
-            src: faker.image.image(),
-            alt: faker.lorem.text(),
-          },
-          {
-            src: faker.image.image(),
-            alt: faker.lorem.text(),
-          }
-        ],
-      ],
-    };
-    return <Carousel {...props} />
-  });
+  () => <Carousel {...mocks.multi} />);
 
-story.add(
-'default',
-() => {
-  const props = {
-    slides: [
-      {
-        src: faker.image.image(),
-        alt: faker.lorem.text(),
-      },
-      {
-        src: faker.image.image(),
-        alt: faker.lorem.text(),
-      },
-      {
-        src: faker.image.image(),
-        alt: faker.lorem.text(),
-      }
-    ],
-  };
-  return <Carousel {...props} />
-});
+typings.add(
+'simple',
+() => <Carousel {...mocks.simple} />);

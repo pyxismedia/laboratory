@@ -9,7 +9,7 @@ import { withInfo } from '@storybook/addon-info';
 
 storiesOf('Atoms/Svg', module)
   .addDecorator(withInfo({ header: false }))
-  .addDecorator(withDocs(README))
+  .addDecorator(withDocs([README]))
   .add(
   'default',
   () => {

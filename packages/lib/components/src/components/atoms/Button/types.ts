@@ -1,5 +1,5 @@
 
-export enum Types {
+export enum Variants {
   PRIMARY = 'primary',
   SECONDARY = 'secondary',
   SUCCESS = 'success',

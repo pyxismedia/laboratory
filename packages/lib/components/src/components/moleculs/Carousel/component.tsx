@@ -1,11 +1,13 @@
-import * as React from 'react';
-import '../../bootstrap.scss';
-import { CarouselSlide } from './types'
-import { Carousel as BsCarousel } from 'react-bootstrap';
-import branch from 'recompose/branch';
-import renderComponent from 'recompose/renderComponent';
-import defaultProps from 'recompose/defaultProps';
-import cn from 'classnames';
+import * as React from 'react'
+import '../../bootstrap.scss'
+import { CarouselSlide, Variants, Slide, Slides } from './types'
+import { Carousel as BsCarousel } from 'react-bootstrap'
+import defaultProps from 'recompose/defaultProps'
+import setDisplayName from 'recompose/setDisplayName';
+import compose from 'recompose/compose';
+import cn from 'classnames'
+import { Log } from '../../../services/log';
+import { tap } from '../../../services/tap';
 
 const ITEM_WIDTH = 100;
 
@@ -14,41 +16,70 @@ interface ItemProps {
   width?: number;
 }
 
-const Item = defaultProps<ItemProps>({ width: 100, slide: { src: '', alt: '' } })(({ slide, width }: ItemProps) => (
+const ItemPure = ({ slide, width }: ItemProps) => (
   <img className={cn({ 'd-block': width === ITEM_WIDTH }, `w-${width || ITEM_WIDTH}`)} src={slide.src} alt={slide.alt} />
-));
+);
+
+const Item = compose<ItemProps, ItemProps>(
+  setDisplayName('Item'),
+  defaultProps<ItemProps>({
+    width: 100,
+    slide: { src: '', alt: '' },
+  }),
+)(ItemPure);
 
 interface ItemsProps {
   slide: CarouselSlide[];
 }
 
-const Items: React.FunctionComponent<ItemsProps> = ({ slide }) => (
+const Items: React.FunctionComponent<ItemsProps> = setDisplayName('Items')(({ slide }) => (
   <>
-    {slide.map((item: CarouselSlide) => (
-      <Item width={ITEM_WIDTH / slide.length} slide={slide[0]} />
+    {slide.map((item: CarouselSlide, i: number) => (
+      <Item width={ITEM_WIDTH / slide.length} slide={item} key={i} />
     ))}
   </>
-);
-
-type Slides = CarouselSlide[] | CarouselSlide[][];
+));
 
 export interface CarouselProps {
   slides: Slides;
+  variant: Variants,
 }
 
-export const  Carousel: React.FunctionComponent<CarouselProps> = ({ slides }) => (
-  <BsCarousel className="carousel-multi-item">
-    {slides.map((slide, i) => {
-      const Content = branch<ItemsProps>(
-        (props: ItemsProps) => Array.isArray(props.slide),
-        renderComponent(Items)
-      )(Item);
 
-      return (
-        <BsCarousel.Item key={i}>
-          <Content slide={slide} />
+const CarouselPure: React.FunctionComponent<CarouselProps> = ({ slides, variant = Variants.SIMPLE }) => (
+  <BsCarousel>
+    {slides.map((slide: Slide, i: number) => {
+      if (Array.isArray(slide)) {
+        return <BsCarousel.Item key={i}>
+          <Items slide={slide}/>
         </BsCarousel.Item>
-      );
+      }
+
+      return <BsCarousel.Item key={i}>
+        <Item slide={slide}/>
+      </BsCarousel.Item>;
     })}
   </BsCarousel>
 );
+
+export const Carousel = compose<CarouselProps, CarouselProps>(
+  setDisplayName('Carousel'),
+  tap((props: CarouselProps) => {
+    const log = new Log();
+    const { variant, slides } = props;
+    log.info(`Props are ${JSON.stringify(props, null, 2)}`, Carousel.displayName as string);
+
+    if (typeof variant === 'undefined') {
+      log.error('Prop variant has to be defined', Carousel.displayName as string);
+    }
+
+    if (variant === Variants.MULTI) {
+      !Array.isArray(slides) &&
+      log.error('Since Variant.MULTI you have to provide multi array.', Carousel.displayName as string);
+
+    } else if (variant === Variants.SIMPLE) {
+      !Array.isArray(slides) &&
+      log.error('Since Variant.SIMPLE you have to provide simple array.', Carousel.displayName as string);
+    }
+  })
+)(CarouselPure);

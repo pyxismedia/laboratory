@@ -9,10 +9,8 @@ declare module '*.svg' {
   export default content;
 }
 
-declare module '*.md' {
-  const content: any;
-  export default content;
-}
+declare module '*.md';
+declare module 'window';
 
 declare module '*.scss' {
   const content: any;

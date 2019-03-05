@@ -1,3 +1,3 @@
 export { Button } from './component';
-export { Types } from './types';
+export { Variants } from './types';
 

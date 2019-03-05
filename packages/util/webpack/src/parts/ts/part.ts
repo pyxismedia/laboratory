@@ -47,6 +47,7 @@ export const ts = (): TsPart => ({
   },
   plugins: [
     new ForkTsCheckerWebpackPlugin({
+      // Indicates path to tsconfig.json file in particular package
       tsconfig: './tsconfig.json',
     }),
     new PrepackWebpackPlugin({
