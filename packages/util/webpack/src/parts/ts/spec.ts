@@ -57,7 +57,7 @@ ava('should export default values', (t) => {
     },
     plugins: [
       new ForkTsCheckerWebpackPlugin({
-        tsconfig: 'root',
+        tsconfig: './tsconfig.json',
       }),
       new PrepackPlugin(),
     ],
