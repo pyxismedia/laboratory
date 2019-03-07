@@ -11,7 +11,7 @@
 <div class="container">
     <div class="row">
 
-        <nav class="navbar navbar-expand-lg pyxis-nav col-xl-12">
+        <nav class="navbar navbar-expand-lg pyxis-nav col-xl-12 navbar-white bg-white">
                 <a class="navbar-brand pyxis-nav__brand col-2 text-center text-uppercase" href="#">logo</a>
 
                 <ul class="navbar-nav pyxis-nav__navbar col-8">
@@ -52,17 +52,82 @@
             </ol>
         </nav>
     </div>
-    
-    <div class="media pyxis-content__media">
-        <img src="../../views/templates/photo/Sofia-group-styled_Web_1024x1024_affd2440-5a10-4eed-b90f-d80832af3105_2048x@1x.png" class="mr-3" alt="...">
-            <div class="media-body pyxis-content__media-body">
-                <h5 class="mt-0 pyxis-content__mediatitle">Lorem ipsum solor sit amet</h5>
-                <h5 class="mt-0 pyxis-content__mediaprice">€500</h5>
-                <p class="pyxis-content__mediadescription">
-                    Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero.
-                </p>
-            </div>
+
+    <div class="content-container">
+        <div class="media pyxis-content__media">
+            <img src="../../views/templates/photo/Sofia-group-styled_Web_1024x1024_affd2440-5a10-4eed-b90f-d80832af3105_2048x@1x.png" class="mr-3" alt="...">
+                <div class="media-body pyxis-content__media-body">
+                    <h5 class="mt-0 pyxis-content__mediatitle text-uppercase">Lorem ipsum solor sit amet</h5>
+                    <h5 class="mt-0 pyxis-content__mediaprice">€500</h5>
+                    <p class="pyxis-content__mediadescription">
+                        Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero.
+                    </p>
+                    <button class="btn pyxis-content__number text-uppercase col-1">
+                        1
+                    </button>
+
+                    <button class="btn pyxis-content__cart text-uppercase">
+                        add to cart
+                    </button>
+
+                    <p class="text-uppercase pyxis-options">options</p>
+                    <p class="available">available sizes <a class="sizes text-uppercase">s | m | l | xl</a></p>
+
+                    <ul class="icon-navs nav">
+                        <li class="pyxis-icons__twitter float-left"><i class="fab fa-twitter"></i></li>
+                        <li class="pyxis-icons__facebook float-left"><i class="fab fa-facebook-f"></i></li>
+                        <li class="pyxis-icons__linkedin float-left"><i class="fab fa-linkedin-in"></i></li>
+                        <li class="pyxis-icons__instagram float-left"><i class="fab fa-instagram"></i></li>
+                    </ul>    
+                </div>
+        </div>
+
+        <div class="photo-grid">    
+            <img src="../../views/templates/photo/Sofia_Tall_Large_x_website_1024x1024_7573d36a-c292-4884-a60a-a333d09ed85c_2048x@1x.png">
+            <img src="../../views/templates/photo/sofia_tall_large_glass_2048x@1x.png">
+            <img src="../../views/templates/photo/Sofia-group-styled_Web2_1024x1024_affd2440-5a10-4eed-b90f-d80832af3105_2048x@1x.png">
+
+        </div>
     </div>
+
+        <footer class="container py-5">
+        <div class="row">
+          <div class="col-6 col-md">
+            <h5 class="pyxis-footer__title text-uppercase">Description</h5>
+            <ul class="list-unstyled text-small">
+              <li class="pyxis-footer__item">Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Maecenas faucibus mollis interdum. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.
+
+Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum.</li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5 class="pyxis-footer__title text-uppercase">sizes</h5>
+            <ul class="list-unstyled text-small">
+              <li class="pyxis-footer__item">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui.</li>
+              <li class="pyxis-footer__item">size</li>
+                <li class="pyxis-footer__item">TABLE</li>
+
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5 class="pyxis-footer__title text-uppercase">Properties</h5>
+            <ul class="list-unstyled text-small">
+              <li class="pyxis-footer__item pyxis-footer__link">Dolor sit amet</li>
+              <li class="pyxis-footer__item">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus.</li>
+              <li class="pyxis-footer__item pyxis-footer__link">Lorem ipsum</li>
+              <li class="pyxis-footer__item pyxis-footer__link">Sibur samel it</li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5 class="pyxis-footer__title text-uppercase">Features</h5>
+            <ul class="list-unstyled text-small">
+              <li class="pyxis-footer__item">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui.</li>
+              <li class="pyxis-footer__item">TABLE</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
 </div>
 
   {{/content}}

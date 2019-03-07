@@ -10,6 +10,10 @@ html {
     font-family: $font-family-sans-serif;
 }
 
+body {
+    background-color: #E6ECF8;
+}
+
 // MENU
 
 .pyxis-nav {
@@ -28,7 +32,7 @@ html {
 .pyxis-nav__brand {
     color: $font-color;
     font-weight: bold;
-    font-size: $font-size-lg;
+    font-size: $font-size-logo;
 }
 
 .pyxis-nav__cart {
@@ -54,9 +58,52 @@ html {
 
 .pyxis-content__mediatitle {
     font-size: $font-size-lg;
+    font-weight: bold;
 }
 
 .pyxis-content__mediadescription {
     font-weight: 100;
+    font-size: $font-size-desc;
+}
+
+.sizes {
+    font-weight: bold;
+    font-size: $font-size-sm;
+}
+
+.available {
+    font-weight: lighter;
+    font-size: $font-size-sm;
+}
+
+.pyxis-content__number, .pyxis-content__cart {
+    border: $border;
+    border-radius: 0px;
+    font-size: $font-size-md;
+}
+
+.pyxis-options {
+    font-size: $font-size-md-sm;
+}
+
+.content-container {
+    border-bottom: $border;
+}
+
+// FOOTER
+
+.pyxis-footer__item {
+    font-weight: lighter;
+    font-size: $font-size-sm;
+}
+
+.pyxis-footer__title {
+    font-weight: lighter;
+    font-size: $font-size-md-sm;
+}
+
+.pyxis-footer__link {
+    font-weight: bold;
+    font-size: $font-size-md;
 }
 
