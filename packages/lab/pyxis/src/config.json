@@ -35,6 +35,18 @@
       {
         "link": "/templates/painter",
         "title": "Painter"
+      },
+      {
+        "link": "/templates/special",
+        "title": "Special"
+      },
+      {
+        "link": "/templates/art",
+        "title": "Art"
+      },
+      {
+        "link": "/templates/concact",
+        "title": "Concact"
       }
     ]
   },
@@ -63,7 +75,22 @@
       "route": "/templates/painter",
       "title": "Painter",
       "view": "templates/painter.hbs"
-      },
+    },
+    {
+      "route": "/templates/special",
+      "title": "Special",
+      "view": "templates/special.hbs"
+    },
+    {
+      "route": "/templates/art",
+      "title": "Art",
+      "view": "templates/art.hbs"
+    },
+    {
+      "route": "/templates/concact",
+      "title": "Concact",
+      "view": "templates/concact.hbs"
+    },          
     {
       "route": "/templates/masonry",
       "title": "Masonry",

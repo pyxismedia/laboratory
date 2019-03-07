@@ -4,7 +4,7 @@
 html, body{
     font-size: 16px;
     font-family: $font-family-sans-serif;
-    background-color: $painter-primary-color;
+    background: url('../../views/templates/photopainter/bg.jpeg');
 }
 
 
@@ -44,4 +44,11 @@ html, body{
 
 .painter-title__skills {
     padding: 30px;
+}
+
+.painter-content__show {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    left: 60px;
 }
