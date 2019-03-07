@@ -8,6 +8,7 @@ import {target as targets} from "../../parts/target";
 import { Extension, extensions as extension } from '../../parts/extensions';
 import { TypescriptArgs, TypescriptConfig } from "./types";
 import { pyxis } from '../../parts/pyxis';
+import { svg } from '../../parts/svg'
 
 export const typescript = ({ entry = Entry.INDEX_TS, extensions = [Extension.TS, Extension.TSX, Extension.JS], mode = Mode.development,
                              target, cleanPath, externals }: TypescriptArgs): TypescriptConfig => merge(
@@ -19,4 +20,11 @@ export const typescript = ({ entry = Entry.INDEX_TS, extensions = [Extension.TS,
   modes({ mode }),
   targets({ target, externals }),
   pyxis(),
+);
+
+export const storybook = () => merge(
+  extension({ extensions: [Extension.TS, Extension.TSX] }),
+  ts(),
+  pyxis(),
+  svg(),
 );
