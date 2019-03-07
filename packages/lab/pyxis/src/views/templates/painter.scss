@@ -20,9 +20,6 @@ html, body{
     width: 100%;
 }
 
-.painter-nav__icon .painter-nav__link {
-}
-
 .painter-nav__link {
     font-weight: lighter;
 }
@@ -51,4 +48,12 @@ html, body{
     height: 500px;
     position: relative;
     left: 60px;
+}
+
+.footer-title {
+    color: $painter-secondary-color;
+}
+
+.show-container {
+    background: black;
 }
