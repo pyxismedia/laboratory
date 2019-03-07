@@ -1,4 +1,4 @@
-const { storybook } = require('@pyxis/webpack/build/configs/typescript/stylable');
+const { storybook } = require('@pyxis/webpack/build/configs/typescript');
 const { sass } = require('@pyxis/webpack/build/parts/sass');
 const { sassExtract } = require('@pyxis/webpack/build/parts/sassExtract');
 const webpackMerge = require('webpack-merge');
