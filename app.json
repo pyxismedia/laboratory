@@ -4,16 +4,9 @@
   "buildpacks": [
     {
       "url": "https://github.com/heroku/heroku-buildpack-nodejs#v132"
+    },
+    {
+      "url": "https://github.com/timanovsky/subdir-heroku-buildpack"
     }
-  ],
-  "environments": {
-    "test": {
-      "env": {
-        "NODE_MODULES_CACHE": "true"
-      },
-      "scripts": {
-        "test": "yarn test && yarn release"
-      }
-    }
-  }
+  ]
 }
