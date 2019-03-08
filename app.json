@@ -8,5 +8,10 @@
     {
       "url": "https://github.com/timanovsky/subdir-heroku-buildpack"
     }
-  ]
+  ],
+  "env": {
+    "PROJECT_PATH": {
+      "required": true
+    }
+  }
 }
