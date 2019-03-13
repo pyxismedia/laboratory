@@ -1,11 +1,13 @@
 language: node_js
 
+node_js:
+  - "10.13.0"
+
 cache: yarn
 
 matrix:
   include:
-  - rvm: components
-    name: Components Pipeline
+  - name: Components Pipeline
     env: PACKAGE_PATH=packages/lib/components PACKAGE_NAME=pyxis-components
 
 before_install:
