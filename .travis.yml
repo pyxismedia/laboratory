@@ -8,13 +8,10 @@ cache: yarn
 matrix:
   include:
     - name: Components Pipeline
-      env: PACKAGE_PATH=packages/lib/components PACKAGE_NAME=pyxis-components
+      env: PACKAGE_NAME=pyxis-components
 
 before_install:
   - npm i -g yarn@1.10.1
-
-before_deploy:
-  - cd $PACKAGE_PATH
 
 deploy:
   - provider: heroku
