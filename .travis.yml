@@ -34,6 +34,6 @@ stages:
 
 deploy:
   - provider: heroku
-  api_key:
-    secure: $HEROKU_API_SECURE
-  app: $PACKAGE_NAME
+    api_key:
+      secure: $HEROKU_API_SECURE
+    app: $PACKAGE_NAME
