@@ -16,21 +16,6 @@ before_install:
 before_deploy:
   - cd $PACKAGE_PATH
 
-# One stage runs after another
-jobs:
-  include:
-    - stage: test
-      script: yarn test
-    - stage: build
-      script: yarn build
-    - stage: deploy
-
-# Order of stages
-stages:
-  - test
-  - build
-  - deploy
-
 deploy:
   - provider: heroku
     api_key:
