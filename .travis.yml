@@ -1,3 +1,39 @@
+language: node_js
+
+cache: yarn
+
+matrix:
+  include:
+  - rvm: components
+    name: Components Pipeline
+    env: PACKAGE_PATH=packages/lib/components PACKAGE_NAME=pyxis-components
+
 before_install:
   - npm i -g yarn@1.10.1
-language: node_js
+
+before_deploy:
+  - cd $PACKAGE_PATH
+
+# One stage runs after another
+jobs:
+  include:
+    - stage: mono-test
+      script: yarn test
+    - stage: mono-build
+      script: yarn build
+    - stage: build
+      script:
+        - cd $PACKAGE_PATH
+        - yarn build
+    - stage: deploy
+
+# Order of stages
+stages:
+  - build
+  - deploy
+
+deploy:
+  - provider: heroku
+  api_key:
+    secure: $HEROKU_API_SECURE
+  app: $PACKAGE_NAME
