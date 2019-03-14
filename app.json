@@ -6,7 +6,12 @@
       "url": "https://github.com/heroku/heroku-buildpack-nodejs#v132"
     },
     {
-      "url": "https://github.com/timanovsky/subdir-heroku-buildpack"
+      "url": "https://github.com/heroku/heroku-buildpack-multi-procfile"
     }
-  ]
+  ],
+  "env": {
+    "PROCFILE": {
+      "required": true
+    }
+  }
 }
