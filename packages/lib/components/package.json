@@ -12,14 +12,13 @@
   "scripts": {
     "start": "node server.js",
     "dev": "webpack --config webpack.config.js --watch",
-    "build": "webpack --config webpack.config.js",
+    "build": "yarn storybook:build && webpack --config webpack.config.js",
     "test": "jest",
     "test:watch": "jest --watch",
     "storybook": "start-storybook -p 9001 -c .storybook",
     "storybook:build": "build-storybook -c .storybook -o .storybook/build",
     "storybook:surge": "surge --domain pyxis-components.surge.sh --project .storybook/build",
-    "storybook:serve": "serve .storybook/build",
-    "now-build": "yarn storybook:build"
+    "storybook:serve": "serve .storybook/build"
   },
   "dependencies": {
     "@dr-kobros/react-webfont-loader": "^8.0.0",

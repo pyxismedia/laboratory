@@ -2,9 +2,9 @@
   "version": 2,
   "name": "@pyxis/laboratory",
   "builds": [
-    { "src": "packages/lib/components/package.json", "use": "@now/static-build" }
+    { "src": "package.json", "use": "@now/static-build" }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "packages/lib/components/.storybook/build/$1" }
+    { "src": "/components/(.*)", "dest": "packages/lib/components/.storybook/build/$1" }
   ]
 }
