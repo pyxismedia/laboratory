@@ -12,7 +12,9 @@
   "scripts": {
     "start": "node server.js",
     "dev": "webpack --config webpack.config.js --watch",
-    "build": "yarn storybook:build && webpack --config webpack.config.js",
+    "build": "webpack --config webpack.config.js",
+    "postinstall_BYPASS": "yarn storybook:build && yarn build",
+    "postinstall": "yarn storybook:build",
     "test": "jest",
     "test:watch": "jest --watch",
     "storybook": "start-storybook -p 9001 -c .storybook",
