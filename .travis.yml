@@ -3,18 +3,28 @@ language: node_js
 node_js:
   - "10.13.0"
 
-cache: yarn
-
-matrix:
-  include:
-    - name: Components Pipeline
-      env: PACKAGE_NAME=pyxis-components
+cache:
+  directories:
+    - "node_modules"
 
 before_install:
   - npm i -g yarn@1.10.1
 
+before_deploy:
+  - npm install now --no-save # Install Now CLI on Travis
+
+script:
+  - yarn workspace @pyxis/components storybook:build
+
 deploy:
-  - provider: heroku
-    api_key:
-      secure: $HEROKU_API_SECURE
-    app: $PACKAGE_NAME
+  - provider: script # Run a custom deployment script which we will define below
+    script: now --token $NOW_TOKEN
+    skip_cleanup: true
+    on:
+      all_branches: true
+      master: false
+  - provider: script
+    script: now --token $NOW_TOKEN && now alias --token $NOW_TOKEN
+    skip_cleanup: true
+    on:
+      master: true
