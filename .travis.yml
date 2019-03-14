@@ -9,22 +9,3 @@ cache:
 
 before_install:
   - npm i -g yarn@1.10.1
-
-before_deploy:
-  - npm install now --no-save # Install Now CLI on Travis
-
-script:
-  - yarn workspace @pyxis/components storybook:build
-
-deploy:
-  - provider: script # Run a custom deployment script which we will define below
-    script: now --token $NOW_TOKEN
-    skip_cleanup: true
-    on:
-      all_branches: true
-      master: false
-  - provider: script
-    script: now --token $NOW_TOKEN && now alias --token $NOW_TOKEN
-    skip_cleanup: true
-    on:
-      master: true

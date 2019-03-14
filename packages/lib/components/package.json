@@ -18,7 +18,8 @@
     "storybook": "start-storybook -p 9001 -c .storybook",
     "storybook:build": "build-storybook -c .storybook -o .storybook/build",
     "storybook:surge": "surge --domain pyxis-components.surge.sh --project .storybook/build",
-    "storybook:serve": "serve .storybook/build"
+    "storybook:serve": "serve .storybook/build",
+    "now-build": "yarn storybook:build"
   },
   "dependencies": {
     "@dr-kobros/react-webfont-loader": "^8.0.0",
