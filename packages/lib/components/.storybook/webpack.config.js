@@ -1,9 +1,7 @@
 const { storybook } = require('@pyxis/webpack/build/configs/typescript');
 const { sass } = require('@pyxis/webpack/build/parts/sass');
-const { sassExtract } = require('@pyxis/webpack/build/parts/sassExtract');
 const webpackMerge = require('webpack-merge');
 const { assign } = Object;
-const webpack = require('webpack');
 
 // Export a function. Accept the base config as the only param.
 module.exports = (storybookBaseConfig, configType, defaultConfig) => {
