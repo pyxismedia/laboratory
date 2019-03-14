@@ -1,7 +1,7 @@
 {
   "version": 2,
   "name": "@pyxis/laboratory",
-  "builders": [
+  "builds": [
     { "src": "packages/lib/components/package.json", "use": "@now/static-build" }
   ],
   "routes": [
