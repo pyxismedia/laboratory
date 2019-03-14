@@ -95,8 +95,8 @@
     "webpack-node-externals": "1.7.2"
   },
   "engines": {
-    "node": "10.13.0",
-    "yarn": "1.10.1",
+    "node": "10.x.x",
+    "yarn": "1.x.x",
     "npm": "6.4.1"
   },
   "gitHead": "42a59c6709d7f7f6dda00725858aa0da8d33f5ef"
