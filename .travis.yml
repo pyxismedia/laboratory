@@ -3,16 +3,18 @@ language: node_js
 node_js:
   - "10.13.0"
 
-cache: yarn
+cache:
+  directories:
+    - "node_modules"
+
+before_install:
+  - npm i -g yarn@1.10.1
 
 matrix:
   include:
     - name: Components Pipeline
       env: PACKAGE_NAME=pyxis-components
-
-before_install:
-  - npm i -g yarn@1.10.1
-
+	
 deploy:
   - provider: heroku
     api_key:
