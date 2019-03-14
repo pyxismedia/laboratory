@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "name": "@pyxis/laboratory",
+  "builds": [
+    { "src": "packages/lib/components/.storybook/build/index.html", "use": "@now/html-minifier" }
+  ]
+}
