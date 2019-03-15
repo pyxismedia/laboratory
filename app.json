@@ -6,12 +6,29 @@
       "url": "https://github.com/timanovsky/subdir-heroku-buildpack"
     },
     {
+<<<<<<< HEAD
       "url": "https://github.com/heroku/heroku-buildpack-nodejs#v132"
     }
   ],
   "env": {
     "PROJECT_PATH": {
       "required": true
+||||||| merged common ancestors
+      "url": "https://github.com/timanovsky/subdir-heroku-buildpack"
+=======
+      "url": "https://github.com/heroku/heroku-buildpack-multi-procfile"
+>>>>>>> master
+    }
+<<<<<<< HEAD
+  }
+||||||| merged common ancestors
+  ]
+=======
+  ],
+  "env": {
+    "PROCFILE": {
+      "required": true
     }
   }
+>>>>>>> master
 }
