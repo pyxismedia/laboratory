@@ -22,7 +22,8 @@ deploy:
     app: $PACKAGE_NAME
 
 notifications:
-  rooms:
-      - '$SLACK_GROUP:$SLACK_TOKEN'
-  on_success: change # default: always
-  on_failure: always # default: always
+  slack:
+    rooms:
+        - '$SLACK_GROUP:$SLACK_TOKEN#development'
+    on_success: change # default: always
+    on_failure: always # default: always
