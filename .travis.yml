@@ -12,7 +12,7 @@ matrix:
 
 before_install:
   - npm i -g yarn@1.10.1
-
+  
 deploy:
   - provider: heroku
     api_key:
