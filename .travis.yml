@@ -20,3 +20,6 @@ deploy:
     api_key:
       secure: $HEROKU_API_SECURE
     app: $PACKAGE_NAME
+
+notifications:
+  slack: $SLACK_NOTIFICATIONS
