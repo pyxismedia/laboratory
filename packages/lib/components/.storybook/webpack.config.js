@@ -1,5 +1,6 @@
 const { storybook } = require('@pyxis/webpack/build/configs/typescript');
 const { sass } = require('@pyxis/webpack/build/parts/sass');
+const { webfonts } = require('@pyxis/webpack/build/parts/webfonts');
 const webpackMerge = require('webpack-merge');
 const { assign } = Object;
 
@@ -14,6 +15,7 @@ module.exports = (storybookBaseConfig, configType, defaultConfig) => {
     defaultConfig,
     storybook(),
     sass(),
+    webfonts(),
   );
 
   const forbiddenStorybookLoaders = [
