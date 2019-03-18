@@ -7,7 +7,7 @@ module.exports = merge.smart(
   typescript({
     entry: {
       'construction': './src/components/templates/construction',
-      'logo': './src/components/atoms/svg',
+      'logo': './src/components/atoms/Svg',
     },
     externals: [externals()],
   }),
