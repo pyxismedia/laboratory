@@ -1,3 +1,0 @@
-*.sketch filter=lfs diff=lfs merge=lfs -text
-*.zip filter=lfs diff=lfs merge=lfs -text
-packages/uxd/export/** filter=lfs diff=lfs merge=lfs -text
