@@ -18,7 +18,7 @@
     "commit": "git add . && git-cz",
     "release": "lerna-semantic-release pre && lerna-semantic-release perform && lerna-semantic-release post",
     "sass-fix": "node ./node_modules/node-sass/scripts/install.js && npm rebuild node-sass",
-    "postinstall": "lerna exec -- \"yarn generate-lock-entry > yarn.lock\" && yarn sass-fix"
+    "postinstall": "yarn sass-fix"
   },
   "husky": {
     "hooks": {
@@ -40,6 +40,7 @@
     "npm": ">=6.4.1"
   },
   "dependencies": {
+    "case-sensitive-paths-webpack-plugin": "2.2.0",
     "pkg-dir": "^3.0.0"
   },
   "workspaces": [
