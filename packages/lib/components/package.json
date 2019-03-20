@@ -17,7 +17,7 @@
     "postinstall": "yarn storybook:build",
     "test": "jest",
     "test:watch": "jest --watch",
-    "storybook": "start-storybook -p 9001 -c .storybook",
+    "storybook": "start-storybook -p 9001 -h localhost -c .storybook",
     "storybook:build": "build-storybook -c .storybook -o .storybook/build",
     "storybook:surge": "surge --domain pyxis-components.surge.sh --project .storybook/build",
     "storybook:serve": "serve .storybook/build"
@@ -27,6 +27,7 @@
     "@pyxis/decorators": "^0.0.23",
     "@pyxis/imigary": "^0.0.3",
     "bootstrap": "^4.3.1",
+    "case-sensitive-paths-webpack-plugin": "2.2.0",
     "commitizen": "^3.0.5",
     "debug": "^4.1.1",
     "express": "^4.16.4",
