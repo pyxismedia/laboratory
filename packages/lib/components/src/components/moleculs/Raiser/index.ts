@@ -1,1 +1,1 @@
-export { Raiser } from './component';
+export { Raiser } from './container';
