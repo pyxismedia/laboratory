@@ -4,9 +4,10 @@ module.exports = {
   ],
   "transform": {
     "^.+\\.(tsx?|jsx?)$": "ts-jest",
-    "^.+\\.(css|less|md|svg|scss)$": "<rootDir>/.jest/.jestMock.js"
+    "^.+\\.(css|less|svg|scss)$": "<rootDir>/.jest/.jestMock.js",
+    "^.+\\.md?$": "markdown-loader-jest"
   },
-  "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$",
+  "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))|storyshots\\.tsx?$",
   "moduleFileExtensions": [
     "ts",
     "tsx",
