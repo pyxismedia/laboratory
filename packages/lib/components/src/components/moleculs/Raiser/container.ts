@@ -1,11 +1,11 @@
 import React from 'react';
 import { Raiser as Component } from './component';
 
-interface RaiserProps {
+export interface RaiserProps {
   onCount: (count: number) => void;
 }
 
-interface RaiserState {
+export interface RaiserState {
   count: number;
 }
 
@@ -15,6 +15,11 @@ export class Raiser extends React.Component<RaiserProps, RaiserState> {
     this.state = {
       count: 0,
     };
+  }
+
+  componentDidMount() {
+    // Initial
+    this.props.onCount(this.state.count);
   }
 
   reset() {

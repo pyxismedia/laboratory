@@ -11,7 +11,6 @@ import { action } from '@storybook/addon-actions';
 const { keys } = Object;
 
 const story = storiesOf('Atoms/Button', module);
-
 const typings = story.addDecorator(withInfo({ header: false }));
 
 story.add('Documentation', () => (

@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from 'react';
-import styles from './styles.scss';
+import styles from './style.scss';
 import { Add } from '../../moleculs/Add';
 
 interface SidescriptionProps {

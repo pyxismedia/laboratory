@@ -8,5 +8,5 @@ const story = storiesOf('Moleculs/Raiser', module);
 const typings = story.addDecorator(withInfo({ header: false }));
 
 typings.add('default', () => (
-  <Raiser onCount={action('count changed')} />
+  <Raiser onCount={action('Count changed!')} />
 ));

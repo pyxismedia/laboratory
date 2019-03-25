@@ -2,6 +2,7 @@ import React, { FunctionComponent } from 'react';
 import { Raiser } from '../Raiser';
 import { Button, Variants } from '../../atoms/Button';
 import setDisplayName from 'recompose/setDisplayName';
+import { Container, Row, Col } from 'react-bootstrap'
 
 export interface AddComponentProps {
   title: string;
@@ -10,10 +11,16 @@ export interface AddComponentProps {
 }
 
 const AddPure: FunctionComponent<AddComponentProps> = ({ title, onAdd, onCount }) => (
-  <div>
-    <Raiser onCount={onCount} />
-    <Button variant={Variants.PRIMARY} onClick={onAdd}>{title}</Button>
-  </div>
+  <Container>
+    <Row>
+      <Col>
+        <Raiser onCount={onCount} />
+      </Col>
+      <Col>
+        <Button variant={Variants.PRIMARY} onClick={onAdd}>{title}</Button>
+      </Col>
+    </Row>
+  </Container>
 );
 
 export const AddComponent: FunctionComponent<AddComponentProps> = setDisplayName('AddComponent')(AddPure);
