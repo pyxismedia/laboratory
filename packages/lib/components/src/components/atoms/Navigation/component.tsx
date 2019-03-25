@@ -1,13 +1,21 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
+import { Item } from './types';
+import { Svg } from '../Svg';
 
-export const Navigation = () => (
-  <Navbar bg="light" variant="light">
+export interface NavigationProps {
+  items: Item[];
+  brand: string;
+  home: string;
+}
+
+export const Navigation: FunctionComponent<NavigationProps> = ({ items, brand, home }) => (
+  <Navbar bg="transparent" variant="light">
     <Nav className="mr-auto">
-      <Nav.Link href="#home">Home</Nav.Link>
-      <Nav.Link href="#features">Features</Nav.Link>
-      <Nav.Link href="#pricing">Pricing</Nav.Link>
+      {items.map((item: Item, i) => (
+        <Nav.Link href={item.link} key={item.id || i}>{item.title}</Nav.Link>
+      ))}
     </Nav>
-    <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+    <Navbar.Brand href="#home"><Svg svg={brand} fill="black" /></Navbar.Brand>
   </Navbar>
 );
