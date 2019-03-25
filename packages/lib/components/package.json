@@ -49,6 +49,7 @@
     "tracking": "^1.1.3"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.8.1",
     "@pyxis/webpack": "0.0.44",
     "@storybook/addon-actions": "^4.1.13",
     "@storybook/addon-info": "^4.1.13",
