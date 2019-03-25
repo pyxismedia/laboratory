@@ -7,6 +7,8 @@ import svg from './svg.svg';
 import { text } from '@storybook/addon-knobs';
 import { withInfo } from '@storybook/addon-info';
 
+console.log(svg);
+
 storiesOf('Atoms/Svg', module)
   .addDecorator(withInfo({ header: false }))
   .addDecorator(withDocs([README]))
