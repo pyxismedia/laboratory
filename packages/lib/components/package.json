@@ -20,7 +20,8 @@
     "storybook": "start-storybook -p 9001 -h localhost -c .storybook",
     "storybook:build": "build-storybook -c .storybook -o .storybook/build",
     "storybook:surge": "surge --domain pyxis-components.surge.sh --project .storybook/build",
-    "storybook:serve": "serve .storybook/build"
+    "storybook:serve": "serve .storybook/build",
+    "test:update": "jest --updateSnapshot"
   },
   "dependencies": {
     "@dr-kobros/react-webfont-loader": "^8.0.0",

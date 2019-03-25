@@ -1,20 +1,19 @@
-import faker from 'faker';
 import { Variants } from './types'
 
 export const mocks = {
   simple: {
     slides: [
       {
-        src: faker.image.image(),
-        alt: faker.lorem.text(),
+        src: 'http://lorempixel.com/640/480/fashion',
+        alt: 'Lorem ipsum',
       },
       {
-        src: faker.image.image(),
-        alt: faker.lorem.text(),
+        src: 'http://lorempixel.com/640/480/fashion',
+        alt: 'Lorem ipsum',
       },
       {
-        src: faker.image.image(),
-        alt: faker.lorem.text(),
+        src: 'http://lorempixel.com/640/480/fashion',
+        alt: 'Lorem ipsum',
       }
     ],
     variant: Variants.SIMPLE,
@@ -23,38 +22,38 @@ export const mocks = {
     slides: [
       [
         {
-          src: faker.image.image(),
-          alt: faker.lorem.text(),
+          src: 'http://lorempixel.com/640/480/fashion',
+          alt: 'Lorem ipsum',
         },
         {
-          src: faker.image.image(),
-          alt: faker.lorem.text(),
+          src: 'http://lorempixel.com/640/480/fashion',
+          alt: 'Lorem ipsum',
         },
         {
-          src: faker.image.image(),
-          alt: faker.lorem.text(),
+          src: 'http://lorempixel.com/640/480/fashion',
+          alt: 'Lorem ipsum',
         },
         {
-          src: faker.image.image(),
-          alt: faker.lorem.text(),
+          src: 'http://lorempixel.com/640/480/fashion',
+          alt: 'Lorem ipsum',
         }
       ],
       [
         {
-          src: faker.image.image(),
-          alt: faker.lorem.text(),
+          src: 'http://lorempixel.com/640/480/fashion',
+          alt: 'Lorem ipsum',
         },
         {
-          src: faker.image.image(),
-          alt: faker.lorem.text(),
+          src: 'http://lorempixel.com/640/480/fashion',
+          alt: 'Lorem ipsum',
         },
         {
-          src: faker.image.image(),
-          alt: faker.lorem.text(),
+          src: 'http://lorempixel.com/640/480/fashion',
+          alt: 'Lorem ipsum',
         },
         {
-          src: faker.image.image(),
-          alt: faker.lorem.text(),
+          src: 'http://lorempixel.com/640/480/fashion',
+          alt: 'Lorem ipsum',
         }
       ],
     ],
