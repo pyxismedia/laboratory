@@ -1,13 +1,13 @@
 import React from 'react';
-import { Add as Component } from './component';
+import { AddComponent } from './component';
 
-interface AddProps {
+export interface AddContainerProps {
   title: string;
   onAdd: (event: MouseEvent, count: number) => void;
 }
-export class Add extends React.Component<AddProps> {
+export class AddContainer extends React.Component<AddContainerProps> {
   count!: number;
-  constructor(props: AddProps) {
+  constructor(props: AddContainerProps) {
     super(props);
   }
 
@@ -20,7 +20,7 @@ export class Add extends React.Component<AddProps> {
   }
 
   render() {
-    return React.createElement(Component, {
+    return React.createElement(AddComponent, {
       title: this.props.title,
       onAdd: this.handleAdd,
       onCount: this.handleCount,

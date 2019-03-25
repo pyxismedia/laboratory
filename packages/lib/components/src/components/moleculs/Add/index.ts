@@ -1,1 +1,1 @@
-export { Add } from './container';
+export { AddContainer as Add } from './container';

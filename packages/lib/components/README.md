@@ -1,7 +1,13 @@
-# 1. Dependencies
+### How to start?
 
-Install heroku-cli by `brew install heroku/brew/heroku` on MacOS.
+# 1. Install Dependencies
 
-# 2. Run
+`yarn`
 
-Run `heroku local web` for application.
+# 2. Run storybook for development
+
+`yarn storybook`
+
+### Snippets
+
+You have to use Visual Code and it will work accordingly.
