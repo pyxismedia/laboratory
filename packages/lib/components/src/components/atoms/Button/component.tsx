@@ -1,7 +1,7 @@
 import React, { FunctionComponent, ReactChild } from 'react';
 import { Variants } from './types'
 import '../../bootstrap.scss';
-import { Button as Btn } from 'react-bootstrap';
+import { default as Btn } from 'react-bootstrap/Button';
 
 export interface ButtonProps {
   children: ReactChild;

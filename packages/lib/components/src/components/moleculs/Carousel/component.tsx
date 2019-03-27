@@ -1,5 +1,5 @@
 import * as React from 'react'
-import '../../bootstrap.scss'
+// import '../../bootstrap.scss'
 import { CarouselSlide, Variants, Slide, Slides } from './types'
 import { Carousel as BsCarousel } from 'react-bootstrap'
 import defaultProps from 'recompose/defaultProps'
