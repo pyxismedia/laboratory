@@ -2,7 +2,6 @@ import React from 'react';
 import { Button, Variants } from './';
 import { mount } from 'enzyme';
 import { expect } from 'chai';
-import { action } from '@storybook/addon-actions';
 
 describe('Button', () => {
   it('should have class btn by default', () => {
