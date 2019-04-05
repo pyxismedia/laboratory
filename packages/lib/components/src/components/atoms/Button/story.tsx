@@ -6,11 +6,11 @@ import { withInfo } from '@storybook/addon-info'
 import Marked from 'storybook-readme/components/Marked'
 import HEADER from './markdown/HEADER.md';
 import VARIANTS_HEADER from './markdown/VARIANTS_HEADER.md';
+import { action } from '@storybook/addon-actions';
 
 const { keys } = Object;
 
 const story = storiesOf('Atoms/Button', module);
-
 const typings = story.addDecorator(withInfo({ header: false }));
 
 story.add('Documentation', () => (
@@ -21,31 +21,31 @@ story.add('Documentation', () => (
     <Marked md={'<br />'} />
     <Marked md={'### Primary'}/>
     <Marked md={'<br />'} />
-    <Button variant={Variants.PRIMARY}>Primary</Button>
+    <Button variant={Variants.PRIMARY} onClick={action('Clicked PRIMARY')}>Primary</Button>
     <Marked md={'<br />'} />
     <Marked md={'### Secondary'}/>
     <Marked md={'<br />'} />
-    <Button variant={Variants.SECONDARY}>Secondary</Button>
+    <Button variant={Variants.SECONDARY} onClick={action('Clicked SECONDARY')}>Secondary</Button>
     <Marked md={'<br />'} />
     <Marked md={'### Success'}/>
     <Marked md={'<br />'} />
-    <Button variant={Variants.SUCCESS}>Success</Button>
+    <Button variant={Variants.SUCCESS} onClick={action('Clicked SUCCESS')}>Success</Button>
     <Marked md={'<br />'} />
     <Marked md={'### Info'}/>
     <Marked md={'<br />'} />
-    <Button variant={Variants.INFO}>Info</Button>
+    <Button variant={Variants.INFO} onClick={action('Clicked INFO')}>Info</Button>
     <Marked md={'<br />'} />
     <Marked md={'### Warning'}/>
     <Marked md={'<br />'} />
-    <Button variant={Variants.WARNING}>Warning</Button>
+    <Button variant={Variants.WARNING} onClick={action('Clicked WARNING')}>Warning</Button>
     <Marked md={'<br />'} />
     <Marked md={'### Danger'}/>
     <Marked md={'<br />'} />
-    <Button variant={Variants.DANGER}>Danger</Button>
+    <Button variant={Variants.DANGER} onClick={action('Clicked DANGER')}>Danger</Button>
     <Marked md={'<br />'} />
     <Marked md={'### Link'}/>
     <Marked md={'<br />'} />
-    <Button variant={Variants.LINK}>Link</Button>
+    <Button variant={Variants.LINK} onClick={action('Clicked LINK')}>Link</Button>
     <Marked md={'<br />'} />
   </div>
 ));
@@ -56,6 +56,6 @@ keys(Variants).forEach((key: string) => {
       children: 'Click me!',
       variant: Variants[key],
     };
-    return <Button {...props} />
+    return <Button {...props} onClick={action(`Clicked ${Variants[key]}`)} />
   })
 });
