@@ -6,25 +6,63 @@ export const sass = () => ({
       {
         test: /\.?module.scss$/,
         use: [
-          resolve('style-loader'), // creates style nodes from JS strings
+          {
+            loader: resolve('style-loader'), // creates style nodes from JS strings
+            options: {
+              sourceMap: true,
+            },
+          },
           {
             loader: resolve('css-loader'),
             options: {
               modules: true,
               sourceMap: true,
-              localIdentName: '[local]__[hash:base64:5]',
+              localIdentName: '[path][name]__[local]__[hash:base64:5]',
               minimize: true,
-            }
+            },
           },
-          resolve('sass-loader'), // compiles Sass to CSS, using Node Sass by default
+          {
+            loader: resolve('resolve-url-loader'),
+            options: {
+              sourceMap: true,
+            },
+          },
+          {
+            loader: resolve('sass-loader'), // compiles Sass to CSS, using Node Sass by default
+            options: {
+              sourceMap: true,
+            },
+          },
         ],
       },
       {
         test: /\.scss$/,
         use: [
-          resolve('style-loader'), // creates style nodes from JS strings
-          resolve('css-loader'),
-          resolve('sass-loader'), // compiles Sass to CSS, using Node Sass by default
+          {
+            loader: resolve('style-loader'), // creates style nodes from JS strings
+            options: {
+              sourceMap: true,
+            },
+          },
+          {
+            loader: resolve('css-loader'),
+            options: {
+              sourceMap: true,
+              minimize: true,
+            },
+          },
+          {
+            loader: resolve('resolve-url-loader'),
+            options: {
+              sourceMap: true,
+            },
+          },
+          {
+            loader: resolve('sass-loader'), // compiles Sass to CSS, using Node Sass by default
+            options: {
+              sourceMap: true,
+            },
+          },
         ],
         exclude: /\.?module.scss$/,
       },

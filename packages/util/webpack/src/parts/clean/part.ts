@@ -5,6 +5,6 @@ import { join } from 'path';
 
 export const clean = ({ paths = [Clean.BUILD] }: CleanArgs): CleanPart  => ({
   plugins: [
-      new CleanWebpackPlugin(paths.map(path => join(APP_DIRNAME, path)))
+      new CleanWebpackPlugin()
   ],
 });
