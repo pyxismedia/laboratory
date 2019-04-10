@@ -1,0 +1,11 @@
+{
+  "name": "RXStore",
+  "version": "0.0.1",
+  "description": "Store for reactive state management.",
+  "main": "index.js",
+  "author": "Petr Juna",
+  "license": "MIT",
+  "dependencies": {
+    "rxjs": "6.4.0"
+  }
+}
