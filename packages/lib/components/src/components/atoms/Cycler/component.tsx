@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import classnames from 'classnames';
 
-interface CyclerProps {
+export interface CyclerProps {
   items: {
     title: string,
     id: string,
@@ -12,7 +12,7 @@ interface CyclerProps {
   position: number;
   up: () => void;
   down: () => void;
-  isActive: (index: number) => void;
+  isActive: (index: number) => boolean;
   handleItemClick: (url: string) => () => void
 }
 

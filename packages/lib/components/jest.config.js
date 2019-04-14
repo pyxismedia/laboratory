@@ -19,5 +19,8 @@ module.exports = {
   "setupFilesAfterEnv": [
     "<rootDir>/.jest/setupTestFramework.ts",
     "<rootDir>/.jest/setupEnzyme.js"
-  ]
+  ],
+  "moduleNameMapper": {
+    "\\.(css|less|scss|sss|styl)$": "jest-css-modules"
+  },
 };
