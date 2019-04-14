@@ -31,6 +31,7 @@ export class Squares extends SquaresAbstract {
    * @description Coordinates based description of the square on matrix using 4 corners
    */
   @memoize public get squares(): Square[] {
+    // @ts-ignore
     return flatten(
       this.xPairsEdges.map(
         x => this.yPairsEdges.map(
