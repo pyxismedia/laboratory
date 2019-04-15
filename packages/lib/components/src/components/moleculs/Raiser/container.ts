@@ -18,7 +18,6 @@ export class Raiser extends React.Component<RaiserProps, RaiserState> {
   }
 
   componentDidMount() {
-    // Initial
     this.props.onCount(this.state.count);
   }
 
@@ -31,13 +30,13 @@ export class Raiser extends React.Component<RaiserProps, RaiserState> {
     const count = this.state.count - 1;
     this.setState({ count });
     this.props.onCount(count);
-  }
+  };
 
   handleRaise = () => {
     const count = this.state.count + 1;
     this.setState({ count });
     this.props.onCount(count);
-  }
+  };
 
   render() {
     return React.createElement(Component, {

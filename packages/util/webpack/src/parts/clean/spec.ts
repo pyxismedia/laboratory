@@ -2,9 +2,7 @@ import ava from 'ava';
 import prequire from 'proxyquire';
 
 class CleanWebpackPlugin {
-  constructor(
-    public paths: string[][] | string[]
-  ) {}
+  constructor() {}
 }
 
 const { clean } = prequire('./part', {
@@ -16,7 +14,7 @@ const { clean } = prequire('./part', {
 ava('should call CleanWebpackPlugin with default parameter', (t) => {
   const expected = {
     plugins: [
-      new CleanWebpackPlugin([['APP_DIRNAME', './build']]),
+      new CleanWebpackPlugin(),
     ],
   };
 
@@ -28,7 +26,7 @@ ava('should call CleanWebpackPlugin with default parameter', (t) => {
 ava('should call CleanWebpackPlugin with custom parameter', (t) => {
   const expected = {
     plugins: [
-      new CleanWebpackPlugin([['APP_DIRNAME', 'custom1'], ['APP_DIRNAME', 'custom2']]),
+      new CleanWebpackPlugin(),
     ],
   };
 
