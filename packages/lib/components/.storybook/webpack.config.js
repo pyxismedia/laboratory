@@ -18,22 +18,22 @@ module.exports = ({ config: defaultConfig }) => {
     webfonts(),
   );
 
-  const forbiddenStorybookLoaders = [
-    /\.(svg|ico|jpg|jpeg|png|gif|eot|otf|webp|ttf|woff|woff2|cur|ani)(\?.*)?$/,
-    /\.css$/,
-  ].map((loader) => loader.toString());
+  // const forbiddenStorybookLoaders = [
+  //   /\.(svg|ico|jpg|jpeg|png|gif|eot|otf|webp|ttf|woff|woff2|cur|ani)(\?.*)?$/,
+  //   /\.css$/,
+  // ].map((loader) => loader.toString());
 
-  // Remove css since we are using stylable
-  // Stylable causing issue when loader for css is part of it
-  // Since storybook adding it by default we have to manually remove it
-  const sanitized = assign({}, result ,{
-    module: {
-      rules: result.module.rules
-        .filter(rule => (
-          !forbiddenStorybookLoaders.includes(rule.test.toString())
-        )),
-    },
-  });
+  // // Remove css since we are using stylable
+  // // Stylable causing issue when loader for css is part of it
+  // // Since storybook adding it by default we have to manually remove it
+  // const sanitized = assign({}, result ,{
+  //   module: {
+  //     rules: result.module.rules
+  //       .filter(rule => (
+  //         !forbiddenStorybookLoaders.includes(rule.test.toString())
+  //       )),
+  //   },
+  // });
 
-  return sanitized;
+  return result;
 };
