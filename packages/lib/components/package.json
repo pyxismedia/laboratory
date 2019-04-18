@@ -51,12 +51,12 @@
   "devDependencies": {
     "@babel/core": "7.4.3",
     "@pyxis/webpack": "0.0.44",
-    "@storybook/addon-actions": "^v5.1.0-alpha.29",
-    "@storybook/addon-info": "^v5.1.0-alpha.29",
-    "@storybook/addon-knobs": "^v5.1.0-alpha.29",
-    "@storybook/addon-storyshots": "^v5.1.0-alpha.29",
-    "@storybook/core-events": "^v5.1.0-alpha.29",
-    "@storybook/react": "^v5.1.0-alpha.29",
+    "@storybook/addon-actions": "^v5.1.0-alpha.30",
+    "@storybook/addon-info": "^v5.1.0-alpha.30",
+    "@storybook/addon-knobs": "^v5.1.0-alpha.30",
+    "@storybook/addon-storyshots": "^v5.1.0-alpha.30",
+    "@storybook/core-events": "^v5.1.0-alpha.30",
+    "@storybook/react": "^v5.1.0-alpha.30",
     "@types/chai-enzyme": "^0.6.6",
     "@types/classnames": "^2.2.7",
     "@types/debug": "^4.1.2",
@@ -96,10 +96,12 @@
     "ts-jest": "^24.0.0",
     "ts-node": "^7.0.1",
     "typescript": "^3.1.6",
-    "webpack": "^4.26.1",
+    "webpack": "^4.30.0",
     "webpack-cli": "^3.1.2",
     "webpack-merge": "^4.2.1",
-    "webpack-node-externals": "1.7.2"
+    "webpack-node-externals": "1.7.2",
+    "acorn": "^6.1.1",
+    "acorn-dynamic-import": "^4.0.0"
   },
   "engines": {
     "node": ">=8.10.0",

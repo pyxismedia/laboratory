@@ -35,5 +35,7 @@ module.exports = ({ config: defaultConfig }) => {
   //   },
   // });
 
+    console.log('RESULT', result)
+
   return result;
 };
