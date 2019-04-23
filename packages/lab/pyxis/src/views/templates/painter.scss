@@ -30,6 +30,10 @@ html, body{
     color: $painter-h1;
 }
 
+.painter-title__skills a {
+    text-decoration: none;
+}
+
 .painter-title__concact {
     color: $painter-secondary-color;
 }
