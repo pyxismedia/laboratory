@@ -15,14 +15,14 @@
     "test": "lerna run test",
     "build": "lerna run build",
     "docs": "lerna run docs",
-    "commit": "git add . && git-cz",
     "release": "lerna-semantic-release pre && lerna-semantic-release perform && lerna-semantic-release post",
     "sass-fix": "node ./node_modules/node-sass/scripts/install.js && npm rebuild node-sass",
     "postinstall": "yarn sass-fix"
   },
   "husky": {
     "hooks": {
-      "pre-push": "lerna run test"
+      "pre-push": "lerna run test",
+      "prepare-commit-msg": "exec < /dev/tty && git-cz --hook"
     }
   },
   "devDependencies": {
@@ -49,6 +49,7 @@
     "packages/app/pyxis/web",
     "packages/lab/pyxis",
     "packages/lib/components",
+    "packages/lib/vue-components",
     "packages/lib/decorators",
     "packages/lib/imigary",
     "packages/srv/nest",
