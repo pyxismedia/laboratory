@@ -22,7 +22,7 @@
   "husky": {
     "hooks": {
       "pre-push": "lerna run test",
-      "prepare-commit-msg": "exec < /dev/tty && git-cz --hook -am"
+      "prepare-commit-msg": "exec < /dev/tty && git-cz --hook"
     }
   },
   "devDependencies": {
