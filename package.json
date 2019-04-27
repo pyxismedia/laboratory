@@ -22,13 +22,13 @@
   "husky": {
     "hooks": {
       "pre-push": "lerna run test",
-      "prepare-commit-msg": "exec < /dev/tty && git-cz --hook"
+      "prepare-commit-msg": "exec < /dev/tty && git-cz --hook -am"
     }
   },
   "devDependencies": {
     "@lerna/project": "^3.10.0",
     "@semantic-release/github": "^5.2.10",
-    "commitizen": "^3.0.5",
+    "commitizen": "^3.1.1",
     "cz-lerna-changelog": "^2.0.2",
     "husky": "^1.2.0",
     "lerna": "^2.11.0",
