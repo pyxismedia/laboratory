@@ -3,6 +3,7 @@ export enum Extension {
   TS = '.ts',
   TSX = '.tsx',
   YAML = '.yaml',
+  VUE = '.vue',
 }
 
 export interface ExtensionsArgs {

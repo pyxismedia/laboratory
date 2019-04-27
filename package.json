@@ -49,7 +49,6 @@
     "packages/app/pyxis/web",
     "packages/lab/pyxis",
     "packages/lib/components",
-    "packages/lib/vue-components",
     "packages/lib/decorators",
     "packages/lib/imigary",
     "packages/srv/nest",
