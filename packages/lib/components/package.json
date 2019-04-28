@@ -19,7 +19,6 @@
     "test:watch": "jest --watch",
     "storybook": "start-storybook -p 9001 -h localhost -c .storybook",
     "storybook:build": "build-storybook -c .storybook -o .storybook/build",
-    "storybook:surge": "surge --domain pyxis-components.surge.sh --project .storybook/build",
     "storybook:serve": "serve .storybook/build",
     "test:update": "jest --updateSnapshot"
   },

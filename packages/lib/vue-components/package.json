@@ -8,8 +8,8 @@
     "lint": "vue-cli-service lint",
     "test:e2e": "vue-cli-service test:e2e",
     "test:unit": "vue-cli-service test:unit",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "storybook:serve": "start-storybook -p 6006",
+    "storybook:build": "build-storybook"
   },
   "dependencies": {
     "core-js": "^2.6.5",
@@ -19,7 +19,9 @@
   },
   "devDependencies": {
     "@babel/core": "^7.4.4",
+    "@pyxis/webpack": "^0.0.44",
     "@storybook/addon-actions": "^5.0.10",
+    "@storybook/addon-knobs": "^5.0.10",
     "@storybook/addon-links": "^5.0.10",
     "@storybook/addons": "^5.0.10",
     "@storybook/vue": "^5.0.10",
@@ -41,6 +43,7 @@
     "eslint-plugin-vue": "^5.0.0",
     "fork-ts-checker-webpack-plugin": "^1.2.0",
     "lint-staged": "^8.1.5",
+    "storybook-readme": "^5.0.2",
     "ts-jest": "^23.0.0",
     "typescript": "^3.4.3",
     "vue-template-compiler": "^2.5.21"

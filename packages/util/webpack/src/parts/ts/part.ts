@@ -13,7 +13,7 @@ import { Enforce } from '../../types';
 
 export type enforce = 'pre' | 'post' | undefined;
 
-export const ts = ({ options }): TsPart => ({
+export const ts = (): TsPart => ({
   module: {
     rules: [
       // TODO: Add after installation of source-map-loader
