@@ -23,7 +23,7 @@ export const typescript = ({ entry = Entry.INDEX_TS, extensions = [Extension.TS,
 );
 
 export const storybook = () => merge(
-  extension({ extensions: [Extension.TS, Extension.TSX] }),
+  extension({ extensions: [Extension.TS, Extension.TSX, Extension.VUE] }),
   ts(),
   pyxis(),
   svg(),

@@ -19,7 +19,6 @@
     "test:watch": "jest --watch",
     "storybook": "start-storybook -p 9001 -h localhost -c .storybook",
     "storybook:build": "build-storybook -c .storybook -o .storybook/build",
-    "storybook:surge": "surge --domain pyxis-components.surge.sh --project .storybook/build",
     "storybook:serve": "serve .storybook/build",
     "test:update": "jest --updateSnapshot"
   },
@@ -81,6 +80,7 @@
     "@types/storybook__addon-knobs": "^4.0.1",
     "@types/storybook__addon-storyshots": "^3.4.7",
     "@types/storybook__react": "^4.0.1",
+    "@types/storybook__vue": "^5.0.1",
     "@types/tracking": "^1.1.29",
     "chai": "^4.2.0",
     "chai-enzyme": "^1.0.0-beta.1",
