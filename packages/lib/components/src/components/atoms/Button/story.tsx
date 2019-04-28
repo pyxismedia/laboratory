@@ -7,6 +7,7 @@ import Marked from 'storybook-readme/components/Marked'
 import HEADER from './markdown/HEADER.md';
 import VARIANTS_HEADER from './markdown/VARIANTS_HEADER.md';
 import { action } from '@storybook/addon-actions';
+// import './web-component';
 
 const { keys } = Object;
 
@@ -59,3 +60,5 @@ keys(Variants).forEach((key: string) => {
     return <Button {...props} onClick={action(`Clicked ${Variants[key]}`)} />
   })
 });
+
+// story.add('web-component', () => <r-button></r-button>)
