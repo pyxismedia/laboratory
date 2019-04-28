@@ -54,6 +54,6 @@
     "packages/lib/imigary",
     "packages/srv/nest",
     "packages/util/webpack",
-    "packages/lib/ngcomponents"
+    "packages/lib/ng-components"
   ]
 }
