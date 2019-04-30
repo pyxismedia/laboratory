@@ -38,7 +38,7 @@ export class Raiser extends React.Component<RaiserProps, RaiserState> {
     this.props.onCount(count);
   };
 
-  render() {
+  render(): any {
     return React.createElement(Component, {
       ...this.props,
       count: this.state.count,
