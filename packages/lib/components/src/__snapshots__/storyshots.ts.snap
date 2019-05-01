@@ -31,8 +31,7 @@ exports[`Storyshots Atoms/Button Documentation 1`] = `
         className="markdown-body"
         dangerouslySetInnerHTML={
           Object {
-            "__html": "<p><br /></p>
-",
+            "__html": "<br />",
           }
         }
       />
@@ -83,8 +82,7 @@ exports[`Storyshots Atoms/Button Documentation 1`] = `
         className="markdown-body"
         dangerouslySetInnerHTML={
           Object {
-            "__html": "<p><br /></p>
-",
+            "__html": "<br />",
           }
         }
       />
@@ -101,8 +99,7 @@ exports[`Storyshots Atoms/Button Documentation 1`] = `
         className="markdown-body"
         dangerouslySetInnerHTML={
           Object {
-            "__html": "<p><br /></p>
-",
+            "__html": "<br />",
           }
         }
       />
@@ -118,8 +115,7 @@ exports[`Storyshots Atoms/Button Documentation 1`] = `
         className="markdown-body"
         dangerouslySetInnerHTML={
           Object {
-            "__html": "<p><br /></p>
-",
+            "__html": "<br />",
           }
         }
       />
@@ -136,8 +132,7 @@ exports[`Storyshots Atoms/Button Documentation 1`] = `
         className="markdown-body"
         dangerouslySetInnerHTML={
           Object {
-            "__html": "<p><br /></p>
-",
+            "__html": "<br />",
           }
         }
       />
@@ -153,8 +148,7 @@ exports[`Storyshots Atoms/Button Documentation 1`] = `
         className="markdown-body"
         dangerouslySetInnerHTML={
           Object {
-            "__html": "<p><br /></p>
-",
+            "__html": "<br />",
           }
         }
       />
@@ -171,8 +165,7 @@ exports[`Storyshots Atoms/Button Documentation 1`] = `
         className="markdown-body"
         dangerouslySetInnerHTML={
           Object {
-            "__html": "<p><br /></p>
-",
+            "__html": "<br />",
           }
         }
       />
@@ -188,8 +181,7 @@ exports[`Storyshots Atoms/Button Documentation 1`] = `
         className="markdown-body"
         dangerouslySetInnerHTML={
           Object {
-            "__html": "<p><br /></p>
-",
+            "__html": "<br />",
           }
         }
       />
@@ -206,8 +198,7 @@ exports[`Storyshots Atoms/Button Documentation 1`] = `
         className="markdown-body"
         dangerouslySetInnerHTML={
           Object {
-            "__html": "<p><br /></p>
-",
+            "__html": "<br />",
           }
         }
       />
@@ -223,8 +214,7 @@ exports[`Storyshots Atoms/Button Documentation 1`] = `
         className="markdown-body"
         dangerouslySetInnerHTML={
           Object {
-            "__html": "<p><br /></p>
-",
+            "__html": "<br />",
           }
         }
       />
@@ -241,8 +231,7 @@ exports[`Storyshots Atoms/Button Documentation 1`] = `
         className="markdown-body"
         dangerouslySetInnerHTML={
           Object {
-            "__html": "<p><br /></p>
-",
+            "__html": "<br />",
           }
         }
       />
@@ -258,8 +247,7 @@ exports[`Storyshots Atoms/Button Documentation 1`] = `
         className="markdown-body"
         dangerouslySetInnerHTML={
           Object {
-            "__html": "<p><br /></p>
-",
+            "__html": "<br />",
           }
         }
       />
@@ -276,8 +264,7 @@ exports[`Storyshots Atoms/Button Documentation 1`] = `
         className="markdown-body"
         dangerouslySetInnerHTML={
           Object {
-            "__html": "<p><br /></p>
-",
+            "__html": "<br />",
           }
         }
       />
@@ -293,8 +280,7 @@ exports[`Storyshots Atoms/Button Documentation 1`] = `
         className="markdown-body"
         dangerouslySetInnerHTML={
           Object {
-            "__html": "<p><br /></p>
-",
+            "__html": "<br />",
           }
         }
       />
@@ -311,8 +297,7 @@ exports[`Storyshots Atoms/Button Documentation 1`] = `
         className="markdown-body"
         dangerouslySetInnerHTML={
           Object {
-            "__html": "<p><br /></p>
-",
+            "__html": "<br />",
           }
         }
       />
@@ -328,18 +313,18 @@ exports[`Storyshots Atoms/Button Documentation 1`] = `
         className="markdown-body"
         dangerouslySetInnerHTML={
           Object {
-            "__html": "<p><br /></p>
-",
+            "__html": "<br />",
           }
         }
       />
     </div>
   </div>
   <button
+    className="info__show-button"
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -358,6 +343,7 @@ exports[`Storyshots Atoms/Button Documentation 1`] = `
     Show Info
   </button>
   <div
+    className="info__overlay"
     style={
       Object {
         "background": "white",
@@ -374,10 +360,11 @@ exports[`Storyshots Atoms/Button Documentation 1`] = `
     }
   >
     <button
+      className="info__close-button"
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -399,12 +386,11 @@ exports[`Storyshots Atoms/Button Documentation 1`] = `
       <div
         style={
           Object {
-            "WebkitFontSmoothing": "antialiased",
             "backgroundColor": "#fff",
             "border": "1px solid #eee",
             "borderRadius": "2px",
-            "color": "#444",
-            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "color": "black",
+            "fontFamily": "Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif",
             "fontSize": "15px",
             "fontWeight": 300,
             "lineHeight": 1.45,
@@ -944,7 +930,7 @@ exports[`Storyshots Atoms/Button Documentation 1`] = `
                                 }
                               }
                             >
-                              Clicked PRIMARY
+                              action
                             </span>
                             }
                           </span>
@@ -1242,7 +1228,7 @@ exports[`Storyshots Atoms/Button Documentation 1`] = `
                                 }
                               }
                             >
-                              Clicked SECONDARY
+                              action
                             </span>
                             }
                           </span>
@@ -1540,7 +1526,7 @@ exports[`Storyshots Atoms/Button Documentation 1`] = `
                                 }
                               }
                             >
-                              Clicked SUCCESS
+                              action
                             </span>
                             }
                           </span>
@@ -1838,7 +1824,7 @@ exports[`Storyshots Atoms/Button Documentation 1`] = `
                                 }
                               }
                             >
-                              Clicked INFO
+                              action
                             </span>
                             }
                           </span>
@@ -2136,7 +2122,7 @@ exports[`Storyshots Atoms/Button Documentation 1`] = `
                                 }
                               }
                             >
-                              Clicked WARNING
+                              action
                             </span>
                             }
                           </span>
@@ -2434,7 +2420,7 @@ exports[`Storyshots Atoms/Button Documentation 1`] = `
                                 }
                               }
                             >
-                              Clicked DANGER
+                              action
                             </span>
                             }
                           </span>
@@ -2732,7 +2718,7 @@ exports[`Storyshots Atoms/Button Documentation 1`] = `
                                 }
                               }
                             >
-                              Clicked LINK
+                              action
                             </span>
                             }
                           </span>
@@ -2907,7 +2893,7 @@ exports[`Storyshots Atoms/Button Documentation 1`] = `
             Prop Types
           </h1>
           <div>
-            <h2
+            <h3
               style={
                 Object {
                   "margin": "20px 0 0 0",
@@ -2917,13 +2903,13 @@ exports[`Storyshots Atoms/Button Documentation 1`] = `
               "
               
               " Component
-            </h2>
+            </h3>
             <small>
               No propTypes defined!
             </small>
           </div>
           <div>
-            <h2
+            <h3
               style={
                 Object {
                   "margin": "20px 0 0 0",
@@ -2933,7 +2919,7 @@ exports[`Storyshots Atoms/Button Documentation 1`] = `
               "
               Marked
               " Component
-            </h2>
+            </h3>
             <small>
               No propTypes defined!
             </small>
@@ -2965,10 +2951,11 @@ exports[`Storyshots Atoms/Button danger 1`] = `
     </button>
   </div>
   <button
+    className="info__show-button"
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -2987,6 +2974,7 @@ exports[`Storyshots Atoms/Button danger 1`] = `
     Show Info
   </button>
   <div
+    className="info__overlay"
     style={
       Object {
         "background": "white",
@@ -3003,10 +2991,11 @@ exports[`Storyshots Atoms/Button danger 1`] = `
     }
   >
     <button
+      className="info__close-button"
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -3028,12 +3017,11 @@ exports[`Storyshots Atoms/Button danger 1`] = `
       <div
         style={
           Object {
-            "WebkitFontSmoothing": "antialiased",
             "backgroundColor": "#fff",
             "border": "1px solid #eee",
             "borderRadius": "2px",
-            "color": "#444",
-            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "color": "black",
+            "fontFamily": "Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif",
             "fontSize": "15px",
             "fontWeight": 300,
             "lineHeight": 1.45,
@@ -3140,7 +3128,7 @@ exports[`Storyshots Atoms/Button danger 1`] = `
                               }
                             }
                           >
-                            Clicked danger
+                            action
                           </span>
                           }
                         </span>
@@ -3236,7 +3224,7 @@ exports[`Storyshots Atoms/Button danger 1`] = `
             Prop Types
           </h1>
           <div>
-            <h2
+            <h3
               style={
                 Object {
                   "margin": "20px 0 0 0",
@@ -3246,7 +3234,7 @@ exports[`Storyshots Atoms/Button danger 1`] = `
               "
               
               " Component
-            </h2>
+            </h3>
             <small>
               No propTypes defined!
             </small>
@@ -3278,10 +3266,11 @@ exports[`Storyshots Atoms/Button dark 1`] = `
     </button>
   </div>
   <button
+    className="info__show-button"
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -3300,6 +3289,7 @@ exports[`Storyshots Atoms/Button dark 1`] = `
     Show Info
   </button>
   <div
+    className="info__overlay"
     style={
       Object {
         "background": "white",
@@ -3316,10 +3306,11 @@ exports[`Storyshots Atoms/Button dark 1`] = `
     }
   >
     <button
+      className="info__close-button"
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -3341,12 +3332,11 @@ exports[`Storyshots Atoms/Button dark 1`] = `
       <div
         style={
           Object {
-            "WebkitFontSmoothing": "antialiased",
             "backgroundColor": "#fff",
             "border": "1px solid #eee",
             "borderRadius": "2px",
-            "color": "#444",
-            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "color": "black",
+            "fontFamily": "Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif",
             "fontSize": "15px",
             "fontWeight": 300,
             "lineHeight": 1.45,
@@ -3453,7 +3443,7 @@ exports[`Storyshots Atoms/Button dark 1`] = `
                               }
                             }
                           >
-                            Clicked dark
+                            action
                           </span>
                           }
                         </span>
@@ -3549,7 +3539,7 @@ exports[`Storyshots Atoms/Button dark 1`] = `
             Prop Types
           </h1>
           <div>
-            <h2
+            <h3
               style={
                 Object {
                   "margin": "20px 0 0 0",
@@ -3559,7 +3549,7 @@ exports[`Storyshots Atoms/Button dark 1`] = `
               "
               
               " Component
-            </h2>
+            </h3>
             <small>
               No propTypes defined!
             </small>
@@ -3591,10 +3581,11 @@ exports[`Storyshots Atoms/Button info 1`] = `
     </button>
   </div>
   <button
+    className="info__show-button"
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -3613,6 +3604,7 @@ exports[`Storyshots Atoms/Button info 1`] = `
     Show Info
   </button>
   <div
+    className="info__overlay"
     style={
       Object {
         "background": "white",
@@ -3629,10 +3621,11 @@ exports[`Storyshots Atoms/Button info 1`] = `
     }
   >
     <button
+      className="info__close-button"
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -3654,12 +3647,11 @@ exports[`Storyshots Atoms/Button info 1`] = `
       <div
         style={
           Object {
-            "WebkitFontSmoothing": "antialiased",
             "backgroundColor": "#fff",
             "border": "1px solid #eee",
             "borderRadius": "2px",
-            "color": "#444",
-            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "color": "black",
+            "fontFamily": "Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif",
             "fontSize": "15px",
             "fontWeight": 300,
             "lineHeight": 1.45,
@@ -3766,7 +3758,7 @@ exports[`Storyshots Atoms/Button info 1`] = `
                               }
                             }
                           >
-                            Clicked info
+                            action
                           </span>
                           }
                         </span>
@@ -3862,7 +3854,7 @@ exports[`Storyshots Atoms/Button info 1`] = `
             Prop Types
           </h1>
           <div>
-            <h2
+            <h3
               style={
                 Object {
                   "margin": "20px 0 0 0",
@@ -3872,7 +3864,7 @@ exports[`Storyshots Atoms/Button info 1`] = `
               "
               
               " Component
-            </h2>
+            </h3>
             <small>
               No propTypes defined!
             </small>
@@ -3904,10 +3896,11 @@ exports[`Storyshots Atoms/Button light 1`] = `
     </button>
   </div>
   <button
+    className="info__show-button"
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -3926,6 +3919,7 @@ exports[`Storyshots Atoms/Button light 1`] = `
     Show Info
   </button>
   <div
+    className="info__overlay"
     style={
       Object {
         "background": "white",
@@ -3942,10 +3936,11 @@ exports[`Storyshots Atoms/Button light 1`] = `
     }
   >
     <button
+      className="info__close-button"
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -3967,12 +3962,11 @@ exports[`Storyshots Atoms/Button light 1`] = `
       <div
         style={
           Object {
-            "WebkitFontSmoothing": "antialiased",
             "backgroundColor": "#fff",
             "border": "1px solid #eee",
             "borderRadius": "2px",
-            "color": "#444",
-            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "color": "black",
+            "fontFamily": "Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif",
             "fontSize": "15px",
             "fontWeight": 300,
             "lineHeight": 1.45,
@@ -4079,7 +4073,7 @@ exports[`Storyshots Atoms/Button light 1`] = `
                               }
                             }
                           >
-                            Clicked light
+                            action
                           </span>
                           }
                         </span>
@@ -4175,7 +4169,7 @@ exports[`Storyshots Atoms/Button light 1`] = `
             Prop Types
           </h1>
           <div>
-            <h2
+            <h3
               style={
                 Object {
                   "margin": "20px 0 0 0",
@@ -4185,7 +4179,7 @@ exports[`Storyshots Atoms/Button light 1`] = `
               "
               
               " Component
-            </h2>
+            </h3>
             <small>
               No propTypes defined!
             </small>
@@ -4217,10 +4211,11 @@ exports[`Storyshots Atoms/Button link 1`] = `
     </button>
   </div>
   <button
+    className="info__show-button"
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -4239,6 +4234,7 @@ exports[`Storyshots Atoms/Button link 1`] = `
     Show Info
   </button>
   <div
+    className="info__overlay"
     style={
       Object {
         "background": "white",
@@ -4255,10 +4251,11 @@ exports[`Storyshots Atoms/Button link 1`] = `
     }
   >
     <button
+      className="info__close-button"
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -4280,12 +4277,11 @@ exports[`Storyshots Atoms/Button link 1`] = `
       <div
         style={
           Object {
-            "WebkitFontSmoothing": "antialiased",
             "backgroundColor": "#fff",
             "border": "1px solid #eee",
             "borderRadius": "2px",
-            "color": "#444",
-            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "color": "black",
+            "fontFamily": "Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif",
             "fontSize": "15px",
             "fontWeight": 300,
             "lineHeight": 1.45,
@@ -4392,7 +4388,7 @@ exports[`Storyshots Atoms/Button link 1`] = `
                               }
                             }
                           >
-                            Clicked link
+                            action
                           </span>
                           }
                         </span>
@@ -4488,7 +4484,7 @@ exports[`Storyshots Atoms/Button link 1`] = `
             Prop Types
           </h1>
           <div>
-            <h2
+            <h3
               style={
                 Object {
                   "margin": "20px 0 0 0",
@@ -4498,7 +4494,7 @@ exports[`Storyshots Atoms/Button link 1`] = `
               "
               
               " Component
-            </h2>
+            </h3>
             <small>
               No propTypes defined!
             </small>
@@ -4530,10 +4526,11 @@ exports[`Storyshots Atoms/Button outline-danger 1`] = `
     </button>
   </div>
   <button
+    className="info__show-button"
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -4552,6 +4549,7 @@ exports[`Storyshots Atoms/Button outline-danger 1`] = `
     Show Info
   </button>
   <div
+    className="info__overlay"
     style={
       Object {
         "background": "white",
@@ -4568,10 +4566,11 @@ exports[`Storyshots Atoms/Button outline-danger 1`] = `
     }
   >
     <button
+      className="info__close-button"
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -4593,12 +4592,11 @@ exports[`Storyshots Atoms/Button outline-danger 1`] = `
       <div
         style={
           Object {
-            "WebkitFontSmoothing": "antialiased",
             "backgroundColor": "#fff",
             "border": "1px solid #eee",
             "borderRadius": "2px",
-            "color": "#444",
-            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "color": "black",
+            "fontFamily": "Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif",
             "fontSize": "15px",
             "fontWeight": 300,
             "lineHeight": 1.45,
@@ -4705,7 +4703,7 @@ exports[`Storyshots Atoms/Button outline-danger 1`] = `
                               }
                             }
                           >
-                            Clicked outline-danger
+                            action
                           </span>
                           }
                         </span>
@@ -4801,7 +4799,7 @@ exports[`Storyshots Atoms/Button outline-danger 1`] = `
             Prop Types
           </h1>
           <div>
-            <h2
+            <h3
               style={
                 Object {
                   "margin": "20px 0 0 0",
@@ -4811,7 +4809,7 @@ exports[`Storyshots Atoms/Button outline-danger 1`] = `
               "
               
               " Component
-            </h2>
+            </h3>
             <small>
               No propTypes defined!
             </small>
@@ -4843,10 +4841,11 @@ exports[`Storyshots Atoms/Button outline-dark 1`] = `
     </button>
   </div>
   <button
+    className="info__show-button"
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -4865,6 +4864,7 @@ exports[`Storyshots Atoms/Button outline-dark 1`] = `
     Show Info
   </button>
   <div
+    className="info__overlay"
     style={
       Object {
         "background": "white",
@@ -4881,10 +4881,11 @@ exports[`Storyshots Atoms/Button outline-dark 1`] = `
     }
   >
     <button
+      className="info__close-button"
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -4906,12 +4907,11 @@ exports[`Storyshots Atoms/Button outline-dark 1`] = `
       <div
         style={
           Object {
-            "WebkitFontSmoothing": "antialiased",
             "backgroundColor": "#fff",
             "border": "1px solid #eee",
             "borderRadius": "2px",
-            "color": "#444",
-            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "color": "black",
+            "fontFamily": "Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif",
             "fontSize": "15px",
             "fontWeight": 300,
             "lineHeight": 1.45,
@@ -5018,7 +5018,7 @@ exports[`Storyshots Atoms/Button outline-dark 1`] = `
                               }
                             }
                           >
-                            Clicked outline-dark
+                            action
                           </span>
                           }
                         </span>
@@ -5114,7 +5114,7 @@ exports[`Storyshots Atoms/Button outline-dark 1`] = `
             Prop Types
           </h1>
           <div>
-            <h2
+            <h3
               style={
                 Object {
                   "margin": "20px 0 0 0",
@@ -5124,7 +5124,7 @@ exports[`Storyshots Atoms/Button outline-dark 1`] = `
               "
               
               " Component
-            </h2>
+            </h3>
             <small>
               No propTypes defined!
             </small>
@@ -5156,10 +5156,11 @@ exports[`Storyshots Atoms/Button outline-info 1`] = `
     </button>
   </div>
   <button
+    className="info__show-button"
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -5178,6 +5179,7 @@ exports[`Storyshots Atoms/Button outline-info 1`] = `
     Show Info
   </button>
   <div
+    className="info__overlay"
     style={
       Object {
         "background": "white",
@@ -5194,10 +5196,11 @@ exports[`Storyshots Atoms/Button outline-info 1`] = `
     }
   >
     <button
+      className="info__close-button"
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -5219,12 +5222,11 @@ exports[`Storyshots Atoms/Button outline-info 1`] = `
       <div
         style={
           Object {
-            "WebkitFontSmoothing": "antialiased",
             "backgroundColor": "#fff",
             "border": "1px solid #eee",
             "borderRadius": "2px",
-            "color": "#444",
-            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "color": "black",
+            "fontFamily": "Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif",
             "fontSize": "15px",
             "fontWeight": 300,
             "lineHeight": 1.45,
@@ -5331,7 +5333,7 @@ exports[`Storyshots Atoms/Button outline-info 1`] = `
                               }
                             }
                           >
-                            Clicked outline-info
+                            action
                           </span>
                           }
                         </span>
@@ -5427,7 +5429,7 @@ exports[`Storyshots Atoms/Button outline-info 1`] = `
             Prop Types
           </h1>
           <div>
-            <h2
+            <h3
               style={
                 Object {
                   "margin": "20px 0 0 0",
@@ -5437,7 +5439,7 @@ exports[`Storyshots Atoms/Button outline-info 1`] = `
               "
               
               " Component
-            </h2>
+            </h3>
             <small>
               No propTypes defined!
             </small>
@@ -5469,10 +5471,11 @@ exports[`Storyshots Atoms/Button outline-light 1`] = `
     </button>
   </div>
   <button
+    className="info__show-button"
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -5491,6 +5494,7 @@ exports[`Storyshots Atoms/Button outline-light 1`] = `
     Show Info
   </button>
   <div
+    className="info__overlay"
     style={
       Object {
         "background": "white",
@@ -5507,10 +5511,11 @@ exports[`Storyshots Atoms/Button outline-light 1`] = `
     }
   >
     <button
+      className="info__close-button"
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -5532,12 +5537,11 @@ exports[`Storyshots Atoms/Button outline-light 1`] = `
       <div
         style={
           Object {
-            "WebkitFontSmoothing": "antialiased",
             "backgroundColor": "#fff",
             "border": "1px solid #eee",
             "borderRadius": "2px",
-            "color": "#444",
-            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "color": "black",
+            "fontFamily": "Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif",
             "fontSize": "15px",
             "fontWeight": 300,
             "lineHeight": 1.45,
@@ -5644,7 +5648,7 @@ exports[`Storyshots Atoms/Button outline-light 1`] = `
                               }
                             }
                           >
-                            Clicked outline-light
+                            action
                           </span>
                           }
                         </span>
@@ -5740,7 +5744,7 @@ exports[`Storyshots Atoms/Button outline-light 1`] = `
             Prop Types
           </h1>
           <div>
-            <h2
+            <h3
               style={
                 Object {
                   "margin": "20px 0 0 0",
@@ -5750,7 +5754,7 @@ exports[`Storyshots Atoms/Button outline-light 1`] = `
               "
               
               " Component
-            </h2>
+            </h3>
             <small>
               No propTypes defined!
             </small>
@@ -5782,10 +5786,11 @@ exports[`Storyshots Atoms/Button outline-primary 1`] = `
     </button>
   </div>
   <button
+    className="info__show-button"
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -5804,6 +5809,7 @@ exports[`Storyshots Atoms/Button outline-primary 1`] = `
     Show Info
   </button>
   <div
+    className="info__overlay"
     style={
       Object {
         "background": "white",
@@ -5820,10 +5826,11 @@ exports[`Storyshots Atoms/Button outline-primary 1`] = `
     }
   >
     <button
+      className="info__close-button"
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -5845,12 +5852,11 @@ exports[`Storyshots Atoms/Button outline-primary 1`] = `
       <div
         style={
           Object {
-            "WebkitFontSmoothing": "antialiased",
             "backgroundColor": "#fff",
             "border": "1px solid #eee",
             "borderRadius": "2px",
-            "color": "#444",
-            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "color": "black",
+            "fontFamily": "Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif",
             "fontSize": "15px",
             "fontWeight": 300,
             "lineHeight": 1.45,
@@ -5957,7 +5963,7 @@ exports[`Storyshots Atoms/Button outline-primary 1`] = `
                               }
                             }
                           >
-                            Clicked outline-primary
+                            action
                           </span>
                           }
                         </span>
@@ -6053,7 +6059,7 @@ exports[`Storyshots Atoms/Button outline-primary 1`] = `
             Prop Types
           </h1>
           <div>
-            <h2
+            <h3
               style={
                 Object {
                   "margin": "20px 0 0 0",
@@ -6063,7 +6069,7 @@ exports[`Storyshots Atoms/Button outline-primary 1`] = `
               "
               
               " Component
-            </h2>
+            </h3>
             <small>
               No propTypes defined!
             </small>
@@ -6095,10 +6101,11 @@ exports[`Storyshots Atoms/Button outline-secondary 1`] = `
     </button>
   </div>
   <button
+    className="info__show-button"
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -6117,6 +6124,7 @@ exports[`Storyshots Atoms/Button outline-secondary 1`] = `
     Show Info
   </button>
   <div
+    className="info__overlay"
     style={
       Object {
         "background": "white",
@@ -6133,10 +6141,11 @@ exports[`Storyshots Atoms/Button outline-secondary 1`] = `
     }
   >
     <button
+      className="info__close-button"
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -6158,12 +6167,11 @@ exports[`Storyshots Atoms/Button outline-secondary 1`] = `
       <div
         style={
           Object {
-            "WebkitFontSmoothing": "antialiased",
             "backgroundColor": "#fff",
             "border": "1px solid #eee",
             "borderRadius": "2px",
-            "color": "#444",
-            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "color": "black",
+            "fontFamily": "Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif",
             "fontSize": "15px",
             "fontWeight": 300,
             "lineHeight": 1.45,
@@ -6270,7 +6278,7 @@ exports[`Storyshots Atoms/Button outline-secondary 1`] = `
                               }
                             }
                           >
-                            Clicked outline-secondary
+                            action
                           </span>
                           }
                         </span>
@@ -6366,7 +6374,7 @@ exports[`Storyshots Atoms/Button outline-secondary 1`] = `
             Prop Types
           </h1>
           <div>
-            <h2
+            <h3
               style={
                 Object {
                   "margin": "20px 0 0 0",
@@ -6376,7 +6384,7 @@ exports[`Storyshots Atoms/Button outline-secondary 1`] = `
               "
               
               " Component
-            </h2>
+            </h3>
             <small>
               No propTypes defined!
             </small>
@@ -6408,10 +6416,11 @@ exports[`Storyshots Atoms/Button outline-success 1`] = `
     </button>
   </div>
   <button
+    className="info__show-button"
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -6430,6 +6439,7 @@ exports[`Storyshots Atoms/Button outline-success 1`] = `
     Show Info
   </button>
   <div
+    className="info__overlay"
     style={
       Object {
         "background": "white",
@@ -6446,10 +6456,11 @@ exports[`Storyshots Atoms/Button outline-success 1`] = `
     }
   >
     <button
+      className="info__close-button"
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -6471,12 +6482,11 @@ exports[`Storyshots Atoms/Button outline-success 1`] = `
       <div
         style={
           Object {
-            "WebkitFontSmoothing": "antialiased",
             "backgroundColor": "#fff",
             "border": "1px solid #eee",
             "borderRadius": "2px",
-            "color": "#444",
-            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "color": "black",
+            "fontFamily": "Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif",
             "fontSize": "15px",
             "fontWeight": 300,
             "lineHeight": 1.45,
@@ -6583,7 +6593,7 @@ exports[`Storyshots Atoms/Button outline-success 1`] = `
                               }
                             }
                           >
-                            Clicked outline-success
+                            action
                           </span>
                           }
                         </span>
@@ -6679,7 +6689,7 @@ exports[`Storyshots Atoms/Button outline-success 1`] = `
             Prop Types
           </h1>
           <div>
-            <h2
+            <h3
               style={
                 Object {
                   "margin": "20px 0 0 0",
@@ -6689,7 +6699,7 @@ exports[`Storyshots Atoms/Button outline-success 1`] = `
               "
               
               " Component
-            </h2>
+            </h3>
             <small>
               No propTypes defined!
             </small>
@@ -6721,10 +6731,11 @@ exports[`Storyshots Atoms/Button outline-warning 1`] = `
     </button>
   </div>
   <button
+    className="info__show-button"
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -6743,6 +6754,7 @@ exports[`Storyshots Atoms/Button outline-warning 1`] = `
     Show Info
   </button>
   <div
+    className="info__overlay"
     style={
       Object {
         "background": "white",
@@ -6759,10 +6771,11 @@ exports[`Storyshots Atoms/Button outline-warning 1`] = `
     }
   >
     <button
+      className="info__close-button"
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -6784,12 +6797,11 @@ exports[`Storyshots Atoms/Button outline-warning 1`] = `
       <div
         style={
           Object {
-            "WebkitFontSmoothing": "antialiased",
             "backgroundColor": "#fff",
             "border": "1px solid #eee",
             "borderRadius": "2px",
-            "color": "#444",
-            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "color": "black",
+            "fontFamily": "Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif",
             "fontSize": "15px",
             "fontWeight": 300,
             "lineHeight": 1.45,
@@ -6896,7 +6908,7 @@ exports[`Storyshots Atoms/Button outline-warning 1`] = `
                               }
                             }
                           >
-                            Clicked outline-warning
+                            action
                           </span>
                           }
                         </span>
@@ -6992,7 +7004,7 @@ exports[`Storyshots Atoms/Button outline-warning 1`] = `
             Prop Types
           </h1>
           <div>
-            <h2
+            <h3
               style={
                 Object {
                   "margin": "20px 0 0 0",
@@ -7002,7 +7014,7 @@ exports[`Storyshots Atoms/Button outline-warning 1`] = `
               "
               
               " Component
-            </h2>
+            </h3>
             <small>
               No propTypes defined!
             </small>
@@ -7034,10 +7046,11 @@ exports[`Storyshots Atoms/Button primary 1`] = `
     </button>
   </div>
   <button
+    className="info__show-button"
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -7056,6 +7069,7 @@ exports[`Storyshots Atoms/Button primary 1`] = `
     Show Info
   </button>
   <div
+    className="info__overlay"
     style={
       Object {
         "background": "white",
@@ -7072,10 +7086,11 @@ exports[`Storyshots Atoms/Button primary 1`] = `
     }
   >
     <button
+      className="info__close-button"
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -7097,12 +7112,11 @@ exports[`Storyshots Atoms/Button primary 1`] = `
       <div
         style={
           Object {
-            "WebkitFontSmoothing": "antialiased",
             "backgroundColor": "#fff",
             "border": "1px solid #eee",
             "borderRadius": "2px",
-            "color": "#444",
-            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "color": "black",
+            "fontFamily": "Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif",
             "fontSize": "15px",
             "fontWeight": 300,
             "lineHeight": 1.45,
@@ -7209,7 +7223,7 @@ exports[`Storyshots Atoms/Button primary 1`] = `
                               }
                             }
                           >
-                            Clicked primary
+                            action
                           </span>
                           }
                         </span>
@@ -7305,7 +7319,7 @@ exports[`Storyshots Atoms/Button primary 1`] = `
             Prop Types
           </h1>
           <div>
-            <h2
+            <h3
               style={
                 Object {
                   "margin": "20px 0 0 0",
@@ -7315,7 +7329,7 @@ exports[`Storyshots Atoms/Button primary 1`] = `
               "
               
               " Component
-            </h2>
+            </h3>
             <small>
               No propTypes defined!
             </small>
@@ -7347,10 +7361,11 @@ exports[`Storyshots Atoms/Button secondary 1`] = `
     </button>
   </div>
   <button
+    className="info__show-button"
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -7369,6 +7384,7 @@ exports[`Storyshots Atoms/Button secondary 1`] = `
     Show Info
   </button>
   <div
+    className="info__overlay"
     style={
       Object {
         "background": "white",
@@ -7385,10 +7401,11 @@ exports[`Storyshots Atoms/Button secondary 1`] = `
     }
   >
     <button
+      className="info__close-button"
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -7410,12 +7427,11 @@ exports[`Storyshots Atoms/Button secondary 1`] = `
       <div
         style={
           Object {
-            "WebkitFontSmoothing": "antialiased",
             "backgroundColor": "#fff",
             "border": "1px solid #eee",
             "borderRadius": "2px",
-            "color": "#444",
-            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "color": "black",
+            "fontFamily": "Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif",
             "fontSize": "15px",
             "fontWeight": 300,
             "lineHeight": 1.45,
@@ -7522,7 +7538,7 @@ exports[`Storyshots Atoms/Button secondary 1`] = `
                               }
                             }
                           >
-                            Clicked secondary
+                            action
                           </span>
                           }
                         </span>
@@ -7618,7 +7634,7 @@ exports[`Storyshots Atoms/Button secondary 1`] = `
             Prop Types
           </h1>
           <div>
-            <h2
+            <h3
               style={
                 Object {
                   "margin": "20px 0 0 0",
@@ -7628,7 +7644,7 @@ exports[`Storyshots Atoms/Button secondary 1`] = `
               "
               
               " Component
-            </h2>
+            </h3>
             <small>
               No propTypes defined!
             </small>
@@ -7660,10 +7676,11 @@ exports[`Storyshots Atoms/Button success 1`] = `
     </button>
   </div>
   <button
+    className="info__show-button"
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -7682,6 +7699,7 @@ exports[`Storyshots Atoms/Button success 1`] = `
     Show Info
   </button>
   <div
+    className="info__overlay"
     style={
       Object {
         "background": "white",
@@ -7698,10 +7716,11 @@ exports[`Storyshots Atoms/Button success 1`] = `
     }
   >
     <button
+      className="info__close-button"
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -7723,12 +7742,11 @@ exports[`Storyshots Atoms/Button success 1`] = `
       <div
         style={
           Object {
-            "WebkitFontSmoothing": "antialiased",
             "backgroundColor": "#fff",
             "border": "1px solid #eee",
             "borderRadius": "2px",
-            "color": "#444",
-            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "color": "black",
+            "fontFamily": "Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif",
             "fontSize": "15px",
             "fontWeight": 300,
             "lineHeight": 1.45,
@@ -7835,7 +7853,7 @@ exports[`Storyshots Atoms/Button success 1`] = `
                               }
                             }
                           >
-                            Clicked success
+                            action
                           </span>
                           }
                         </span>
@@ -7931,7 +7949,7 @@ exports[`Storyshots Atoms/Button success 1`] = `
             Prop Types
           </h1>
           <div>
-            <h2
+            <h3
               style={
                 Object {
                   "margin": "20px 0 0 0",
@@ -7941,7 +7959,7 @@ exports[`Storyshots Atoms/Button success 1`] = `
               "
               
               " Component
-            </h2>
+            </h3>
             <small>
               No propTypes defined!
             </small>
@@ -7973,10 +7991,11 @@ exports[`Storyshots Atoms/Button warning 1`] = `
     </button>
   </div>
   <button
+    className="info__show-button"
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -7995,6 +8014,7 @@ exports[`Storyshots Atoms/Button warning 1`] = `
     Show Info
   </button>
   <div
+    className="info__overlay"
     style={
       Object {
         "background": "white",
@@ -8011,10 +8031,11 @@ exports[`Storyshots Atoms/Button warning 1`] = `
     }
   >
     <button
+      className="info__close-button"
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -8036,12 +8057,11 @@ exports[`Storyshots Atoms/Button warning 1`] = `
       <div
         style={
           Object {
-            "WebkitFontSmoothing": "antialiased",
             "backgroundColor": "#fff",
             "border": "1px solid #eee",
             "borderRadius": "2px",
-            "color": "#444",
-            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "color": "black",
+            "fontFamily": "Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif",
             "fontSize": "15px",
             "fontWeight": 300,
             "lineHeight": 1.45,
@@ -8148,7 +8168,7 @@ exports[`Storyshots Atoms/Button warning 1`] = `
                               }
                             }
                           >
-                            Clicked warning
+                            action
                           </span>
                           }
                         </span>
@@ -8244,7 +8264,7 @@ exports[`Storyshots Atoms/Button warning 1`] = `
             Prop Types
           </h1>
           <div>
-            <h2
+            <h3
               style={
                 Object {
                   "margin": "20px 0 0 0",
@@ -8254,7 +8274,7 @@ exports[`Storyshots Atoms/Button warning 1`] = `
               "
               
               " Component
-            </h2>
+            </h3>
             <small>
               No propTypes defined!
             </small>
@@ -8406,10 +8426,11 @@ exports[`Storyshots Atoms/Cycler default 1`] = `
     </div>
   </div>
   <button
+    className="info__show-button"
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -8428,6 +8449,7 @@ exports[`Storyshots Atoms/Cycler default 1`] = `
     Show Info
   </button>
   <div
+    className="info__overlay"
     style={
       Object {
         "background": "white",
@@ -8444,10 +8466,11 @@ exports[`Storyshots Atoms/Cycler default 1`] = `
     }
   >
     <button
+      className="info__close-button"
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -8469,12 +8492,11 @@ exports[`Storyshots Atoms/Cycler default 1`] = `
       <div
         style={
           Object {
-            "WebkitFontSmoothing": "antialiased",
             "backgroundColor": "#fff",
             "border": "1px solid #eee",
             "borderRadius": "2px",
-            "color": "#444",
-            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "color": "black",
+            "fontFamily": "Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif",
             "fontSize": "15px",
             "fontWeight": 300,
             "lineHeight": 1.45,
@@ -8812,7 +8834,7 @@ exports[`Storyshots Atoms/Cycler default 1`] = `
             Prop Types
           </h1>
           <div>
-            <h2
+            <h3
               style={
                 Object {
                   "margin": "20px 0 0 0",
@@ -8822,7 +8844,7 @@ exports[`Storyshots Atoms/Cycler default 1`] = `
               "
               CyclerContainer
               " Component
-            </h2>
+            </h3>
             <small>
               No propTypes defined!
             </small>
@@ -8918,10 +8940,11 @@ exports[`Storyshots Atoms/Sidescription default 1`] = `
     </div>
   </div>
   <button
+    className="info__show-button"
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -8940,6 +8963,7 @@ exports[`Storyshots Atoms/Sidescription default 1`] = `
     Show Info
   </button>
   <div
+    className="info__overlay"
     style={
       Object {
         "background": "white",
@@ -8956,10 +8980,11 @@ exports[`Storyshots Atoms/Sidescription default 1`] = `
     }
   >
     <button
+      className="info__close-button"
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -8981,12 +9006,11 @@ exports[`Storyshots Atoms/Sidescription default 1`] = `
       <div
         style={
           Object {
-            "WebkitFontSmoothing": "antialiased",
             "backgroundColor": "#fff",
             "border": "1px solid #eee",
             "borderRadius": "2px",
-            "color": "#444",
-            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "color": "black",
+            "fontFamily": "Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif",
             "fontSize": "15px",
             "fontWeight": 300,
             "lineHeight": 1.45,
@@ -9128,7 +9152,7 @@ exports[`Storyshots Atoms/Sidescription default 1`] = `
                             }
                           }
                         >
-                          Clicked Add!
+                          action
                         </span>
                         }
                       </span>
@@ -9215,7 +9239,7 @@ exports[`Storyshots Atoms/Sidescription default 1`] = `
             Prop Types
           </h1>
           <div>
-            <h2
+            <h3
               style={
                 Object {
                   "margin": "20px 0 0 0",
@@ -9225,7 +9249,7 @@ exports[`Storyshots Atoms/Sidescription default 1`] = `
               "
               
               " Component
-            </h2>
+            </h3>
             <small>
               No propTypes defined!
             </small>
@@ -9240,112 +9264,230 @@ exports[`Storyshots Atoms/Sidescription default 1`] = `
 exports[`Storyshots Atoms/Svg default 1`] = `
 <div
   className="storybook-readme-story"
-  style={
-    Object {
-      "padding": "8px",
-    }
-  }
 >
+  <div>
+    <div
+      className="markdown-body"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<h1 id=\\"svg-star-\\">Svg ⭐</h1>
+<p>Svg component suitable for placing any kind of svg graphics.</p>
+",
+        }
+      }
+    />
+  </div>
   <div
-    className="markdown-body"
+    className="markdown-body markdown-props-table"
     dangerouslySetInnerHTML={
       Object {
-        "__html": "<h1 id=\\"svg-star-\\">Svg ⭐️</h1>
-<p>Svg component suitable for placing any kind of svg graphics.</p>
-<!-- PROPS -->
-<pre><code class=\\"lang-js\\">import Svg from &#39;@pyxis/components/build/Svg&#39;;
-</code></pre>
-",
+        "__html": "<h3 id=\\"story-props\\">Story Props</h3>
+<table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Required</th>
+        <th>Type</th>
+        <th>DefaultValue</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody><tr>
+      <td>context</td>
+      <td>-</td>
+      <td>
+        <div><b>other</b></div>
+        <div class=\\"property_meta\\"></div>
+      </td>
+      <td>-</td>
+      <td>-</td>
+    </tr><tr>
+      <td>info</td>
+      <td>-</td>
+      <td>
+        <div><b>other</b></div>
+        <div class=\\"property_meta\\"></div>
+      </td>
+      <td>-</td>
+      <td>-</td>
+    </tr><tr>
+      <td>propTables</td>
+      <td>-</td>
+      <td>
+        <div><b>other</b></div>
+        <div class=\\"property_meta\\"></div>
+      </td>
+      <td>-</td>
+      <td>-</td>
+    </tr><tr>
+      <td>propTablesExclude</td>
+      <td>-</td>
+      <td>
+        <div><b>other</b></div>
+        <div class=\\"property_meta\\"></div>
+      </td>
+      <td></td>
+      <td>-</td>
+    </tr><tr>
+      <td>showInline</td>
+      <td>-</td>
+      <td>
+        <div><b>other</b></div>
+        <div class=\\"property_meta\\"></div>
+      </td>
+      <td>-</td>
+      <td>-</td>
+    </tr><tr>
+      <td>showHeader</td>
+      <td>-</td>
+      <td>
+        <div><b>other</b></div>
+        <div class=\\"property_meta\\"></div>
+      </td>
+      <td>true</td>
+      <td>-</td>
+    </tr><tr>
+      <td>showSource</td>
+      <td>-</td>
+      <td>
+        <div><b>other</b></div>
+        <div class=\\"property_meta\\"></div>
+      </td>
+      <td>true</td>
+      <td>-</td>
+    </tr><tr>
+      <td>styles</td>
+      <td>+</td>
+      <td>
+        <div><b>other</b></div>
+        <div class=\\"property_meta\\"></div>
+      </td>
+      <td>-</td>
+      <td>-</td>
+    </tr><tr>
+      <td>children</td>
+      <td>-</td>
+      <td>
+        <div><b>other</b></div>
+        <div class=\\"property_meta\\"></div>
+      </td>
+      <td>-</td>
+      <td>-</td>
+    </tr><tr>
+      <td>components</td>
+      <td>-</td>
+      <td>
+        <div><b>other</b></div>
+        <div class=\\"property_meta\\"></div>
+      </td>
+      <td>[object Object]</td>
+      <td>-</td>
+    </tr><tr>
+      <td>maxPropsIntoLine</td>
+      <td>+</td>
+      <td>
+        <div><b>other</b></div>
+        <div class=\\"property_meta\\"></div>
+      </td>
+      <td>-</td>
+      <td>-</td>
+    </tr><tr>
+      <td>maxPropObjectKeys</td>
+      <td>+</td>
+      <td>
+        <div><b>other</b></div>
+        <div class=\\"property_meta\\"></div>
+      </td>
+      <td>-</td>
+      <td>-</td>
+    </tr><tr>
+      <td>maxPropArrayLength</td>
+      <td>+</td>
+      <td>
+        <div><b>other</b></div>
+        <div class=\\"property_meta\\"></div>
+      </td>
+      <td>-</td>
+      <td>-</td>
+    </tr><tr>
+      <td>maxPropStringLength</td>
+      <td>+</td>
+      <td>
+        <div><b>other</b></div>
+        <div class=\\"property_meta\\"></div>
+      </td>
+      <td>-</td>
+      <td>-</td>
+    </tr><tr>
+      <td>excludedPropTypes</td>
+      <td>-</td>
+      <td>
+        <div><b>other</b></div>
+        <div class=\\"property_meta\\"></div>
+      </td>
+      <td></td>
+      <td>-</td>
+    </tr></tbody></table>",
       }
     }
   />
+  <div>
+    <div
+      className="markdown-body"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "
+<pre><code class=\\"lang-js\\">import Svg from &#39;@pyxis/components/build/Svg&#39;;
+</code></pre>
+",
+        }
+      }
+    />
+  </div>
   <div
     style={
       Object {
-        "backgroundColor": "#ffffff",
-        "border": "1px dashed #e5e5e5",
-        "boxSizing": "border-box",
-        "margin": "16px 0 16px 0",
-        "padding": "50px 35px",
-        "position": "relative",
-        "textAlign": "center",
-        "transition": "background-color 0.2s",
+        "margin": "32px 0",
       }
     }
   >
     <div>
-      <div
-        style={
-          Object {
-            "position": "relative",
-            "zIndex": 0,
+      <div>
+        <div
+          style={
+            Object {
+              "position": "relative",
+              "zIndex": 0,
+            }
           }
-        }
-      >
-        <a
-          aria-label="pyxis media"
-          className="root"
-          href="#"
         >
-          <i
-            className="svg"
-            dangerouslySetInnerHTML={
-              Object {
-                "__html": Object {},
+          <a
+            aria-label="pyxis media"
+            className="root"
+            href="#"
+          >
+            <i
+              className="svg"
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": Object {},
+                }
               }
-            }
-            src={null}
-            styles={
-              Object {
-                "fill": "black",
+              src={null}
+              styles={
+                Object {
+                  "fill": "black",
+                }
               }
-            }
-          />
-        </a>
-      </div>
-      <button
-        onClick={[Function]}
-        style={
-          Object {
-            "background": "#28c",
-            "border": "none",
-            "borderRadius": "0 0 0 5px",
-            "color": "#fff",
-            "cursor": "pointer",
-            "display": "block",
-            "fontFamily": "sans-serif",
-            "fontSize": "12px",
-            "padding": "5px 15px",
-            "position": "fixed",
-            "right": 0,
-            "top": 0,
-          }
-        }
-        type="button"
-      >
-        Show Info
-      </button>
-      <div
-        style={
-          Object {
-            "background": "white",
-            "bottom": 0,
-            "display": "none",
-            "left": 0,
-            "overflow": "auto",
-            "padding": "0 40px",
-            "position": "fixed",
-            "right": 0,
-            "top": 0,
-            "zIndex": 99999,
-          }
-        }
-      >
+            />
+          </a>
+        </div>
         <button
+          className="info__show-button"
           onClick={[Function]}
           style={
             Object {
-              "background": "#28c",
+              "background": "#027ac5",
               "border": "none",
               "borderRadius": "0 0 0 5px",
               "color": "#fff",
@@ -9361,172 +9503,161 @@ exports[`Storyshots Atoms/Svg default 1`] = `
           }
           type="button"
         >
-          ×
+          Show Info
         </button>
-        <div>
-          <div
+        <div
+          className="info__overlay"
+          style={
+            Object {
+              "background": "white",
+              "bottom": 0,
+              "display": "none",
+              "left": 0,
+              "overflow": "auto",
+              "padding": "0 40px",
+              "position": "fixed",
+              "right": 0,
+              "top": 0,
+              "zIndex": 99999,
+            }
+          }
+        >
+          <button
+            className="info__close-button"
+            onClick={[Function]}
             style={
               Object {
-                "WebkitFontSmoothing": "antialiased",
-                "backgroundColor": "#fff",
-                "border": "1px solid #eee",
-                "borderRadius": "2px",
-                "color": "#444",
-                "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
-                "fontSize": "15px",
-                "fontWeight": 300,
-                "lineHeight": 1.45,
-                "marginBottom": "20px",
-                "marginTop": "20px",
-                "padding": "20px 40px 40px",
+                "background": "#027ac5",
+                "border": "none",
+                "borderRadius": "0 0 0 5px",
+                "color": "#fff",
+                "cursor": "pointer",
+                "display": "block",
+                "fontFamily": "sans-serif",
+                "fontSize": "12px",
+                "padding": "5px 15px",
+                "position": "fixed",
+                "right": 0,
+                "top": 0,
               }
             }
+            type="button"
           >
-            
-            <div>
-              <h1
-                style={
-                  Object {
-                    "borderBottom": "1px solid #EEE",
-                    "fontSize": "25px",
-                    "margin": "20px 0 0 0",
-                    "padding": "0 0 5px 0",
-                  }
+            ×
+          </button>
+          <div>
+            <div
+              style={
+                Object {
+                  "backgroundColor": "#fff",
+                  "border": "1px solid #eee",
+                  "borderRadius": "2px",
+                  "color": "black",
+                  "fontFamily": "Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif",
+                  "fontSize": "15px",
+                  "fontWeight": 300,
+                  "lineHeight": 1.45,
+                  "marginBottom": "20px",
+                  "marginTop": "20px",
+                  "padding": "20px 40px 40px",
                 }
-              >
-                Story Source
-              </h1>
-              <pre
-                style={
-                  Object {
-                    "alignItems": "center",
-                    "backgroundColor": "#fafafa",
-                    "display": "flex",
-                    "fontFamily": "Menlo, Monaco, \\"Courier New\\", monospace",
-                    "fontSize": ".88em",
-                    "justifyContent": "space-between",
-                    "lineHeight": 1.5,
-                    "overflowX": "scroll",
-                    "padding": ".5rem",
-                  }
-                }
-              >
-                <div>
-                  <div
-                    style={
-                      Object {
-                        "paddingLeft": 18,
-                        "paddingRight": 3,
-                      }
+              }
+            >
+              
+              <div>
+                <h1
+                  style={
+                    Object {
+                      "borderBottom": "1px solid #EEE",
+                      "fontSize": "25px",
+                      "margin": "20px 0 0 0",
+                      "padding": "0 0 5px 0",
                     }
-                  >
-                    <span
+                  }
+                >
+                  Story Source
+                </h1>
+                <pre
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "backgroundColor": "#fafafa",
+                      "display": "flex",
+                      "fontFamily": "Menlo, Monaco, \\"Courier New\\", monospace",
+                      "fontSize": ".88em",
+                      "justifyContent": "space-between",
+                      "lineHeight": 1.5,
+                      "overflowX": "scroll",
+                      "padding": ".5rem",
+                    }
+                  }
+                >
+                  <div>
+                    <div
                       style={
                         Object {
-                          "color": "#444",
+                          "paddingLeft": 18,
+                          "paddingRight": 3,
                         }
                       }
                     >
-                      &lt;
-                      Unknown
-                    </span>
-                    <span>
-                      <span>
-                        <span>
-                          <br />
-                            
-                        </span>
-                        <span
-                          style={Object {}}
-                        >
-                          svg
-                        </span>
-                        <span>
-                          =
-                          <span
-                            style={Object {}}
-                          >
-                            {
-                            <span
-                              style={
-                                Object {
-                                  "color": "#666",
-                                }
-                              }
-                            >
-                              {
-                              }
-                            </span>
-                            }
-                          </span>
-                        </span>
+                      <span
+                        style={
+                          Object {
+                            "color": "#444",
+                          }
+                        }
+                      >
+                        &lt;
+                        Unknown
                       </span>
                       <span>
                         <span>
-                          <br />
-                            
-                        </span>
-                        <span
-                          style={Object {}}
-                        >
-                          link
-                        </span>
-                        <span>
-                          =
-                          <span
-                            style={Object {}}
-                          >
-                            "
-                            <span
-                              style={
-                                Object {
-                                  "color": "#22a",
-                                  "wordBreak": "break-word",
-                                }
-                              }
-                            >
-                              #
-                            </span>
-                            "
+                          <span>
+                            <br />
+                              
                           </span>
-                        </span>
-                      </span>
-                      <span>
-                        <span>
-                          <br />
-                            
-                        </span>
-                        <span
-                          style={Object {}}
-                        >
-                          aria
-                        </span>
-                        <span>
-                          =
                           <span
                             style={Object {}}
                           >
-                            {
+                            svg
+                          </span>
+                          <span>
+                            =
                             <span
-                              style={
-                                Object {
-                                  "color": "#666",
-                                }
-                              }
+                              style={Object {}}
                             >
                               {
-                              <span>
-                                <span
-                                  style={
-                                    Object {
-                                      "color": "#666",
-                                    }
+                              <span
+                                style={
+                                  Object {
+                                    "color": "#666",
                                   }
-                                >
-                                  label
-                                </span>
+                                }
+                              >
+                                {
+                                }
                               </span>
-                              : 
+                              }
+                            </span>
+                          </span>
+                        </span>
+                        <span>
+                          <span>
+                            <br />
+                              
+                          </span>
+                          <span
+                            style={Object {}}
+                          >
+                            link
+                          </span>
+                          <span>
+                            =
+                            <span
+                              style={Object {}}
+                            >
+                              "
                               <span
                                 style={
                                   Object {
@@ -9535,109 +9666,160 @@ exports[`Storyshots Atoms/Svg default 1`] = `
                                   }
                                 }
                               >
-                                'pyxis media'
+                                #
                               </span>
-                              }
+                              "
                             </span>
-                            }
                           </span>
                         </span>
-                      </span>
-                      <span>
                         <span>
-                          <br />
-                            
-                        </span>
-                        <span
-                          style={Object {}}
-                        >
-                          fill
-                        </span>
-                        <span>
-                          =
+                          <span>
+                            <br />
+                              
+                          </span>
                           <span
                             style={Object {}}
                           >
-                            "
+                            aria
+                          </span>
+                          <span>
+                            =
                             <span
-                              style={
-                                Object {
-                                  "color": "#22a",
-                                  "wordBreak": "break-word",
-                                }
-                              }
+                              style={Object {}}
                             >
-                              black
+                              {
+                              <span
+                                style={
+                                  Object {
+                                    "color": "#666",
+                                  }
+                                }
+                              >
+                                {
+                                <span>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#666",
+                                      }
+                                    }
+                                  >
+                                    label
+                                  </span>
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }
+                                >
+                                  'pyxis media'
+                                </span>
+                                }
+                              </span>
+                              }
                             </span>
-                            "
                           </span>
                         </span>
-                        <br />
+                        <span>
+                          <span>
+                            <br />
+                              
+                          </span>
+                          <span
+                            style={Object {}}
+                          >
+                            fill
+                          </span>
+                          <span>
+                            =
+                            <span
+                              style={Object {}}
+                            >
+                              "
+                              <span
+                                style={
+                                  Object {
+                                    "color": "#22a",
+                                    "wordBreak": "break-word",
+                                  }
+                                }
+                              >
+                                black
+                              </span>
+                              "
+                            </span>
+                          </span>
+                          <br />
+                        </span>
                       </span>
-                    </span>
-                    <span
-                      style={
-                        Object {
-                          "color": "#444",
+                      <span
+                        style={
+                          Object {
+                            "color": "#444",
+                          }
                         }
-                      }
-                    >
-                      /&gt;
-                    </span>
+                      >
+                        /&gt;
+                      </span>
+                    </div>
                   </div>
-                </div>
-                <button
-                  onClick={[Function]}
-                  style={
-                    Object {
-                      "alignSelf": "flex-start",
-                      "backgroundColor": "rgb(255, 255, 255)",
-                      "borderColor": "rgb(238, 238, 238)",
-                      "borderImage": "initial",
-                      "borderRadius": "3px",
-                      "borderStyle": "solid",
-                      "borderWidth": "1px",
-                      "cursor": "pointer",
-                      "flexShrink": "0",
-                      "fontSize": "13px",
-                      "overflow": "hidden",
-                      "padding": "3px 10px",
+                  <button
+                    onClick={[Function]}
+                    style={
+                      Object {
+                        "alignSelf": "flex-start",
+                        "backgroundColor": "rgb(255, 255, 255)",
+                        "borderColor": "rgb(238, 238, 238)",
+                        "borderImage": "initial",
+                        "borderRadius": "3px",
+                        "borderStyle": "solid",
+                        "borderWidth": "1px",
+                        "cursor": "pointer",
+                        "flexShrink": "0",
+                        "fontSize": "13px",
+                        "overflow": "hidden",
+                        "padding": "3px 10px",
+                      }
                     }
-                  }
-                  type="button"
-                >
-                  Copy
-                </button>
-              </pre>
-            </div>
-            <div>
-              <h1
-                style={
-                  Object {
-                    "borderBottom": "1px solid #EEE",
-                    "fontSize": "25px",
-                    "margin": "20px 0 0 0",
-                    "padding": "0 0 5px 0",
-                  }
-                }
-              >
-                Prop Types
-              </h1>
+                    type="button"
+                  >
+                    Copy
+                  </button>
+                </pre>
+              </div>
               <div>
-                <h2
+                <h1
                   style={
                     Object {
+                      "borderBottom": "1px solid #EEE",
+                      "fontSize": "25px",
                       "margin": "20px 0 0 0",
+                      "padding": "0 0 5px 0",
                     }
                   }
                 >
-                  "
-                  
-                  " Component
-                </h2>
-                <small>
-                  No propTypes defined!
-                </small>
+                  Prop Types
+                </h1>
+                <div>
+                  <h3
+                    style={
+                      Object {
+                        "margin": "20px 0 0 0",
+                      }
+                    }
+                  >
+                    "
+                    
+                    " Component
+                  </h3>
+                  <small>
+                    No propTypes defined!
+                  </small>
+                </div>
               </div>
             </div>
           </div>
@@ -9645,14 +9827,6 @@ exports[`Storyshots Atoms/Svg default 1`] = `
       </div>
     </div>
   </div>
-  <div
-    className="markdown-body"
-    dangerouslySetInnerHTML={
-      Object {
-        "__html": "",
-      }
-    }
-  />
 </div>
 `;
 
@@ -9755,10 +9929,11 @@ exports[`Storyshots Moleculs/Add Documentation 1`] = `
     </div>
   </div>
   <button
+    className="info__show-button"
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -9777,6 +9952,7 @@ exports[`Storyshots Moleculs/Add Documentation 1`] = `
     Show Info
   </button>
   <div
+    className="info__overlay"
     style={
       Object {
         "background": "white",
@@ -9793,10 +9969,11 @@ exports[`Storyshots Moleculs/Add Documentation 1`] = `
     }
   >
     <button
+      className="info__close-button"
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -9818,12 +9995,11 @@ exports[`Storyshots Moleculs/Add Documentation 1`] = `
       <div
         style={
           Object {
-            "WebkitFontSmoothing": "antialiased",
             "backgroundColor": "#fff",
             "border": "1px solid #eee",
             "borderRadius": "2px",
-            "color": "#444",
-            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "color": "black",
+            "fontFamily": "Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif",
             "fontSize": "15px",
             "fontWeight": 300,
             "lineHeight": 1.45,
@@ -10132,7 +10308,7 @@ exports[`Storyshots Moleculs/Add Documentation 1`] = `
                               }
                             }
                           >
-                            Add clicked!
+                            action
                           </span>
                           }
                         </span>
@@ -10210,7 +10386,7 @@ exports[`Storyshots Moleculs/Add Documentation 1`] = `
             Prop Types
           </h1>
           <div>
-            <h2
+            <h3
               style={
                 Object {
                   "margin": "20px 0 0 0",
@@ -10220,13 +10396,13 @@ exports[`Storyshots Moleculs/Add Documentation 1`] = `
               "
               AddContainer
               " Component
-            </h2>
+            </h3>
             <small>
               No propTypes defined!
             </small>
           </div>
           <div>
-            <h2
+            <h3
               style={
                 Object {
                   "margin": "20px 0 0 0",
@@ -10236,7 +10412,7 @@ exports[`Storyshots Moleculs/Add Documentation 1`] = `
               "
               Marked
               " Component
-            </h2>
+            </h3>
             <small>
               No propTypes defined!
             </small>
@@ -10317,10 +10493,11 @@ exports[`Storyshots Moleculs/Add default 1`] = `
     </div>
   </div>
   <button
+    className="info__show-button"
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -10339,6 +10516,7 @@ exports[`Storyshots Moleculs/Add default 1`] = `
     Show Info
   </button>
   <div
+    className="info__overlay"
     style={
       Object {
         "background": "white",
@@ -10355,10 +10533,11 @@ exports[`Storyshots Moleculs/Add default 1`] = `
     }
   >
     <button
+      className="info__close-button"
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -10380,12 +10559,11 @@ exports[`Storyshots Moleculs/Add default 1`] = `
       <div
         style={
           Object {
-            "WebkitFontSmoothing": "antialiased",
             "backgroundColor": "#fff",
             "border": "1px solid #eee",
             "borderRadius": "2px",
-            "color": "#444",
-            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "color": "black",
+            "fontFamily": "Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif",
             "fontSize": "15px",
             "fontWeight": 300,
             "lineHeight": 1.45,
@@ -10491,7 +10669,7 @@ exports[`Storyshots Moleculs/Add default 1`] = `
                             }
                           }
                         >
-                          Add clicked!
+                          action
                         </span>
                         }
                       </span>
@@ -10548,7 +10726,7 @@ exports[`Storyshots Moleculs/Add default 1`] = `
             Prop Types
           </h1>
           <div>
-            <h2
+            <h3
               style={
                 Object {
                   "margin": "20px 0 0 0",
@@ -10558,7 +10736,7 @@ exports[`Storyshots Moleculs/Add default 1`] = `
               "
               AddContainer
               " Component
-            </h2>
+            </h3>
             <small>
               No propTypes defined!
             </small>
@@ -10601,8 +10779,7 @@ exports[`Storyshots Moleculs/Carousel Documentation 1`] = `
         className="markdown-body"
         dangerouslySetInnerHTML={
           Object {
-            "__html": "<p><br /></p>
-",
+            "__html": "<br />",
           }
         }
       />
@@ -10637,8 +10814,7 @@ exports[`Storyshots Moleculs/Carousel Documentation 1`] = `
         className="markdown-body"
         dangerouslySetInnerHTML={
           Object {
-            "__html": "<p><br /></p>
-",
+            "__html": "<br />",
           }
         }
       />
@@ -10659,8 +10835,7 @@ exports[`Storyshots Moleculs/Carousel Documentation 1`] = `
         className="markdown-body"
         dangerouslySetInnerHTML={
           Object {
-            "__html": "<p><br /></p>
-",
+            "__html": "<br />",
           }
         }
       />
@@ -10759,8 +10934,7 @@ exports[`Storyshots Moleculs/Carousel Documentation 1`] = `
         className="markdown-body"
         dangerouslySetInnerHTML={
           Object {
-            "__html": "<p><br /></p>
-",
+            "__html": "<br />",
           }
         }
       />
@@ -10781,8 +10955,7 @@ exports[`Storyshots Moleculs/Carousel Documentation 1`] = `
         className="markdown-body"
         dangerouslySetInnerHTML={
           Object {
-            "__html": "<p><br /></p>
-",
+            "__html": "<br />",
           }
         }
       />
@@ -10896,10 +11069,11 @@ exports[`Storyshots Moleculs/Carousel Documentation 1`] = `
     </div>
   </div>
   <button
+    className="info__show-button"
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -10918,6 +11092,7 @@ exports[`Storyshots Moleculs/Carousel Documentation 1`] = `
     Show Info
   </button>
   <div
+    className="info__overlay"
     style={
       Object {
         "background": "white",
@@ -10934,10 +11109,11 @@ exports[`Storyshots Moleculs/Carousel Documentation 1`] = `
     }
   >
     <button
+      className="info__close-button"
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -10959,12 +11135,11 @@ exports[`Storyshots Moleculs/Carousel Documentation 1`] = `
       <div
         style={
           Object {
-            "WebkitFontSmoothing": "antialiased",
             "backgroundColor": "#fff",
             "border": "1px solid #eee",
             "borderRadius": "2px",
-            "color": "#444",
-            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "color": "black",
+            "fontFamily": "Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif",
             "fontSize": "15px",
             "fontWeight": 300,
             "lineHeight": 1.45,
@@ -12443,7 +12618,7 @@ exports[`Storyshots Moleculs/Carousel Documentation 1`] = `
             Prop Types
           </h1>
           <div>
-            <h2
+            <h3
               style={
                 Object {
                   "margin": "20px 0 0 0",
@@ -12453,13 +12628,13 @@ exports[`Storyshots Moleculs/Carousel Documentation 1`] = `
               "
               Carousel
               " Component
-            </h2>
+            </h3>
             <small>
               No propTypes defined!
             </small>
           </div>
           <div>
-            <h2
+            <h3
               style={
                 Object {
                   "margin": "20px 0 0 0",
@@ -12469,7 +12644,7 @@ exports[`Storyshots Moleculs/Carousel Documentation 1`] = `
               "
               Marked
               " Component
-            </h2>
+            </h3>
             <small>
               No propTypes defined!
             </small>
@@ -12600,10 +12775,11 @@ exports[`Storyshots Moleculs/Carousel multi 1`] = `
     </div>
   </div>
   <button
+    className="info__show-button"
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -12622,6 +12798,7 @@ exports[`Storyshots Moleculs/Carousel multi 1`] = `
     Show Info
   </button>
   <div
+    className="info__overlay"
     style={
       Object {
         "background": "white",
@@ -12638,10 +12815,11 @@ exports[`Storyshots Moleculs/Carousel multi 1`] = `
     }
   >
     <button
+      className="info__close-button"
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -12663,12 +12841,11 @@ exports[`Storyshots Moleculs/Carousel multi 1`] = `
       <div
         style={
           Object {
-            "WebkitFontSmoothing": "antialiased",
             "backgroundColor": "#fff",
             "border": "1px solid #eee",
             "borderRadius": "2px",
-            "color": "#444",
-            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "color": "black",
+            "fontFamily": "Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif",
             "fontSize": "15px",
             "fontWeight": 300,
             "lineHeight": 1.45,
@@ -13259,7 +13436,7 @@ exports[`Storyshots Moleculs/Carousel multi 1`] = `
             Prop Types
           </h1>
           <div>
-            <h2
+            <h3
               style={
                 Object {
                   "margin": "20px 0 0 0",
@@ -13269,7 +13446,7 @@ exports[`Storyshots Moleculs/Carousel multi 1`] = `
               "
               Carousel
               " Component
-            </h2>
+            </h3>
             <small>
               No propTypes defined!
             </small>
@@ -13384,10 +13561,11 @@ exports[`Storyshots Moleculs/Carousel simple 1`] = `
     </div>
   </div>
   <button
+    className="info__show-button"
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -13406,6 +13584,7 @@ exports[`Storyshots Moleculs/Carousel simple 1`] = `
     Show Info
   </button>
   <div
+    className="info__overlay"
     style={
       Object {
         "background": "white",
@@ -13422,10 +13601,11 @@ exports[`Storyshots Moleculs/Carousel simple 1`] = `
     }
   >
     <button
+      className="info__close-button"
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -13447,12 +13627,11 @@ exports[`Storyshots Moleculs/Carousel simple 1`] = `
       <div
         style={
           Object {
-            "WebkitFontSmoothing": "antialiased",
             "backgroundColor": "#fff",
             "border": "1px solid #eee",
             "borderRadius": "2px",
-            "color": "#444",
-            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "color": "black",
+            "fontFamily": "Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif",
             "fontSize": "15px",
             "fontWeight": 300,
             "lineHeight": 1.45,
@@ -13789,7 +13968,7 @@ exports[`Storyshots Moleculs/Carousel simple 1`] = `
             Prop Types
           </h1>
           <div>
-            <h2
+            <h3
               style={
                 Object {
                   "margin": "20px 0 0 0",
@@ -13799,7 +13978,7 @@ exports[`Storyshots Moleculs/Carousel simple 1`] = `
               "
               Carousel
               " Component
-            </h2>
+            </h3>
             <small>
               No propTypes defined!
             </small>
@@ -13856,10 +14035,11 @@ exports[`Storyshots Moleculs/Raiser default 1`] = `
     </div>
   </div>
   <button
+    className="info__show-button"
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -13878,6 +14058,7 @@ exports[`Storyshots Moleculs/Raiser default 1`] = `
     Show Info
   </button>
   <div
+    className="info__overlay"
     style={
       Object {
         "background": "white",
@@ -13894,10 +14075,11 @@ exports[`Storyshots Moleculs/Raiser default 1`] = `
     }
   >
     <button
+      className="info__close-button"
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -13919,12 +14101,11 @@ exports[`Storyshots Moleculs/Raiser default 1`] = `
       <div
         style={
           Object {
-            "WebkitFontSmoothing": "antialiased",
             "backgroundColor": "#fff",
             "border": "1px solid #eee",
             "borderRadius": "2px",
-            "color": "#444",
-            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "color": "black",
+            "fontFamily": "Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif",
             "fontSize": "15px",
             "fontWeight": 300,
             "lineHeight": 1.45,
@@ -14003,7 +14184,7 @@ exports[`Storyshots Moleculs/Raiser default 1`] = `
                             }
                           }
                         >
-                          Count changed!
+                          action
                         </span>
                         }
                       </span>
@@ -14060,7 +14241,7 @@ exports[`Storyshots Moleculs/Raiser default 1`] = `
             Prop Types
           </h1>
           <div>
-            <h2
+            <h3
               style={
                 Object {
                   "margin": "20px 0 0 0",
@@ -14070,7 +14251,7 @@ exports[`Storyshots Moleculs/Raiser default 1`] = `
               "
               Raiser
               " Component
-            </h2>
+            </h3>
             <small>
               No propTypes defined!
             </small>
