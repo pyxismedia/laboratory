@@ -1,6 +1,6 @@
 {
   "name": "@pyxis/lab",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "The most basic level for creating html component.",
   "main": "./app/index.js",
   "license": "MIT",

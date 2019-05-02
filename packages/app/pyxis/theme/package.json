@@ -1,6 +1,6 @@
 {
   "name": "@pyxis/theme",
-  "version": "0.0.21",
+  "version": "0.1.0",
   "main": "index.js",
   "license": "MIT",
   "files": [
@@ -12,7 +12,7 @@
     "styled-components": "^4.1.2"
   },
   "devDependencies": {
-    "@pyxis/webpack": "^0.0.24",
+    "@pyxis/webpack": "^0.1.0",
     "webpack": "^4.26.1",
     "webpack-cli": "^3.1.2"
   },
