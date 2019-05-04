@@ -39,9 +39,9 @@
     "lerna-semantic-release": "^9.1.0"
   },
   "engines": {
-    "node": ">=8.10.0",
-    "yarn": ">=1.10.1",
-    "npm": ">=6.4.1"
+    "node": "10.15.3",
+    "yarn": "1.10.1",
+    "npm": "6.4.1"
   },
   "dependencies": {
     "case-sensitive-paths-webpack-plugin": "2.2.0",
