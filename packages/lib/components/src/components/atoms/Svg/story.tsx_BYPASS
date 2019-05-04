@@ -1,13 +1,11 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { Svg } from '.';
+import { Svg } from './component';
 import { withDocs } from 'storybook-readme';
 import README from './README.md';
 import svg from './svg.svg';
 import { text } from '@storybook/addon-knobs';
 import { withInfo } from '@storybook/addon-info';
-
-console.log(svg);
 
 storiesOf('Atoms/Svg', module)
   .addDecorator(withInfo({ header: false }))

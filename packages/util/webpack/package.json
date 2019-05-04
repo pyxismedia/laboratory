@@ -83,6 +83,7 @@
     "stylable": "^5.4.11",
     "style-loaders": "^1.0.0",
     "svg-inline-loader": "^0.8.0",
+    "svg-react-loader": "^0.4.6",
     "symlink-modules": "^0.2.0",
     "tslint": "^5.11.0",
     "tslint-config-airbnb": "^5.11.1",
@@ -95,6 +96,11 @@
     "webpack-merge": "^4.1.4",
     "webpack-node-externals": "^1.7.2",
     "yaml-loader": "^0.5.0"
+  },
+  "engines": {
+    "node": "10.15.3",
+    "yarn": "1.10.1",
+    "npm": "6.4.1"
   },
   "gitHead": "42a59c6709d7f7f6dda00725858aa0da8d33f5ef"
 }

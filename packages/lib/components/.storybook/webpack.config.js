@@ -3,6 +3,7 @@ const { sass } = require('@pyxis/webpack/build/parts/sass');
 const { webfonts } = require('@pyxis/webpack/build/parts/webfonts');
 const webpackMerge = require('webpack-merge');
 const { assign } = Object;
+const { svg } = require('@pyxis/webpack/build/parts/svg');
 
 // Export a function. Accept the base config as the only param.
 module.exports = async ({ config }) => {
@@ -16,9 +17,8 @@ module.exports = async ({ config }) => {
     storybook(),
     sass(),
     webfonts(),
+    svg()
   );
-
-  console.dir(result, { depth: null });
 
   const forbiddenStorybookLoaders = [
     /\.(svg|ico|jpg|jpeg|png|gif|eot|otf|webp|ttf|woff|woff2|cur|ani)(\?.*)?$/,

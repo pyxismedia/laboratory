@@ -4,7 +4,7 @@ module.exports = {
   ],
   "transform": {
     "^.+\\.(tsx?|jsx?)$": "ts-jest",
-    "^.+\\.(svg|scss)$": "<rootDir>/.jest/.jestMock.js",
+    "^.+\\.(svg)$": "<rootDir>/.jest/.jestMock.js",
     "^.+\\.md?$": "markdown-loader-jest"
   },
   "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))|storyshots\\.tsx?$",
@@ -18,7 +18,7 @@ module.exports = {
   ],
   "setupFilesAfterEnv": [
     "<rootDir>/.jest/setupTestFramework.ts",
-    "<rootDir>/.jest/setupEnzyme.js"
+    "<rootDir>/.jest/setupEnzyme.js",
   ],
   "moduleNameMapper": {
     "\\.(css|less|scss|sss|styl)$": "jest-css-modules"
