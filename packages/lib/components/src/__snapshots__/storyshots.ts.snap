@@ -13747,3 +13747,13 @@ exports[`Storyshots Organisms/Navigation default 1`] = `
   </a>
 </nav>
 `;
+
+exports[`Storyshots Templates/ProductDetail default 1`] = `
+<div>
+  <div
+    className="image"
+  >
+    test
+  </div>
+</div>
+`;

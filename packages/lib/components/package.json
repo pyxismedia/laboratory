@@ -99,16 +99,14 @@
     "sinon-chai": "^3.3.0",
     "storybook-readme": "^5.0.2",
     "ts-jest": "^24.0.0",
-    "ts-node": "^7.0.1",
     "typescript": "^3.1.6",
     "webpack": "^4.26.1",
     "webpack-cli": "^3.1.2",
-    "webpack-merge": "^4.2.1",
-    "webpack-node-externals": "1.7.2"
+    "webpack-merge": "^4.2.1"
   },
   "engines": {
     "node": "10.15.3",
-    "yarn": "1.10.1",
+    "yarn": "1.15.2",
     "npm": "6.4.1"
   },
   "gitHead": "42a59c6709d7f7f6dda00725858aa0da8d33f5ef"
