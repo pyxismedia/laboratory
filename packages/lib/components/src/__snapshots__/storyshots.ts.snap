@@ -13747,3 +13747,42 @@ exports[`Storyshots Organisms/Navigation default 1`] = `
   </a>
 </nav>
 `;
+
+exports[`Storyshots moleculs/ProductDescription default 1`] = `
+<div
+  className="wrapper d-flex align-items-center justify-content-center"
+>
+  <div
+    className="container d-flex flex-column"
+  >
+    <h2
+      className="h1"
+    >
+      Lorem
+    </h2>
+    <p
+      className="text-uppercase"
+    >
+      Dolor
+    </p>
+    <p
+      className="font-weight-light"
+    >
+      Etiam porta sem malesuada magna mollis euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed posuere consectetur est at lobortis. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+    </p>
+    <div
+      className="h3 mb-4"
+    >
+      $300
+    </div>
+    <button
+      className="btn btn-outline-dark btn-lg"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      Add to basket
+    </button>
+  </div>
+</div>
+`;
