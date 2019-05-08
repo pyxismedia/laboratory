@@ -2,16 +2,17 @@ import React from 'react';
 import { storiesOf } from '@storybook/react'
 import { Button } from '.';
 import { Variants } from './types'
-import { withInfo } from '@storybook/addon-info'
 import Marked from 'storybook-readme/components/Marked'
 import HEADER from './markdown/HEADER.md';
 import VARIANTS_HEADER from './markdown/VARIANTS_HEADER.md';
 import { action } from '@storybook/addon-actions';
+import README from './README.md';
+import { withDocs } from 'storybook-readme';
 
 const { keys } = Object;
 
 const story = storiesOf('Atoms/Button', module);
-const typings = story.addDecorator(withInfo({ header: false }));
+const typings = story.addDecorator(withDocs([README]));
 
 story.add('Documentation', () => (
   <div style={{ padding: '20px' }}>

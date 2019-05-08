@@ -8,7 +8,6 @@ import { text } from '@storybook/addon-knobs';
 import { withInfo } from '@storybook/addon-info';
 
 storiesOf('Atoms/Svg', module)
-  .addDecorator(withInfo({ header: false }))
   .addDecorator(withDocs([README]))
   .add(
   'default',

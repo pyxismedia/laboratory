@@ -1,10 +1,11 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { CyclerContainer as Cycler } from './container';
-import { withInfo } from '@storybook/addon-info';
+import { withDocs } from 'storybook-readme';
+import README from './README.md';
 
 storiesOf('Atoms/Cycler', module)
-  .addDecorator(withInfo({ header: false }))
+  .addDecorator(withDocs([README]))
   .add(
     'default',
     () => {
