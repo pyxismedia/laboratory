@@ -8,6 +8,7 @@ import {target as targets} from "../../parts/target";
 import { Extension, extensions as extension } from '../../parts/extensions';
 import { TypescriptArgs, TypescriptConfig } from "./types";
 import { pyxis } from '../../parts/pyxis';
+import { devtool } from '../../parts/devtool/part';
 
 export const typescript = ({ entry = Entry.INDEX_TS, extensions = [Extension.TS, Extension.TSX, Extension.JS], mode = Mode.development,
                              target, cleanPath, externals }: TypescriptArgs): TypescriptConfig => merge(
@@ -25,4 +26,5 @@ export const storybook = () => merge(
   extension({ extensions: [Extension.TS, Extension.TSX, Extension.VUE] }),
   ts(),
   pyxis(),
+  devtool(),
 );

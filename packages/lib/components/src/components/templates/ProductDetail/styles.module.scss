@@ -1,0 +1,24 @@
+@import "../../../themes/animaux.theme.scss";
+
+.product-detail__wrapper {
+  height: 100vh;
+}
+
+.product-detail__image-wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+@include media-breakpoint-down(sm) {
+  .product-detail__image-wrapper {
+    height: 50vh;
+  }
+}
+
+.product-detail__container-stretched {
+  height: 100%;
+}
+
+.product-detail__row {
+  height: 100%;
+}

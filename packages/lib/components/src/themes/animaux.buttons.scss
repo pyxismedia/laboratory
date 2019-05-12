@@ -1,0 +1,7 @@
+@import '~bootstrap/scss/_variables.scss';
+
+@include media-breakpoint-down(sm) {
+  .btn {
+    @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-line-height, $border-radius);
+  }
+}

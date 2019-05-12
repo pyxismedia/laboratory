@@ -1,8 +1,54 @@
+@import "../../../themes/animaux.theme.scss";
+
 .wrapper {
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
-.container {
-  width: 50%;
+.category {
+  text-transform: uppercase;
+}
+
+.product-description__price {
+  @include font-size($h3-font-size);
+}
+
+@include media-breakpoint-down(sm) {
+  .headline {
+    font-size: $h3-font-size;
+  }
+
+  .category {
+    font-size: $font-size-sm;
+  }
+
+  .description {
+    font-size: $font-size-sm;
+  }
+
+  .product-description__price {
+    float: left;
+  }
+
+  .product-description__action {
+    float: right;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .headline {
+    font-size: $h1-font-size;
+  }
+
+  .container {
+    width: 50%;
+  }
+
+  .product-description__action {
+    width: 100%;
+  }
+
+  .product-description__price {
+    margin-bottom: $headings-margin-bottom; 
+  }
 }

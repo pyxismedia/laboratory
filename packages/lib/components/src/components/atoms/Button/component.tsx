@@ -10,15 +10,17 @@ export interface ButtonProps {
   variant?: Variants;
   size?: Sizes;
   onClick: (event: any) => void;
+  className?: string;
 }
 
 export const Button: FunctionComponent<ButtonProps> = ({
   children = 'Confirm',
   variant = Variants.PRIMARY,
   size,
-  onClick
+  onClick,
+  className
 }) => (
-  <Btn variant={variant} size={size} onClick={onClick}>
+  <Btn variant={variant} size={size} onClick={onClick} className={className}>
     {children}
   </Btn>
 );
