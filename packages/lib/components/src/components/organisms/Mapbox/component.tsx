@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React, { Component, CSSProperties } from 'react';
 import * as mapbox from 'mapbox-gl';
 // import 'mapbox-gl/dist/mapbox-gl.css';
 
 export class Mapbox extends Component {
-  map;
-  container;
+  map: any;
+  container: any;
 
   componentDidMount() {
     // @ts-ignore
@@ -102,7 +102,7 @@ export class Mapbox extends Component {
         duration: 2000,
         pitch: 45,
         bearing: 10,
-        easing: (t) => {
+        easing: (t: any) => {
           return t * (2 - t);
         }
       });
@@ -120,6 +120,6 @@ export class Mapbox extends Component {
         width: '100%'
     };
 
-    return <div style={style} ref={el => this.container = el} />;
+    return <div style={style as CSSProperties} ref={el => this.container = el} />;
   }
 }

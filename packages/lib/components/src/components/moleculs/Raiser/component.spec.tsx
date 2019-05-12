@@ -1,8 +1,10 @@
 import React from 'react';
-import { Raiser } from './';
+import { Raiser } from '.';
 import { Raiser as RaiserComponent } from './component';
 import { shallow, mount } from 'enzyme';
-import { expect } from 'chai';
+import chai, { expect } from 'chai';
+import chaiSinon from 'sinon-chai';
+import chaiEnzyme from 'chai-enzyme';
 import { InputGroup, FormControl } from 'react-bootstrap';
 import { Button, Variants } from '../../atoms/Button';
 
@@ -50,3 +52,6 @@ describe('Raiser', () => {
     expect(component.find(FormControl)).to.have.attr('value', '1');
   });
 });
+
+chai.use(chaiSinon);
+chai.use(chaiEnzyme());

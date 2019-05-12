@@ -5,7 +5,7 @@ declare module '*.st.css' {
 }
 
 declare module '*.svg' {
-  const content: any;
+  const content: { ReactComponent };
   export default content;
 }
 

@@ -1,7 +1,9 @@
 import React  from 'react'
-import { Carousel, CarouselProps } from './';
+import { Carousel, CarouselProps } from '.';
 import { shallow, ShallowWrapper } from 'enzyme'
-import { expect } from 'chai';
+import chai, { expect } from 'chai';
+import chaiSinon from 'sinon-chai';
+import chaiEnzyme from 'chai-enzyme';
 import { mocks } from './mocks'
 import { Carousel as BsCarousel } from 'react-bootstrap'
 import { CarouselSlide } from './types'
@@ -82,3 +84,6 @@ describe(Carousel.displayName as string, () => {
     });
   });
 });
+
+chai.use(chaiSinon);
+chai.use(chaiEnzyme());

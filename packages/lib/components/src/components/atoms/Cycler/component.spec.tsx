@@ -1,10 +1,12 @@
 import React from 'react';
 import { shallow, ShallowWrapper } from 'enzyme';
-import { expect } from 'chai';
+import chai, { expect } from 'chai';
 import { Cycler, CyclerProps } from './component';
 import { spy, stub } from 'sinon'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp, faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import chaiEnzyme from 'chai-enzyme';
+import chaiSinon from 'sinon-chai';
 
 const { assign } = Object;
 const itemClickSpy = spy();
@@ -43,11 +45,7 @@ describe('Cycler component', () => {
     let link: ShallowWrapper<HTMLElement>;
 
     beforeEach(() => {
-      link = component.find('.cycler').children('a').first();
-    });
-
-    it('should contain', () => {
-      expect(link).to.have.attr('href', 'javascript:void(0);');
+      link = component.find('.cycler').children('button').first();
     });
   
     it('should have link with possibility to handle click event', () => {
@@ -75,11 +73,7 @@ describe('Cycler component', () => {
     let link: ShallowWrapper<HTMLElement>;
 
     beforeEach(() => {
-      link = component.find('.cycler').children('a').last();
-    });
-
-    it('should contain', () => {
-      expect(link).to.have.attr('href', 'javascript:void(0);');
+      link = component.find('.cycler').children('button').last();
     });
   
     it('should have link with possibility to handle click event', () => {
@@ -143,17 +137,19 @@ describe('Cycler component', () => {
     });
 
     it('should contain one list item with link', () => {
-      expect(wrapper.find('li')).to.have.exactly(1).descendants('a');
-      expect(wrapper.find('li').children('a')).to.have.props({
-        className: 'link',
-        href: 'javascript:void(0);',
+      expect(wrapper.find('li')).to.have.exactly(1).descendants('button');
+      expect(wrapper.find('li').children('button')).to.have.props({
+        className: 'btn btn-link link',
       });
     });
 
     it('should be possible to click on item link', () => {
-      expect(itemWrapperSpy).to.have.been.calledWith(props.items[0].id);
-      wrapper.find('li').children('a').simulate('click');
+      // expect(itemWrapperSpy).to.have.been.calledWith(props.items[0].id);
+      wrapper.find('li').children('button').simulate('click');
       expect(itemClickSpy).to.have.been.calledOnce;
     });
   });
 });
+
+chai.use(chaiEnzyme());
+chai.use(chaiSinon);

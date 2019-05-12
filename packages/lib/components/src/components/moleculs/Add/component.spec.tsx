@@ -2,10 +2,14 @@ import React, { FunctionComponent } from 'react';
 import { AddContainer, AddContainerProps } from './container';
 import { AddComponent, AddComponentProps } from './component'; 
 import { shallow, ShallowWrapper } from 'enzyme';
-import { expect } from 'chai';
-import { Raiser, RaiserProps } from '../Raiser';
-import { Button, Variants, ButtonProps } from '../../atoms/Button';
+import chai, { expect } from 'chai';
+import { Raiser } from '../Raiser';
+import { Button, Variants } from '../../atoms/Button';
 import { spy, SinonSpy } from 'sinon';
+import { RaiserProps } from '../Raiser/container';
+import { ButtonProps } from 'react-bootstrap';
+import chaiSinon from 'sinon-chai';
+import chaiEnzyme from 'chai-enzyme';
 
 describe('Add', () => {
   describe('Component', () => {
@@ -65,3 +69,6 @@ describe('Add', () => {
     });
   });
 });
+
+chai.use(chaiSinon);
+chai.use(chaiEnzyme());

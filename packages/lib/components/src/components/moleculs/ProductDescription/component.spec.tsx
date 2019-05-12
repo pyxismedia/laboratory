@@ -1,7 +1,9 @@
 import React from 'react';
 import { ProductDescription } from './component';
 import { shallow, ShallowWrapper } from 'enzyme';
-import { expect } from 'chai';
+import chai, { expect } from 'chai';
+import chaiSinon from 'sinon-chai';
+import chaiEnzyme from 'chai-enzyme';
 import { Button } from '../../atoms/Button';
 import { Variants } from '../../atoms/Button';
 import { Sizes } from '../../types/sizes';
@@ -88,3 +90,6 @@ describe("ProductDescription", () => {
     expect(props.onAdd).to.have.been.calledOnce;
   });
 }); 
+
+chai.use(chaiSinon);
+chai.use(chaiEnzyme());

@@ -41,7 +41,7 @@ export class Tracking extends Component<TrackingProps> {
           <Corners />
           <Active />
           <Edges />
-          <Title />
+          <Title store={this.props.store} />
         </Stage>
       </>
     );

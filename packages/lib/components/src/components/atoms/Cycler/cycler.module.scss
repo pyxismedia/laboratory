@@ -1,27 +1,37 @@
-@import "../../bootstrap.scss";
+@import '../../../themes/animaux.theme.scss';
 
 $item: (
   height: 25px,
-  color: black,
+  color: black
 );
 
 $active-item: (
-  height: 29px,
+  height: 29px
 );
 
 $item-count: 3;
 
 @function getWrapperHeight() {
-  @return (
-    map-get($map: $item, $key: height) * ($item-count - 1)
-  ) + map-get($map: $active-item, $key: height);
+  @return (map-get($map: $item, $key: height) * ($item-count - 1)) +
+    map-get($map: $active-item, $key: height);
 }
 
 @mixin direction {
   font-weight: 200;
 }
 
-.cycler {}
+.up,
+.down,
+.link {
+  outline: none;
+  padding: 0;
+  border: 0px;
+  box-sizing: none;
+  background-color: transparent;
+}
+
+.cycler {
+}
 
 .wrapper {
   height: getWrapperHeight();
@@ -46,7 +56,7 @@ $item-count: 3;
 .link {
   font-weight: 300;
   text-decoration: none;
-  transition: font-weight .2s ease-in-out;
+  transition: font-weight 0.2s ease-in-out;
 }
 
 .link:hover {

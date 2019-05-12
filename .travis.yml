@@ -13,7 +13,9 @@ before_install:
 matrix:
   include:
     - name: Components Pipeline
-      env: PACKAGE_NAME=pyxis-components
+      env:
+        - PACKAGE_NAME=pyxis-components
+        - SKIP_PREFLIGHT_CHECK=true
 
 script:
   - yarn test

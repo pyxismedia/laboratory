@@ -3,7 +3,7 @@ import { IStore, StoreState } from '../../store';
 import { Layer, Text } from 'react-konva';
 import { inject, observer } from 'mobx-react';
 import { Text as TextType } from 'konva';
-import { Coordinates } from '@pyxis/imigary/src/Squares/types';
+// @ts-ignore
 import { memoize } from '@pyxis/decorators/build/main';
 
 export enum Align {

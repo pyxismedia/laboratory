@@ -1,3 +1,10 @@
 // For overriding: https://github.com/twbs/bootstrap/blob/master/scss/_variables.scss
 // Bootstrap override
 
+$theme-colors: (
+  primary: #000
+);
+
+$enable-rounded: false;
+
+$font-family-sans-serif: 'Sofia Pro';

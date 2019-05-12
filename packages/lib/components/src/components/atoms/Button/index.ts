@@ -1,3 +1,2 @@
-export { Button, ButtonProps } from './component';
+export { Button } from './component';
 export { Variants } from './types';
-
