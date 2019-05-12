@@ -14,7 +14,7 @@ export interface CornersProps {
 @observer
 export class Corners extends Component<CornersProps> {
   private static STYLES = [
-    ['lineWidth', 10],
+    ['lineWidth', '10'],
     ['fillStyle', '#FF0000'],
   ];
   scene(context: Context) {
@@ -26,7 +26,7 @@ export class Corners extends Component<CornersProps> {
   }
 
   protected get isReady() {
-    const { state } = this.props.store;
+    const { state } = this.props.store!;
     return state === StoreState.DONE
   }
   

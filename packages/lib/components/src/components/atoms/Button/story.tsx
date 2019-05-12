@@ -51,11 +51,11 @@ story.add('Documentation', () => (
 ));
 
 keys(Variants).forEach((key: string) => {
-  typings.add(Variants[key], () => {
+  typings.add((Variants as any)[key], () => {
     const props = {
       children: 'Click me!',
-      variant: Variants[key],
+      variant: (Variants as any)[key],
     };
-    return <Button {...props} onClick={action(`Clicked ${Variants[key]}`)} />
+    return <Button {...props} onClick={action(`Clicked ${(Variants as any)[key]}`)} />
   })
 });

@@ -9,7 +9,7 @@ const { tracking } = (window as any);
 export function CustomTracker() {
 
   // Constructor
-  CustomTracker.prototype.track = function(pixels: number[], width: number, height: number) {
+  CustomTracker.prototype.track = function(pixels: number, width: number, height: number) {
     // @ts-ignore
     tracking.Fast.THRESHOLD = 6;
   

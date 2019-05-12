@@ -1,5 +1,4 @@
-import { Coordinates, DimensionAbstract, SquaresAbstract } from '@pyxis/imigary/build';
-import { IActiveSquares } from '@pyxis/imigary/src/ActiveSquares/types';
+import { Coordinates, DimensionAbstract, SquaresAbstract, IActiveSquares } from '@pyxis/imigary/build';
 
 export enum StoreState {
   PENDING = 'pending',

@@ -7,23 +7,20 @@ export interface AddContainerProps {
 }
 export class AddContainer extends React.Component<AddContainerProps> {
   count!: number;
-  constructor(props: AddContainerProps) {
-    super(props);
-  }
 
   handleCount = (count: number) => {
     this.count = count;
-  }
+  };
 
   handleAdd = (e: MouseEvent) => {
     this.props.onAdd(e, this.count);
-  }
+  };
 
   render() {
     return React.createElement(AddComponent, {
       title: this.props.title,
       onAdd: this.handleAdd,
-      onCount: this.handleCount,
+      onCount: this.handleCount
     });
   }
 }

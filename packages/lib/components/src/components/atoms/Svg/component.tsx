@@ -1,28 +1,31 @@
 import React, { FunctionComponent } from 'react';
-// @ts-ignore
-import InlineSVG from 'svg-inline-react';
-import styles from './module.scss';
+import styles from './styles.module.scss';
 
 /**
  * Svg properties.
  */
 export interface SvgProps {
-  svg: string;
+  Svg: any;
   /** link to url */
-  link?: string;
+  link: string;
   aria?: {
-    label: string,
+    label: string;
   };
   fill?: string;
 }
 
 /**
  * Svg component.
- * 
+ *
  * @visibleName Logotype
  */
-export const Svg: FunctionComponent<SvgProps> = ({ svg, link = 'javascript:void(0)', aria = { label: undefined }, fill = 'white' }) => (
+export const Svg: FunctionComponent<SvgProps> = ({
+  Svg,
+  link,
+  aria = { label: undefined },
+  fill = 'white'
+}) => (
   <a href={link} aria-label={aria.label} className={styles.root}>
-    <InlineSVG className={styles.svg} styles={{ fill }} src={svg} />
+    <Svg className={styles.svg} styles={{ fill }} />
   </a>
 );

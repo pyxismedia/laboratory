@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from 'react';
-import styles from './style.scss';
+import styles from './styles.module.scss';
 import { Add } from '../../moleculs/Add';
 
 interface SidescriptionProps {
@@ -9,7 +9,12 @@ interface SidescriptionProps {
   subtitle: string;
 }
 
-export const Sidescription: FunctionComponent<SidescriptionProps> = ({ title, description, onAdd, subtitle }) => (
+export const Sidescription: FunctionComponent<SidescriptionProps> = ({
+  title,
+  description,
+  onAdd,
+  subtitle
+}) => (
   <div className={styles.container}>
     <h1>{title}</h1>
     <strong className={styles.subtitle}>{subtitle}</strong>

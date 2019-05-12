@@ -14,4 +14,5 @@ export abstract class ActiveSquaresAbstract extends SquaresAbstract implements I
   protected abstract get safeAreaSquares(): boolean[];
   public abstract inactiveEdges: Square[];
   public abstract get safeAreaInactiveSquares(): boolean[];
+  public abstract get safeAreaActiveSquares(): boolean[];
 }

@@ -5,7 +5,6 @@ import { StoreAbstract } from './StoreAbstract';
 import {
   DimensionAbstract,
   ActiveSquares,
-  ActiveSquaresAbstract,
   TrackerAbstract,
   Coordinates,
   CustomTracker,
@@ -16,7 +15,7 @@ import {
 export class Store extends StoreAbstract implements IStore {
   protected tracker: TrackerAbstract;
   @observable.ref public state: StoreState = StoreState.PENDING;
-  @observable.ref public image: HTMLImageElement = {};
+  @observable.ref public image: HTMLImageElement = new HTMLImageElement();
   @observable.ref public corners: Coordinates[] = [[0, 0], [0, 0]];
   @observable.ref title = {
     width: 0,
