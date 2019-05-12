@@ -19,7 +19,7 @@ export interface TrackingProps {
 
 /**
  * Tracking component.
- * 
+ *
  * @visibleName Tracking
  */
 @inject('store')
@@ -46,4 +46,4 @@ export class Tracking extends Component<TrackingProps> {
       </>
     );
   }
-};
+}

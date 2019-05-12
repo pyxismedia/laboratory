@@ -9,14 +9,12 @@ import { action } from '@storybook/addon-actions';
 storiesOf('Atoms/Sidescription', module)
   .addDecorator(withInfo({ header: false }))
   // .addDecorator(withDocs([README]))
-  .add(
-  'default',
-  () => {
+  .add('default', () => {
     const props = {
       title: 'Lorem ipsum',
       description: 'Lorem ipsum dolor sit amet si',
       onAdd: action('Clicked Add!'),
-      subtitle: 'Good one',
+      subtitle: 'Good one'
     };
-    return <Sidescription {...props} />
+    return <Sidescription {...props} />;
   });

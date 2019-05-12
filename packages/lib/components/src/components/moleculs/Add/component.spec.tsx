@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react';
 import { AddContainer, AddContainerProps } from './container';
-import { AddComponent, AddComponentProps } from './component'; 
+import { AddComponent, AddComponentProps } from './component';
 import { shallow, ShallowWrapper } from 'enzyme';
 import chai, { expect } from 'chai';
 import { Raiser } from '../Raiser';
@@ -20,7 +20,13 @@ describe('Add', () => {
     beforeEach(() => {
       onAddSpy = spy();
       onCountSpy = spy();
-      component = shallow<FunctionComponent<AddComponentProps>>(<AddComponent title="Lorem ipsum" onCount={onCountSpy} onAdd={onAddSpy} />);
+      component = shallow<FunctionComponent<AddComponentProps>>(
+        <AddComponent
+          title="Lorem ipsum"
+          onCount={onCountSpy}
+          onAdd={onAddSpy}
+        />
+      );
     });
 
     it('should render Add component', () => {
@@ -28,12 +34,21 @@ describe('Add', () => {
     });
 
     it('should contain Raiser', () => {
-      expect(component.find<RaiserProps>(Raiser)).to.have.prop('onCount', onCountSpy);
+      expect(component.find<RaiserProps>(Raiser)).to.have.prop(
+        'onCount',
+        onCountSpy
+      );
     });
 
     it('should contain Button', () => {
-      expect(component.find<ButtonProps>(Button)).to.have.prop('variant', Variants.PRIMARY);
-      expect(component.find<ButtonProps>(Button)).to.have.prop('onClick', onAddSpy);
+      expect(component.find<ButtonProps>(Button)).to.have.prop(
+        'variant',
+        Variants.PRIMARY
+      );
+      expect(component.find<ButtonProps>(Button)).to.have.prop(
+        'onClick',
+        onAddSpy
+      );
     });
   });
 
@@ -43,7 +58,9 @@ describe('Add', () => {
 
     beforeEach(() => {
       onAddSpy = spy();
-      container = shallow<AddContainer>(<AddContainer title="Lorem ipsum" onAdd={onAddSpy} />);
+      container = shallow<AddContainer>(
+        <AddContainer title="Lorem ipsum" onAdd={onAddSpy} />
+      );
     });
 
     it('should render Add container', () => {

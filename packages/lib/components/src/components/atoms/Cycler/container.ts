@@ -7,8 +7,8 @@ interface CyclerState {
 
 interface CyclerProps {
   items: {
-    id: string,
-    title: string,
+    id: string;
+    title: string;
   }[];
 }
 
@@ -19,13 +19,13 @@ export class CyclerContainer extends React.Component<CyclerProps, CyclerState> {
   constructor(props: CyclerProps) {
     super(props);
     this.state = {
-      position: 0,
+      position: 0
     };
   }
 
   componentDidMount() {
     const { visible } = CyclerContainer;
-    this.setState({ position: (this.count / 2) - visible });
+    this.setState({ position: this.count / 2 - visible });
   }
 
   private get isSlidableUp() {
@@ -38,28 +38,28 @@ export class CyclerContainer extends React.Component<CyclerProps, CyclerState> {
 
   private get isSlidableDown() {
     const { visible } = CyclerContainer;
-    return (this.count - visible) > -this.state.position;
+    return this.count - visible > -this.state.position;
   }
 
   private up = () => {
     if (this.isSlidableUp) {
-      this.setState({ position: this.state.position + 1});
+      this.setState({ position: this.state.position + 1 });
     }
-  }
+  };
 
   private down = () => {
     if (this.isSlidableDown) {
-      this.setState({ position: this.state.position - 1});
-    }  
-  }
+      this.setState({ position: this.state.position - 1 });
+    }
+  };
 
   private isActive = (index: number) => {
-    return (Math.abs(this.state.position) + 1) === index;
-  }
+    return Math.abs(this.state.position) + 1 === index;
+  };
 
   private handleItemClick = (id: string) => () => {
-    console.log(`Item ${id} clicked.`)
-  }
+    console.log(`Item ${id} clicked.`);
+  };
 
   render() {
     const { position } = this.state;
@@ -70,7 +70,7 @@ export class CyclerContainer extends React.Component<CyclerProps, CyclerState> {
       up: this.up,
       down: this.down,
       isActive: this.isActive,
-      handleItemClick: this.handleItemClick,
+      handleItemClick: this.handleItemClick
     });
   }
 }

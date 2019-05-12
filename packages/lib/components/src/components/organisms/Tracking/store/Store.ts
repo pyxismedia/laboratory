@@ -1,5 +1,12 @@
 import 'tracking';
-import { configure, observable, computed, action, runInAction, when } from 'mobx';
+import {
+  configure,
+  observable,
+  computed,
+  action,
+  runInAction,
+  when
+} from 'mobx';
 import { StoreState, IStore } from './types';
 import { StoreAbstract } from './StoreAbstract';
 import {
@@ -9,7 +16,7 @@ import {
   Coordinates,
   CustomTracker,
   Dimension,
-  IActiveSquares,
+  IActiveSquares
 } from '@pyxis/imigary/build';
 
 export class Store extends StoreAbstract implements IStore {
@@ -19,11 +26,11 @@ export class Store extends StoreAbstract implements IStore {
   @observable.ref public corners: Coordinates[] = [[0, 0], [0, 0]];
   @observable.ref title = {
     width: 0,
-    height: 0,
-  }
+    height: 0
+  };
 
   @action public setTitle(width: number, height: number) {
-    this.title = { width, height};
+    this.title = { width, height };
   }
 
   constructor() {
@@ -35,8 +42,8 @@ export class Store extends StoreAbstract implements IStore {
   }
 
   @computed public get dimension(): DimensionAbstract {
-    return new Dimension(this.width, this.height)
-  };
+    return new Dimension(this.width, this.height);
+  }
   @computed public get squares(): IActiveSquares {
     return new ActiveSquares(this.dimension, this.corners);
   }
@@ -73,19 +80,18 @@ export class Store extends StoreAbstract implements IStore {
     this.setState(StoreState.PENDING);
 
     try {
-      const corners = await new Promise(resolve => {
-        this.tracker.once('track', (pairs) => {
+      const corners = (await new Promise(resolve => {
+        this.tracker.once('track', pairs => {
           resolve(pairs);
         });
         tracking.track(image, this.tracker);
-      }) as Coordinates[];
+      })) as Coordinates[];
 
       runInAction(() => {
         this.setState(StoreState.DONE);
         this.corners = corners;
       });
-
-    } catch(error) {
+    } catch (error) {
       this.setState(StoreState.ERROR);
     }
   }

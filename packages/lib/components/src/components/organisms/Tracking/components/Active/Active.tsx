@@ -14,7 +14,7 @@ export interface ActiveProps {
 @observer
 export class Active extends Component<ActiveProps> {
   private static STYLES: string[][] = [
-    ['fillStyle', hexToRgbA('#000000', 0.15)],
+    ['fillStyle', hexToRgbA('#000000', 0.15)]
   ];
 
   private get store() {
@@ -29,12 +29,17 @@ export class Active extends Component<ActiveProps> {
     const canvas = new Pairs(context);
     const inactive = this.store.squares.inactiveEdges;
     for (let i = 0; i < inactive.length; i++) {
-      context.rect(inactive[i][0][0], inactive[i][0][1], inactive[i][1][0], inactive[i][1][1]);
+      context.rect(
+        inactive[i][0][0],
+        inactive[i][0][1],
+        inactive[i][1][0],
+        inactive[i][1][1]
+      );
     }
     canvas.style(Active.STYLES);
     canvas.fill();
   }
-  
+
   render() {
     if (this.isReady) {
       return (

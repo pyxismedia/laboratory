@@ -8,15 +8,17 @@ export class Mapbox extends Component {
 
   componentDidMount() {
     // @ts-ignore
-    mapbox.accessToken = 'pk.eyJ1IjoiY3JlYXV4IiwiYSI6ImNqb244aGYzazE0aHkzd215eG13OG43ZWYifQ.j88ZxJGjQBZ2tVu416HSYQ';
+    mapbox.accessToken =
+      'pk.eyJ1IjoiY3JlYXV4IiwiYSI6ImNqb244aGYzazE0aHkzd215eG13OG43ZWYifQ.j88ZxJGjQBZ2tVu416HSYQ';
     this.map = new mapbox.Map({
       container: this.container,
       style: 'mapbox://styles/creaux/cjorg0ynb72gv2rqska2l5nnt',
-      center: [1.230, 52],
-      zoom: 3,
+      center: [1.23, 52],
+      zoom: 3
     });
 
-    const FILTER_OPERATIVE = ['any',
+    const FILTER_OPERATIVE = [
+      'any',
       // ISO 3166 Country Codes (A3) / http://www.virtualherbarium.org/vh/auth/country.html
       ['==', 'ISO_A2', 'CZ'],
       ['==', 'ISO_A2', 'GB'],
@@ -26,48 +28,48 @@ export class Mapbox extends Component {
       ['==', 'ISO_A2', 'PL'],
       ['==', 'ISO_A2', 'RU'],
       ['==', 'ISO_A2', 'CH'],
-      ['==', 'ADM0_A3', 'FRA'],
+      ['==', 'ADM0_A3', 'FRA']
     ];
 
     this.map.on('load', () => {
       this.map.addLayer({
         source: {
           type: 'vector',
-          url: 'mapbox://creaux.ckydiapz',
+          url: 'mapbox://creaux.ckydiapz'
         },
         'source-layer': 'ne_10m_ocean-09pfc4',
         id: 'SEA',
         type: 'fill',
         paint: {
-          'fill-color': "#cad2d3",
+          'fill-color': '#cad2d3'
         }
       });
 
       this.map.addLayer({
         source: {
           type: 'vector',
-          url: 'mapbox://creaux.9za8hjsf',
+          url: 'mapbox://creaux.9za8hjsf'
         },
         'source-layer': 'ne_10m_admin_0_countries-7tjkr9',
         id: 'NON_OPERATIVE',
         type: 'fill',
         paint: {
-          'fill-color': "#0D0D0D",
+          'fill-color': '#0D0D0D'
         }
       });
 
       this.map.addLayer({
         source: {
           type: 'vector',
-          url: 'mapbox://creaux.9za8hjsf',
+          url: 'mapbox://creaux.9za8hjsf'
         },
         'source-layer': 'ne_10m_admin_0_countries-7tjkr9',
         id: 'OPERATIVE',
         type: 'fill',
         filter: FILTER_OPERATIVE,
         paint: {
-          'fill-color': "#DDD13A",
-          'fill-outline-color': '#0D0D0D',
+          'fill-color': '#DDD13A',
+          'fill-outline-color': '#0D0D0D'
         }
       });
 
@@ -79,7 +81,8 @@ export class Mapbox extends Component {
         'source-layer': 'country_label',
         id: 'CITIES',
         type: 'symbol',
-        filter: ['any',
+        filter: [
+          'any',
           // ISO 3166 Country Codes (A3) / http://www.virtualherbarium.org/vh/auth/country.html
           ['==', 'code', 'CZ'],
           ['==', 'code', 'GB'],
@@ -89,11 +92,11 @@ export class Mapbox extends Component {
           ['==', 'code', 'PL'],
           ['==', 'code', 'RU'],
           ['==', 'code', 'CH'],
-          ['==', 'code', 'FR'],
+          ['==', 'code', 'FR']
         ],
         layout: {
-          "text-field": '{name_en}'
-        },
+          'text-field': '{name_en}'
+        }
       });
     });
 
@@ -106,7 +109,7 @@ export class Mapbox extends Component {
           return t * (2 - t);
         }
       });
-    }, 500)
+    }, 500);
   }
 
   componentWillUnmount() {
@@ -116,10 +119,12 @@ export class Mapbox extends Component {
   render() {
     const style = {
       position: 'relative',
-        height: '500px',
-        width: '100%'
+      height: '500px',
+      width: '100%'
     };
 
-    return <div style={style as CSSProperties} ref={el => this.container = el} />;
+    return (
+      <div style={style as CSSProperties} ref={el => (this.container = el)} />
+    );
   }
 }

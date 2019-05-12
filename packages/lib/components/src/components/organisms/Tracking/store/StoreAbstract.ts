@@ -2,7 +2,7 @@ import {
   TrackerAbstract,
   Coordinates,
   DimensionAbstract,
-  IActiveSquares,
+  IActiveSquares
 } from '@pyxis/imigary/build';
 import { StoreState, IStore } from './types';
 
@@ -10,9 +10,9 @@ export abstract class StoreAbstract implements IStore {
   protected abstract tracker: TrackerAbstract;
   public abstract state: StoreState;
   public abstract title: {
-    height: number,
-    width: number,
-  }
+    height: number;
+    width: number;
+  };
   public abstract image: HTMLImageElement;
   public abstract corners: Coordinates[];
   public abstract get dimension(): DimensionAbstract;
