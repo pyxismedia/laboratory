@@ -1,4 +1,3 @@
-
 export interface CarouselSlide {
   alt: string;
   src: string;
@@ -6,7 +5,7 @@ export interface CarouselSlide {
 
 export enum Variants {
   SIMPLE = 'simple',
-  MULTI = 'multi',
+  MULTI = 'multi'
 }
 
 export type Slide = CarouselSlide | CarouselSlide[];

@@ -13,10 +13,7 @@ export interface CornersProps {
 @inject('store')
 @observer
 export class Corners extends Component<CornersProps> {
-  private static STYLES = [
-    ['lineWidth', '10'],
-    ['fillStyle', '#FF0000'],
-  ];
+  private static STYLES = [['lineWidth', '10'], ['fillStyle', '#FF0000']];
   scene(context: Context) {
     const { corners } = this.props.store!;
     const canvas = new Pairs(context);
@@ -27,14 +24,17 @@ export class Corners extends Component<CornersProps> {
 
   protected get isReady() {
     const { state } = this.props.store!;
-    return state === StoreState.DONE
+    return state === StoreState.DONE;
   }
-  
+
   render() {
     if (this.isReady) {
-      return <Layer><Shape sceneFunc={this.scene.bind(this)} /></Layer>
+      return (
+        <Layer>
+          <Shape sceneFunc={this.scene.bind(this)} />
+        </Layer>
+      );
     }
     return null;
   }
 }
-

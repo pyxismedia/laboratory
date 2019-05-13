@@ -1,9 +1,14 @@
-import { Coordinates, DimensionAbstract, SquaresAbstract, IActiveSquares } from '@pyxis/imigary/build';
+import {
+  Coordinates,
+  DimensionAbstract,
+  SquaresAbstract,
+  IActiveSquares
+} from '@pyxis/imigary/build';
 
 export enum StoreState {
   PENDING = 'pending',
   DONE = 'done',
-  ERROR = 'error',
+  ERROR = 'error'
 }
 
 export interface IStore {
@@ -15,9 +20,9 @@ export interface IStore {
   width: number;
   height: number;
   title: {
-    height: number,
-    width: number,
-  }
+    height: number;
+    width: number;
+  };
   setImage(image: HTMLImageElement): void;
   setTitle(width: number, height: number): void;
 }

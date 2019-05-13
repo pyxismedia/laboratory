@@ -14,7 +14,7 @@ export class Image extends Component<ImageProps> {
     const { image, width, height } = this.props.store!;
     return (
       <Layer>
-        <ImageComponent image={image} width={width} height={height}  />
+        <ImageComponent image={image} width={width} height={height} />
       </Layer>
     );
   }

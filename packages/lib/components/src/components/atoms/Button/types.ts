@@ -1,4 +1,3 @@
-
 export enum Variants {
   PRIMARY = 'primary',
   SECONDARY = 'secondary',
@@ -16,5 +15,5 @@ export enum Variants {
   OUTLINE_WARNING = 'outline-warning',
   OUTLINE_INFO = 'outline-info',
   OUTLINE_DARK = 'outline-dark',
-  OUTLINE_LIGHT = 'outline-light',
+  OUTLINE_LIGHT = 'outline-light'
 }

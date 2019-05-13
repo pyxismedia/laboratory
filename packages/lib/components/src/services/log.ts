@@ -4,14 +4,14 @@ enum Colors {
   trace = 'lightblue',
   info = 'blue',
   warn = 'pink',
-  error = 'red',
+  error = 'red'
 }
 
 enum Level {
   TRACE = 'trace',
   INFO = 'info',
   WARN = 'warn',
-  ERROR = 'error',
+  ERROR = 'error'
 }
 
 export class Log {
@@ -29,10 +29,9 @@ export class Log {
     // @ts-ignore
     createDebug.color = Colors[level];
 
-    if(source) {
+    if (source) {
       createDebug(source, message);
-    }
-    else {
+    } else {
       createDebug(message);
     }
   }

@@ -10,20 +10,24 @@ const typings = story.addDecorator(withInfo({ header: false }));
 
 story.add('Documentation', () => (
   <div style={{ padding: '20px' }}>
-    <Marked md={`
+    <Marked
+      md={`
       # Add
 
       Component for adding particular count.
 
-    `} />
-    <Marked md={`
+    `}
+    />
+    <Marked
+      md={`
       ## Variants
 
       | Variant       | Description                             |
       | ------------- | --------------------------------------- |
       | NA            | NA                                      |
       
-    `} />
+    `}
+    />
     <Add title="Add" onAdd={action('Add clicked!')} />
   </div>
 ));

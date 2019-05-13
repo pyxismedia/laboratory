@@ -1,17 +1,16 @@
-import React  from 'react'
+import React from 'react';
 import { Carousel, CarouselProps } from '.';
-import { shallow, ShallowWrapper } from 'enzyme'
+import { shallow, ShallowWrapper } from 'enzyme';
 import chai, { expect } from 'chai';
 import chaiSinon from 'sinon-chai';
 import chaiEnzyme from 'chai-enzyme';
-import { mocks } from './mocks'
-import { Carousel as BsCarousel } from 'react-bootstrap'
-import { CarouselSlide } from './types'
+import { mocks } from './mocks';
+import { Carousel as BsCarousel } from 'react-bootstrap';
+import { CarouselSlide } from './types';
 
 describe(Carousel.displayName as string, () => {
   it('should contain Carousel container', () => {
-    const component = shallow(<Carousel {...mocks.simple} />)
-      .shallow();
+    const component = shallow(<Carousel {...mocks.simple} />).shallow();
     expect(component.find(BsCarousel)).to.be.present();
   });
 
@@ -40,15 +39,25 @@ describe(Carousel.displayName as string, () => {
     });
 
     it('should render img', () => {
-      const component = shallowed.shallow().find('Item').first().shallow().shallow();
+      const component = shallowed
+        .shallow()
+        .find('Item')
+        .first()
+        .shallow()
+        .shallow();
       expect(component.find('img')).to.be.present();
       expect(component.find('img')).to.have.className('d-block');
       expect(component.find('img')).to.have.className('w-100');
-      expect(component.find('img')).to.have.prop('src', (props.slides[0] as CarouselSlide).src);
-      expect(component.find('img')).to.have.prop('alt', (props.slides[0] as CarouselSlide).alt);
+      expect(component.find('img')).to.have.prop(
+        'src',
+        (props.slides[0] as CarouselSlide).src
+      );
+      expect(component.find('img')).to.have.prop(
+        'alt',
+        (props.slides[0] as CarouselSlide).alt
+      );
     });
   });
-
 
   describe('multi variant', () => {
     let shallowed: ShallowWrapper;
@@ -70,17 +79,35 @@ describe(Carousel.displayName as string, () => {
     });
 
     it('should render img four times', () => {
-      const component = shallowed.shallow().find('Items').first().shallow();
+      const component = shallowed
+        .shallow()
+        .find('Items')
+        .first()
+        .shallow();
       expect(component.find('Item')).to.have.exactly(4);
     });
 
     it('should render img', () => {
-      const component = shallowed.shallow().find('Items').first().shallow().find('Item').first().shallow().shallow();
+      const component = shallowed
+        .shallow()
+        .find('Items')
+        .first()
+        .shallow()
+        .find('Item')
+        .first()
+        .shallow()
+        .shallow();
       expect(component.find('img')).to.be.present();
       expect(component.find('img')).to.not.have.className('d-block');
       expect(component.find('img')).to.have.className('w-25');
-      expect(component.find('img')).to.have.prop('src', mocks.multi.slides[0][0].src);
-      expect(component.find('img')).to.have.prop('alt', mocks.multi.slides[0][0].alt);
+      expect(component.find('img')).to.have.prop(
+        'src',
+        mocks.multi.slides[0][0].src
+      );
+      expect(component.find('img')).to.have.prop(
+        'alt',
+        mocks.multi.slides[0][0].alt
+      );
     });
   });
 });

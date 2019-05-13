@@ -8,7 +8,7 @@ import { memoize } from '@pyxis/decorators/build/main';
 
 export enum Align {
   LEFT = 'left',
-  RIGHT = 'right',
+  RIGHT = 'right'
 }
 
 export type CoordinatesAlign = [number, number, Align];
@@ -27,8 +27,8 @@ export class Title extends Component<TitleProps> {
 
     this.state = {
       width: 0,
-      height: 0,
-    }
+      height: 0
+    };
 
     this.titleRef = createRef();
   }
@@ -65,7 +65,7 @@ export class Title extends Component<TitleProps> {
           break;
         }
         x = edges[i][0][0];
-        y = edges[i][0][1]; 
+        y = edges[i][0][1];
         align = Align.LEFT;
         break;
       }
@@ -80,7 +80,7 @@ export class Title extends Component<TitleProps> {
     if (align === Align.LEFT) {
       return x;
     } else if (align === Align.RIGHT) {
-      return (x - this.store.title.width);
+      return x - this.store.title.width;
     }
   }
 
@@ -91,7 +91,7 @@ export class Title extends Component<TitleProps> {
     if (align === Align.LEFT) {
       return y;
     } else if (align === Align.RIGHT) {
-      return (y - this.store.title.height);
+      return y - this.store.title.height;
     }
   }
 
@@ -104,7 +104,15 @@ export class Title extends Component<TitleProps> {
     if (this.isReady) {
       return (
         <Layer>
-          <Text fill="#0000FF" fontSize={36} fontFamily="Georgia" x={this.x} y={this.y} text='Try to click here!' ref={this.titleRef} />
+          <Text
+            fill="#0000FF"
+            fontSize={36}
+            fontFamily="Georgia"
+            x={this.x}
+            y={this.y}
+            text="Try to click here!"
+            ref={this.titleRef}
+          />
         </Layer>
       );
     }
