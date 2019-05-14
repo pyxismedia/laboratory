@@ -25,8 +25,12 @@
   .description-column {
     height:40%;
   }
+}
 
-  .detail {
-    height: calc(var(--viewport-height, 1vh));
-  }
+.detail {
+  // TODO Move responsibility of height to another component which will always wrap ours
+  // Variable --viewport-height is calculated using javascript
+  // This is make sure that viewport is all the time innerHeight of window
+  // and not with heading of browser on mobile1
+  height: calc(var(--viewport-height, 1vh));
 }
