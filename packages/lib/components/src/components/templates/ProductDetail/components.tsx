@@ -1,12 +1,11 @@
 import React, { FunctionComponent } from 'react';
 import styles from './styles.module.scss';
+import '../../../themes/animaux.theme.scss';
 import { ProductDescription } from '../../moleculs/ProductDescription';
 import { ImageVariants } from '../../atoms/Image/types';
 import { Image } from '../../atoms/Image';
 import { Container, Row, Col } from 'react-bootstrap';
 import { ProductDescriptionProps } from '../../moleculs/ProductDescription/component';
-
-console.log(styles);
 
 export interface ProductDetailsProps extends ProductDescriptionProps {
   image: string;
@@ -30,9 +29,9 @@ export const ProductDetail: FunctionComponent<ProductDetailsProps> = ({
     onAdd
   };
   return (
-    <div className={styles['product-detail__wrapper']}>
-      <Container fluid className={styles['product-detail__container-stretched']}>
-        <Row className={styles['product-detail__row']}>
+    <div className="vh-100">
+      <Container fluid className="h-100">
+        <Row className="h-100">
           <Col lg="8" sm="12" className={styles['product-detail__image-column']}>
             <div className={styles['product-detail__image-wrapper']}>
               <Image src={image} variant={ImageVariants.BACKGROUND} />

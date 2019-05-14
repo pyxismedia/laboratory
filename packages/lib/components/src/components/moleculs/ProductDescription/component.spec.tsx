@@ -36,16 +36,20 @@ describe('ProductDescription', () => {
     expect(component.find('.wrapper')).to.have.className(
       'justify-content-center'
     );
+    expect(component.find('.wrapper')).to.have.className('h-100');
   });
 
   it('should contain container as child of wrapper with required classNames', () => {
-    const wrapper = component.find('.wrapper');
+    const wrapper = component.find('div');
     const container = component.find('.container');
     expect(wrapper)
       .to.have.exactly(1)
       .descendants('.container');
     expect(container).to.have.className('d-flex');
     expect(container).to.have.className('flex-column');
+    expect(container).to.have.className('w-100');
+    expect(container).to.have.className('ml-sm-6');
+    expect(container).to.have.className('mr-sm-6');
   });
 
   it('should contain h2 with required classNames as child of container', () => {
@@ -54,7 +58,6 @@ describe('ProductDescription', () => {
     expect(container)
       .to.have.exactly(1)
       .descendants('h2');
-    expect(h2).to.have.className('h1');
     expect(h2).to.have.text(props.title);
   });
 

@@ -1,6 +1,8 @@
 // For overriding: https://github.com/twbs/bootstrap/blob/master/scss/_variables.scss
 // Bootstrap override
 
+$enable-responsive-font-sizes: true;
+
 $theme-colors: (
   primary: #000
 );
@@ -8,3 +10,9 @@ $theme-colors: (
 $enable-rounded: false;
 
 $font-family-sans-serif: 'Sofia Pro';
+
+// 1rem is default value of bootstrap $spacer
+// which is not available here
+$spacers: (
+  9: (1rem * 9)
+);

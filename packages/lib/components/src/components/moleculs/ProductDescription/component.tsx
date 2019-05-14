@@ -1,6 +1,5 @@
 import React, { FunctionComponent } from 'react';
 import { Button, Variants } from '../../atoms/Button';
-import styles from './styles.module.scss';
 import '../../../themes/animaux.theme.scss';
 
 export interface ProductDescriptionProps {
@@ -20,18 +19,16 @@ export const ProductDescription: FunctionComponent<ProductDescriptionProps> = ({
   action,
   onAdd
 }) => (
-  <div
-    className={`${
-      styles.wrapper
-    } d-flex align-items-center justify-content-center`}
-  >
-    <div className={`${styles.container} d-flex flex-column`}>
-      <h2 className={styles.headline}>{title}</h2>
-      <p className={styles.category}>{category}</p>
-      <p className={`${styles.description} font-weight-light`}>{description}</p>
-      <div className={styles.action}>
-        <div className={styles['product-description__price']}>{price}</div>
-        <Button variant={Variants.OUTLINE_DARK} onClick={onAdd} className={styles['product-description__action']}>
+  <div className="d-flex align-items-center justify-content-center h-100">
+    <div className="d-flex flex-column w-100 ml-sm-9 mr-sm-9">
+      <h2>{title}</h2>
+      <p className="text-uppercase">{category}</p>
+      <p className="font-weight-light">{description}</p>
+      <div className="d-flex justify-content-between flex-row flex-sm-column justify-content-sm-center">
+        <div className="align-self-center align-self-sm-start mb-sm-3">
+          <span className="h2">{price}</span>
+        </div>
+        <Button variant={Variants.OUTLINE_DARK} onClick={onAdd} className="align-self-center align-self-sm-stretch">
           {action}
         </Button>
       </div>
