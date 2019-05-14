@@ -4,12 +4,14 @@ import '../../../themes/animaux.theme.scss';
 import { ProductDescription } from '../../moleculs/ProductDescription';
 import { ImageVariants } from '../../atoms/Image/types';
 import { Image } from '../../atoms/Image';
-import { Container, Row, Col } from 'react-bootstrap';
 import { ProductDescriptionProps } from '../../moleculs/ProductDescription/component';
 
 export interface ProductDetailsProps extends ProductDescriptionProps {
   image: string;
 }
+
+// This has to be loaded some globaly
+document.documentElement.style.setProperty('--viewport-height', `${window.innerHeight}px`);
 
 export const ProductDetail: FunctionComponent<ProductDetailsProps> = ({
   title,
@@ -29,19 +31,19 @@ export const ProductDetail: FunctionComponent<ProductDetailsProps> = ({
     onAdd
   };
   return (
-    <div className="vh-100">
-      <Container fluid className="h-100">
-        <Row className="h-100">
-          <Col lg="8" sm="12" className={styles['product-detail__image-column']}>
-            <div className={styles['product-detail__image-wrapper']}>
+    <div className={styles.detail}>
+      <div className="container-fluid h-100">
+        <div className="row h-100 align-items-end align-items-sm-center">
+          <div className={`${styles['image-column']} col-lg-7 col-sm-12`} >
+            <div className={styles['image-wrapper']}>
               <Image src={image} variant={ImageVariants.BACKGROUND} />
             </div>
-          </Col>
-          <Col lg="4" sm="12" className={styles['product-detail__description-column']}>
+          </div>
+          <div className={`${styles['description-column']} col-lg-5 col-sm-12`}>
             <ProductDescription {...productDescriptionProps} />
-          </Col>
-        </Row>
-      </Container>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

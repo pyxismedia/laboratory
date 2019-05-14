@@ -11,14 +11,13 @@
   ],
   "scripts": {
     "postinstall": "yarn storybook:build",
-    "storybook": "start-storybook -p 9001 -h localhost -c .storybook",
+    "storybook": "start-storybook -p 9001 -h 0.0.0.0 -c .storybook",
     "storybook:build": "build-storybook -c .storybook -o .storybook/build",
     "storybook:serve": "serve .storybook/build",
     "prettier": "prettier --single-quote --write \"src/**/*.{ts,tsx}\"",
     "start": "react-scripts start",
     "test": "react-scripts test",
-    "test:watch": "react-scripts test --watch",
-    "test:update": "react-scripts test --updateSnapshot",
+    "test:update": "react-scripts test -u",
     "eject": "react-scripts eject"
   },
   "dependencies": {
@@ -47,6 +46,7 @@
     "react-dom": "^16.8.6",
     "react-konva": "^16.6.31",
     "recompose": "^0.30.0",
+    "require-context": "^1.1.0",
     "serve": "^10.1.2",
     "svg-inline-react": "^3.1.0",
     "tracking": "^1.1.3"

@@ -1,12 +1,32 @@
 @import "../../../themes/animaux.theme.scss";
 
-.product-detail__image-wrapper {
+.image-wrapper {
   height: 100%;
   width: 100%;
 }
 
+.image-column {
+  height: 100%;
+  width: 100%;
+}
+
+@include media-breakpoint-up(sm) {
+  .detail-row {
+    height: 100%;
+  }
+}
+
 @include media-breakpoint-down(sm) {
-  .product-detail__image-wrapper {
-    height: 50vh;
+  .image-column {
+    height: 60%;
+    // margin-bottom: 30px;
+  }
+
+  .description-column {
+    height:40%;
+  }
+
+  .detail {
+    height: calc(var(--viewport-height, 1vh));
   }
 }
