@@ -6,6 +6,7 @@ import { ImageVariants } from '../../atoms/Image/types';
 import { Image } from '../../atoms/Image';
 import { ProductDescriptionProps } from '../../moleculs/ProductDescription/component';
 import { NavigationProps, Navigation } from '../../moleculs/Navigation/component';
+import { NavigationAbstract } from '../../moleculs/Navigation/types';
 
 type NavigationComponent = ReactElement<NavigationProps>
 type ChildrenComponents = NavigationComponent;
@@ -41,12 +42,17 @@ export const ProductDetail: FunctionComponent<ProductDetailsProps> = ({
       <div className="container-fluid h-100">
         <div className="row h-100 align-items-end align-items-sm-center">
           <div className={`${styles['image-column']} col-lg-7 col-sm-12`} >
-            {Children.map<NavigationComponent | null, ChildrenComponents>(children, ((child) => {
-              if (child) {
-                return child.type === Navigation ? cloneElement(child) : null;
-              }
-              return null;
-            }))}
+            <div className="w-100 position-relative">
+              {Children.map<NavigationComponent | null, ChildrenComponents>(children, ((child) => {
+                if (child && typeof child !== 'string') {
+                  return (child.type as any).prototype instanceof NavigationAbstract || child.type === Navigation ? cloneElement(child, {
+                    className: 'position-absolute',
+                    style: { left: 0, right: 0 },
+                  }) : null;
+                }
+                return null;
+              }))}
+            </div>
             <div className={styles['image-wrapper']}>
               <Image src={image} variant={ImageVariants.BACKGROUND} />
             </div>

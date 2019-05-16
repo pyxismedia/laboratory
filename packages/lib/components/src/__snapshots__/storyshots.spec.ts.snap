@@ -13800,33 +13800,34 @@ exports[`Storyshots Moleculs/Carousel simple 1`] = `
 
 exports[`Storyshots Moleculs/Navigation default 1`] = `
 <nav
-  className="navbar navbar-expand navbar-light bg-transparent"
+  className="navbar navbar-expand-lg navbar-light bg-transparent undefined"
 >
-  <div
-    className="mr-auto navbar-nav"
-    onKeyDown={[Function]}
+  <ul
+    className="navbar-nav mr-auto"
   >
-    <a
-      className="nav-link"
-      data-rb-event-key="#lorem"
-      href="#lorem"
-      onClick={[Function]}
-      onKeyDown={[Function]}
+    <li
+      className="nav-item active"
     >
-      Lorem
-    </a>
-    <a
-      className="nav-link"
-      data-rb-event-key="#ipsum"
-      href="#ipsum"
-      onClick={[Function]}
-      onKeyDown={[Function]}
+      <a
+        className="nav-link"
+        href="#lorem"
+      >
+        Lorem
+      </a>
+    </li>
+    <li
+      className="nav-item active"
     >
-      ipsum
-    </a>
-  </div>
+      <a
+        className="nav-link"
+        href="#ipsum"
+      >
+        ipsum
+      </a>
+    </li>
+  </ul>
   <a
-    className="navbar-brand"
+    className="navbar-brand mr-0"
     href="#home"
   >
     <a
@@ -13864,7 +13865,7 @@ exports[`Storyshots Moleculs/ProductDescription default 1`] = `
       Dolor
     </p>
     <p
-      className="font-weight-light"
+      className="font-weight-light mb-4 mb-sm-3"
     >
       Etiam porta sem malesuada magna mollis euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
     </p>
@@ -14168,19 +14169,67 @@ exports[`Storyshots Moleculs/Raiser default 1`] = `
 
 exports[`Storyshots Templates/ProductDetail default 1`] = `
 <div
-  className="vh-100"
+  className="detail"
 >
   <div
-    className="h-100 container-fluid"
+    className="container-fluid h-100"
   >
     <div
-      className="h-100 row"
+      className="row h-100 align-items-end align-items-sm-center"
     >
       <div
-        className="product-detail__image-column col-lg-7 col-sm-12"
+        className="image-column col-lg-7 col-sm-12"
       >
         <div
-          className="product-detail__image-wrapper"
+          className="w-100 position-relative"
+        >
+          <nav
+            className="navbar navbar-expand-lg navbar-light bg-transparent position-absolute"
+            style={
+              Object {
+                "left": 0,
+                "right": 0,
+              }
+            }
+          >
+            <ul
+              className="navbar-nav mr-auto"
+            >
+              <li
+                className="nav-item active"
+              >
+                <a
+                  className="nav-link"
+                  href="http://"
+                >
+                  Get to know Animaux!
+                </a>
+              </li>
+            </ul>
+            <a
+              className="navbar-brand mr-0"
+              href="#home"
+            >
+              <a
+                className="root"
+                href="/"
+              >
+                <svg
+                  className="svg"
+                  styles={
+                    Object {
+                      "fill": "black",
+                    }
+                  }
+                >
+                  svg.svg
+                </svg>
+              </a>
+            </a>
+          </nav>
+        </div>
+        <div
+          className="image-wrapper"
         >
           <div
             className="background"
@@ -14193,7 +14242,7 @@ exports[`Storyshots Templates/ProductDetail default 1`] = `
         </div>
       </div>
       <div
-        className="product-detail__description-column col-lg-5 col-sm-12"
+        className="description-column col-lg-5 col-sm-12"
       >
         <div
           className="d-flex align-items-center justify-content-center h-100"
@@ -14210,7 +14259,7 @@ exports[`Storyshots Templates/ProductDetail default 1`] = `
               Dolor
             </p>
             <p
-              className="font-weight-light"
+              className="font-weight-light mb-4 mb-sm-3"
             >
               Etiam porta sem malesuada magna mollis euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
             </p>
