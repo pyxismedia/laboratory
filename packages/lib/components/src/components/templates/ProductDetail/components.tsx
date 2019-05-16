@@ -1,13 +1,18 @@
-import React, { FunctionComponent } from 'react';
+import React, { FunctionComponent, Children, cloneElement, ReactElement } from 'react';
 import styles from './styles.module.scss';
 import '../../../themes/animaux.theme.scss';
 import { ProductDescription } from '../../moleculs/ProductDescription';
 import { ImageVariants } from '../../atoms/Image/types';
 import { Image } from '../../atoms/Image';
 import { ProductDescriptionProps } from '../../moleculs/ProductDescription/component';
+import { NavigationProps, Navigation } from '../../moleculs/Navigation/component';
+
+type NavigationComponent = ReactElement<NavigationProps>
+type ChildrenComponents = NavigationComponent;
 
 export interface ProductDetailsProps extends ProductDescriptionProps {
   image: string;
+  children: ChildrenComponents;
 }
 
 // This has to be loaded some globaly
@@ -20,7 +25,8 @@ export const ProductDetail: FunctionComponent<ProductDetailsProps> = ({
   price,
   action,
   onAdd,
-  image
+  image,
+  children
 }) => {
   const productDescriptionProps = {
     title,
@@ -35,6 +41,12 @@ export const ProductDetail: FunctionComponent<ProductDetailsProps> = ({
       <div className="container-fluid h-100">
         <div className="row h-100 align-items-end align-items-sm-center">
           <div className={`${styles['image-column']} col-lg-7 col-sm-12`} >
+            {Children.map<NavigationComponent | null, ChildrenComponents>(children, ((child) => {
+              if (child) {
+                return child.type === Navigation ? cloneElement(child) : null;
+              }
+              return null;
+            }))}
             <div className={styles['image-wrapper']}>
               <Image src={image} variant={ImageVariants.BACKGROUND} />
             </div>

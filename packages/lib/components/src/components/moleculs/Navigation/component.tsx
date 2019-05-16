@@ -6,13 +6,13 @@ import { Svg } from '../../atoms/Svg';
 export interface NavigationProps {
   items: Item[];
   Brand: any;
-  home: string;
+  home?: string;
 }
 
 export const Navigation: FunctionComponent<NavigationProps> = ({
   items,
   Brand,
-  home
+  home = '/'
 }) => (
   <Navbar bg="transparent" variant="light">
     <Nav className="mr-auto">
