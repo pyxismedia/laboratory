@@ -5,8 +5,6 @@ import chai, { expect } from 'chai';
 import chaiSinon from 'sinon-chai';
 import chaiEnzyme from 'chai-enzyme';
 import { props } from './mocks';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
 
 describe('Navigation', () => {
   it('should be present', () => {
@@ -16,38 +14,36 @@ describe('Navigation', () => {
 
   it('should contain Navbar', () => {
     const component = shallow(<Navigation {...props} />);
-    const navbar = component.find(Navbar);
+    const navbar = component.find('.navbar');
     expect(navbar).to.be.present();
-    expect(navbar).to.have.prop('bg', 'transparent');
-    expect(navbar).to.have.prop('variant', 'light');
   });
 
   it('should contain Nav', () => {
     const component = shallow(<Navigation {...props} />);
-    const navbar = component.find(Navbar);
-    const nav = navbar.find(Nav);
+    const navbar = component.find('.navbar');
+    const nav = navbar.find('.navbar-nav');
     expect(navbar)
       .to.have.exactly(1)
-      .descendants(Nav);
-    expect(nav).to.have.prop('className', 'mr-auto');
+      .descendants('.navbar-nav');
+    expect(nav).to.have.prop('className', 'navbar-nav mr-auto');
   });
 
   it('should contain Nav.Link', () => {
     const component = shallow(<Navigation {...props} />);
-    const navbar = component.find(Navbar);
-    const nav = navbar.find(Nav);
-    const navLink = nav.find(Nav.Link);
+    const navbar = component.find('.navbar');
+    const nav = navbar.find('.navbar-nav');
+    const navLink = nav.find('.nav-link');
     expect(nav)
       .to.have.exactly(2)
-      .descendants(Nav.Link);
+      .descendants('.nav-item');
     expect(navLink.first()).to.have.prop('href', props.items[0].link);
     expect(navLink.at(1)).to.have.prop('href', props.items[1].link);
   });
 
   it('should contain Nav', () => {
     const component = shallow(<Navigation {...props} />);
-    const navbar = component.find(Navbar);
-    const navbarBrand = navbar.find(Navbar.Brand);
+    const navbar = component.find('.navbar');
+    const navbarBrand = navbar.find('.navbar-brand');
     expect(navbarBrand).to.have.prop('href', '#home');
   });
 });

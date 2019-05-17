@@ -25,8 +25,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "lerna run test",
-      "prepare-commit-msg": "yarn cross-os prepare-commit-msg"
+      "pre-push": "lerna run test"
     }
   },
   "devDependencies": {

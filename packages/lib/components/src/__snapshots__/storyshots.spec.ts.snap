@@ -21,8 +21,7 @@ exports[`Storyshots Atoms/Button Documentation 1`] = `
         className="markdown-body"
         dangerouslySetInnerHTML={
           Object {
-            "__html": "<h1 id=\\"button\\">Button</h1>
-<p>Simple atom element for displaying Button.</p>
+            "__html": "<p>HEADER.md</p>
 ",
           }
         }
@@ -39,41 +38,7 @@ exports[`Storyshots Atoms/Button Documentation 1`] = `
         className="markdown-body"
         dangerouslySetInnerHTML={
           Object {
-            "__html": "<h2 id=\\"variants\\">Variants</h2>
-<table>
-<thead>
-<tr>
-<th>Variant</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>PRIMARY</td>
-<td>Primary</td>
-</tr>
-<tr>
-<td>SECONDARY</td>
-<td>Secondary</td>
-</tr>
-<tr>
-<td>SUCCESS</td>
-<td>Success</td>
-</tr>
-<tr>
-<td>INFO</td>
-<td>Info</td>
-</tr>
-<tr>
-<td>WARNING</td>
-<td>Warning</td>
-</tr>
-<tr>
-<td>DANGER</td>
-<td>Danger</td>
-</tr>
-</tbody>
-</table>
+            "__html": "<p>VARIANTS_HEADER.md</p>
 ",
           }
         }
@@ -551,8 +516,7 @@ exports[`Storyshots Atoms/Button Documentation 1`] = `
                               }
                             }
                           >
-                            &lt;h1 id="button"&gt;Button&lt;/h1&gt;
-&lt;p&gt;Simple atom element…
+                            HEADER.md
                           </span>
                           "
                         </span>
@@ -668,10 +632,7 @@ exports[`Storyshots Atoms/Button Documentation 1`] = `
                               }
                             }
                           >
-                            &lt;h2 id="variants"&gt;Variants&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;t…
+                            VARIANTS_HEADER.md
                           </span>
                           "
                         </span>
@@ -880,7 +841,7 @@ exports[`Storyshots Atoms/Button Documentation 1`] = `
                       }
                     >
                       &lt;
-                      Unknown
+                      Button
                     </span>
                     <span>
                       <span>
@@ -982,7 +943,7 @@ exports[`Storyshots Atoms/Button Documentation 1`] = `
                       }
                     >
                       &lt;/
-                      Unknown
+                      Button
                       &gt;
                     </span>
                   </div>
@@ -1178,7 +1139,7 @@ exports[`Storyshots Atoms/Button Documentation 1`] = `
                       }
                     >
                       &lt;
-                      Unknown
+                      Button
                     </span>
                     <span>
                       <span>
@@ -1280,7 +1241,7 @@ exports[`Storyshots Atoms/Button Documentation 1`] = `
                       }
                     >
                       &lt;/
-                      Unknown
+                      Button
                       &gt;
                     </span>
                   </div>
@@ -1476,7 +1437,7 @@ exports[`Storyshots Atoms/Button Documentation 1`] = `
                       }
                     >
                       &lt;
-                      Unknown
+                      Button
                     </span>
                     <span>
                       <span>
@@ -1578,7 +1539,7 @@ exports[`Storyshots Atoms/Button Documentation 1`] = `
                       }
                     >
                       &lt;/
-                      Unknown
+                      Button
                       &gt;
                     </span>
                   </div>
@@ -1774,7 +1735,7 @@ exports[`Storyshots Atoms/Button Documentation 1`] = `
                       }
                     >
                       &lt;
-                      Unknown
+                      Button
                     </span>
                     <span>
                       <span>
@@ -1876,7 +1837,7 @@ exports[`Storyshots Atoms/Button Documentation 1`] = `
                       }
                     >
                       &lt;/
-                      Unknown
+                      Button
                       &gt;
                     </span>
                   </div>
@@ -2072,7 +2033,7 @@ exports[`Storyshots Atoms/Button Documentation 1`] = `
                       }
                     >
                       &lt;
-                      Unknown
+                      Button
                     </span>
                     <span>
                       <span>
@@ -2174,7 +2135,7 @@ exports[`Storyshots Atoms/Button Documentation 1`] = `
                       }
                     >
                       &lt;/
-                      Unknown
+                      Button
                       &gt;
                     </span>
                   </div>
@@ -2370,7 +2331,7 @@ exports[`Storyshots Atoms/Button Documentation 1`] = `
                       }
                     >
                       &lt;
-                      Unknown
+                      Button
                     </span>
                     <span>
                       <span>
@@ -2472,7 +2433,7 @@ exports[`Storyshots Atoms/Button Documentation 1`] = `
                       }
                     >
                       &lt;/
-                      Unknown
+                      Button
                       &gt;
                     </span>
                   </div>
@@ -2668,7 +2629,7 @@ exports[`Storyshots Atoms/Button Documentation 1`] = `
                       }
                     >
                       &lt;
-                      Unknown
+                      Button
                     </span>
                     <span>
                       <span>
@@ -2770,7 +2731,7 @@ exports[`Storyshots Atoms/Button Documentation 1`] = `
                       }
                     >
                       &lt;/
-                      Unknown
+                      Button
                       &gt;
                     </span>
                   </div>
@@ -2901,7 +2862,7 @@ exports[`Storyshots Atoms/Button Documentation 1`] = `
               }
             >
               "
-              
+              Button
               " Component
             </h3>
             <small>
@@ -3078,7 +3039,7 @@ exports[`Storyshots Atoms/Button danger 1`] = `
                     }
                   >
                     &lt;
-                    Unknown
+                    Button
                   </span>
                   <span>
                     <span>
@@ -3180,7 +3141,7 @@ exports[`Storyshots Atoms/Button danger 1`] = `
                     }
                   >
                     &lt;/
-                    Unknown
+                    Button
                     &gt;
                   </span>
                 </div>
@@ -3232,7 +3193,7 @@ exports[`Storyshots Atoms/Button danger 1`] = `
               }
             >
               "
-              
+              Button
               " Component
             </h3>
             <small>
@@ -3393,7 +3354,7 @@ exports[`Storyshots Atoms/Button dark 1`] = `
                     }
                   >
                     &lt;
-                    Unknown
+                    Button
                   </span>
                   <span>
                     <span>
@@ -3495,7 +3456,7 @@ exports[`Storyshots Atoms/Button dark 1`] = `
                     }
                   >
                     &lt;/
-                    Unknown
+                    Button
                     &gt;
                   </span>
                 </div>
@@ -3547,7 +3508,7 @@ exports[`Storyshots Atoms/Button dark 1`] = `
               }
             >
               "
-              
+              Button
               " Component
             </h3>
             <small>
@@ -3708,7 +3669,7 @@ exports[`Storyshots Atoms/Button info 1`] = `
                     }
                   >
                     &lt;
-                    Unknown
+                    Button
                   </span>
                   <span>
                     <span>
@@ -3810,7 +3771,7 @@ exports[`Storyshots Atoms/Button info 1`] = `
                     }
                   >
                     &lt;/
-                    Unknown
+                    Button
                     &gt;
                   </span>
                 </div>
@@ -3862,7 +3823,7 @@ exports[`Storyshots Atoms/Button info 1`] = `
               }
             >
               "
-              
+              Button
               " Component
             </h3>
             <small>
@@ -4023,7 +3984,7 @@ exports[`Storyshots Atoms/Button light 1`] = `
                     }
                   >
                     &lt;
-                    Unknown
+                    Button
                   </span>
                   <span>
                     <span>
@@ -4125,7 +4086,7 @@ exports[`Storyshots Atoms/Button light 1`] = `
                     }
                   >
                     &lt;/
-                    Unknown
+                    Button
                     &gt;
                   </span>
                 </div>
@@ -4177,7 +4138,7 @@ exports[`Storyshots Atoms/Button light 1`] = `
               }
             >
               "
-              
+              Button
               " Component
             </h3>
             <small>
@@ -4338,7 +4299,7 @@ exports[`Storyshots Atoms/Button link 1`] = `
                     }
                   >
                     &lt;
-                    Unknown
+                    Button
                   </span>
                   <span>
                     <span>
@@ -4440,7 +4401,7 @@ exports[`Storyshots Atoms/Button link 1`] = `
                     }
                   >
                     &lt;/
-                    Unknown
+                    Button
                     &gt;
                   </span>
                 </div>
@@ -4492,7 +4453,7 @@ exports[`Storyshots Atoms/Button link 1`] = `
               }
             >
               "
-              
+              Button
               " Component
             </h3>
             <small>
@@ -4653,7 +4614,7 @@ exports[`Storyshots Atoms/Button outline-danger 1`] = `
                     }
                   >
                     &lt;
-                    Unknown
+                    Button
                   </span>
                   <span>
                     <span>
@@ -4755,7 +4716,7 @@ exports[`Storyshots Atoms/Button outline-danger 1`] = `
                     }
                   >
                     &lt;/
-                    Unknown
+                    Button
                     &gt;
                   </span>
                 </div>
@@ -4807,7 +4768,7 @@ exports[`Storyshots Atoms/Button outline-danger 1`] = `
               }
             >
               "
-              
+              Button
               " Component
             </h3>
             <small>
@@ -4968,7 +4929,7 @@ exports[`Storyshots Atoms/Button outline-dark 1`] = `
                     }
                   >
                     &lt;
-                    Unknown
+                    Button
                   </span>
                   <span>
                     <span>
@@ -5070,7 +5031,7 @@ exports[`Storyshots Atoms/Button outline-dark 1`] = `
                     }
                   >
                     &lt;/
-                    Unknown
+                    Button
                     &gt;
                   </span>
                 </div>
@@ -5122,7 +5083,7 @@ exports[`Storyshots Atoms/Button outline-dark 1`] = `
               }
             >
               "
-              
+              Button
               " Component
             </h3>
             <small>
@@ -5283,7 +5244,7 @@ exports[`Storyshots Atoms/Button outline-info 1`] = `
                     }
                   >
                     &lt;
-                    Unknown
+                    Button
                   </span>
                   <span>
                     <span>
@@ -5385,7 +5346,7 @@ exports[`Storyshots Atoms/Button outline-info 1`] = `
                     }
                   >
                     &lt;/
-                    Unknown
+                    Button
                     &gt;
                   </span>
                 </div>
@@ -5437,7 +5398,7 @@ exports[`Storyshots Atoms/Button outline-info 1`] = `
               }
             >
               "
-              
+              Button
               " Component
             </h3>
             <small>
@@ -5598,7 +5559,7 @@ exports[`Storyshots Atoms/Button outline-light 1`] = `
                     }
                   >
                     &lt;
-                    Unknown
+                    Button
                   </span>
                   <span>
                     <span>
@@ -5700,7 +5661,7 @@ exports[`Storyshots Atoms/Button outline-light 1`] = `
                     }
                   >
                     &lt;/
-                    Unknown
+                    Button
                     &gt;
                   </span>
                 </div>
@@ -5752,7 +5713,7 @@ exports[`Storyshots Atoms/Button outline-light 1`] = `
               }
             >
               "
-              
+              Button
               " Component
             </h3>
             <small>
@@ -5913,7 +5874,7 @@ exports[`Storyshots Atoms/Button outline-primary 1`] = `
                     }
                   >
                     &lt;
-                    Unknown
+                    Button
                   </span>
                   <span>
                     <span>
@@ -6015,7 +5976,7 @@ exports[`Storyshots Atoms/Button outline-primary 1`] = `
                     }
                   >
                     &lt;/
-                    Unknown
+                    Button
                     &gt;
                   </span>
                 </div>
@@ -6067,7 +6028,7 @@ exports[`Storyshots Atoms/Button outline-primary 1`] = `
               }
             >
               "
-              
+              Button
               " Component
             </h3>
             <small>
@@ -6228,7 +6189,7 @@ exports[`Storyshots Atoms/Button outline-secondary 1`] = `
                     }
                   >
                     &lt;
-                    Unknown
+                    Button
                   </span>
                   <span>
                     <span>
@@ -6330,7 +6291,7 @@ exports[`Storyshots Atoms/Button outline-secondary 1`] = `
                     }
                   >
                     &lt;/
-                    Unknown
+                    Button
                     &gt;
                   </span>
                 </div>
@@ -6382,7 +6343,7 @@ exports[`Storyshots Atoms/Button outline-secondary 1`] = `
               }
             >
               "
-              
+              Button
               " Component
             </h3>
             <small>
@@ -6543,7 +6504,7 @@ exports[`Storyshots Atoms/Button outline-success 1`] = `
                     }
                   >
                     &lt;
-                    Unknown
+                    Button
                   </span>
                   <span>
                     <span>
@@ -6645,7 +6606,7 @@ exports[`Storyshots Atoms/Button outline-success 1`] = `
                     }
                   >
                     &lt;/
-                    Unknown
+                    Button
                     &gt;
                   </span>
                 </div>
@@ -6697,7 +6658,7 @@ exports[`Storyshots Atoms/Button outline-success 1`] = `
               }
             >
               "
-              
+              Button
               " Component
             </h3>
             <small>
@@ -6858,7 +6819,7 @@ exports[`Storyshots Atoms/Button outline-warning 1`] = `
                     }
                   >
                     &lt;
-                    Unknown
+                    Button
                   </span>
                   <span>
                     <span>
@@ -6960,7 +6921,7 @@ exports[`Storyshots Atoms/Button outline-warning 1`] = `
                     }
                   >
                     &lt;/
-                    Unknown
+                    Button
                     &gt;
                   </span>
                 </div>
@@ -7012,7 +6973,7 @@ exports[`Storyshots Atoms/Button outline-warning 1`] = `
               }
             >
               "
-              
+              Button
               " Component
             </h3>
             <small>
@@ -7173,7 +7134,7 @@ exports[`Storyshots Atoms/Button primary 1`] = `
                     }
                   >
                     &lt;
-                    Unknown
+                    Button
                   </span>
                   <span>
                     <span>
@@ -7275,7 +7236,7 @@ exports[`Storyshots Atoms/Button primary 1`] = `
                     }
                   >
                     &lt;/
-                    Unknown
+                    Button
                     &gt;
                   </span>
                 </div>
@@ -7327,7 +7288,7 @@ exports[`Storyshots Atoms/Button primary 1`] = `
               }
             >
               "
-              
+              Button
               " Component
             </h3>
             <small>
@@ -7488,7 +7449,7 @@ exports[`Storyshots Atoms/Button secondary 1`] = `
                     }
                   >
                     &lt;
-                    Unknown
+                    Button
                   </span>
                   <span>
                     <span>
@@ -7590,7 +7551,7 @@ exports[`Storyshots Atoms/Button secondary 1`] = `
                     }
                   >
                     &lt;/
-                    Unknown
+                    Button
                     &gt;
                   </span>
                 </div>
@@ -7642,7 +7603,7 @@ exports[`Storyshots Atoms/Button secondary 1`] = `
               }
             >
               "
-              
+              Button
               " Component
             </h3>
             <small>
@@ -7803,7 +7764,7 @@ exports[`Storyshots Atoms/Button success 1`] = `
                     }
                   >
                     &lt;
-                    Unknown
+                    Button
                   </span>
                   <span>
                     <span>
@@ -7905,7 +7866,7 @@ exports[`Storyshots Atoms/Button success 1`] = `
                     }
                   >
                     &lt;/
-                    Unknown
+                    Button
                     &gt;
                   </span>
                 </div>
@@ -7957,7 +7918,7 @@ exports[`Storyshots Atoms/Button success 1`] = `
               }
             >
               "
-              
+              Button
               " Component
             </h3>
             <small>
@@ -8118,7 +8079,7 @@ exports[`Storyshots Atoms/Button warning 1`] = `
                     }
                   >
                     &lt;
-                    Unknown
+                    Button
                   </span>
                   <span>
                     <span>
@@ -8220,7 +8181,7 @@ exports[`Storyshots Atoms/Button warning 1`] = `
                     }
                   >
                     &lt;/
-                    Unknown
+                    Button
                     &gt;
                   </span>
                 </div>
@@ -8272,7 +8233,7 @@ exports[`Storyshots Atoms/Button warning 1`] = `
               }
             >
               "
-              
+              Button
               " Component
             </h3>
             <small>
@@ -8299,8 +8260,8 @@ exports[`Storyshots Atoms/Cycler default 1`] = `
     <div
       className="cycler"
     >
-      <a
-        href="javascript:void(0);"
+      <button
+        className="btn btn-link link "
         onClick={[Function]}
       >
         <svg
@@ -8320,7 +8281,7 @@ exports[`Storyshots Atoms/Cycler default 1`] = `
             style={Object {}}
           />
         </svg>
-      </a>
+      </button>
       <div
         className="wrapper"
       >
@@ -8335,74 +8296,67 @@ exports[`Storyshots Atoms/Cycler default 1`] = `
           <li
             className="item"
           >
-            <a
-              className="link"
-              href="javascript:void(0);"
+            <button
+              className="btn btn-link link"
               onClick={[Function]}
             >
               Item 1
-            </a>
+            </button>
           </li>
           <li
             className="item active"
           >
-            <a
-              className="link"
-              href="javascript:void(0);"
+            <button
+              className="btn btn-link link"
               onClick={[Function]}
             >
               Item 2
-            </a>
+            </button>
           </li>
           <li
             className="item"
           >
-            <a
-              className="link"
-              href="javascript:void(0);"
+            <button
+              className="btn btn-link link"
               onClick={[Function]}
             >
               Item 3
-            </a>
+            </button>
           </li>
           <li
             className="item"
           >
-            <a
-              className="link"
-              href="javascript:void(0);"
+            <button
+              className="btn btn-link link"
               onClick={[Function]}
             >
               Item 4
-            </a>
+            </button>
           </li>
           <li
             className="item"
           >
-            <a
-              className="link"
-              href="javascript:void(0);"
+            <button
+              className="btn btn-link link"
               onClick={[Function]}
             >
               Item 5
-            </a>
+            </button>
           </li>
           <li
             className="item"
           >
-            <a
-              className="link"
-              href="javascript:void(0);"
+            <button
+              className="btn btn-link link"
               onClick={[Function]}
             >
               Item 6
-            </a>
+            </button>
           </li>
         </ul>
       </div>
-      <a
-        className="down"
-        href="javascript:void(0);"
+      <button
+        className="btn btn-link down"
         onClick={[Function]}
       >
         <svg
@@ -8422,7 +8376,7 @@ exports[`Storyshots Atoms/Cycler default 1`] = `
             style={Object {}}
           />
         </svg>
-      </a>
+      </button>
     </div>
   </div>
   <button
@@ -8856,6 +8810,28 @@ exports[`Storyshots Atoms/Cycler default 1`] = `
 </div>
 `;
 
+exports[`Storyshots Atoms/Image as background 1`] = `
+<div
+  className="background"
+  style={
+    Object {
+      "backgroundImage": "url(http://lorempixel.com/640/480/fashion)",
+    }
+  }
+/>
+`;
+
+exports[`Storyshots Atoms/Image as img 1`] = `
+<div
+  className="background"
+>
+  <img
+    alt="Lorem ipsum"
+    src="http://lorempixel.com/640/480/fashion"
+  />
+</div>
+`;
+
 exports[`Storyshots Atoms/Sidescription default 1`] = `
 <div>
   <div
@@ -9066,7 +9042,7 @@ exports[`Storyshots Atoms/Sidescription default 1`] = `
                   }
                 >
                   &lt;
-                  Unknown
+                  Sidescription
                 </span>
                 <span>
                   <span>
@@ -9247,12 +9223,446 @@ exports[`Storyshots Atoms/Sidescription default 1`] = `
               }
             >
               "
-              
+              Sidescription
               " Component
             </h3>
             <small>
               No propTypes defined!
             </small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/Svg default 1`] = `
+<div
+  className="storybook-readme-story"
+>
+  <div>
+    <div
+      className="markdown-body"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<p>README.md</p>
+",
+        }
+      }
+    />
+  </div>
+  <div
+    style={
+      Object {
+        "margin": "32px 0",
+      }
+    }
+  >
+    <div>
+      <div>
+        <div
+          style={
+            Object {
+              "position": "relative",
+              "zIndex": 0,
+            }
+          }
+        >
+          <a
+            aria-label="pyxis media"
+            className="root"
+            href="#"
+          >
+            <svg
+              className="svg"
+              styles={
+                Object {
+                  "fill": "black",
+                }
+              }
+            >
+              svg.svg
+            </svg>
+          </a>
+        </div>
+        <button
+          className="info__show-button"
+          onClick={[Function]}
+          style={
+            Object {
+              "background": "#027ac5",
+              "border": "none",
+              "borderRadius": "0 0 0 5px",
+              "color": "#fff",
+              "cursor": "pointer",
+              "display": "block",
+              "fontFamily": "sans-serif",
+              "fontSize": "12px",
+              "padding": "5px 15px",
+              "position": "fixed",
+              "right": 0,
+              "top": 0,
+            }
+          }
+          type="button"
+        >
+          Show Info
+        </button>
+        <div
+          className="info__overlay"
+          style={
+            Object {
+              "background": "white",
+              "bottom": 0,
+              "display": "none",
+              "left": 0,
+              "overflow": "auto",
+              "padding": "0 40px",
+              "position": "fixed",
+              "right": 0,
+              "top": 0,
+              "zIndex": 99999,
+            }
+          }
+        >
+          <button
+            className="info__close-button"
+            onClick={[Function]}
+            style={
+              Object {
+                "background": "#027ac5",
+                "border": "none",
+                "borderRadius": "0 0 0 5px",
+                "color": "#fff",
+                "cursor": "pointer",
+                "display": "block",
+                "fontFamily": "sans-serif",
+                "fontSize": "12px",
+                "padding": "5px 15px",
+                "position": "fixed",
+                "right": 0,
+                "top": 0,
+              }
+            }
+            type="button"
+          >
+            ×
+          </button>
+          <div>
+            <div
+              style={
+                Object {
+                  "backgroundColor": "#fff",
+                  "border": "1px solid #eee",
+                  "borderRadius": "2px",
+                  "color": "black",
+                  "fontFamily": "Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif",
+                  "fontSize": "15px",
+                  "fontWeight": 300,
+                  "lineHeight": 1.45,
+                  "marginBottom": "20px",
+                  "marginTop": "20px",
+                  "padding": "20px 40px 40px",
+                }
+              }
+            >
+              
+              <div>
+                <h1
+                  style={
+                    Object {
+                      "borderBottom": "1px solid #EEE",
+                      "fontSize": "25px",
+                      "margin": "20px 0 0 0",
+                      "padding": "0 0 5px 0",
+                    }
+                  }
+                >
+                  Story Source
+                </h1>
+                <pre
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "backgroundColor": "#fafafa",
+                      "display": "flex",
+                      "fontFamily": "Menlo, Monaco, \\"Courier New\\", monospace",
+                      "fontSize": ".88em",
+                      "justifyContent": "space-between",
+                      "lineHeight": 1.5,
+                      "overflowX": "scroll",
+                      "padding": ".5rem",
+                    }
+                  }
+                >
+                  <div>
+                    <div
+                      style={
+                        Object {
+                          "paddingLeft": 18,
+                          "paddingRight": 3,
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#444",
+                          }
+                        }
+                      >
+                        &lt;
+                        Svg
+                      </span>
+                      <span>
+                        <span>
+                          <span>
+                            <br />
+                              
+                          </span>
+                          <span
+                            style={Object {}}
+                          >
+                            Svg
+                          </span>
+                          <span>
+                            =
+                            <span
+                              style={Object {}}
+                            >
+                              {
+                              <span
+                                style={
+                                  Object {
+                                    "color": "#666",
+                                  }
+                                }
+                              >
+                                {
+                                <span>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#666",
+                                      }
+                                    }
+                                  >
+                                    $$typeof
+                                  </span>
+                                </span>
+                                : 
+                                <span>
+                                  …
+                                </span>
+                                ,
+                                <span>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#666",
+                                      }
+                                    }
+                                  >
+                                    render
+                                  </span>
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#170",
+                                    }
+                                  }
+                                >
+                                  SvgSvg
+                                </span>
+                                }
+                              </span>
+                              }
+                            </span>
+                          </span>
+                        </span>
+                        <span>
+                          <span>
+                            <br />
+                              
+                          </span>
+                          <span
+                            style={Object {}}
+                          >
+                            link
+                          </span>
+                          <span>
+                            =
+                            <span
+                              style={Object {}}
+                            >
+                              "
+                              <span
+                                style={
+                                  Object {
+                                    "color": "#22a",
+                                    "wordBreak": "break-word",
+                                  }
+                                }
+                              >
+                                #
+                              </span>
+                              "
+                            </span>
+                          </span>
+                        </span>
+                        <span>
+                          <span>
+                            <br />
+                              
+                          </span>
+                          <span
+                            style={Object {}}
+                          >
+                            aria
+                          </span>
+                          <span>
+                            =
+                            <span
+                              style={Object {}}
+                            >
+                              {
+                              <span
+                                style={
+                                  Object {
+                                    "color": "#666",
+                                  }
+                                }
+                              >
+                                {
+                                <span>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#666",
+                                      }
+                                    }
+                                  >
+                                    label
+                                  </span>
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }
+                                >
+                                  'pyxis media'
+                                </span>
+                                }
+                              </span>
+                              }
+                            </span>
+                          </span>
+                        </span>
+                        <span>
+                          <span>
+                            <br />
+                              
+                          </span>
+                          <span
+                            style={Object {}}
+                          >
+                            fill
+                          </span>
+                          <span>
+                            =
+                            <span
+                              style={Object {}}
+                            >
+                              "
+                              <span
+                                style={
+                                  Object {
+                                    "color": "#22a",
+                                    "wordBreak": "break-word",
+                                  }
+                                }
+                              >
+                                black
+                              </span>
+                              "
+                            </span>
+                          </span>
+                          <br />
+                        </span>
+                      </span>
+                      <span
+                        style={
+                          Object {
+                            "color": "#444",
+                          }
+                        }
+                      >
+                        /&gt;
+                      </span>
+                    </div>
+                  </div>
+                  <button
+                    onClick={[Function]}
+                    style={
+                      Object {
+                        "alignSelf": "flex-start",
+                        "backgroundColor": "rgb(255, 255, 255)",
+                        "borderColor": "rgb(238, 238, 238)",
+                        "borderImage": "initial",
+                        "borderRadius": "3px",
+                        "borderStyle": "solid",
+                        "borderWidth": "1px",
+                        "cursor": "pointer",
+                        "flexShrink": "0",
+                        "fontSize": "13px",
+                        "overflow": "hidden",
+                        "padding": "3px 10px",
+                      }
+                    }
+                    type="button"
+                  >
+                    Copy
+                  </button>
+                </pre>
+              </div>
+              <div>
+                <h1
+                  style={
+                    Object {
+                      "borderBottom": "1px solid #EEE",
+                      "fontSize": "25px",
+                      "margin": "20px 0 0 0",
+                      "padding": "0 0 5px 0",
+                    }
+                  }
+                >
+                  Prop Types
+                </h1>
+                <div>
+                  <h3
+                    style={
+                      Object {
+                        "margin": "20px 0 0 0",
+                      }
+                    }
+                  >
+                    "
+                    Svg
+                    " Component
+                  </h3>
+                  <small>
+                    No propTypes defined!
+                  </small>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -10200,8 +10610,7 @@ exports[`Storyshots Moleculs/Carousel Documentation 1`] = `
         className="markdown-body"
         dangerouslySetInnerHTML={
           Object {
-            "__html": "<h1 id=\\"carousel\\">Carousel</h1>
-<p>Is used to visualise slideshow of media content.</p>
+            "__html": "<p>HEADER.md</p>
 ",
           }
         }
@@ -10218,25 +10627,7 @@ exports[`Storyshots Moleculs/Carousel Documentation 1`] = `
         className="markdown-body"
         dangerouslySetInnerHTML={
           Object {
-            "__html": "<h2 id=\\"variants\\">Variants</h2>
-<table>
-<thead>
-<tr>
-<th>Variant</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>SIMPLE</td>
-<td>Designed to render simple media content.</td>
-</tr>
-<tr>
-<td>MULTI</td>
-<td>Renders multiple images in one slide</td>
-</tr>
-</tbody>
-</table>
+            "__html": "<p>VARIANTS_HEADER.md</p>
 ",
           }
         }
@@ -10253,11 +10644,7 @@ exports[`Storyshots Moleculs/Carousel Documentation 1`] = `
         className="markdown-body"
         dangerouslySetInnerHTML={
           Object {
-            "__html": "<h3 id=\\"simple\\">SIMPLE</h3>
-<pre><code class=\\"lang-js\\">import { Carousel, Variants } from &#39;@pyxis/components/build/Carousel&#39;;
-
-<p>&lt;Carousel variant={Variants.SIMPLE} slides={slides} /&gt;
-</code></pre></p>
+            "__html": "<p>VARIANTS_SIMPLE.md</p>
 ",
           }
         }
@@ -10373,11 +10760,7 @@ exports[`Storyshots Moleculs/Carousel Documentation 1`] = `
         className="markdown-body"
         dangerouslySetInnerHTML={
           Object {
-            "__html": "<h3 id=\\"multi\\">MULTI</h3>
-<pre><code class=\\"lang-js\\">import { Carousel, Variants } from &#39;@pyxis/components/build/Carousel&#39;;
-
-<p>&lt;Carousel variant={Variants.MULTI} slides={slides} /&gt;
-</code></pre></p>
+            "__html": "<p>VARIANTS_MULTI.md</p>
 ",
           }
         }
@@ -10731,8 +11114,7 @@ exports[`Storyshots Moleculs/Carousel Documentation 1`] = `
                               }
                             }
                           >
-                            &lt;h1 id="carousel"&gt;Carousel&lt;/h1&gt;
-&lt;p&gt;Is used to visu…
+                            HEADER.md
                           </span>
                           "
                         </span>
@@ -10848,10 +11230,7 @@ exports[`Storyshots Moleculs/Carousel Documentation 1`] = `
                               }
                             }
                           >
-                            &lt;h2 id="variants"&gt;Variants&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;t…
+                            VARIANTS_HEADER.md
                           </span>
                           "
                         </span>
@@ -10967,8 +11346,7 @@ exports[`Storyshots Moleculs/Carousel Documentation 1`] = `
                               }
                             }
                           >
-                            &lt;h3 id="simple"&gt;SIMPLE&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="lang…
+                            VARIANTS_SIMPLE.md
                           </span>
                           "
                         </span>
@@ -11400,8 +11778,7 @@ exports[`Storyshots Moleculs/Carousel Documentation 1`] = `
                               }
                             }
                           >
-                            &lt;h3 id="multi"&gt;MULTI&lt;/h3&gt;
-&lt;pre&gt;&lt;code class="lang-j…
+                            VARIANTS_MULTI.md
                           </span>
                           "
                         </span>
@@ -13421,6 +13798,102 @@ exports[`Storyshots Moleculs/Carousel simple 1`] = `
 </div>
 `;
 
+exports[`Storyshots Moleculs/Navigation default 1`] = `
+<nav
+  className="navbar navbar-expand-lg navbar-light bg-transparent undefined"
+>
+  <ul
+    className="navbar-nav mr-auto"
+  >
+    <li
+      className="nav-item active"
+    >
+      <a
+        className="nav-link"
+        href="#lorem"
+      >
+        Lorem
+      </a>
+    </li>
+    <li
+      className="nav-item active"
+    >
+      <a
+        className="nav-link"
+        href="#ipsum"
+      >
+        ipsum
+      </a>
+    </li>
+  </ul>
+  <a
+    className="navbar-brand mr-0"
+    href="#home"
+  >
+    <a
+      className="root"
+      href="#home"
+    >
+      <svg
+        className="svg"
+        styles={
+          Object {
+            "fill": "black",
+          }
+        }
+      >
+        svg.svg
+      </svg>
+    </a>
+  </a>
+</nav>
+`;
+
+exports[`Storyshots Moleculs/ProductDescription default 1`] = `
+<div
+  className="d-flex align-items-center justify-content-center h-100"
+>
+  <div
+    className="d-flex flex-column w-100 ml-sm-8 mr-sm-8"
+  >
+    <h2>
+      Lorem
+    </h2>
+    <p
+      className="text-uppercase"
+    >
+      Dolor
+    </p>
+    <p
+      className="font-weight-light mb-4 mb-sm-3"
+    >
+      Etiam porta sem malesuada magna mollis euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+    </p>
+    <div
+      className="d-flex justify-content-between flex-row flex-sm-column justify-content-sm-center"
+    >
+      <div
+        className="align-self-center align-self-sm-start mb-sm-3"
+      >
+        <span
+          className="h2"
+        >
+          $300
+        </span>
+      </div>
+      <button
+        className="align-self-center align-self-sm-stretch btn btn-outline-dark"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        Add to basket
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Moleculs/Raiser default 1`] = `
 <div>
   <div
@@ -13694,95 +14167,127 @@ exports[`Storyshots Moleculs/Raiser default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Organisms/Navigation default 1`] = `
-<nav
-  className="navbar navbar-expand navbar-light bg-transparent"
->
-  <div
-    className="mr-auto navbar-nav"
-    onKeyDown={[Function]}
-  >
-    <a
-      className="nav-link"
-      data-rb-event-key="#lorem"
-      href="#lorem"
-      onClick={[Function]}
-      onKeyDown={[Function]}
-    >
-      Lorem
-    </a>
-    <a
-      className="nav-link"
-      data-rb-event-key="#ipsum"
-      href="#ipsum"
-      onClick={[Function]}
-      onKeyDown={[Function]}
-    >
-      ipsum
-    </a>
-  </div>
-  <a
-    className="navbar-brand"
-    href="#home"
-  >
-    <a
-      className="root"
-      href="javascript:void(0)"
-    >
-      <i
-        className="svg"
-        dangerouslySetInnerHTML={
-          Object {
-            "__html": Object {},
-          }
-        }
-        src={null}
-        styles={
-          Object {
-            "fill": "black",
-          }
-        }
-      />
-    </a>
-  </a>
-</nav>
-`;
-
-exports[`Storyshots moleculs/ProductDescription default 1`] = `
+exports[`Storyshots Templates/ProductDetail default 1`] = `
 <div
-  className="wrapper d-flex align-items-center justify-content-center"
+  className="detail"
 >
   <div
-    className="container d-flex flex-column"
+    className="container-fluid h-100"
   >
-    <h2
-      className="h1"
-    >
-      Lorem
-    </h2>
-    <p
-      className="text-uppercase"
-    >
-      Dolor
-    </p>
-    <p
-      className="font-weight-light"
-    >
-      Etiam porta sem malesuada magna mollis euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed posuere consectetur est at lobortis. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-    </p>
     <div
-      className="h3 mb-4"
+      className="row h-100 align-items-end align-items-sm-center"
     >
-      $300
+      <div
+        className="image-column col-lg-7 col-sm-12"
+      >
+        <div
+          className="w-100 position-relative"
+        >
+          <nav
+            className="navbar navbar-expand-lg navbar-light bg-transparent position-absolute"
+            style={
+              Object {
+                "left": 0,
+                "right": 0,
+              }
+            }
+          >
+            <ul
+              className="navbar-nav mr-auto"
+            >
+              <li
+                className="nav-item active"
+              >
+                <a
+                  className="nav-link"
+                  href="http://"
+                >
+                  Get to know Animaux!
+                </a>
+              </li>
+            </ul>
+            <a
+              className="navbar-brand mr-0"
+              href="#home"
+            >
+              <a
+                className="root"
+                href="/"
+              >
+                <svg
+                  className="svg"
+                  styles={
+                    Object {
+                      "fill": "black",
+                    }
+                  }
+                >
+                  svg.svg
+                </svg>
+              </a>
+            </a>
+          </nav>
+        </div>
+        <div
+          className="image-wrapper"
+        >
+          <div
+            className="background"
+            style={
+              Object {
+                "backgroundImage": "url(http://lorempixel.com/640/480/fashion)",
+              }
+            }
+          />
+        </div>
+      </div>
+      <div
+        className="description-column col-lg-5 col-sm-12"
+      >
+        <div
+          className="d-flex align-items-center justify-content-center h-100"
+        >
+          <div
+            className="d-flex flex-column w-100 ml-sm-8 mr-sm-8"
+          >
+            <h2>
+              Lorem
+            </h2>
+            <p
+              className="text-uppercase"
+            >
+              Dolor
+            </p>
+            <p
+              className="font-weight-light mb-4 mb-sm-3"
+            >
+              Etiam porta sem malesuada magna mollis euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </p>
+            <div
+              className="d-flex justify-content-between flex-row flex-sm-column justify-content-sm-center"
+            >
+              <div
+                className="align-self-center align-self-sm-start mb-sm-3"
+              >
+                <span
+                  className="h2"
+                >
+                  $300
+                </span>
+              </div>
+              <button
+                className="align-self-center align-self-sm-stretch btn btn-outline-dark"
+                disabled={false}
+                onClick={[Function]}
+                type="button"
+              >
+                Add to basket
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <button
-      className="btn btn-outline-dark btn-lg"
-      disabled={false}
-      onClick={[Function]}
-      type="button"
-    >
-      Add to basket
-    </button>
   </div>
 </div>
 `;

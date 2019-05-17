@@ -1,4 +1,5 @@
 import { resolve } from '../../constants';
+import path from 'path';
 
 export const sass = () => ({
   module: {
@@ -18,7 +19,7 @@ export const sass = () => ({
               modules: true,
               sourceMap: true,
               localIdentName: '[path][name]__[local]__[hash:base64:5]',
-              minimize: true,
+              minimize: true
             },
           },
           {

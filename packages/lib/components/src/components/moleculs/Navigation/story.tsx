@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { Navigation } from '.';
+import { Navigation } from './component';
 import { props } from './mocks';
 
 const story = storiesOf('Moleculs/Navigation', module);
