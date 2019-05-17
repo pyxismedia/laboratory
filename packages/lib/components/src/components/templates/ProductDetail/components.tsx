@@ -16,8 +16,14 @@ export interface ProductDetailsProps extends ProductDescriptionProps {
   children: ChildrenComponents;
 }
 
-// This has to be loaded some globaly
-document.documentElement.style.setProperty('--viewport-height', `${window.innerHeight}px`);
+function viewport() {
+  // This has to be loaded some globaly
+  document.documentElement.style.setProperty('--viewport-height', `${window.innerHeight}px`); 
+}
+
+viewport();
+
+window.addEventListener('resize', viewport);
 
 export const ProductDetail: FunctionComponent<ProductDetailsProps> = ({
   title,
