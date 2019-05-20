@@ -3,7 +3,7 @@ import { ImageVariants } from './types';
 import styles from './styles.module.scss';
 
 export interface ImageProps {
-  variant: ImageVariants;
+  variant?: ImageVariants;
   src: string;
   alt?: string;
 }
