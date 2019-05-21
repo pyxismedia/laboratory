@@ -1,25 +1,40 @@
-import React, { Children, cloneElement } from 'react';
+import React, { Children, cloneElement, ReactNode } from 'react';
+import get from 'lodash/get';
 
-interface Type<T> extends Function {
-  new (...args: any[]): T
-}
-
-type Constructor<T> = Function & { prototype: T }
-
-export interface GuardProps<A, C> {
-  Abstract: Constructor<A>;
-  Component: Constructor<C>;
+export interface GuardProps {
+  Component?: ReactNode;
   props?: { [key: string]: any };
-  children: C;
+  when?: string[];
+  children: ReactNode;
+  otherwise?: Function;
 }
 
-export class Guard<A extends React.Component, C extends any> extends React.Component<GuardProps<A, C>> {
+export class Guard extends React.Component<GuardProps> {
   render() {
-    const { Abstract, Component, children, props } = this.props;
-    return Children.map<JSX.Element | undefined, C>(children, (child) => {
-      if (Abstract.isPrototypeOf(child.type) || child.type === Component) {
-        return cloneElement((child as any), props);
+    const { Component, children, props, when, otherwise } = this.props;
+
+    let hasWhen: any;
+
+    return Children.map(children, (child) => {
+      if (!React.isValidElement(child)) {
+        return null;
       }
+
+      if ((when && get(child.props, when)) || typeof when ===  'undefined') {
+        // hasWhen define whether we want to render otherwise or not
+        hasWhen = get(child.props, when as any);
+        if ((Component && Component.isPrototypeOf(child.type)) || child.type === Component) {
+          return cloneElement(child, props);
+        }
+      }
+
+      if(!hasWhen && otherwise) {
+        if (!((Component && Component.isPrototypeOf(child.type)) || child.type === Component)) {
+          return otherwise();
+        }
+      }
+
+      return null;
     });
   }
 };
