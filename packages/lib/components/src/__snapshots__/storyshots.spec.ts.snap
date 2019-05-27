@@ -14167,6 +14167,375 @@ exports[`Storyshots Moleculs/Raiser default 1`] = `
 </div>
 `;
 
+exports[`Storyshots Moleculs/Steps default 1`] = `
+<ul
+  className="list-group list-group-horizontal list-group-flush justify-content-between mb-3"
+>
+  <li
+    className="list-group-item border-0 step-active px-0 py-0"
+  >
+    <button
+      className="btn btn-link"
+      onClick={[Function]}
+    >
+      <span
+        className="d-inline-block rounded-circle w-10 circle align-middle text-center mr-2 text-light"
+      >
+        1
+      </span>
+      <span
+        className="text-center align-middle label"
+      >
+        Orders
+      </span>
+    </button>
+  </li>
+  <li
+    className="list-group-item border-0 px-0 py-0"
+  >
+    <button
+      className="btn btn-link"
+      onClick={[Function]}
+    >
+      <span
+        className="d-inline-block rounded-circle w-10 circle align-middle text-center mr-2 text-light"
+      >
+        2
+      </span>
+      <span
+        className="text-center align-middle label"
+      >
+        Payment
+      </span>
+    </button>
+  </li>
+  <li
+    className="list-group-item border-0 px-0 py-0"
+  >
+    <button
+      className="btn btn-link"
+      onClick={[Function]}
+    >
+      <span
+        className="d-inline-block rounded-circle w-10 circle align-middle text-center mr-2 text-light"
+      >
+        3
+      </span>
+      <span
+        className="text-center align-middle label"
+      >
+        Shipping
+      </span>
+    </button>
+  </li>
+</ul>
+`;
+
+exports[`Storyshots Organisms/Order default 1`] = `
+<div
+  className="w-50 mr-auto ml-auto"
+>
+  <div>
+    <ul
+      className="list-group list-group-horizontal list-group-flush justify-content-between mb-3"
+    >
+      <li
+        className="list-group-item border-0 step-active px-0 py-0"
+      >
+        <button
+          className="btn btn-link"
+          onClick={[Function]}
+        >
+          <span
+            className="d-inline-block rounded-circle w-10 circle align-middle text-center mr-2 text-light"
+          >
+            1
+          </span>
+          <span
+            className="text-center align-middle label"
+          >
+            Orders
+          </span>
+        </button>
+      </li>
+      <li
+        className="list-group-item border-0 px-0 py-0"
+      >
+        <button
+          className="btn btn-link"
+          onClick={[Function]}
+        >
+          <span
+            className="d-inline-block rounded-circle w-10 circle align-middle text-center mr-2 text-light"
+          >
+            2
+          </span>
+          <span
+            className="text-center align-middle label"
+          >
+            Payment
+          </span>
+        </button>
+      </li>
+      <li
+        className="list-group-item border-0 px-0 py-0"
+      >
+        <button
+          className="btn btn-link"
+          onClick={[Function]}
+        >
+          <span
+            className="d-inline-block rounded-circle w-10 circle align-middle text-center mr-2 text-light"
+          >
+            3
+          </span>
+          <span
+            className="text-center align-middle label"
+          >
+            Shipping
+          </span>
+        </button>
+      </li>
+    </ul>
+  </div>
+  <div
+    className="d-flex justify-content-center align-items-center text-center"
+  >
+    <table
+      className="table table-borderless"
+    >
+      <tr>
+        <td
+          className="align-middle"
+        >
+          <div
+            className="background"
+          >
+            <img
+              alt="Lorem ipsum"
+              src="http://lorempixel.com/80/80/fashion"
+            />
+          </div>
+        </td>
+        <td
+          className="align-middle"
+        >
+          Lorem ipsum
+        </td>
+        <td
+          className="align-middle"
+        >
+          450 EUR
+        </td>
+        <td
+          className="align-middle"
+        >
+          <button
+            className="btn btn-link"
+            onClick={[Function]}
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-times fa-w-11 fa-2x "
+              data-icon="times"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 352 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="align-middle"
+        >
+          <div
+            className="background"
+          >
+            <img
+              alt="Lorem ipsum"
+              src="http://lorempixel.com/80/80/fashion"
+            />
+          </div>
+        </td>
+        <td
+          className="align-middle"
+        >
+          Lorem ipsum
+        </td>
+        <td
+          className="align-middle"
+        >
+          450 EUR
+        </td>
+        <td
+          className="align-middle"
+        >
+          <button
+            className="btn btn-link"
+            onClick={[Function]}
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-times fa-w-11 fa-2x "
+              data-icon="times"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 352 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="align-middle"
+        >
+          <div
+            className="background"
+          >
+            <img
+              alt="Lorem ipsum"
+              src="http://lorempixel.com/80/80/fashion"
+            />
+          </div>
+        </td>
+        <td
+          className="align-middle"
+        >
+          Lorem ipsum
+        </td>
+        <td
+          className="align-middle"
+        >
+          450 EUR
+        </td>
+        <td
+          className="align-middle"
+        >
+          <button
+            className="btn btn-link"
+            onClick={[Function]}
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-times fa-w-11 fa-2x "
+              data-icon="times"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 352 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </button>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Organisms/Order empty 1`] = `
+<div
+  className="w-50 mr-auto ml-auto"
+>
+  <div>
+    <ul
+      className="list-group list-group-horizontal list-group-flush justify-content-between mb-3"
+    >
+      <li
+        className="list-group-item border-0 step-active px-0 py-0"
+      >
+        <button
+          className="btn btn-link"
+          onClick={[Function]}
+        >
+          <span
+            className="d-inline-block rounded-circle w-10 circle align-middle text-center mr-2 text-light"
+          >
+            1
+          </span>
+          <span
+            className="text-center align-middle label"
+          >
+            Orders
+          </span>
+        </button>
+      </li>
+      <li
+        className="list-group-item border-0 px-0 py-0"
+      >
+        <button
+          className="btn btn-link"
+          onClick={[Function]}
+        >
+          <span
+            className="d-inline-block rounded-circle w-10 circle align-middle text-center mr-2 text-light"
+          >
+            2
+          </span>
+          <span
+            className="text-center align-middle label"
+          >
+            Payment
+          </span>
+        </button>
+      </li>
+      <li
+        className="list-group-item border-0 px-0 py-0"
+      >
+        <button
+          className="btn btn-link"
+          onClick={[Function]}
+        >
+          <span
+            className="d-inline-block rounded-circle w-10 circle align-middle text-center mr-2 text-light"
+          >
+            3
+          </span>
+          <span
+            className="text-center align-middle label"
+          >
+            Shipping
+          </span>
+        </button>
+      </li>
+    </ul>
+  </div>
+  <div
+    className="d-flex justify-content-center align-items-center text-center"
+  >
+    <div>
+      There is no product in the checkout.
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Templates/ProductDetail default 1`] = `
 <div
   className="detail"
@@ -14290,4 +14659,158 @@ exports[`Storyshots Templates/ProductDetail default 1`] = `
     </div>
   </div>
 </div>
+`;
+
+exports[`Storyshots moleculs/List default 1`] = `
+<table
+  className="table table-borderless"
+>
+  <tr>
+    <td
+      className="align-middle"
+    >
+      <div
+        className="background"
+      >
+        <img
+          alt="Lorem ipsum"
+          src="http://lorempixel.com/80/80/fashion"
+        />
+      </div>
+    </td>
+    <td
+      className="align-middle"
+    >
+      Lorem ipsum
+    </td>
+    <td
+      className="align-middle"
+    >
+      450 EUR
+    </td>
+    <td
+      className="align-middle"
+    >
+      <button
+        className="btn btn-link"
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-times fa-w-11 fa-2x "
+          data-icon="times"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 352 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+      </button>
+    </td>
+  </tr>
+  <tr>
+    <td
+      className="align-middle"
+    >
+      <div
+        className="background"
+      >
+        <img
+          alt="Lorem ipsum"
+          src="http://lorempixel.com/80/80/fashion"
+        />
+      </div>
+    </td>
+    <td
+      className="align-middle"
+    >
+      Lorem ipsum
+    </td>
+    <td
+      className="align-middle"
+    >
+      450 EUR
+    </td>
+    <td
+      className="align-middle"
+    >
+      <button
+        className="btn btn-link"
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-times fa-w-11 fa-2x "
+          data-icon="times"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 352 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+      </button>
+    </td>
+  </tr>
+  <tr>
+    <td
+      className="align-middle"
+    >
+      <div
+        className="background"
+      >
+        <img
+          alt="Lorem ipsum"
+          src="http://lorempixel.com/80/80/fashion"
+        />
+      </div>
+    </td>
+    <td
+      className="align-middle"
+    >
+      Lorem ipsum
+    </td>
+    <td
+      className="align-middle"
+    >
+      450 EUR
+    </td>
+    <td
+      className="align-middle"
+    >
+      <button
+        className="btn btn-link"
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-times fa-w-11 fa-2x "
+          data-icon="times"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 352 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+      </button>
+    </td>
+  </tr>
+</table>
 `;

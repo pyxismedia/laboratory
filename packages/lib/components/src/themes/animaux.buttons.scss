@@ -10,4 +10,9 @@
   .btn {
     @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $btn-font-size-lg, $btn-line-height-lg, $border-radius);
   }
+
+  .form-control {
+    padding: $input-padding-y-lg $input-padding-x-lg;
+    height: auto;
+  }
 }
