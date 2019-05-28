@@ -1,16 +1,12 @@
 import React, { FunctionComponent } from 'react';
+import { RadioStackProps, RadioStack } from '../../atoms/RadioStack/component';
 
-export const Form: FunctionComponent = () => (
+interface FormProps {
+  delivery: RadioStackProps;
+}
+
+export const Form: FunctionComponent<FormProps> = ({ delivery }) => (
   <form>
-    <span className="btn-group" data-toggle="buttons">
-      <label className="btn btn-primary">
-        <input type="radio" name="shipping-method" id="shipping-personal" className="sr-only" />
-        Personal handover
-      </label>
-      <label className="btn btn-primary">
-        <input type="radio" name="shipping-method" id="shipping-post" className="sr-only" />
-        Post delivery
-      </label>
-    </span>
+    <RadioStack {...delivery} />
   </form>
 );

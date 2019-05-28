@@ -6,7 +6,6 @@ import { ImageVariants } from '../../atoms/Image/types';
 import { Image } from '../../atoms/Image';
 import { ProductDescriptionProps } from '../../moleculs/ProductDescription/component';
 import { Navigation } from '../../moleculs/Navigation/component';
-import { NavigationAbstract } from '../../moleculs/Navigation/types';
 import { Guard } from '../../atoms/Guard/component';
 
 export interface ProductDetailsProps extends ProductDescriptionProps {
