@@ -6,21 +6,23 @@ import { faWalking, faTruck } from '@fortawesome/free-solid-svg-icons';
 export const props = {
   active: 'cdefghc',
   id: 'rthgfjslwp',
+  onChange() {},
   radios: [
     {
       id: 'abcdefghc',
       icon: faWalking,
       title: 'Personal Handover',
+
     },
     {
       id: 'cdefghc',
       icon: faTruck,
-      title: 'Home Delivery'
+      title: 'Home Delivery',
     }
   ]
 }
 
-storiesOf('Atoms/RadioStack', module)
+storiesOf('Atoms/forms/RadioStack', module)
   .add('default', () => (
     <RadioStack {...props} />
   ));

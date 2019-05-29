@@ -6,7 +6,7 @@ import chai, { expect } from 'chai';
 import chaiSinon from 'sinon-chai';
 import chaiEnzyme from 'chai-enzyme';
 import { InputGroup, FormControl } from 'react-bootstrap';
-import { Button, Variants } from '../../atoms/Button';
+import { Button, Variants } from '../../atoms/forms/Button';
 
 describe('Raiser', () => {
   it('should have defined structure', () => {

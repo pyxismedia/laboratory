@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react';
 import { Raiser } from '../Raiser';
-import { Button, Variants } from '../../atoms/Button';
+import { Button, Variants } from '../../atoms/forms/Button';
 import setDisplayName from 'recompose/setDisplayName';
 import { Container, Row, Col } from 'react-bootstrap';
 

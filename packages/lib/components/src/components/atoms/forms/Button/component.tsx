@@ -1,16 +1,17 @@
 import React, { FunctionComponent, ReactChild } from 'react';
-import { Variants } from './types';
+import { Variants, Type } from './types';
 import { Button as Btn } from 'react-bootstrap';
-import { Sizes } from '../../types/sizes';
-import '../../../themes/animaux.theme.scss';
-import '../../../themes/animaux.fonts.css';
+import { Sizes } from '../../../types/sizes';
+import '../../../../themes/animaux.theme.scss';
+import '../../../../themes/animaux.fonts.css';
 
 export interface ButtonProps {
   children: ReactChild;
   variant?: Variants;
   size?: Sizes;
-  onClick: (event: any) => void;
+  onClick?: (event: any) => void;
   className?: string;
+  type: Type | undefined;
 }
 
 export const Button: FunctionComponent<ButtonProps> = ({
@@ -18,9 +19,10 @@ export const Button: FunctionComponent<ButtonProps> = ({
   variant = Variants.PRIMARY,
   size,
   onClick,
-  className
+  className,
+  type
 }) => (
-  <Btn variant={variant} size={size} onClick={onClick} className={className}>
+  <Btn variant={variant} size={size} onClick={onClick} className={className} type={type}>
     {children}
   </Btn>
 );

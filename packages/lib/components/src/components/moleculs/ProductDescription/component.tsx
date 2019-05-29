@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from 'react';
-import { Button, Variants } from '../../atoms/Button';
+import { Button, Variants } from '../../atoms/forms/Button';
 import '../../../themes/animaux.theme.scss';
 
 export interface ProductDescriptionProps {

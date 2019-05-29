@@ -17,3 +17,9 @@ export enum Variants {
   OUTLINE_DARK = 'outline-dark',
   OUTLINE_LIGHT = 'outline-light'
 }
+
+export enum Type {
+  SUBMIT = 'submit',
+  BUTTON = 'button',
+  RESET = 'reset',
+}

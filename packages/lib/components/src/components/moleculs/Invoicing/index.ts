@@ -1,1 +1,0 @@
-export { Invoicing } from './component';
