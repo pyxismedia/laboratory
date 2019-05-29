@@ -17,35 +17,35 @@ export const Invoicing: FunctionComponent<InvoicingProps> = ({ forname, cities, 
   <>
     <div className="form-row">
       <div className="col-6 mb-3">
-        <label htmlFor="">Forname</label>
+        <label htmlFor="forname">Forname</label>
         <input type="text" className="form-control" name="forname" id="" placeholder="" value={forname} required />
       </div>
       <div className="col-6 mb-3">
-        <label htmlFor="">Surname</label>
+        <label htmlFor="surname">Surname</label>
         <input type="text" className="form-control" id="surname" placeholder="" value={surname} required />
       </div>
     </div>
     <div className="form-row">
       <div className="col-6 mb-3">
-        <label htmlFor="">Company</label>
+        <label htmlFor="company">Company</label>
         <input type="text" className="form-control" id="company" placeholder="" value={company} required />
       </div>
       <div className="col-6 mb-3">
-        <label htmlFor="">VAT</label>
+        <label htmlFor="vat">VAT</label>
         <input type="text" className="form-control" id="vat" placeholder="" value={vat} required />
       </div>
     </div>
     <div className="form-row">
       <div className="col-6 mb-3">
-        <label htmlFor="">Street</label>
+        <label htmlFor="street">Street</label>
         <input type="text" className="form-control" id="street" placeholder="" value={street} required />
       </div>
       <div className="col-2 mb-3">
-        <label htmlFor="">Street no.</label>
+        <label htmlFor="streetNo">Street no.</label>
         <input type="text" className="form-control" id="streetNo" placeholder="" value={streetNo} required />
       </div>
       <div className="col-4 mb-3">
-        <label htmlFor="">Postcode</label>
+        <label htmlFor="postcode">Postcode</label>
         <input type="text" className="form-control" id="postcode" placeholder="" value={postcode} required />
       </div>
     </div>
