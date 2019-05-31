@@ -11,7 +11,7 @@ export interface ButtonProps {
   size?: Sizes;
   onClick?: (event: any) => void;
   className?: string;
-  type: Type | undefined;
+  type?: Type;
 }
 
 export const Button: FunctionComponent<ButtonProps> = ({

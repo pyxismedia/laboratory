@@ -1,9 +1,12 @@
 import React, { FunctionComponent, FormEvent } from 'react';
 
-export interface CheckboxProps {
+export interface ICheckbox {
   checked: boolean;
   id: string;
   title: string;
+}
+
+export interface CheckboxProps extends ICheckbox {
   onChange: (e: FormEvent<HTMLInputElement>) => void;
 }
 

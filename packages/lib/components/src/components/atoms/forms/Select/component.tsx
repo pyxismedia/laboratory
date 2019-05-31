@@ -1,25 +1,28 @@
 import React, { FunctionComponent } from 'react';
+import { IOption, OnChange, ISelect } from '../../../types/form';
 
-export class Option {
-  constructor(
-    public id: string,
-    public value: string,
-    public title: string,
-  ) {}
+export interface IOption {
+  id: string;
+  title: string;
+  value: string;
 }
 
-export interface SelectProps {
+export interface ISelect {
   id: string;
   label: string;
   value: string | number;
-  options: Option[];
+  options: IOption[];
+}
+
+export interface SelectProps extends ISelect {
+  onChange: OnChange;
 }
 
 export const Select: FunctionComponent<SelectProps> = ({ label, id, options, value }) => (
   <>
     <label htmlFor="city">{label}</label>
     <select value={value} className="custom-select" id={id}>
-      {options.map((option: Option) => <option key={option.id} value={option.value}>{option.title}</option>)}
+      {options.map((option: IOption) => <option key={option.id} value={option.value}>{option.title}</option>)}
     </select>
   </>
 );

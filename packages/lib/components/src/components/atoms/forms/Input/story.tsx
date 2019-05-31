@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { InputType, Input } from './component';
+import { Input, InputTypeEnum } from './component';
 
 const props = {
   id: '123456',
@@ -8,7 +8,7 @@ const props = {
   value: '511 01',
   placeholder: '255 45',
   datalist: ['130 00', '888 88'],
-  type: InputType.TEXT,
+  type: InputTypeEnum.TEXT,
   onChange() {}
 };
 

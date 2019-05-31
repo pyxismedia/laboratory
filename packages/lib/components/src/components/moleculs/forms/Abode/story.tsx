@@ -65,19 +65,19 @@ export const deliveryProps = {
       ]
     }
   },
+  onFieldChange() {},
 }
 
 export const invoicingProps = assign({}, deliveryProps, {
   company: {
     company: {
       value: 'Neco LTD',
-      onChange() {}
     },
     vat: {
       value: '123456',
-      onChange() {}
     },
   },
+  onFieldChange() {},
 });
 
 storiesOf('Moleculs/forms/Abode', module)

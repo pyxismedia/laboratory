@@ -6,12 +6,15 @@ import { FormEvent } from 'react';
 export const props = {
   forname: {
     value: 'Karel',
-    onChange: () => {},
+    id: 'forname',
+    label: 'Forname'
   },
   surname: {
     value: 'Vomacka',
-    onChange: () => {}
+    id: 'surname',
+    label: 'Surname'
   },
+  onFieldChange: () => () => {}
 };
 
 const PersonContainer = () => {
@@ -21,12 +24,23 @@ const PersonContainer = () => {
   const props = {
     forname: {
       value: forname,
-      onChange: (e: FormEvent<HTMLInputElement>) => setForname(e.currentTarget.value),
+      id: 'forname',
+      label: 'Forname'
     },
     surname: {
       value: surname,
-      onChange: (e: FormEvent<HTMLInputElement>) => setSurname(e.currentTarget.value),
-    }
+      id: 'surname',
+      label: 'Surname'
+    },
+    onFieldChange: (id: string) => (e: FormEvent<HTMLInputElement>) => {
+      if (id === 'forname') {
+        setForname(e.currentTarget.value)
+      };
+
+      if (id === 'surname') {
+        setSurname(e.currentTarget.value);
+      }
+    },
   };
   
   return <Person {...props} />

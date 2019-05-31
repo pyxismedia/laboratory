@@ -12,7 +12,8 @@ const props = {
       value: 'xyz',
       title: 'Xyz'
     }
-  ]
+  ],
+  onChange() {}
 };
 
 storiesOf('Atoms/forms/Select', module)

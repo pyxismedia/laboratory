@@ -5,12 +5,11 @@ import { Company } from './component';
 const props = {
   company: {
     value: 'Neco LTD',
-    onChange() {}
   },
   vat: {
     value: '123456',
-    onChange() {}
   },
+  onFieldChange() {}
 };
 
 storiesOf('Moleculs/forms/Company', module)
