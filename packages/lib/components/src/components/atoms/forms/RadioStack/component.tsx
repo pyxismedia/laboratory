@@ -2,6 +2,7 @@ import React, { FunctionComponent } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import cx from 'classnames';
 import { OnChange } from '../../../types/form';
+import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 
 export interface IRadio {
   title: string;

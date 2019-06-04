@@ -1,5 +1,4 @@
 import { Component, FormEvent, createElement, ReactNode } from 'react';
-import { OnFieldChange } from '../../../types/form';
 import { Shipping as ShippingComponent } from './component';
 import { faTruck } from '@fortawesome/fontawesome-free';
 import { IAbode } from '../../../moleculs/forms/Abode/types';
@@ -8,7 +7,7 @@ import { InputTypeEnum } from '../../../atoms/forms/Input/component';
 import { IRadioStack } from '../../../atoms/forms/RadioStack';
 
 interface IShipping {
-  handleFieldChange: OnFieldChange;
+  
 }
 
 interface ShippingProps extends IShipping {
@@ -209,13 +208,19 @@ export class Shipping extends Component<ShippingProps, ShippingState> implements
   }
 
   handleFieldChange = (field: string) => (event: FormEvent<HTMLInputElement>) => {
+    // TODO: We have to update real source now we are passing into the state directly forname1: "value"
+    console.log(field, event.currentTarget.value);
     const { value } = event.currentTarget;
     let data = { ...this.state.data, [field]: value };
     this.setState({ data });
   }
 
+  handleSubmit(e: FormEvent<HTMLFormElement>): void {
+    console.log(e);
+  }
+
   render(): ReactNode  {
-    const props = { ...this.state.data, onFieldChange: this.handleFieldChange };
+    const props = { ...this.state.data, onFieldChange: this.handleFieldChange, onSubmit: this.handleSubmit };
     return createElement(ShippingComponent, props);
   }
 }

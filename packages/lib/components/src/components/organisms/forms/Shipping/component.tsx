@@ -1,19 +1,19 @@
 import React, { FunctionComponent, FormEvent } from 'react';
-import { RadioStackProps, RadioStack } from '../../../atoms/forms/RadioStack/component';
-import { Abode, AbodeProps } from '../../../moleculs/forms/Abode';
+import { RadioStack, IRadioStack } from '../../../atoms/forms/RadioStack/component';
+import { Abode, IAbode } from '../../../moleculs/forms/Abode';
 import { Accordion, Card } from 'react-bootstrap';
-import { Checkbox, CheckboxProps } from '../../../atoms/forms/Checkbox';
+import { Checkbox, ICheckbox } from '../../../atoms/forms/Checkbox';
 import { Button } from '../../../atoms/forms/Button';
 import { OnFieldChange } from '../../../types/form';
 
 // TODO: Create namespaces like <Form.Groups.Shipping />
 
 interface ShippingProps {
-  distribution: RadioStackProps;
-  invoicing: AbodeProps;
-  delivery: AbodeProps;
-  terms: CheckboxProps;
-  data: CheckboxProps;
+  distribution: IRadioStack;
+  invoicing: IAbode;
+  delivery: IAbode;
+  terms: ICheckbox;
+  data: ICheckbox;
   onSubmit: (e: FormEvent<HTMLFormElement>) => void;
   onFieldChange: OnFieldChange;
 }

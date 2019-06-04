@@ -1,40 +1,47 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { Abode } from './component';
+import { Abode, AbodeProps } from './component';
 
 const { assign } = Object;
 
-export const deliveryProps = {
+export const deliveryProps: AbodeProps = {
   person: {
     forname: {
+      id: 'foroname',
       value: 'Karel',
-      onChange() {}
+      label: 'Forname',
     },
     surname: {
+      id: 'surname',
       value: 'Vomacka',
-      onChange() {}
+      label: 'Surname',
     },
   },
   address: {
     street: {
+      id: 'street',
+      label: 'Street',
       value: 'Some Street',
       datalist: [
         'Vodickova',
         'Stromovka'
       ],
-      onChange() {}
     },
     streetNo: {
+      id: 'streetNo',
+      label: 'Street Number',
       value: 0,
       datalist: [3, 33, 333],
-      onChange() {}
     },
     postcode: {
+      id: 'postcode',
+      label: 'Postcode',
       value: '12345',
       datalist: ['12345', '68789'],
-      onChange() {}
     },
     countries: {
+      id: 'country',
+      label: 'Country',
       value: 'czechRepublic',
       options: [
         {
@@ -50,6 +57,8 @@ export const deliveryProps = {
       ],
     },
     cities: {
+      id: 'city',
+      label: 'City',
       value: 'prague',
       options: [
         {
@@ -65,7 +74,7 @@ export const deliveryProps = {
       ]
     }
   },
-  onFieldChange() {},
+  onFieldChange: () => () => {},
 }
 
 export const invoicingProps = assign({}, deliveryProps, {
@@ -77,7 +86,7 @@ export const invoicingProps = assign({}, deliveryProps, {
       value: '123456',
     },
   },
-  onFieldChange() {},
+  onFieldChange: () => () => {},
 });
 
 storiesOf('Moleculs/forms/Abode', module)
