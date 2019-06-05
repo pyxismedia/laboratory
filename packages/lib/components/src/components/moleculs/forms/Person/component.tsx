@@ -3,9 +3,12 @@ import { Input } from '../../../atoms/forms/Input';
 import { OnFieldChange } from '../../../types/form';
 import { IInput } from '../../../atoms/forms/Input/component';
 
-export interface PersonProps {
+export interface IPerson {
   forname: IInput;
   surname: IInput;
+}
+
+export interface PersonProps extends IPerson {
   onFieldChange: OnFieldChange;
 }
 

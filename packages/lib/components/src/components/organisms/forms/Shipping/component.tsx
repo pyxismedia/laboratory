@@ -2,11 +2,10 @@ import React, { FunctionComponent, FormEvent } from 'react';
 import { RadioStack, IRadioStack } from '../../../atoms/forms/RadioStack/component';
 import { Abode, IAbode } from '../../../moleculs/forms/Abode';
 import { Accordion, Card } from 'react-bootstrap';
-import { Checkbox, ICheckbox } from '../../../atoms/forms/Checkbox';
+import { Checkbox } from '../../../atoms/forms/Checkbox';
 import { Button } from '../../../atoms/forms/Button';
 import { OnFieldChange } from '../../../types/form';
-
-// TODO: Create namespaces like <Form.Groups.Shipping />
+import { ICheckbox } from '../../../atoms/forms/Checkbox/component';
 
 interface ShippingProps {
   distribution: IRadioStack;

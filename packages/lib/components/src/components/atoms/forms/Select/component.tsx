@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from 'react';
-import { IOption, OnChange, ISelect } from '../../../types/form';
+import { OnChange } from '../../../types/form';
 
 export interface IOption {
   id: string;

@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
-import { Person } from './component';
+import { Person, IPerson } from './component';
 import { FormEvent } from 'react';
+import { IInput } from '../../../atoms/forms/Input/component';
 
 export const props = {
   forname: {
@@ -18,32 +19,27 @@ export const props = {
 };
 
 const PersonContainer = () => {
-  const [forname, setForname] = useState('');
-  const [surname, setSurname] = useState('');
-
-  const props = {
+  const [state, setState] = useState<IPerson>({
     forname: {
-      value: forname,
+      value: '',
       id: 'forname',
       label: 'Forname'
     },
     surname: {
-      value: surname,
+      value: '',
       id: 'surname',
       label: 'Surname'
-    },
-    onFieldChange: (id: string) => (e: FormEvent<HTMLInputElement>) => {
-      if (id === 'forname') {
-        setForname(e.currentTarget.value)
-      };
+    }
+  });
 
-      if (id === 'surname') {
-        setSurname(e.currentTarget.value);
-      }
-    },
+  type id = 'forname' | 'surname';
+
+  const handleFieldChange = (id: id) => (e: FormEvent<HTMLInputElement>, value: IInput) => {
+    console.log({ ...state, [id]: value });
+    setState({ ...state, [id]: value });
   };
   
-  return <Person {...props} />
+  return <Person {...state} onFieldChange={handleFieldChange} />
 };
 
 storiesOf('Moleculs/forms/Person', module)

@@ -48,7 +48,7 @@ export class Shipping extends Component<ShippingProps, ShippingState> implements
           active: '02',
         },
         invoicing: {
-          person: {
+          
             forname: {
               id: 'forname1',
               label: 'Forname',
@@ -63,8 +63,8 @@ export class Shipping extends Component<ShippingProps, ShippingState> implements
               placeholder: 'Juna',
               type: InputTypeEnum.TEXT,
             },
-          },
-          company: {
+          
+          
             company: {
               id: 'company',
               label: 'Company',
@@ -79,8 +79,8 @@ export class Shipping extends Component<ShippingProps, ShippingState> implements
               placeholder: '12345',
               type: InputTypeEnum.TEXT,
             },
-          },
-          address: {
+          
+          
             street: {
               id: 'street1',
               label: 'Street',
@@ -91,7 +91,7 @@ export class Shipping extends Component<ShippingProps, ShippingState> implements
             streetNo: {
               id: 'streetNo1',
               label: 'Street Number',
-              value: 5,
+              value: '5',
               placeholder: 'Your Number Street',
               type: InputTypeEnum.NUMBER,
             },
@@ -126,10 +126,10 @@ export class Shipping extends Component<ShippingProps, ShippingState> implements
                 }
               ],
             },
-          },
+          
         },
         delivery: {
-          person: {
+          
             forname: {
               id: 'forname2',
               label: 'Forname',
@@ -144,8 +144,8 @@ export class Shipping extends Component<ShippingProps, ShippingState> implements
               placeholder: 'Juna',
               type: InputTypeEnum.TEXT,
             },
-          },
-          address: {
+          
+          
             street: {
               id: 'street2',
               label: 'Street',
@@ -156,7 +156,7 @@ export class Shipping extends Component<ShippingProps, ShippingState> implements
             streetNo: {
               id: 'streetNo2',
               label: 'Street Number',
-              value: 5,
+              value: '5',
               placeholder: 'Your Number Street',
               type: InputTypeEnum.NUMBER,
             },
@@ -191,7 +191,7 @@ export class Shipping extends Component<ShippingProps, ShippingState> implements
                 }
               ],
             },
-          },
+          
         },
         terms: {
           checked: false,
@@ -208,8 +208,6 @@ export class Shipping extends Component<ShippingProps, ShippingState> implements
   }
 
   handleFieldChange = (field: string) => (event: FormEvent<HTMLInputElement>) => {
-    // TODO: We have to update real source now we are passing into the state directly forname1: "value"
-    console.log(field, event.currentTarget.value);
     const { value } = event.currentTarget;
     let data = { ...this.state.data, [field]: value };
     this.setState({ data });

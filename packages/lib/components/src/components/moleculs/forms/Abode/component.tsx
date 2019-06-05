@@ -9,10 +9,10 @@ export interface AbodeProps extends IAbode {
   onFieldChange: OnFieldChange
 }
 
-export const Abode: FunctionComponent<AbodeProps> = ({ person, company, address, onFieldChange: handleFieldChange }) => (
+export const Abode: FunctionComponent<AbodeProps> = ({ forname, surname, company, vat, street, streetNo, postcode, cities, countries, onFieldChange: handleFieldChange }) => (
   <>
-    <Person {...person} onFieldChange={handleFieldChange} />
-    {company && <Company {...company} onFieldChange={handleFieldChange} />}
-    <Address {...address} onFieldChange={handleFieldChange} />
+    <Person forname={forname} surname={surname} onFieldChange={handleFieldChange} />
+    {company && <Company company={company} vat={vat} onFieldChange={handleFieldChange} />}
+    <Address street={street} streetNo={streetNo} postcode={postcode} cities={cities} countries={countries} onFieldChange={handleFieldChange} />
   </>
 );

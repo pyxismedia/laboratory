@@ -22,5 +22,5 @@ export enum Fields {
   PERSONAL_DATA = 'personalData'
 }
 
-export type OnChange = (event: FormEvent<HTMLInputElement>) => void;
-export type OnFieldChange = (id: string) => OnChange;
+export type OnChange = (event: FormEvent<HTMLInputElement>, value?: any, selectedKey?: string) => void;
+export type OnFieldChange = (id: any) => OnChange;
