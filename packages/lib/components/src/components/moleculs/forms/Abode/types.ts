@@ -1,5 +1,5 @@
-import { IInput, IInputData } from "../../../atoms/forms/Input/component";
-import { ISelect } from "../../../atoms/forms/Select/component";
+import { IInput, IInputData } from "../../../atoms/forms/Input/types";
+import { ISelect } from "../../../atoms/forms/Select/types";
 
 export interface IAbode {
     forname: IInput,

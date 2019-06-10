@@ -1,6 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { Input, InputTypeEnum } from './component';
+import { Input } from './component';
+import { InputTypeEnum } from './types';
 
 const props = {
   id: '123456',

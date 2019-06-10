@@ -34,7 +34,7 @@ const PersonContainer = () => {
 
   type id = 'forname' | 'surname';
 
-  const handleFieldChange = (id: id) => (e: FormEvent<HTMLInputElement>, value: IInput) => {
+  const handleFieldChange = (id: id) => (e: FormEvent<HTMLInputElement | HTMLSelectElement>, value: IInput) => {
     console.log({ ...state, [id]: value });
     setState({ ...state, [id]: value });
   };

@@ -1,28 +1,27 @@
 import React, { FunctionComponent, FormEvent } from 'react';
-import { RadioStack, IRadioStack } from '../../../atoms/forms/RadioStack/component';
+import { RadioStack } from '../../../atoms/forms/RadioStack/component';
 import { Abode, IAbode } from '../../../moleculs/forms/Abode';
+// @ts-ignore
 import { Accordion, Card } from 'react-bootstrap';
 import { Checkbox } from '../../../atoms/forms/Checkbox';
 import { Button } from '../../../atoms/forms/Button';
-import { OnFieldChange } from '../../../types/form';
-import { ICheckbox } from '../../../atoms/forms/Checkbox/component';
+import { OnFieldChange, OnGroupChange } from '../../../types/form';
+import { IShippingFields, IShippingGroups } from './types';
 
-interface ShippingProps {
-  distribution: IRadioStack;
-  invoicing: IAbode;
-  delivery: IAbode;
-  terms: ICheckbox;
-  data: ICheckbox;
+interface ShippingProps extends IShippingGroups, IShippingFields {
   onSubmit: (e: FormEvent<HTMLFormElement>) => void;
-  onFieldChange: OnFieldChange;
+  onFieldChange: OnFieldChange<keyof IShippingFields>;
+  onGroupChange: OnGroupChange<keyof IShippingGroups, keyof IAbode>
 }
 
 export const Shipping: FunctionComponent<ShippingProps> = ({
     distribution, invoicing, delivery, terms, data,
-    onSubmit: handleSubmit, onFieldChange: handleFieldChange 
+    onSubmit: handleSubmit,
+    onGroupChange: handleGroupChange,
+    onFieldChange: handleFieldChange,
   }) => (
   <>
-    <RadioStack {...distribution} onChange={handleFieldChange(distribution.id)} />
+    <RadioStack {...distribution} onChange={handleFieldChange('distribution')} />
     <Accordion>
       <Card>
         <Card.Header>
@@ -32,7 +31,7 @@ export const Shipping: FunctionComponent<ShippingProps> = ({
         </Card.Header>
         <Accordion.Collapse eventKey="0">
           <Card.Body>
-            <Abode {...invoicing} onFieldChange={handleFieldChange} />
+            <Abode {...invoicing} onFieldChange={handleGroupChange('invoicing')} />
           </Card.Body>
         </Accordion.Collapse>
       </Card>
@@ -45,13 +44,13 @@ export const Shipping: FunctionComponent<ShippingProps> = ({
         </Card.Header>
         <Accordion.Collapse eventKey="1">
           <Card.Body>
-            <Abode {...delivery} onFieldChange={handleFieldChange} />
+            <Abode {...delivery} onFieldChange={handleGroupChange('delivery')} />
           </Card.Body>
         </Accordion.Collapse>
       </Card>
     </Accordion>
-    <Checkbox {...terms} onChange={handleFieldChange(terms.id)} />
-    <Checkbox {...data} onChange={handleFieldChange(data.id)} />
+    <Checkbox {...terms} onChange={handleFieldChange('terms')} />
+    <Checkbox {...data} onChange={handleFieldChange('data')} />
     <Button onClick={handleSubmit}>Next</Button>
   </>
 );

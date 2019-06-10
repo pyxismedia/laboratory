@@ -1,18 +1,19 @@
 import { Component, FormEvent, createElement, ReactNode } from 'react';
 import { Shipping as ShippingComponent } from './component';
-import { faTruck } from '@fortawesome/fontawesome-free';
+import { faTruck } from '@fortawesome/free-solid-svg-icons';
 import { IAbode } from '../../../moleculs/forms/Abode/types';
-import { ICheckbox } from '../../../atoms/forms/Checkbox/component';
-import { InputTypeEnum } from '../../../atoms/forms/Input/component';
-import { IRadioStack } from '../../../atoms/forms/RadioStack';
+import { ICheckbox } from '../../../atoms/forms/Checkbox/types';
+import { InputTypeEnum } from '../../../atoms/forms/Input/types';
+import { IRadioStack } from '../../../atoms/forms/RadioStack/types';
 
-interface IShipping {
-  
-}
+const { assign } = Object;
 
-interface ShippingProps extends IShipping {
+type Group = 'invoicing' | 'delivery';
+type Field = 'distribution' | 'terms' | 'data';
 
-}
+interface IShipping {}
+
+interface ShippingProps extends IShipping {}
 
 interface ShippingState {
   data: {
@@ -207,9 +208,21 @@ export class Shipping extends Component<ShippingProps, ShippingState> implements
     };
   }
 
-  handleFieldChange = (field: string) => (event: FormEvent<HTMLInputElement>) => {
+  handleChange = (field: Field) => (event: FormEvent<HTMLInputElement | HTMLSelectElement>) => {
+    let data = assign({}, this.state.data);
+
+    if (data[field] instanceof ICheckbox || data[field] instanceof IRadioStack) {
+      const { checked } = (event.currentTarget as HTMLInputElement);
+      (data[field] as ICheckbox).checked = checked;
+    }
+
+    this.setState({ data });
+  }
+
+  handleGroupChange = (group: Group) => (field: keyof IAbode) => (event: FormEvent<HTMLInputElement | HTMLSelectElement>) => {
     const { value } = event.currentTarget;
-    let data = { ...this.state.data, [field]: value };
+    let data = assign({}, this.state.data);
+    data[group][field]!['value'] = value;
     this.setState({ data });
   }
 
@@ -218,7 +231,7 @@ export class Shipping extends Component<ShippingProps, ShippingState> implements
   }
 
   render(): ReactNode  {
-    const props = { ...this.state.data, onFieldChange: this.handleFieldChange, onSubmit: this.handleSubmit };
+    const props = { ...this.state.data, onGroupChange: this.handleGroupChange, onFieldChange: this.handleChange, onSubmit: this.handleSubmit };
     return createElement(ShippingComponent, props);
   }
 }

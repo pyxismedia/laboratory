@@ -1,11 +1,6 @@
-import React, { FunctionComponent, FormEvent } from 'react';
+import React, { FunctionComponent } from 'react';
 import { OnChange } from '../../../types/form';
-
-export interface ICheckbox {
-  checked: boolean;
-  id: string;
-  title: string;
-}
+import { ICheckbox } from './types';
 
 export interface CheckboxProps extends ICheckbox {
   onChange: OnChange;

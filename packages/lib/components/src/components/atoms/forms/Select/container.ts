@@ -4,7 +4,7 @@ import { Select, SelectProps } from './component';
 export interface SelectContainerProps extends SelectProps {}
 
 export class SelectContainer extends React.Component<SelectContainerProps> {
-  handleChange = (e: FormEvent<HTMLInputElement>) => {
+  handleChange = (e: FormEvent<HTMLInputElement | HTMLSelectElement>) => {
     let data = { ...this.props, value: e.currentTarget.value };
     this.props.onChange(e, data);
   }

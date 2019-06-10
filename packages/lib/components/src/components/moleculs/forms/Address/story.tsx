@@ -4,24 +4,30 @@ import { Address } from './component';
 
 export const props = {
   street: {
+    id: '123456',
     value: 'Some Street',
     datalist: [
       'Vodickova',
       'Stromovka'
     ],
-    onChange() {}
+    label: 'Street'
   },
   streetNo: {
-    value: 0,
-    datalist: [3, 33, 333],
-    onChange() {}
+    id: '12345',
+    value: '0',
+    datalist: ['3', '33', '333'],
+    label: 'Street No.'
+    
   },
   postcode: {
+    id: '1234567',
     value: '12345',
     datalist: ['12345', '68789'],
-    onChange() {}
+    label: 'Postcode'
   },
   countries: {
+    id: 'country',
+    label: 'Country',
     value: 'czechRepublic',
     options: [
       {
@@ -37,6 +43,8 @@ export const props = {
     ],
   },
   cities: {
+    id: 'city',
+    label: 'City',
     value: 'prague',
     options: [
       {
@@ -50,7 +58,8 @@ export const props = {
         value: 'berlin'
       }
     ]
-  }
+  },
+  onFieldChange: () => () => {}
 };
 
 storiesOf('Moleculs/forms/Person', module)

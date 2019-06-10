@@ -1,22 +1,6 @@
 import React, { FunctionComponent } from 'react';
 import { OnChange } from '../../../types/form';
-
-export enum InputTypeEnum {
-  TEXT = 'text',
-  NUMBER = 'number',
-}
-
-export interface IInput {
-  id: string;
-  label: string;
-  value: string;
-  placeholder?: string;
-  type?: InputTypeEnum;
-}
-
-export interface IInputData extends IInput {
-  datalist?: (string)[];
-}
+import { IInputData, InputTypeEnum } from './types';
 
 export interface InputProps extends IInputData {
   onChange: OnChange;

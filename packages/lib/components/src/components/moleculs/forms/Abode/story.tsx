@@ -5,7 +5,7 @@ import { Abode, AbodeProps } from './component';
 const { assign } = Object;
 
 export const deliveryProps: AbodeProps = {
-  person: {
+  
     forname: {
       id: 'foroname',
       value: 'Karel',
@@ -16,8 +16,8 @@ export const deliveryProps: AbodeProps = {
       value: 'Vomacka',
       label: 'Surname',
     },
-  },
-  address: {
+  
+  
     street: {
       id: 'street',
       label: 'Street',
@@ -30,8 +30,8 @@ export const deliveryProps: AbodeProps = {
     streetNo: {
       id: 'streetNo',
       label: 'Street Number',
-      value: 0,
-      datalist: [3, 33, 333],
+      value: '0',
+      datalist: ['3', '33', '333'],
     },
     postcode: {
       id: 'postcode',
@@ -72,20 +72,18 @@ export const deliveryProps: AbodeProps = {
           value: 'berlin'
         }
       ]
-    }
-  },
+    },
   onFieldChange: () => () => {},
 }
 
 export const invoicingProps = assign({}, deliveryProps, {
-  company: {
+  
     company: {
       value: 'Neco LTD',
     },
     vat: {
       value: '123456',
     },
-  },
   onFieldChange: () => () => {},
 });
 

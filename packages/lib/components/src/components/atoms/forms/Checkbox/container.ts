@@ -4,7 +4,7 @@ import { Checkbox, CheckboxProps } from './component';
 export interface CheckboxContainerProps extends CheckboxProps {}
 
 export class CheckboxContainer extends React.Component<CheckboxContainerProps> {
-  handleChange = (e: FormEvent<HTMLInputElement>) => {
+  handleChange = (e: FormEvent<HTMLInputElement | HTMLSelectElement>) => {
     let data = { ...this.props, value: e.currentTarget.value };
     this.props.onChange(e, data);
   }

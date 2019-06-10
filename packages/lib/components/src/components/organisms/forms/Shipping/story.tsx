@@ -13,6 +13,7 @@ const props = {
   terms: termsProps,
   data: termsProps,
   onFieldChange: () => () => {},
+  onGroupChange: () => () => () => {},
   onSubmit() {}
 }
 

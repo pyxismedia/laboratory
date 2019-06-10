@@ -4,7 +4,7 @@ import { Input, InputProps } from './component';
 export interface InputContainerProps extends InputProps {}
 
 export class InputContainer extends React.Component<InputContainerProps> {
-  handleChange = (e: FormEvent<HTMLInputElement>) => {
+  handleChange = (e: FormEvent<HTMLInputElement | HTMLSelectElement>) => {
     let data = { ...this.props, value: e.currentTarget.value };
     this.props.onChange(e, data);
   }
