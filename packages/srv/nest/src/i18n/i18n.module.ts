@@ -3,10 +3,12 @@ import { I18nMiddleware } from './i18n.middleware';
 import { MongooseModule } from '@nestjs/mongoose';
 import { I18nService } from './i18n.service';
 import * as mongoose from 'mongoose';
+// @ts-ignore
 import * as mongooseIntl from 'mongoose-intl';
-import { ConfigModule } from '../config/config.module';
+import { ConfigModule, ConfigService } from '../config/config.module'
 import { ConfigSingleton } from '../config/config.singleton';
 
+// Issue with webpack maybe cause imports *
 // TODO: Move to async provider
 mongoose.plugin(mongooseIntl, { languages: ['en', 'de', 'fr'], defaultLanguage: 'en' }); // wrong instance
 
@@ -14,10 +16,12 @@ mongoose.plugin(mongooseIntl, { languages: ['en', 'de', 'fr'], defaultLanguage: 
   imports: [
     MongooseModule.forRootAsync({
       imports: [ConfigModule],
-      useFactory: async (configService: ConfigSingleton) => ({
-        uri: configService.get(configService.Env.MONGODB_URI),
-      }),
-      inject: [ConfigSingleton],
+      useFactory: async (configService: ConfigSingleton) => {
+        return {
+          uri: configService.get(configService.Env.MONGODB_URI),
+        }
+      },
+      inject: [ConfigService],
     },
   )],
   providers: [I18nService],

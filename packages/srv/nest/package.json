@@ -19,14 +19,19 @@
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
-    "mongoimport": "mongoimport -d pyxis --collection posts --file ./src/posts/post/post.data.json --drop && mongoimport -d pyxis --collection sections --file ./src/posts/section/section.data.json --drop"
+    "mongoimport": "mongoimport -d pyxis --collection posts --file ./src/posts/post/post.data.json --drop --jsonArray && mongoimport -d pyxis --collection sections --file ./src/posts/section/section.data.json --drop --jsonArray&& mongoimport -d pyxis --collection users --file ./src/users/user/user.data.json --drop --jsonArray",
+    "webpack:start": "node dist/server.js",
+    "webpack:build": "webpack --config webpack.config.js"
   },
   "dependencies": {
-    "@nestjs/common": "^5.4.0",
-    "@nestjs/core": "^5.4.0",
-    "@nestjs/graphql": "^5.5.1",
-    "@nestjs/mongoose": "^5.2.2",
-    "@nestjs/passport": "^5.1.0",
+    "@nestjs/common": "6.3.1",
+    "@nestjs/core": "^6.3.1",
+    "@nestjs/graphql": "^6.2.4",
+    "@nestjs/mongoose": "^6.1.2",
+    "@nestjs/passport": "^6.1.0",
+    "@nestjs/platform-express": "^6.3.1",
+    "@nestjs/swagger": "^3.0.2",
+    "@types/dotenv": "^6.1.1",
     "apollo-link-context": "^1.0.14",
     "apollo-server-express": "^2.3.3",
     "dotenv": "^6.2.0",
@@ -40,10 +45,13 @@
     "reflect-metadata": "^0.1.12",
     "rimraf": "^2.6.2",
     "rxjs": "^6.2.2",
-    "typescript": "^3.0.1"
+    "swagger-ui-express": "^4.0.6",
+    "typescript": "^3.0.1",
+    "webpack-cli": "^3.3.4",
+    "webpack-node-externals": "^1.7.2"
   },
   "devDependencies": {
-    "@nestjs/testing": "^5.1.0",
+    "@nestjs/testing": "^6.3.1",
     "@types/express": "^4.16.0",
     "@types/jest": "^23.3.1",
     "@types/joi": "^14.3.1",

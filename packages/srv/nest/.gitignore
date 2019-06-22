@@ -17,3 +17,4 @@ logs
 *.swp
 .vscode
 *.env
+dist

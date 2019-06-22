@@ -1,6 +1,3 @@
-schema {
-  query: Query
-}
 
 enum State {
   DRAFT
@@ -15,18 +12,26 @@ type Post {
   content: String
   image: String
   state: State
-  date: String
+  dateOfCreation: String
+  dateOfLastChange: String
   labels: [String]
   author: String
+  authorOfLastChange: String
   section: Section
+}
+
+input CreatePostDto {
+  title: String
+  subtitle: String
+  content: String
+  image: String
+  state: State
+  labels: [String]
+  author: String
+  section: String
 }
 
 type Section {
   _id: ID!
   name: String
-}
-
-type Query {
-  posts: [Post]
-  post(id: ID!): Post
 }

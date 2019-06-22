@@ -1,5 +1,4 @@
-import { Injectable, MiddlewareFunction, NestMiddleware } from '@nestjs/common';
-import { InjectConnection } from '@nestjs/mongoose';
+import { Injectable, NestMiddleware } from '@nestjs/common';
 import { I18nService } from './i18n.service';
 
 @Injectable()
@@ -8,10 +7,8 @@ export class I18nMiddleware implements NestMiddleware {
     private readonly i18nService: I18nService,
   ) {}
 
-  resolve(): MiddlewareFunction {
-    return (request, response, next) => {
-      this.i18nService.setLanguage(request);
-      next();
-    };
+  use(request: Request, response: Response, next: Function) {
+    this.i18nService.setLanguage(request);
+    next();
   }
 }
