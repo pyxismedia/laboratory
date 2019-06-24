@@ -2,6 +2,7 @@ import * as dotenv from 'dotenv';
 import * as fs from 'fs';
 import * as Joi from 'joi';
 import { Injectable } from '@nestjs/common';
+import { DotenvParseOutput } from 'dotenv';
 
 enum Env {
   MONGODB_URI = 'MONGODB_URI',
@@ -16,10 +17,11 @@ export class ConfigSingleton {
 
   constructor(filePath: string) {
     const config = dotenv.parse(fs.readFileSync(filePath));
-    this.envConfig = this.validateInput(config);
+    this.envConfig = this.validateInput((config as unknown) as Env);
   }
 
   get(key: Env): Env {
+    // @ts-ignore
     return this.envConfig[key];
   }
 
