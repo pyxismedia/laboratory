@@ -26,12 +26,12 @@
       "de": "DRAFT",
       "fr": "DRAFT"
     },
-    "dateOfCreation": 0,
-    "dateOfLastChange": 0,
+    "createdAt": "Sun Jun 23 2019 16:13:05 GMT+0200 (CEST)",
+    "updatedAt": "Sun Jun 23 2019 16:13:05 GMT+0200 (CEST)",
     "labels": ["lorem-ipsum-1"],
     "image": "someimage.png",
-    "author": "0000000000000000000000a0",
-    "authorOfLastChange": "0000000000000000000000b0",
+    "createdBy": "0000000000000000000000a0",
+    "updatedBy": "0000000000000000000000b0",
     "section": "00000000000000000000000a"
   },
   {
@@ -61,12 +61,12 @@
       "de": "DRAFT",
       "fr": "DRAFT"
     },
-    "dateOfCreation": 0,
-    "dateOfLastChange": 0,
+    "createdAt": "Sun Jun 23 2019 16:13:05 GMT+0200 (CEST)",
+    "updatedAt": "Sun Jun 23 2019 16:13:05 GMT+0200 (CEST)",
     "labels": ["lorem-ipsum-1"],
     "image": "someimage.png",
-    "author": "0000000000000000000000a0",
-    "authorOfLastChange": "0000000000000000000000a0",
+    "createdBy": "0000000000000000000000a0",
+    "updatedBy": "0000000000000000000000a0",
     "section": "00000000000000000000000a"
   },
   {
@@ -96,12 +96,12 @@
       "de": "DRAFT",
       "fr": "DRAFT"
     },
-    "dateOfCreation": 0,
-    "dateOfLastChange": 0,
+    "createdAt": "Sun Jun 23 2019 16:13:05 GMT+0200 (CEST)",
+    "updatedAt": "Sun Jun 23 2019 16:13:05 GMT+0200 (CEST)",
     "labels": ["lorem-ipsum-1"],
     "image": "someimage.png",
-    "author": "0000000000000000000000b0",
-    "authorOfLastChange": "0000000000000000000000a0",
+    "createdBy": "0000000000000000000000b0",
+    "updatedBy": "0000000000000000000000a0",
     "section": "00000000000000000000000b"
   },
   {
@@ -131,12 +131,12 @@
       "de": "DRAFT",
       "fr": "DRAFT"
     },
-    "dateOfCreation": 0,
-    "dateOfLastChange": 0,
+    "createdAt": "Sun Jun 23 2019 16:13:05 GMT+0200 (CEST)",
+    "updatedAt": "Sun Jun 23 2019 16:13:05 GMT+0200 (CEST)",
     "labels": ["lorem-ipsum-1"],
     "image": "someimage.png",
-    "author": "0000000000000000000000b0",
-    "authorOfLastChange": "0000000000000000000000b0",
+    "createdBy": "0000000000000000000000b0",
+    "updatedBy": "0000000000000000000000b0",
     "section": "00000000000000000000000b"
   },
   {
@@ -166,12 +166,12 @@
       "de": "DRAFT",
       "fr": "DRAFT"
     },
-    "dateOfCreation": 0,
-    "dateOfLastChange": 0,
+    "createdAt": "Sun Jun 23 2019 16:13:05 GMT+0200 (CEST)",
+    "updatedAt": "Sun Jun 23 2019 16:13:05 GMT+0200 (CEST)",
     "labels": ["lorem-ipsum-1"],
     "image": "someimage.png",
-    "author": "0000000000000000000000a0",
-    "authorOfLastChange": "0000000000000000000000a0",
+    "createdBy": "0000000000000000000000a0",
+    "updatedBy": "0000000000000000000000a0",
     "section": "00000000000000000000000b"
   }
 ]
