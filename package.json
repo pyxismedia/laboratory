@@ -21,11 +21,15 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "yarn lerna run test",
-      "prepare-commit-msg": "exec < /dev/tty && yarn git-cz"
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-push": "yarn lerna run test"
     }
   },
   "devDependencies": {
+    "@commitlint/cli": "^8.0.0",
+    "@commitlint/config-conventional": "^8.0.0",
+    "@commitlint/config-lerna-scopes": "^8.0.0",
+    "@commitlint/prompt-cli": "^8.0.0",
     "@lerna/project": "^3.10.0",
     "commitizen": "^3.1.1",
     "cz-lerna-changelog": "^2.0.2",
