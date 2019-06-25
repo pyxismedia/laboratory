@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
-import { Person, IPerson } from './component';
+import { Person } from './component';
 import { FormEvent } from 'react';
-import { IInput } from '../../../atoms/forms/Input/component';
+import { IPerson } from './types';
+import { IInput } from '../../../atoms/forms/Input/types';
 
 export const props = {
   forname: {
