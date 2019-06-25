@@ -17,24 +17,19 @@
     "docs": "lerna run docs",
     "release": "lerna exec --concurrency 1 -- npx --no-install semantic-release -e semantic-release-monorepo",
     "sass-fix": "node ./node_modules/node-sass/scripts/install.js && npm rebuild node-sass",
-    "postinstall": "yarn sass-fix",
-    "prepare-commit-msg": {
-      "darwin": "exec < /dev/tty && git-cz --hook",
-      "linux": "exec < /dev/tty && git-cz --hook"
-    }
+    "postinstall": "yarn sass-fix"
   },
   "husky": {
     "hooks": {
       "pre-push": "lerna run test",
-      "prepare-commit-msg": "exec < /dev/tty && git-cz --hook"
+      "prepare-commit-msg": "exec < /dev/tty && yarn git-cz --hook"
     }
   },
   "devDependencies": {
     "@lerna/project": "^3.10.0",
     "commitizen": "^3.1.1",
-    "cross-os": "^1.3.0",
     "cz-lerna-changelog": "^2.0.2",
-    "husky": "^1.2.0",
+    "husky": "^2.5.0",
     "lerna": "^3.13.4",
     "semantic-release": "^15.13.17",
     "semantic-release-monorepo": "^6.1.1"
@@ -60,5 +55,10 @@
     "packages/srv/nest",
     "packages/util/webpack",
     "packages/lib/ng-components"
-  ]
+  ],
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }

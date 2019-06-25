@@ -4,7 +4,7 @@ import { Abode, IAbode } from '../../../moleculs/forms/Abode';
 // @ts-ignore
 import { Accordion, Card } from 'react-bootstrap';
 import { Checkbox } from '../../../atoms/forms/Checkbox';
-import { Button } from '../../../atoms/forms/Button';
+import { Button, Variants } from '../../../atoms/forms/Button';
 import { OnFieldChange, OnGroupChange } from '../../../types/form';
 import { IShippingFields, IShippingGroups } from './types';
 
@@ -32,7 +32,7 @@ export const Shipping: FunctionComponent<ShippingProps> = ({
     <Accordion>
       <Card>
         <Card.Header>
-          <Accordion.Toggle as={Button} variant="link" eventKey="0">
+          <Accordion.Toggle as={Button} variant={Variants.LINK} eventKey="0">
             Invoicing Address
           </Accordion.Toggle>
         </Card.Header>
@@ -47,7 +47,7 @@ export const Shipping: FunctionComponent<ShippingProps> = ({
       </Card>
       <Card>
         <Card.Header>
-          <Accordion.Toggle as={Button} variant="link" eventKey="1">
+          <Accordion.Toggle as={Button} variant={Variants.LINK} eventKey="1">
             Delivery Address
           </Accordion.Toggle>
           <small>
