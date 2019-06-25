@@ -21,8 +21,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "lerna run test",
-      "prepare-commit-msg": "exec < /dev/tty && yarn git-cz --hook"
+      "pre-push": "yarn lerna run test",
+      "prepare-commit-msg": "exec < /dev/tty && yarn git-cz"
     }
   },
   "devDependencies": {
