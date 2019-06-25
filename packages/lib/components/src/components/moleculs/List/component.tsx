@@ -16,12 +16,8 @@ export const List: FunctionComponent<ListProps> = ({ items, onRemove }) => (
         <td className="align-middle">
           <Image src={item.image} alt={item.description} />
         </td>
-        <td className="align-middle">
-          {item.description}
-        </td>
-        <td className="align-middle">
-          {item.price}
-        </td>
+        <td className="align-middle">{item.description}</td>
+        <td className="align-middle">{item.price}</td>
         <td className="align-middle">
           <button className="btn btn-link" onClick={onRemove}>
             <FontAwesomeIcon icon={faTimes} size="2x" />

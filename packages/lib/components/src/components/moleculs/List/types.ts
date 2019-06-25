@@ -6,7 +6,7 @@ export class OrderItem extends Model {
     public id: string,
     public image: string,
     public description: string,
-    public price: string,
+    public price: string
   ) {
     super();
   }

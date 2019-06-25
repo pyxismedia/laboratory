@@ -6,7 +6,6 @@ import { ImageVariants } from '../../atoms/Image/types';
 import { Image } from '../../atoms/Image';
 import { ProductDescriptionProps } from '../../moleculs/ProductDescription/component';
 import { Navigation } from '../../moleculs/Navigation/component';
-import { NavigationAbstract } from '../../moleculs/Navigation/types';
 import { Guard } from '../../atoms/Guard/component';
 
 export interface ProductDetailsProps extends ProductDescriptionProps {
@@ -16,7 +15,10 @@ export interface ProductDetailsProps extends ProductDescriptionProps {
 
 function viewport() {
   // This has to be loaded some globaly
-  document.documentElement.style.setProperty('--viewport-height', `${window.innerHeight}px`); 
+  document.documentElement.style.setProperty(
+    '--viewport-height',
+    `${window.innerHeight}px`
+  );
 }
 
 viewport();
@@ -44,19 +46,16 @@ export const ProductDetail: FunctionComponent<ProductDetailsProps> = ({
 
   const navigationProps = {
     className: 'position-absolute',
-    style: { left: 0, right: 0 },
+    style: { left: 0, right: 0 }
   };
 
   return (
     <div className={styles.detail}>
       <div className="container-fluid h-100">
         <div className="row h-100 align-items-end align-items-sm-center">
-          <div className={`${styles['image-column']} col-lg-7 col-sm-12`} >
+          <div className={`${styles['image-column']} col-lg-7 col-sm-12`}>
             <div className="w-100 position-relative">
-              <Guard
-                Component={Navigation}
-                props={navigationProps}
-              >
+              <Guard Component={Navigation} props={navigationProps}>
                 {children}
               </Guard>
             </div>

@@ -20,12 +20,12 @@ $item-count: 3;
   font-weight: 200;
 }
 
-.up,
-.down,
-.link {
+.cycler .up,
+.cycler .down,
+.cycler .link {
   outline: none;
   padding: 0;
-  border: 0px;
+  border: 0;
   box-sizing: none;
   background-color: transparent;
 }

@@ -33,6 +33,7 @@
     "debug": "^4.1.1",
     "express": "^4.16.4",
     "faker": "^4.1.0",
+    "formik": "^1.5.7",
     "husky": "^2.2.0",
     "konva": "^2.5.1",
     "lodash": "^4.17.11",
@@ -98,5 +99,11 @@
     "node": "10.15.3",
     "yarn": "1.15.2",
     "npm": "6.4.1"
+  },
+  "lint-staged": {
+    "{src}/**/*.ts*": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }

@@ -27,7 +27,10 @@ export const Cycler: FunctionComponent<CyclerProps> = ({
   handleItemClick
 }) => (
   <div className={styles.cycler}>
-    <button onClick={up} className={`btn btn-link ${styles.link} `}>
+    <button
+      onClick={up}
+      className={`${styles['btn']} ${styles['btn-link']} ${styles.link} `}
+    >
       <FontAwesomeIcon icon={faChevronUp} size="2x" className={styles.up} />
     </button>
     <div className={styles.wrapper}>

@@ -4,8 +4,8 @@ import { shallow, ShallowWrapper } from 'enzyme';
 import chai, { expect } from 'chai';
 import chaiSinon from 'sinon-chai';
 import chaiEnzyme from 'chai-enzyme';
-import { Button } from '../../atoms/Button';
-import { Variants } from '../../atoms/Button';
+import { Button } from '../../atoms/forms/Button';
+import { Variants } from '../../atoms/forms/Button';
 import { Sizes } from '../../types/sizes';
 import { spy } from 'sinon';
 

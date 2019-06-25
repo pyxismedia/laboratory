@@ -4,7 +4,7 @@ import { AddComponent, AddComponentProps } from './component';
 import { shallow, ShallowWrapper } from 'enzyme';
 import chai, { expect } from 'chai';
 import { Raiser } from '../Raiser';
-import { Button, Variants } from '../../atoms/Button';
+import { Button, Variants } from '../../atoms/forms/Button';
 import { spy, SinonSpy } from 'sinon';
 import { RaiserProps } from '../Raiser/container';
 import { ButtonProps } from 'react-bootstrap';
