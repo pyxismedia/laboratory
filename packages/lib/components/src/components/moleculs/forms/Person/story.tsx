@@ -34,12 +34,15 @@ const PersonContainer = () => {
 
   type id = 'forname' | 'surname';
 
-  const handleFieldChange = (id: id) => (e: FormEvent<HTMLInputElement | HTMLSelectElement>, value: IInput) => {
+  const handleFieldChange = (id: id) => (
+    e: FormEvent<HTMLInputElement | HTMLSelectElement>,
+    value: IInput
+  ) => {
     console.log({ ...state, [id]: value });
     setState({ ...state, [id]: value });
   };
-  
-  return <Person {...state} onFieldChange={handleFieldChange} />
+
+  return <Person {...state} onFieldChange={handleFieldChange} />;
 };
 
 storiesOf('Moleculs/forms/Person', module)

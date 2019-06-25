@@ -3,7 +3,7 @@ import { Guard } from './component';
 import { shallow, ShallowWrapper } from 'enzyme';
 import chai, { expect } from 'chai';
 import sinonChai from 'sinon-chai';
-import chaiEnzyme from 'chai-enzyme'; 
+import chaiEnzyme from 'chai-enzyme';
 
 abstract class Abstract extends React.Component {}
 
@@ -20,7 +20,7 @@ const Another = () => <div />;
 describe('Guard', () => {
   let component: ShallowWrapper;
 
-  it("should render only filtered component", () => {
+  it('should render only filtered component', () => {
     component = shallow(
       <Guard Component={Component}>
         <Component />
@@ -31,7 +31,7 @@ describe('Guard', () => {
     expect(component.find(Another)).not.to.be.present();
   });
 
-  it("should render only filtered container", () => {
+  it('should render only filtered container', () => {
     component = shallow(
       <Guard Component={Abstract}>
         <Container />
@@ -42,7 +42,7 @@ describe('Guard', () => {
     expect(component.find(Another)).not.to.be.present();
   });
 
-  it("should render component if when is truthy", () => {
+  it('should render component if when is truthy', () => {
     component = shallow(
       <Guard Component={Component} when={['condition']}>
         <Component condition={true} />
@@ -53,7 +53,7 @@ describe('Guard', () => {
     expect(component.find(Another)).not.to.be.present();
   });
 
-  it("should not render component if when is falsy", () => {
+  it('should not render component if when is falsy', () => {
     component = shallow(
       <Guard Component={Component} when={['condition']}>
         <Component condition={false} />

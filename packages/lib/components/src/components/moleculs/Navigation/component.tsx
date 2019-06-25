@@ -17,11 +17,16 @@ export const Navigation: FunctionComponent<NavigationProps> = ({
   className,
   style
 }) => (
-  <nav className={`navbar navbar-expand-lg navbar-light bg-transparent ${className}`} style={style}>
+  <nav
+    className={`navbar navbar-expand-lg navbar-light bg-transparent ${className}`}
+    style={style}
+  >
     <ul className="navbar-nav mr-auto">
       {items.map((item: Item, i) => (
         <li className="nav-item active" key={item.id || i}>
-          <a className="nav-link" href={item.link}>{item.title}</a>
+          <a className="nav-link" href={item.link}>
+            {item.title}
+          </a>
         </li>
       ))}
     </ul>

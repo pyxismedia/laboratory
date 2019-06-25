@@ -16,5 +16,6 @@ const props = {
   onFieldChange: () => () => {}
 };
 
-storiesOf('Moleculs/forms/Company', module)
-  .add('default', () => <Company {...props} />);
+storiesOf('Moleculs/forms/Company', module).add('default', () => (
+  <Company {...props} />
+));

@@ -31,7 +31,10 @@ describe('Steps', () => {
   });
 
   it('should get number of step on click', () => {
-    component.find('button').first().simulate('click');
+    component
+      .find('button')
+      .first()
+      .simulate('click');
     expect(handleStepSpy).to.have.been.called;
   });
 });

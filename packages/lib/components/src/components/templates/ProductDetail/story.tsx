@@ -8,7 +8,11 @@ import { ReactComponent as Brand } from '../../moleculs/Navigation/svg.svg';
 storiesOf('Templates/ProductDetail', module).add('default', () => (
   <ProductDetail
     {...productDescriptionProps}
-    image="http://lorempixel.com/640/480/fashion">
-    <Navigation items={[{ title: 'Get to know Animaux!', link: 'http://' }]} Brand={Brand} />
+    image="http://lorempixel.com/640/480/fashion"
+  >
+    <Navigation
+      items={[{ title: 'Get to know Animaux!', link: 'http://' }]}
+      Brand={Brand}
+    />
   </ProductDetail>
 ));

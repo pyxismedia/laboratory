@@ -1,7 +1,6 @@
-
 export enum InputTypeEnum {
   TEXT = 'text',
-  NUMBER = 'number',
+  NUMBER = 'number'
 }
 
 export interface IInput {

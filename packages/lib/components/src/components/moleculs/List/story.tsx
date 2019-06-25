@@ -25,7 +25,4 @@ export const props = {
   ]
 };
 
-storiesOf('moleculs/List', module)
-  .add('default', () => (
-    <List {...props} />
-  ));
+storiesOf('moleculs/List', module).add('default', () => <List {...props} />);

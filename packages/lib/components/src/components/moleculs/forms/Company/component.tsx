@@ -7,13 +7,27 @@ export interface CompanyProps extends ICompany {
   onFieldChange: OnFieldChange<keyof ICompany>;
 }
 
-export const Company: FunctionComponent<CompanyProps> = ({ company, vat, onFieldChange: handleFieldChange }) => (
+export const Company: FunctionComponent<CompanyProps> = ({
+  company,
+  vat,
+  onFieldChange: handleFieldChange
+}) => (
   <fieldset className="form-row" name="company">
     <div className="col-6 mb-3">
-      <Input label="Company" id={company.id} value={company.value} onChange={handleFieldChange('company')} />
+      <Input
+        label="Company"
+        id={company.id}
+        value={company.value}
+        onChange={handleFieldChange('company')}
+      />
     </div>
     <div className="col-6 mb-3">
-      <Input label="VAT" id={vat.id} value={vat.value} onChange={handleFieldChange('vat')} />
+      <Input
+        label="VAT"
+        id={vat.id}
+        value={vat.value}
+        onChange={handleFieldChange('vat')}
+      />
     </div>
   </fieldset>
 );

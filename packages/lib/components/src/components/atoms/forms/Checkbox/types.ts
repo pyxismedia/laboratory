@@ -1,8 +1,7 @@
-
 export class ICheckbox {
   constructor(
     public checked: boolean,
     public id: string,
-    public title: string,
+    public title: string
   ) {}
 }

@@ -9,5 +9,6 @@ export const props = {
   title: 'Please check me!'
 };
 
-storiesOf('Atoms/forms/Checkbox', module)
-  .add('default', () => <Checkbox {...props} />);
+storiesOf('Atoms/forms/Checkbox', module).add('default', () => (
+  <Checkbox {...props} />
+));

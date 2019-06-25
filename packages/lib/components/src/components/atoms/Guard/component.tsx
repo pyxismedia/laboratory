@@ -15,21 +15,29 @@ export class Guard extends React.Component<GuardProps> {
 
     let hasWhen: any;
 
-    return Children.map(children, (child) => {
+    return Children.map(children, child => {
       if (!React.isValidElement(child)) {
         return null;
       }
 
-      if ((when && get(child.props, when)) || typeof when ===  'undefined') {
+      if ((when && get(child.props, when)) || typeof when === 'undefined') {
         // hasWhen define whether we want to render otherwise or not
         hasWhen = get(child.props, when as any);
-        if ((Component && Component.isPrototypeOf(child.type)) || child.type === Component) {
+        if (
+          (Component && Component.isPrototypeOf(child.type)) ||
+          child.type === Component
+        ) {
           return cloneElement(child, props);
         }
       }
 
-      if(!hasWhen && otherwise) {
-        if (!((Component && Component.isPrototypeOf(child.type)) || child.type === Component)) {
+      if (!hasWhen && otherwise) {
+        if (
+          !(
+            (Component && Component.isPrototypeOf(child.type)) ||
+            child.type === Component
+          )
+        ) {
           return otherwise();
         }
       }
@@ -37,4 +45,4 @@ export class Guard extends React.Component<GuardProps> {
       return null;
     });
   }
-};
+}

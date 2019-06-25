@@ -16,5 +16,6 @@ const props = {
   onChange() {}
 };
 
-storiesOf('Atoms/forms/Select', module)
-  .add('default', () => <Select {...props} />);
+storiesOf('Atoms/forms/Select', module).add('default', () => (
+  <Select {...props} />
+));

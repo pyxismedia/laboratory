@@ -20,7 +20,7 @@ describe('Guard', () => {
   it('should set checked to active input', () => {
     expect(component.find('input').at(1)).to.have.attr('checked', 'true');
   });
-});  
+});
 
 chai.use(chaiEnzyme());
 chai.use(sinonChai);

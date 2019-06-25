@@ -6,10 +6,7 @@ export const props = {
   street: {
     id: '123456',
     value: 'Some Street',
-    datalist: [
-      'Vodickova',
-      'Stromovka'
-    ],
+    datalist: ['Vodickova', 'Stromovka'],
     label: 'Street'
   },
   streetNo: {
@@ -17,7 +14,6 @@ export const props = {
     value: '0',
     datalist: ['3', '33', '333'],
     label: 'Street No.'
-    
   },
   postcode: {
     id: '1234567',
@@ -40,7 +36,7 @@ export const props = {
         title: 'Germany',
         value: 'DE'
       }
-    ],
+    ]
   },
   cities: {
     id: 'city',
@@ -49,7 +45,7 @@ export const props = {
     options: [
       {
         id: 'prague',
-        title: 'Prague',                        
+        title: 'Prague',
         value: 'prague'
       },
       {
@@ -62,5 +58,6 @@ export const props = {
   onFieldChange: () => () => {}
 };
 
-storiesOf('Moleculs/forms/Person', module)
-  .add('default', () => <Address {...props} />)
+storiesOf('Moleculs/forms/Person', module).add('default', () => (
+  <Address {...props} />
+));

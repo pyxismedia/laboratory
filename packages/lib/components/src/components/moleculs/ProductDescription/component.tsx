@@ -28,7 +28,11 @@ export const ProductDescription: FunctionComponent<ProductDescriptionProps> = ({
         <div className="align-self-center align-self-sm-start mb-sm-3">
           <span className="h2">{price}</span>
         </div>
-        <Button variant={Variants.OUTLINE_DARK} onClick={onAdd} className="align-self-center align-self-sm-stretch">
+        <Button
+          variant={Variants.OUTLINE_DARK}
+          onClick={onAdd}
+          className="align-self-center align-self-sm-stretch"
+        >
           {action}
         </Button>
       </div>

@@ -1,1 +1,1 @@
-export { RadioStackContainer as RadioStack} from './container';
+export { RadioStackContainer as RadioStack } from './container';

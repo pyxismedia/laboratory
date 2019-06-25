@@ -11,17 +11,24 @@ import { IShippingFields, IShippingGroups } from './types';
 interface ShippingProps extends IShippingGroups, IShippingFields {
   onSubmit: (e: FormEvent<HTMLFormElement>) => void;
   onFieldChange: OnFieldChange<keyof IShippingFields>;
-  onGroupChange: OnGroupChange<keyof IShippingGroups, keyof IAbode>
+  onGroupChange: OnGroupChange<keyof IShippingGroups, keyof IAbode>;
 }
 
 export const Shipping: FunctionComponent<ShippingProps> = ({
-    distribution, invoicing, delivery, terms, data,
-    onSubmit: handleSubmit,
-    onGroupChange: handleGroupChange,
-    onFieldChange: handleFieldChange,
-  }) => (
+  distribution,
+  invoicing,
+  delivery,
+  terms,
+  data,
+  onSubmit: handleSubmit,
+  onGroupChange: handleGroupChange,
+  onFieldChange: handleFieldChange
+}) => (
   <>
-    <RadioStack {...distribution} onChange={handleFieldChange('distribution')} />
+    <RadioStack
+      {...distribution}
+      onChange={handleFieldChange('distribution')}
+    />
     <Accordion>
       <Card>
         <Card.Header>
@@ -31,7 +38,10 @@ export const Shipping: FunctionComponent<ShippingProps> = ({
         </Card.Header>
         <Accordion.Collapse eventKey="0">
           <Card.Body>
-            <Abode {...invoicing} onFieldChange={handleGroupChange('invoicing')} />
+            <Abode
+              {...invoicing}
+              onFieldChange={handleGroupChange('invoicing')}
+            />
           </Card.Body>
         </Accordion.Collapse>
       </Card>
@@ -40,11 +50,16 @@ export const Shipping: FunctionComponent<ShippingProps> = ({
           <Accordion.Toggle as={Button} variant="link" eventKey="1">
             Delivery Address
           </Accordion.Toggle>
-          <small>Fill only if delivery address is different than invoicing address.</small>
+          <small>
+            Fill only if delivery address is different than invoicing address.
+          </small>
         </Card.Header>
         <Accordion.Collapse eventKey="1">
           <Card.Body>
-            <Abode {...delivery} onFieldChange={handleGroupChange('delivery')} />
+            <Abode
+              {...delivery}
+              onFieldChange={handleGroupChange('delivery')}
+            />
           </Card.Body>
         </Accordion.Collapse>
       </Card>

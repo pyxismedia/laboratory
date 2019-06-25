@@ -22,7 +22,13 @@ export const Button: FunctionComponent<ButtonProps> = ({
   className,
   type
 }) => (
-  <Btn variant={variant} size={size} onClick={onClick} className={className} type={type}>
+  <Btn
+    variant={variant}
+    size={size}
+    onClick={onClick}
+    className={className}
+    type={type}
+  >
     {children}
   </Btn>
 );

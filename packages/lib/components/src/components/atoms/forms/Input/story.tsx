@@ -13,7 +13,6 @@ const props = {
   onChange() {}
 };
 
-storiesOf('Atoms/forms/Input', module)
-  .add('default', () => (
-    <Input {...props} />
-  ));
+storiesOf('Atoms/forms/Input', module).add('default', () => (
+  <Input {...props} />
+));

@@ -21,5 +21,5 @@ export enum Variants {
 export enum Type {
   SUBMIT = 'submit',
   BUTTON = 'button',
-  RESET = 'reset',
+  RESET = 'reset'
 }

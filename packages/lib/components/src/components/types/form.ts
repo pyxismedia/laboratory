@@ -1,4 +1,4 @@
-import { FormEvent } from "react";
+import { FormEvent } from 'react';
 
 export enum Fields {
   TYPE_OF_DELIVERY = 'typeOfDelivery',
@@ -22,6 +22,12 @@ export enum Fields {
   PERSONAL_DATA = 'personalData'
 }
 
-export type OnChange = (event: FormEvent<HTMLInputElement | HTMLSelectElement>, value?: any, selectedKey?: string) => void;
+export type OnChange = (
+  event: FormEvent<HTMLInputElement | HTMLSelectElement>,
+  value?: any,
+  selectedKey?: string
+) => void;
 export type OnFieldChange<F extends string> = (id: F) => OnChange;
-export type OnGroupChange<G extends string, F extends string> = (group: G) => OnFieldChange<F>;
+export type OnGroupChange<G extends string, F extends string> = (
+  group: G
+) => OnFieldChange<F>;

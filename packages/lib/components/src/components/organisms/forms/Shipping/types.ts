@@ -1,6 +1,6 @@
-import { IAbode } from "../../../moleculs/forms/Abode";
-import { IRadioStack } from "../../../atoms/forms/RadioStack/types";
-import { ICheckbox } from "../../../atoms/forms/Checkbox/types";
+import { IAbode } from '../../../moleculs/forms/Abode';
+import { IRadioStack } from '../../../atoms/forms/RadioStack/types';
+import { ICheckbox } from '../../../atoms/forms/Checkbox/types';
 
 export interface IShippingGroups {
   delivery: IAbode;
