@@ -10,6 +10,6 @@ export class IRadioStack {
   constructor(
     public id: string,
     public radios: IRadio[],
-    public active: string,
+    public active?: string,
   ) {}
 }

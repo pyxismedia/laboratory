@@ -34,6 +34,7 @@ export class Shipping extends Component<ShippingProps, ShippingState> implements
       data: {
         distribution: {
           id: '01',
+          active: undefined,
           radios: [
             {
               title: 'Home Delivery',
@@ -46,7 +47,6 @@ export class Shipping extends Component<ShippingProps, ShippingState> implements
               id: '12',
             }
           ],
-          active: '02',
         },
         invoicing: {
           
@@ -211,20 +211,24 @@ export class Shipping extends Component<ShippingProps, ShippingState> implements
   handleChange = (field: Field) => (event: FormEvent<HTMLInputElement | HTMLSelectElement>) => {
     let data = assign({}, this.state.data);
 
-    if (data[field] instanceof ICheckbox || data[field] instanceof IRadioStack) {
+    if (event.currentTarget.type === 'checkbox') {
       const { checked } = (event.currentTarget as HTMLInputElement);
       (data[field] as ICheckbox).checked = checked;
     }
 
+    if (event.currentTarget.type === 'radio') {
+      (data[field] as IRadioStack).active = event.currentTarget.value;
+    }
+
     this.setState({ data });
-  }
+  };
 
   handleGroupChange = (group: Group) => (field: keyof IAbode) => (event: FormEvent<HTMLInputElement | HTMLSelectElement>) => {
     const { value } = event.currentTarget;
     let data = assign({}, this.state.data);
     data[group][field]!['value'] = value;
     this.setState({ data });
-  }
+  };
 
   handleSubmit(e: FormEvent<HTMLFormElement>): void {
     console.log(e);
