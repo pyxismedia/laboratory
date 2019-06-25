@@ -17,7 +17,8 @@
     "docs": "lerna run docs",
     "release": "lerna exec --concurrency 1 -- npx --no-install semantic-release -e semantic-release-monorepo",
     "sass-fix": "node ./node_modules/node-sass/scripts/install.js && npm rebuild node-sass",
-    "postinstall": "yarn sass-fix"
+    "postinstall": "yarn sass-fix",
+    "commit": "commit"
   },
   "husky": {
     "hooks": {
@@ -31,7 +32,6 @@
     "@commitlint/config-lerna-scopes": "^8.0.0",
     "@commitlint/prompt-cli": "^8.0.0",
     "@lerna/project": "^3.10.0",
-    "commitizen": "^3.1.1",
     "cz-lerna-changelog": "^2.0.2",
     "husky": "^2.5.0",
     "lerna": "^3.13.4",
