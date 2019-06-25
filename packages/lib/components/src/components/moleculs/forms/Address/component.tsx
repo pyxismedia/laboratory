@@ -20,7 +20,7 @@ export const Address: FunctionComponent<AddressProps> = ({
     <div className="form-row">
       <div className="col-6 mb-3">
         <Input
-          label="Street"
+          label={street.label}
           id={street.id}
           {...street}
           onChange={handleFieldChange('street')}
@@ -28,7 +28,7 @@ export const Address: FunctionComponent<AddressProps> = ({
       </div>
       <div className="col-2 mb-3">
         <Input
-          label="Street No."
+          label={streetNo.label}
           id={streetNo.id}
           {...streetNo}
           onChange={handleFieldChange('streetNo')}
@@ -36,7 +36,7 @@ export const Address: FunctionComponent<AddressProps> = ({
       </div>
       <div className="col-4 mb-3">
         <Input
-          label="Postcode"
+          label={postcode.label}
           id={postcode.id}
           {...postcode}
           onChange={handleFieldChange('postcode')}
@@ -46,7 +46,7 @@ export const Address: FunctionComponent<AddressProps> = ({
     <div className="form-row">
       <div className="col-6 mb-3">
         <Select
-          label="City"
+          label={cities.label}
           id={cities.id}
           {...cities}
           onChange={handleFieldChange('cities')}
@@ -54,7 +54,7 @@ export const Address: FunctionComponent<AddressProps> = ({
       </div>
       <div className="col-6 mb-3">
         <Select
-          label="Country"
+          label={countries.label}
           id={countries.id}
           {...countries}
           onChange={handleFieldChange('countries')}

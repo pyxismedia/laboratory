@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { Shipping } from './component';
-import { Shipping as ShippingContainer } from './container';
+import { Shipping as ShippingContainer, ShippingState } from './container';
 import { props as radioStackProps } from '../../../atoms/forms/RadioStack/story';
 import {
   invoicingProps,
@@ -20,6 +20,31 @@ const props = {
   onSubmit() {}
 };
 
+const propsContainer = {
+  titles: {
+    distribution: {
+      home: 'Home Delivery',
+      personal: 'Personal Pickup'
+    },
+    address: {
+      forename: 'Forename',
+      surname: 'Surname',
+      company: 'Company',
+      vat: 'VAT',
+      street: 'Street',
+      streetNo: 'Street No.',
+      postcode: 'Postcode',
+      city: 'City',
+      country: 'Country'
+    },
+    terms: 'I agree terms and conditions',
+    data: 'I agree with GDPR'
+  },
+  onFormSubmit(data: ShippingState['data']) {
+    console.log(data);
+  }
+};
+
 storiesOf('Organisms/forms/Shipping', module)
   .add('default', () => <Shipping {...props} />)
-  .add('state-full', () => <ShippingContainer />);
+  .add('state-full', () => <ShippingContainer {...propsContainer} />);

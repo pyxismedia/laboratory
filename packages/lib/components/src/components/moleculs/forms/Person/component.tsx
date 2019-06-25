@@ -15,7 +15,7 @@ export const Person: FunctionComponent<PersonProps> = ({
   <fieldset className="form-row" name="name">
     <div className="col-6 mb-3">
       <Input
-        label="Forname"
+        label={forname.label}
         id={forname.id}
         value={forname.value}
         onChange={handleFieldChange('forname')}
@@ -23,7 +23,7 @@ export const Person: FunctionComponent<PersonProps> = ({
     </div>
     <div className="col-6 mb-3">
       <Input
-        label="Surname"
+        label={surname.label}
         id={surname.id}
         value={surname.value}
         onChange={handleFieldChange('surname')}

@@ -15,7 +15,7 @@ export const Company: FunctionComponent<CompanyProps> = ({
   <fieldset className="form-row" name="company">
     <div className="col-6 mb-3">
       <Input
-        label="Company"
+        label={company.label}
         id={company.id}
         value={company.value}
         onChange={handleFieldChange('company')}
@@ -23,7 +23,7 @@ export const Company: FunctionComponent<CompanyProps> = ({
     </div>
     <div className="col-6 mb-3">
       <Input
-        label="VAT"
+        label={vat.label}
         id={vat.id}
         value={vat.value}
         onChange={handleFieldChange('vat')}
